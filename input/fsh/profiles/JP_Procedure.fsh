@@ -15,38 +15,19 @@ Description: "このプロファイルはProcedureリソースに対して、患
 * ^jurisdiction.text = "Jurisdiction"
 * . ^short = "Procedureリソース"
 * . ^definition = "An action that is or was performed on or for a patient. This can be a physical intervention like an operation, or less invasive like long term services, counseling, or hypnotherapy.\r\n\r\n患者に対して、または患者のために実行されているか実行されたアクション。これは、手術のような身体的介入、または長期サービス、カウンセリング、催眠療法のような低侵襲性である可能性がある。"
-* . ^mustSupport = false
 * id ^short = "Logical id of this artifact"
 * contained ^short = "Contained, inline Resources"
 * identifier ^definition = "これは、ビジネスプロセスによって定義され、リソース自体への直接のURL参照が適切でない場合に参照するために使用される、このProcedureに関連する識別子を記録する。"
 * identifier ^comment = "これはビジネス識別子であり、リソース識別子ではありません（議論参照）。識別子は1つのリソースインスタンスにのみ表示されることがベストですが、ビジネス上の慣習により、同じ識別子を持つ複数のリソースインスタンスが存在することがあるかもしれません。例えば、複数のPatientとPersonリソースインスタンスが同じ社会保険番号を共有しているかもしれない。"
-* identifier ^mustSupport = false
-* identifier.use ^mustSupport = false
-* identifier.type ^mustSupport = false
-* identifier.system ^mustSupport = false
-* identifier.value ^mustSupport = false
-* identifier.period ^mustSupport = false
-* identifier.assigner ^mustSupport = false
 * instantiatesCanonical ^definition = "本Procedureの全部または一部を遵守するFHIR定義のプロトコル、ガイドライン、オーダーセット、その他の定義を指すURL."
 * instantiatesUri ^definition = "本Procedrure全体または一部を遵守する、外部で管理されているプロトコル、ガイドライン、オーダーセット、またはその他の定義を指すURL。"
 * basedOn ^short = "A request for this procedure　このプロシージャの依頼情報"
 * basedOn ^definition = "このプロシージャの依頼情報の詳細を含むリソースへの参照。"
 * basedOn ^comment = "参照は、実際のFHIRリソースへの参照であり、解決可能でなければならない（アクセス制御、一時的な利用不能などを可能にする）。解決には、URLからの検索、またはリソースタイプによって該当する場合は、絶対参照を正規のURLとして扱い、ローカルレジストリ/リポジトリで検索することができる。 \r\n\r\n【JPーCORE】\r\nObservation_LabResultにならい、任意。"
-* basedOn ^mustSupport = false
-* basedOn.reference ^mustSupport = false
-* basedOn.type ^mustSupport = false
-* basedOn.identifier ^mustSupport = false
-* basedOn.display ^mustSupport = false
 * partOf ^definition = "A larger event of which this particular procedure is a component or step.【JP仕様】https://www.hl7.org/fhir/procedure.htmlを参照"
 * partOf ^comment = "The MedicationAdministration resource has a partOf reference to Procedure, but this is not a circular reference.   For example, the anesthesia MedicationAdministration is part of the surgical Procedure (MedicationAdministration.partOf = Procedure).  For example, the procedure to insert the IV port for an IV medication administration is part of the medication administration (Procedure.partOf = MedicationAdministration).\r\n\r\nMedicationAdministrationリソースにはProcedureへのpartOf参照があるが、これは循環参照ではない。たとえば、麻酔MedicationAdministrationは外科的処置の一部である（MedicationAdministration.partOf = Procedure）。\r\nまた、たとえば、IV投薬管理用にIVポートを挿入する手順は、投薬管理の一部である（Procedure.partOf = MedicationAdministration）。\r\n\r\n【JP-CORE】\r\nObservation_LabResultにならい、任意。"
-* partOf ^mustSupport = false
-* partOf.reference ^mustSupport = false
-* partOf.type ^mustSupport = false
-* partOf.identifier ^mustSupport = false
-* partOf.display ^mustSupport = false
 * status ^definition = "プロシージャの状態を指定するコードです。一般的には、進行中または完了した状態になります。【JP仕様】http://hl7.org/fhir/us/core/STU3.1/StructureDefinition-us-core-procedure.htmlを参照"
 * status ^comment = "The \"unknown\" code is not to be used to convey other statuses.  The \"unknown\" code should be used when one of the statuses applies, but the authoring system doesn't know the current state of the procedure.\n\nThis element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.\r\n\r\n「不明な」コードは、他のステータスを伝えるために使用されるべきではない。ステータスの1つが当てはまる場合、「不明」コードを使用する必要があるが、オーサリングシステムはプロシージャの現在の状態を認識していない。\r\nステータスにリソースを現在無効としてマークするコードが含まれているため、この要素は修飾子としてラベル付けされる。"
-* status ^mustSupport = false
 * statusReason ^definition = "プロシージャの現在の状態の理由を設定する。"
 * statusReason ^comment = "This is generally only used for \"exception\" statuses such as \"not-done\", \"suspended\" or \"aborted\". The reason for performing the event at all is captured in reasonCode, not here.\r\n\r\nこれは通常、「未完了」、「一時停止」、「中止」などの「例外」ステータスにのみ使用される。イベントを実行する理由は、ここではなく、reasonCodeに設定する。"
 * category 1..
@@ -63,14 +44,12 @@ Description: "このプロファイルはProcedureリソースに対して、患
 * code ^short = "Identification of the procedure　プロシジャーの識別子"
 * code ^definition = "行われた具体的な手順。手技の正確な性質がコード化できない場合はテキストを使用する（例：「腹腔鏡下虫垂切除術」）"
 * code ^comment = "すべての用語の使用がこの一般的なパターンに当てはまるわけではない。場合によっては、モデルはCodeableConceptを使用せず、Codingを直接使用し、テキスト、コーディング、翻訳、要素間の関係や事前・事後の調整を管理するための独自の構造を提供すべきである。"
-* code ^mustSupport = false
 * code ^binding.strength = #required
 * code ^binding.description = "Procedureコード"
 * subject only Reference(Patient)
 * subject ^short = "Who the procedure was performed on　プロシジャーが実施された対象人"
 * subject ^definition = "The person, animal or group on which the procedure was performed.\r\nプロシジャーが実行された対象の人、動物、またはグループ。"
 * subject ^comment = "参照は、実際のFHIRリソースへの参照であり、解決可能でなければならない（アクセス制御、一時的な利用不能などを可能にする）。解決は、URLからの検索、またはリソースタイプによって該当する場合は、絶対参照を正規のURLとして扱い、ローカルレジストリ/リポジトリで検索することによって行うことができる。"
-* subject ^mustSupport = false
 * encounter ^short = "Encounter created as part of　一部として作成されたエンカウンター"
 * encounter ^definition = "プロシジャーが作成または実行されたエンカウンター、またはこの記録の作成が緊密に関連しているエンカウンター。"
 * encounter ^comment = "これは通常、イベントが発生した出会いの中で行われますが、活動によっては、出会いの公式な終了前または終了後に開始されても、出会いの文脈と結びついている場合があります。"
@@ -79,7 +58,6 @@ Description: "このプロファイルはProcedureリソースに対して、患
 * performed[x] ^short = "When the procedure was performed　プロシジャーが実施された時期"
 * performed[x] ^definition = "Procedureが行われた推定または実際の日付、日時、期間、または年齢。複数の日付にまたがる複雑なProcdedureをサポートするために期間を許可し、Procdedureの長さを把握することも可能。"
 * performed[x] ^comment = "Age is generally used when the patient reports an age at which the procedure was performed. Range is generally used when the patient reports an age range when the procedure was performed, such as sometime between 20-25 years old.  dateTime supports a range of precision due to some procedures being reported as past procedures that might not have millisecond precision while other procedures performed and documented during the encounter might have more precise UTC timestamps with timezone.\r\n\r\n年齢は一般的に、患者が手技が行われた年齢を報告するときに使用される。\r\n範囲は、一般的に、患者が手順が実行されたときに年齢範囲を報告する場合に使用される。たとえば、20〜25歳の間など。\r\ndateTimeは、ミリ秒の精度を持たない可能性がある過去の手順として報告される一部の手順と、エンカウンターの期間において実施され文書化された他の手順が、タイムゾーンでより正確なUTCタイムスタンプを持つ可能性があるため、さまざまな精度をサポートする。"
-* performed[x] ^mustSupport = false
 * recorder ^short = "Who recorded the procedure　プロシジャーを記録した人"
 * recorder ^definition = "Individual who recorded the record and takes responsibility for its content.\r\n記録を記録し、その内容に責任を負う個人。"
 * recorder ^comment = "References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.\r\n参照は、実際のFHIRリソースへの参照である必要があり、内容に辿り着ける（解決できる）必要があります（アクセス制御、一時的な使用不可などを考慮に入れる）。解決は、URLから取得するか、リソースタイプによって該当する場合は、絶対参照を正規URLとして扱い、ローカルレジストリ/リポジトリで検索することによって行うことができる。"
