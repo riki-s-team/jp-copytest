@@ -1,4 +1,3 @@
-# 1.5. 検索
 HL7®FHIR®規格では[検索クエリ](https://www.hl7.org/fhir/search.html)に使用できるパラメータは[SearchParameterリソース](https://www.hl7.org/fhir/searchparameter-registry.html)として定義されており，検索クエリはSearchParameterリソースのname, valueを用いて
 
     GET [base]/[type]?name=value&...
@@ -17,7 +16,7 @@ HL7®FHIR®規格では[検索クエリ](https://www.hl7.org/fhir/search.html)�
 
 本節では特に日本において問題となりうる機能に限って記載する。実装者は検索機能を実装するにあたり、[Search](https://www.hl7.org/fhir/search.html)および[SearchParameter](https://www.hl7.org/fhir/searchparameter.html)について十分に理解しておくよう勧められる。
 
-## 1.5.1. 文字列検索
+### 文字列検索
 FHIR®におけるテキストについての検索は大きく4種類に分けることができる。ここではType:modifierと表すことにし，条件がある場合は適宜カッコで補足する。
 
 1. case sensitiveな完全一致
@@ -41,7 +40,7 @@ FHIR®におけるテキストについての検索は大きく4種類に分け�
     - [_content](https://www.hl7.org/fhir/search.html#:~:text=parameters%2C%20_text%20and-,_content,-%2C%20search%20on%20the)  
 _textと_contentはすべてのリソースに適応される[共通のsearch parameter](https://www.hl7.org/fhir/search.html#all)である。これらのSearchParameterは全文検索のためのSearchParameterであり、「[テキストをインデックス化する高度な検索機能をサポートすべきである（**SHOULD**）](https://www.hl7.org/fhir/search.html#:~:text=these%20parameters%20SHOULD%20support%20a%20sophisticated%20search%20functionality%20of%20the%20type%20offered%20by%20typical%20text%20indexing%20services)」とされており，加えて類語検索やあいまい検索，AND検索・OR検索なども実装することが望ましい。
 
-## 1.5.2. 人名の検索について
+### 人名の検索について
 組織ごとに患者記録が作成，維持されており，複数の組織でケアを受けている患者は，その情報が[複数のリソースに存在する可能性が高い](https://www.hl7.org/fhir/patient.html#scope)。多くの場合は氏名による検索や、姓の変更があった場合でも下の名前＋生年月日などの検索である程度候補を絞ることが可能である。一方で日本語表記を持たない外国人など，氏名を表す音をカタカナで表現した場合その方法は一意ではなく，複数システムとの連携を行う場合において，同一人物の突合が困難になる恐れがある。
 
 将来的に組織・システムをまたいだMaster Patient Index(MPI)が整備されることがあれば、[MPIに患者の同一性を問い合わせるクエリ](https://www.hl7.org/fhir/patient.html#match)を用いることができる。

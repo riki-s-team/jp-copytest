@@ -1,5 +1,4 @@
-# CardinalityとMustSupport組み合わせ
----
+### CardinalityとMustSupport組み合わせ
 この節では各CardinalityとMustSupportの状態ごとのサーバおよびクライアント動作について表形式にて記載している。なお、データが存在しない場合の取り扱いについては、[1.3. データが存在しない場合の扱い](Handling of non-existent data)にて詳細を記載した。
 
 [最小Cardinalityが1であることは、必ずしも有効なデータを持つことを意味しない](https://www.hl7.org/fhir/conformance-rules.html#:~:text=an%20element%20to%20a-,minimum%20cardinality%20of%201,-does%20not%20ensure)。最小Cardinalityが1であることは、要素が存在することのみを要求しており、例えば、その要素はDataAbsentReason拡張のみを持つかもしれない。
