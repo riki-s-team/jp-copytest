@@ -1,3 +1,6 @@
+// ==============================
+//   Profile 定義
+// ==============================
 Profile: JP_Observation_SocialHistory
 Parent: JP_Observation_Common
 Id: JP-Observation-SocialHistory

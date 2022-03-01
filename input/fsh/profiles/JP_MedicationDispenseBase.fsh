@@ -1,3 +1,6 @@
+// ==============================
+//   Profile 定義
+// ==============================
 Profile: JP_MedicationDispenseBase
 Parent: MedicationDispense
 Id: JP-MedicationDispenseBase
@@ -163,3 +166,24 @@ Description: "このプロファイルはユーザは直接適用するもので
 * detectedIssue ^definition = "Indicates an actual or potential clinical issue with or between one or more active or proposed clinical actions for a patient; e.g. drug-drug interaction, duplicate therapy, dosage alert etc.\r\n\r\n患者に対する1つまたは複数のアクティブまたは提案された臨床アクションを伴う、またはそれらの間の実際のまたは潜在的な臨床問題を示す。例えば薬物間相互作用、重複治療、投与量アラートなど。\r\nDetectedIssue リソースへの参照。"
 * eventHistory ^short = "A list of relevant lifecycle events　関連するライフサイクルイベントのリスト"
 * eventHistory ^definition = "A summary of the events of interest that have occurred, such as when the dispense was verified.\r\n\r\n\r\n調剤が確認されたときなど、発生した対象のイベントのサマリー。"
+
+
+Extension: JP_MedicationDispense_Preparation
+Id: 41bcb8d5-3940-4baf-8b00-9b8fbaa8ae5d
+Title: "JP_MedicationDispense_Preparation"
+Description: "薬剤単位の調剤結果"
+* ^meta.lastUpdated = "2021-12-03T16:26:48.533+00:00"
+* ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDispense_Preparation"
+* ^version = "1.0.0"
+* ^date = "2021-12-03T16:26:12.6876987+00:00"
+* ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
+* ^purpose = "薬剤単位の調剤結果"
+* ^copyright = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
+* ^context.type = #element
+* ^context.expression = "MedicationDispense"
+* . ^short = "調剤についてのExtension"
+* . ^definition = "一包化、粉砕などの処理を行った際に記載する。"
+* url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDispense_Preparation" (exactly)
+* value[x] only string or CodeableConcept
+* value[x] ^short = "調剤結果"
+* value[x] ^definition = "薬剤単位の調剤結果"

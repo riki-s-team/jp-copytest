@@ -1,3 +1,6 @@
+// ==============================
+//   Profile 定義
+// ==============================
 Profile: JP_Condition
 Parent: Condition
 Id: JP-Condition

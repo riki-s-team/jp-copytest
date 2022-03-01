@@ -1,3 +1,6 @@
+// ==============================
+//   Profile 定義
+// ==============================
 Profile: JP_MedicationAdministration_Injection
 Parent: JP_MedicationAdministration
 Id: JP-MedicationAdministration-Injection

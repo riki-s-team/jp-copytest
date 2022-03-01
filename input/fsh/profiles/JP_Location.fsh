@@ -1,3 +1,6 @@
+// ==============================
+//   Profile 定義
+// ==============================
 Profile: JP_Location
 Parent: Location
 Id: JP-Location

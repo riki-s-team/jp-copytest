@@ -1,3 +1,6 @@
+// ==============================
+//   Profile 定義
+// ==============================
 Profile: JP_Observation_Common
 Parent: Observation
 Id: JP-Observation-Common

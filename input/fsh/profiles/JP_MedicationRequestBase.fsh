@@ -1,3 +1,6 @@
+// ==============================
+//   Profile 定義
+// ==============================
 Profile: JP_MedicationRequestBase
 Parent: MedicationRequest
 Id: JP-MedicationRequestBase
@@ -854,3 +857,151 @@ Description: "このプロファイルはユーザは直接適用するもので
 * eventHistory ^short = "ライフサイクルで関心のあるイベントのリスト"
 * eventHistory ^definition = "このリソースの現在のバージョンをユーザーから見て関係していそうなキーとなる更新や状態遷移と識別される過去のバージョンのこのリソースあるいは調剤請求あるいはEvent ResourceについてのProvenance resourceへの参照。"
 * eventHistory ^comment = "このエレメントには全てのバージョンのMedicationRequestについてのProvenanceが取り込まれているわけではない。「関連する」あるいは重要と思われたものだけである。現在のバージョンのResouceに関連したProvenance resouceを含めてはならない(SHALL NOT)。（もし、Provenanceとして「関連した」変化と思われれば、後の更新の一部として取り込まれる必要があるだろう。それまでは、このバージョンを_revincludeを使ってprovenanceとして指定して直接クエリーを発行することができる。全てのProvenanceがこのRequestについての履歴を対象として持つべきである。）"
+
+// ==============================
+//   Extension 定義
+// ==============================
+Extension: JP_MedicationRequest_DispenseRequest_ExpectedRepeatCount
+Id: 996ef0bf-8b22-46e5-bc34-46c7bd6c6926
+Title: "JP_MedicationRequest_DispenseRequest_ExpectedRepeatCount"
+Description: "頓用回数"
+* ^meta.lastUpdated = "2021-12-03T12:47:27.169+00:00"
+* ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DispenseRequest_ExpectedRepeatCount"
+* ^version = "1.0.0"
+* ^date = "2021-12-03T12:42:41.6873441+00:00"
+* ^purpose = "頓用の場合など調剤量を錠数ではなく回数で表現したい場合の回数を格納する拡張"
+* ^context.type = #element
+* ^context.expression = "MedicationRequest.dispenseRequest"
+* . ..1
+* . ^short = "頓⽤回数を表現する拡張"
+* . ^definition = "頓⽤回数を表現する拡張"
+* url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DispenseRequest_ExpectedRepeatCount" (exactly)
+* value[x] 1..
+* value[x] only integer
+* value[x] ^short = "頓用回数"
+* value[x] ^definition = "頓用回数"
+
+Extension: JP_MedicationRequest_DispenseRequest_InstructionForDispense
+Id: 91cc41f3-a701-4cbe-b9bc-7d810bb7e9e5
+Title: "JP_MedicationRequest_DispenseRequest_InstructionForDispense"
+Description: "調剤指示。薬剤単位の調剤指示を表現するための拡張"
+* ^meta.lastUpdated = "2021-12-03T14:50:05.953+00:00"
+* ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DispenseRequest_InstructionForDispense"
+* ^version = "1.0.0"
+* ^date = "2021-12-03T14:48:42.1477777+00:00"
+* ^purpose = "薬剤単位の調剤指示を表現するための拡張"
+* ^context.type = #element
+* ^context.expression = "MedicationRequest.dispenseRequest"
+* id ..0
+* url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DispenseRequest_InstructionForDispense" (exactly)
+* value[x] only string or CodeableConcept
+
+Extension: JP_MedicationRequest_DosageInstruction_Device
+Id: 6d3333b3-d0f9-4b48-bd78-abfcbaad19fe
+Title: "JP_MedicationRequest_DosageInstruction_Device"
+Description: "投与装置を格納する拡張"
+* ^meta.lastUpdated = "2021-12-03T16:24:50.287+00:00"
+* ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_Device"
+* ^version = "1.0.0"
+* ^date = "2021-12-03T14:07:29.3849157+00:00"
+* ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
+* ^purpose = "投与装置を格納する拡張"
+* ^copyright = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
+* ^context[0].type = #element
+* ^context[=].expression = "MedicationRequest.dosageInstruction"
+* ^context[+].type = #element
+* ^context[=].expression = "MedicationDispense.dosageInstruction"
+* . ^short = "投与装置"
+* . ^definition = "投与装置を格納する拡張"
+* url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_Device" (exactly)
+* value[x] only Reference
+
+Extension: JP_MedicationRequest_DosageInstruction_Line
+Id: 3c153c8f-bc10-4109-8552-0a8ad65498d9
+Title: "JP_MedicationRequest_DosageInstruction_Line"
+Description: "指示ラインを格納するための拡張"
+* ^meta.lastUpdated = "2021-12-03T16:23:26.879+00:00"
+* ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_Line"
+* ^version = "1.0.0"
+* ^date = "2021-12-03T14:07:12.5634947+00:00"
+* ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
+* ^purpose = "指示ラインを格納するための拡張"
+* ^copyright = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
+* ^context[0].type = #element
+* ^context[=].expression = "MedicationRequest.dosageInstruction"
+* ^context[+].type = #element
+* ^context[=].expression = "MedicationDispense.dosageInstruction"
+* ^context[+].type = #element
+* ^context[=].expression = "MedicationAdministration.dosage"
+* . ^short = "指示ライン"
+* . ^definition = "指示ラインを格納する拡張"
+* url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_Line" (exactly)
+* value[x] only CodeableConcept
+
+Extension: JP_MedicationRequest_DosageInstruction_PeriodOfUse
+Id: a6ce827d-1083-49c4-b538-201c18de518d
+Title: "JP_MedicationRequest_DosageInstruction_PeriodOfUse"
+Description: "投与開始日を格納する拡張"
+* ^meta.lastUpdated = "2021-12-03T16:16:39.185+00:00"
+* ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_PeriodOfUse"
+* ^version = "1.0.0"
+* ^date = "2021-12-03T12:19:21.8091949Z"
+* ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
+* ^purpose = "処方日とは別に明示的に投与・内服開始日を指定するため。"
+* ^copyright = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
+* ^context[0].type = #element
+* ^context[=].expression = "MedicationRequest.dosageInstruction"
+* ^context[+].type = #element
+* ^context[=].expression = "MedicationDispense.dosageInstruction"
+* . ..1
+* . ^short = "投与期間の開始日を明示するための拡張"
+* . ^definition = "MedcationRequestの投与期間の開始日を明示するための拡張"
+* url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_PeriodOfUse" (exactly)
+* value[x] only Period
+* value[x] ^short = "投与期間を表す"
+* value[x] ^definition = "MedicationRequestに投与期間の開始日を明示するための拡張"
+* value[x].start 1..
+* value[x].start ^short = "投与期間の開始日"
+* value[x].start ^definition = "明示された投与期間の開始日"
+
+Extension: JP_MedicationRequest_DosageInstruction_UsageDuration
+Id: d2a74cc1-3928-4f1d-afe8-e7b49a2b4b04
+Title: "JP_MedicationRequest_DosageInstruction_UsageDuration"
+Description: "隔⽇投与など、服⽤開始⽇から終了⽇までの⽇数と実投与⽇数が異なる場合に、実投与⽇数を明⽰したい場合に使⽤する拡張"
+* ^meta.lastUpdated = "2021-12-03T16:20:07.109+00:00"
+* ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_UsageDuration"
+* ^version = "1.0.0"
+* ^date = "2021-12-03T12:07:57.3669816Z"
+* ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
+* ^purpose = "隔⽇投与など、服⽤開始⽇から終了⽇までの⽇数と実投与⽇数が異なる場合に、実投与⽇数を明⽰したい場合に使⽤する拡張"
+* ^copyright = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
+* ^context[0].type = #element
+* ^context[=].expression = "MedicationRequest.dosageInstruction"
+* ^context[+].type = #element
+* ^context[=].expression = "MedicationDispense.dosageInstruction"
+* id ..0
+* id ^short = "エレメント間参照のためのID"
+* id ^definition = "JP Coreでは使用されない。"
+* url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_UsageDuration" (exactly)
+* value[x] only Duration
+* value[x] ^short = "実投与⽇数"
+* value[x] ^definition = "隔日投与などで実投与日数と処方期間が異なる場合に用いられる。"
+* value[x].id ..0
+* value[x].id ^short = "エレメント間参照のためのID"
+* value[x].id ^definition = "JP Coreでは使用されない。"
+* value[x].value 1..
+* value[x].value ^short = "実投与日数"
+* value[x].value ^definition = "隔日投与などで実投与日数と処方期間が異なる場合に用いられる。"
+* value[x].comparator ..0
+* value[x].unit 1..
+* value[x].code = #d (exactly)
+* value[x].system = "http://unitsofmeasure.org" (exactly)
+* value[x].unit = "日" (exactly)
+* value[x].unit ^short = "実投与日数単位"
+* value[x].unit ^definition = "「日」で固定される"
+* value[x].system 1..
+* value[x].system ^short = "UCUM"
+* value[x].system ^definition = "単位コード UCUMを識別するURI。固定値。"
+* value[x].code 1..
+* value[x].code ^short = "単位コードUCUMにおける実投与⽇数の単位"
+* value[x].code ^definition = "単位コードUCUMにおける実投与⽇数の単位。dで固定される"

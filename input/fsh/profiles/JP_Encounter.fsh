@@ -1,3 +1,6 @@
+// ==============================
+//   Profile 定義
+// ==============================
 Profile: JP_Encounter
 Parent: Encounter
 Id: JP-Encounter

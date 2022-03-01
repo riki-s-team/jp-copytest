@@ -1,3 +1,6 @@
+// ==============================
+//   Profile 定義
+// ==============================
 Profile: JP_MedicationRequest
 Parent: JP_MedicationRequestBase
 Id: JP-MedicationRequest

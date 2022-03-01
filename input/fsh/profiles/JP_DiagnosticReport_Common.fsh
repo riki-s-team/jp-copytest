@@ -1,3 +1,6 @@
+// ==============================
+//   Profile 定義
+// ==============================
 Profile: JP_DiagnosticReport_Common
 Parent: DiagnosticReport
 Id: JP-DiagnosticReport-Common

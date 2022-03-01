@@ -1,3 +1,6 @@
+// ==============================
+//   Profile 定義
+// ==============================
 Profile: JP_AllergyIntolerance
 Parent: AllergyIntolerance
 Id: JP-AllergyIntolerance

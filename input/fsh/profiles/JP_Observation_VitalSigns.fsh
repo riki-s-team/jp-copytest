@@ -1,3 +1,6 @@
+// ==============================
+//   Profile 定義
+// ==============================
 Profile: JP_Observation_VitalSigns
 Parent: JP_Observation_Common
 Id: JP-Observation-VitalSigns

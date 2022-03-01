@@ -1,3 +1,6 @@
+// ==============================
+//   Profile 定義
+// ==============================
 Profile: JP_Coverage
 Parent: Coverage
 Id: JP-Coverage
@@ -107,3 +110,49 @@ Description: "このプロファイルはCoverageリソースに対して、保�
 * contract ^definition = "The policy(s) which constitute this insurance coverage.\r\n\r\nこの保険の適用範囲を構成するポリシー。"
 * contract ^comment = "References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.\r\n\r\n参照は、実際のFHIRリソースへの参照である必要があり、解決可能（内容に到達可能）である必要がある（アクセス制御、一時的な使用不可などを考慮に入れる）。解決は、URLから取得するか、リソースタイプによって該当する場合は、絶対参照を正規URLとして扱い、ローカルレジストリ/リポジトリで検索することによって行うことができる。"
 * contract ^requirements = "To reference the legally binding contract between the policy holder and the insurer.\r\n\r\n契約者と保険者との間の法的拘束力のある契約を参照するため。"
+
+
+// ==============================
+//   Extension 定義
+// ==============================
+Extension: JP_Coverage_InsuredPersonNumber
+Id: 3dcc02c6-c298-4fb0-bdd2-e19a6728ba24
+Description: "健康保険における被保険者証番号を示す拡張"
+* ^meta.lastUpdated = "2021-12-01T04:20:04.622+00:00"
+* ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonNumber"
+* ^version = "1.0.0"
+* ^date = "2021-12-01T04:18:05.8058695Z"
+* ^context.type = #element
+* ^context.expression = "Coverage"
+* . ^short = "健康保険における被保険者証番号"
+* . ^comment = "健康保険における被保険者証番号を示す拡張"
+* url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonNumber" (exactly)
+* value[x] only string
+
+Extension: JP_Coverage_InsuredPersonSubNumber
+Id: 972fb17c-7248-40c0-8508-94c00e1c10f2
+Description: "健康保険における被保険者証番号の枝番を示す拡張"
+* ^meta.lastUpdated = "2021-12-01T04:19:35.505+00:00"
+* ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonSubNumber"
+* ^version = "1.0.0"
+* ^date = "2021-12-01T04:18:14.8920797+00:00"
+* ^context.type = #element
+* ^context.expression = "Coverage"
+* . ^short = "健康保険における被保険者証番号の枝番"
+* . ^comment = "健康保険における被保険者証番号の枝番を示す拡張"
+* url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonSubNumber" (exactly)
+* value[x] only string
+
+Extension: JP_Coverage_InsuredPersonSymbol
+Id: 73958ac3-9a9d-4c07-8c35-3b277923492e
+Description: "健康保険における被保険者証記号を示す拡張"
+* ^meta.lastUpdated = "2021-12-01T04:19:21.721+00:00"
+* ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonSymbol"
+* ^version = "1.0.0"
+* ^date = "2021-12-01T04:18:22.6866878+00:00"
+* ^context.type = #element
+* ^context.expression = "Coverage"
+* . ^short = "健康保険における被保険者証記号"
+* . ^comment = "健康保険における被保険者証記号を示す拡張"
+* url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonSymbol" (exactly)
+* value[x] only string

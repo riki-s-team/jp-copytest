@@ -1,3 +1,6 @@
+// ==============================
+//   Profile 定義
+// ==============================
 Profile: JP_Procedure
 Parent: Procedure
 Id: JP-Procedure

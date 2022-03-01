@@ -1,3 +1,6 @@
+// ==============================
+//   Profile 定義
+// ==============================
 Profile: JP_Organization
 Parent: Organization
 Id: JP-Organization
@@ -71,3 +74,74 @@ Description: "このプロファイルはOrganizationリソースに対して、
 * endpoint ^definition = "Technical endpoints providing access to services operated for the organization.\r\n組織のために運営されているサービスへのアクセスを提供する技術的エンドポイント"
 * endpoint ^comment = "References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.\r\n参照は、実際のFHIRリソースへの参照である必要があり、内容に辿り着ける（解決できる）必要があります（アクセス制御、一時的な使用不可などを考慮に入れる）。解決は、URLから取得するか、リソースタイプによって該当する場合は、絶対参照を正規URLとして扱い、ローカルレジストリ/リポジトリで検索することによって行うことができる。"
 * endpoint ^requirements = "Organizations have multiple systems that provide various services and need to be able to define the technical connection details for how to connect to them, and for what purpose.\r\n組織にはさまざまなサービスを提供する複数のシステムがあり、それらに接続する方法と目的について、技術的な接続の詳細を定義できる必要がある。"
+
+// ==============================
+//   Extension 定義
+// ==============================
+Extension: JP_Organization_InsuranceOrganizationCategory
+Id: 01530641-bc1b-4c76-a182-40fae3251e98
+Description: "点数表コード１桁（医科１、歯科３）表現するためのExtension。 JP Core Organizationプロファイルで利用されることを想定しているが、他のリソースでも利用可能である"
+* ^meta.lastUpdated = "2021-12-02T03:45:35.138+00:00"
+* ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationCategory"
+* ^version = "1.0.0"
+* ^date = "2021-12-01T06:35:56.7665609+00:00"
+* ^context.type = #element
+* ^context.expression = "Organization"
+* . ^short = "点数表コード１桁（医科1、歯科３）"
+* . ^comment = "点数表コード１桁（医科1、歯科３）。Identifier型の拡張\r\n「InsuranceOrganizationCategory」を使用する。systemには点数表番号\r\nを表すOID「1.2.392.100495.20.3.22」を指定する。"
+* url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationCategory" (exactly)
+* value[x] only Identifier
+* value[x].id ..0
+* value[x].use ..0
+* value[x].type ..0
+* value[x].system = "urn:oid:1.2.392.100495.20.3.22" (exactly)
+* value[x].system ^definition = "点数表番号の名前空間を識別するURIを指定。固定値。"
+* value[x].value ^definition = "点数表コード１桁「1：医科」、「3：歯科」。"
+* value[x].period ..0
+* value[x].assigner ..0
+
+
+Extension: JP_Organization_InsuranceOrganizationNo
+Id: 0951c1d5-7a75-488e-9e00-b2807dba71e5
+Description: "保険医療機関番号７桁を表現するためのExtension。 JP Core Organizationプロファイルで利用されることを想定しているが、他のリソースでも利用可能である"
+* ^meta.lastUpdated = "2021-12-01T06:35:51.467+00:00"
+* ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationNo"
+* ^version = "1.0.0"
+* ^date = "2021-11-30T06:46:39.7818895Z"
+* ^context.type = #element
+* ^context.expression = "Organization"
+* . ^short = "保険医療機関番号７桁"
+* . ^comment = "保険医療機関番号７桁。Identifier型の拡張\r\n「InsuranceOrganizationNo」を使用する。systemには医療機関コードを\r\n表すOID「1.2.392.100495.20.3.23」を指定する。\r\n\r\n電子処方箋 H7FHIR記述仕様書案の定義をベースにしているが、URLを以下に変更している \r\nhttp://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationNo"
+* url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationNo" (exactly)
+* value[x] only Identifier
+* value[x].id ..0
+* value[x].use ..0
+* value[x].type ..0
+* value[x].system = "urn:oid:1.2.392.100495.20.3.23" (exactly)
+* value[x].system ^definition = "保険医療機関コードの名前空間を識別するURIを指定。固定値。"
+* value[x].value ^definition = "保険医療機関番号７桁。半角数字で７桁固定。"
+* value[x].period ..0
+* value[x].assigner ..0
+
+Extension: JP_Organization_PrefectureNo
+Id: 147dd0ac-e43c-45c7-b994-7494b7cb0848
+Description: """都道府県番号２桁を表現するためのExtension。
+JP Core Organizationプロファイルで利用されることを想定しているが、他のリソースでも利用可能である"""
+* ^meta.lastUpdated = "2021-12-01T06:35:42.702+00:00"
+* ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_PrefectureNo"
+* ^version = "1.0.0"
+* ^date = "2021-11-30T06:32:24.0070401Z"
+* ^context.type = #element
+* ^context.expression = "Organization"
+* . ^short = "都道府県番号2桁"
+* . ^comment = "都道府県番号２桁。Identifier型の拡張を使用する。\r\nvalueには都道府県番号2桁の値を格納し、systemには都道府県番号を表すOID「1.2.392.100495.20.3.21」を指定する。"
+* url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_PrefectureNo" (exactly)
+* value[x] only Identifier
+* value[x].id ..0
+* value[x].use ..0
+* value[x].type ..0
+* value[x].system = "urn:oid:1.2.392.100495.20.3.21" (exactly)
+* value[x].system ^definition = "都道府県番号の名前空間を識別するURIを指定"
+* value[x].value ^definition = "2桁にゼロパディングされた都道府県番号。 例）北海道　 \"01\""
+* value[x].period ..0
+* value[x].assigner ..0

@@ -1,3 +1,6 @@
+// ==============================
+//   Profile 定義
+// ==============================
 Profile: JP_PractitionerRole
 Parent: PractitionerRole
 Id: JP-PractitionerRole
