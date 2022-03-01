@@ -15,7 +15,6 @@ Description: "このプロファイルはユーザは直接適用するもので
     JP_MedicationRequest_DosageInstruction_Device named Device 0..*
 //
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationDispenseBase"
-* ^version = "1.0.0"
 * ^status = #active
 * ^date = "2021-12-03T15:35:21.0508205Z"
 * ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
@@ -174,7 +173,6 @@ Title: "JP_MedicationDispense_Preparation"
 Description: "薬剤単位の調剤結果"
 * ^meta.lastUpdated = "2021-12-03T16:26:48.533+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDispense_Preparation"
-* ^version = "1.0.0"
 * ^date = "2021-12-03T16:26:12.6876987+00:00"
 * ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * ^purpose = "薬剤単位の調剤結果"

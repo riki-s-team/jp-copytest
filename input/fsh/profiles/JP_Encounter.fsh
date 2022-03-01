@@ -6,7 +6,6 @@ Parent: Encounter
 Id: JP-Encounter
 Description: "このプロファイルはEncounterリソースに対して、来院/入院情報のデータを送受信するための基礎となる制約と拡張を定めたものである。"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter"
-* ^version = "1.0.0"
 * ^status = #active
 * ^date = "2021-10-25T09:18:10.8987264+00:00"
 * . ^short = "An interaction during which services are provided to the patient / 患者さんにサービスが提供されている間の相互作用"

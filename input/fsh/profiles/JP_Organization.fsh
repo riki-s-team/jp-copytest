@@ -6,7 +6,6 @@ Parent: Organization
 Id: JP-Organization
 Description: "このプロファイルはOrganizationリソースに対して、組織情報のデータを送受信するための基礎となる制約と拡張を定めたものである。"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Organization"
-* ^version = "1.0.0"
 * ^status = #active
 * ^date = "2021-11-09T07:38:42.4698842+00:00"
 * . ^short = "A grouping of people or organizations with a common purpose/共通の目的を持った人や組織の集まり"
@@ -83,7 +82,6 @@ Id: 01530641-bc1b-4c76-a182-40fae3251e98
 Description: "点数表コード１桁（医科１、歯科３）表現するためのExtension。 JP Core Organizationプロファイルで利用されることを想定しているが、他のリソースでも利用可能である"
 * ^meta.lastUpdated = "2021-12-02T03:45:35.138+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationCategory"
-* ^version = "1.0.0"
 * ^date = "2021-12-01T06:35:56.7665609+00:00"
 * ^context.type = #element
 * ^context.expression = "Organization"
@@ -106,7 +104,6 @@ Id: 0951c1d5-7a75-488e-9e00-b2807dba71e5
 Description: "保険医療機関番号７桁を表現するためのExtension。 JP Core Organizationプロファイルで利用されることを想定しているが、他のリソースでも利用可能である"
 * ^meta.lastUpdated = "2021-12-01T06:35:51.467+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationNo"
-* ^version = "1.0.0"
 * ^date = "2021-11-30T06:46:39.7818895Z"
 * ^context.type = #element
 * ^context.expression = "Organization"
@@ -129,7 +126,6 @@ Description: """都道府県番号２桁を表現するためのExtension。
 JP Core Organizationプロファイルで利用されることを想定しているが、他のリソースでも利用可能である"""
 * ^meta.lastUpdated = "2021-12-01T06:35:42.702+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_PrefectureNo"
-* ^version = "1.0.0"
 * ^date = "2021-11-30T06:32:24.0070401Z"
 * ^context.type = #element
 * ^context.expression = "Organization"

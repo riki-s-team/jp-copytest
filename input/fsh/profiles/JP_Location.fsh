@@ -6,7 +6,6 @@ Parent: Location
 Id: JP-Location
 Description: "このプロファイルはLocationリソースに対して、所在場所のデータを送受信するための基礎となる制約と拡張を定めたものである。"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Location"
-* ^version = "1.0.0"
 * ^status = #active
 * ^date = "2020-09-15T06:54:22.4695992+00:00"
 * . ^short = "物理的な場所の詳細情報と位置情報"

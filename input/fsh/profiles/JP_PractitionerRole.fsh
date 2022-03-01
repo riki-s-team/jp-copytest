@@ -7,7 +7,6 @@ Id: JP-PractitionerRole
 Title: "JP_PractitionerRole"
 Description: "このプロファイルはPractitionerRoleリソースに対して、医療従事者役割のデータを送受信するための基礎となる制約と拡張を定めたものである。"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_PractitionerRole"
-* ^version = "1.0.0"
 * ^status = #active
 * ^date = "2020-09-01T06:50:16.8677402+00:00"
 * . ^short = "医療従事者が関連付けられている役割/組織"

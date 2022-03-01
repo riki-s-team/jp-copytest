@@ -37,7 +37,6 @@ Id: JP-Observation-BodySite-BodySitePosition
 Title: "JP_Observation_BodySite_BodySitePosition"
 Description: "部位（bodySite）の左右の区別を表現する際に使用する"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Observation_BodySite_BodySitePosition"
-* ^version = "1.0.0"
 * ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * ^copyright = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * ^context.type = #element

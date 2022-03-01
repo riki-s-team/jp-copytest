@@ -6,7 +6,6 @@ Parent: Condition
 Id: JP-Condition
 Description: "本プロファイルはConditionリソースに対して、患者の健康状態に関するデータを送受信するための共通の制約と拡張を定めたものである。"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Condition"
-* ^version = "1.0.0"
 * ^status = #active
 * ^date = "2021-12-03T06:07:58.0495934+00:00"
 * . ^short = "Detailed information about conditions, problems or diagnoses 身体的状態、問題、診断に関する詳細情報"

@@ -7,7 +7,6 @@ Id: JP-Patient
 Title: "JP_Patient"
 Description: "このプロファイルはPatientリソースに対して、患者のデータを送受信するための基礎となる制約と拡張を定めたものである。"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Patient"
-* ^version = "1.0.0"
 * ^date = "2021-12-01T03:29:13.2472819+00:00"
 * . ^short = "Information about an individual or animal receiving health care services　医療サービスを受けている個人または動物に関する情報"
 * . ^definition = "Demographics and other administrative information about an individual or animal receiving care or other health-related services.\r\n\r\nケアまたはその他の健康関連サービスを受けている個人または動物に関する人口統計およびその他の管理情報。"
@@ -226,9 +225,8 @@ Description: "このプロファイルはPatientリソースに対して、患�
 Extension: JP_Patient_Race
 Id: b14aa99c-ab14-403f-8efd-4a9de985514d
 Description: "人種(Race)に関する情報を格納するためのExtension。"
-* ^meta.lastUpdated = "2021-11-30T10:09:36.662+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Patient_Race"
-* ^version = "1.0.0"
+
 * ^date = "2021-11-30T09:57:31.0583757+00:00"
 * ^context.type = #element
 * ^context.expression = "Patient"
