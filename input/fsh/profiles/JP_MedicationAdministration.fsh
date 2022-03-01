@@ -22,11 +22,6 @@ Description: "このプロファイルはMedicationAdministrationリソースに
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension ^min = 0
-* extension contains
-    JP_MedicationAdministration_RequestDepartment named RequestDepartment 0..1 and
-    JP_MedicationAdministration_Requester named Requester 0..* and
-    JP_MedicationAdministration_RequestAuthoredOn named RequestAuthoredOn 0..1 and
-    JP_MedicationAdministration_Location named Location 0..1
 * extension[RequestDepartment] ^short = "依頼科"
 * extension[RequestDepartment] ^definition = "依頼科を格納するための拡張"
 * extension[Requester] ^short = "依頼医"

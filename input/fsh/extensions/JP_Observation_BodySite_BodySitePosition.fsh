@@ -1,5 +1,5 @@
 Extension: JP_Observation_BodySite_BodySitePosition
-Id: JP_Observation_BodySite_BodySitePosition
+Id: JP-Observation-BodySite-BodySitePosition
 Title: "JP_Observation_BodySite_BodySitePosition"
 Description: "部位（bodySite）の左右の区別を表現する際に使用する"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Observation_BodySite_BodySitePosition"

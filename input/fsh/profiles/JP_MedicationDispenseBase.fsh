@@ -24,7 +24,6 @@ Description: "このプロファイルはユーザは直接適用するもので
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension ^min = 0
-* extension contains JP_MedicationDispense_Preparation named Preparation 0..*
 * extension[Preparation] ^short = "調剤結果"
 * extension[Preparation] ^definition = "薬剤単位の調剤結果"
 * extension[Preparation] ^min = 0
@@ -104,9 +103,6 @@ Description: "このプロファイルはユーザは直接適用するもので
 * dosageInstruction.extension ^slicing.discriminator.path = "url"
 * dosageInstruction.extension ^slicing.rules = #open
 * dosageInstruction.extension ^min = 0
-* dosageInstruction.extension contains
-    JP_MedicationRequest_DosageInstruction_UsageDuration named UsageDuration 0..1 and
-    JP_MedicationRequest_DosageInstruction_PeriodOfUse named PeriodOfUse 0..1
 * dosageInstruction.extension[UsageDuration] ^short = "実服用日数"
 * dosageInstruction.extension[UsageDuration] ^definition = "実服用日数を格納する拡張。\r\n実服用日数（実投与日数）とは、投与期間において実際に服用（投与）が行われる実日数であり、休薬日を含まない。\r\n全期間が７日で、用法が隔日投与の場合には、１日目、３日目、５日目、７日目の４日間に服用することになるので、実服用日数は４日となる。"
 * dosageInstruction.extension[PeriodOfUse] ^short = "投与期間"

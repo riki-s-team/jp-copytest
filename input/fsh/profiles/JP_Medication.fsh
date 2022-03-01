@@ -48,7 +48,6 @@ Description: "このプロファイルはMedicationリソースに対して、�
 * ingredient.extension ^slicing.discriminator.path = "url"
 * ingredient.extension ^slicing.rules = #open
 * ingredient.extension ^min = 0
-* ingredient.extension contains JP_Medication_Ingredient_DrugNo named DrugNo 0..*
 * ingredient.extension[DrugNo] ^min = 0
 * ingredient.item[x] only CodeableConcept
 * ingredient.item[x] MS

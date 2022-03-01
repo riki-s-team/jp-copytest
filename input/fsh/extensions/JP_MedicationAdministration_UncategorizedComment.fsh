@@ -1,5 +1,5 @@
 Extension: JP_MedicationAdministration_UncategorizedComment
-Id: JP_MedicationAdministration_UncategorizedComment
+Id: JP-MedicationAdministration-UncategorizedComment
 Title: "JP_MedicationAdministration_UncategorizedComment"
 Description: "未分類コメントを格納するための拡張"
 * ^meta.lastUpdated = "2021-12-03T17:36:52.360+00:00"
