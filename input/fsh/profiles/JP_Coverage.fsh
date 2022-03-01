@@ -1,6 +1,6 @@
 Profile: JP_Coverage
 Parent: Coverage
-Id: JP_Coverage
+Id: JP-Coverage
 Description: "このプロファイルはCoverageリソースに対して、保険・公費のデータを送受信するための基礎となる制約と拡張を定めたものである。"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Coverage"
 * ^version = "1.0.0"

@@ -1,6 +1,6 @@
 Profile: JP_Observation_BodyMeasurement
 Parent: JP_Observation_Common
-Id: JP_Observation_BodyMeasurement
+Id: JP-Observation-BodyMeasurement
 Title: "JP_Observation_BodyMeasurement"
 Description: "このプロファイルはObservationリソースに対して、身体計測のデータを送受信するための制約と拡張を定めたものである。"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_BodyMeasurement"

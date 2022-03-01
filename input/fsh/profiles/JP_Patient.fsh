@@ -1,6 +1,6 @@
 Profile: JP_Patient
 Parent: Patient
-Id: JP_Patient
+Id: JP-Patient
 Title: "JP_Patient"
 Description: "このプロファイルはPatientリソースに対して、患者のデータを送受信するための基礎となる制約と拡張を定めたものである。"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Patient"

@@ -1,6 +1,6 @@
 Profile: JP_MedicationAdministration_Injection
 Parent: JP_MedicationAdministration
-Id: JP_MedicationAdministration_Injection
+Id: JP-MedicationAdministration-Injection
 Title: "JP_MedicationAdministration_Injection"
 Description: "このプロファイルはMedicationAdministrationリソースに対して、注射薬剤処方投与実施情報のデータを送受信するための基礎となる制約と拡張を定めたものである。"
 // extension 参照宣言

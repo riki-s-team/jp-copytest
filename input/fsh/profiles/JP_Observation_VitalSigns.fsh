@@ -1,6 +1,6 @@
 Profile: JP_Observation_VitalSigns
 Parent: JP_Observation_Common
-Id: JP_Observation_VitalSigns
+Id: JP-Observation-VitalSigns
 Title: "JP_Observation_VitalSigns"
 Description: "このプロファイルはObservationリソースに対して、バイタルサインのデータを送受信するための制約と拡張を定めたものである。"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_VitalSigns"

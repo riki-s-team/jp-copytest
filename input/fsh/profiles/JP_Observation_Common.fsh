@@ -1,6 +1,6 @@
 Profile: JP_Observation_Common
 Parent: Observation
-Id: JP_Observation_Common
+Id: JP-Observation-Common
 Title: "JP_Observation_Common"
 Description: "このプロファイルはObservationリソースに対して、データを送受信するための共通の制約と拡張を定めたものである。"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_Common"

@@ -1,6 +1,6 @@
 Profile: JP_Observation_SocialHistory
 Parent: JP_Observation_Common
-Id: JP_Observation_SocialHistory
+Id: JP-Observation-SocialHistory
 Title: "JP_Observation_SocialHistory"
 Description: "このプロファイルはObservationリソースに対して、生活背景のデータを送受信するための制約と拡張を定めたものである。"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_SocialHistory"

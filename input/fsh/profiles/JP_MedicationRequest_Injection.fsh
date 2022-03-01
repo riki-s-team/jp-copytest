@@ -1,6 +1,6 @@
 Profile: JP_MedicationRequest_Injection
 Parent: JP_MedicationRequestBase
-Id: JP_MedicationRequest_Injection
+Id: JP-MedicationRequest-Injection
 Title: "JP_MedicationRequest_Injection"
 Description: "このプロファイルはJP_MedicationRequestBaseリソースに対して、注射薬剤処方のデータを送受信するための基礎となる制約と拡張を定めたものである。"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest_Injection"

@@ -1,6 +1,6 @@
 Profile: JP_DiagnosticReport_Radiology
 Parent: JP_DiagnosticReport_Common
-Id: JP_DiagnosticReport_Radiology
+Id: JP-DiagnosticReport-Radiology
 Description: "このプロファイルはDiagnosticReportリソースに対して、放射線検査のデータを送受信するための制約と拡張を定めたものである。"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_DiagnosticReport_Radiology"
 * ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"

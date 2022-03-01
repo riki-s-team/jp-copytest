@@ -1,6 +1,6 @@
 Profile: JP_MedicationDispenseBase
 Parent: MedicationDispense
-Id: JP_MedicationDispenseBase
+Id: JP-MedicationDispenseBase
 Title: "JP_MedicationDispenseBase"
 Description: "このプロファイルはユーザは直接適用するものではなく、JP_MedicationDispenseとJP_MedicationDispenseInjectionの共通の親となる抽象プロファイルである。このプロファイルはMedicationDispenseリソースに対して、内服・外用薬剤処方調剤・払い出し記録のデータを送受信するため、JP_MedicationDispenseとJP_MedicationDispenseInjectionの各プロファイルの基礎となる制約と拡張のうち共通部分を定めている。"
 // extension 参照宣言 基底拡張2個、内部拡張1個

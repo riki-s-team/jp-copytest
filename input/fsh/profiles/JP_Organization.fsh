@@ -1,6 +1,6 @@
 Profile: JP_Organization
 Parent: Organization
-Id: JP_Organization
+Id: JP-Organization
 Description: "このプロファイルはOrganizationリソースに対して、組織情報のデータを送受信するための基礎となる制約と拡張を定めたものである。"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Organization"
 * ^version = "1.0.0"

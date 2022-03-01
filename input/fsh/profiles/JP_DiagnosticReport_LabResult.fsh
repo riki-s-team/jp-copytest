@@ -1,6 +1,6 @@
 Profile: JP_DiagnosticReport_LabResult
 Parent: JP_DiagnosticReport_Common
-Id: JP_DiagnosticReport_LabResult
+Id: JP-DiagnosticReport-LabResult
 Description: "このプロファイルはDiagnosticReportリソースに対して、検体検査結果のデータを送受信するための制約と拡張を定めたものである。"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_DiagnosticReport_LabResult"
 * ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"

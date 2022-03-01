@@ -1,6 +1,6 @@
 Profile: JP_Medication
 Parent: Medication
-Id: JP_Medication
+Id: JP-Medication
 Title: "JP_Medication"
 Description: "このプロファイルはMedicationリソースに対して、主に薬剤データを送受信するための基礎となる制約と拡張を定めたものである。"
 // extension 参照宣言

@@ -1,6 +1,6 @@
 Profile: JP_Encounter
 Parent: Encounter
-Id: JP_Encounter
+Id: JP-Encounter
 Description: "このプロファイルはEncounterリソースに対して、来院/入院情報のデータを送受信するための基礎となる制約と拡張を定めたものである。"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter"
 * ^version = "1.0.0"

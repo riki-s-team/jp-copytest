@@ -1,6 +1,6 @@
 Profile: JP_Location
 Parent: Location
-Id: JP_Location
+Id: JP-Location
 Description: "このプロファイルはLocationリソースに対して、所在場所のデータを送受信するための基礎となる制約と拡張を定めたものである。"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Location"
 * ^version = "1.0.0"
