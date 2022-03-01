@@ -1,24 +1,18 @@
-# ╭─────────────────────────Commonly Used ImplementationGuide Properties───────────────────────────╮
-# │  The properties below are used to create the ImplementationGuide resource. The most commonly   │
-# │  used properties are included. For a list of all supported properties and their functions,     │
-# │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
-# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: jp-core-implementaionguide
-canonical: http://jpfhir.jp/fhir/core/JP_Implementaionguide
+id: hl7.fhir.jp.core
+canonical: http://jpfhir.jp/fhir/core
 name: fhir-jpcore-ig-test
-# title: Example Title
-description: JPCore 実装ガイドのドラフト版
+title: "FHIR JP Core 実装ガイド"
+description: "日本医療情報学会(JAMI) NeXEHRS課題研究会「HL7®FHIR® 日本実装検討WG」で作成した日本国内におけるベースとなるJP Core実装ガイドのドラフトVer.1 です。"
 status: draft # draft | active | retired | unknown
 version: 0.9.0
-fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
+fhirVersion: 4.0.1
 copyrightYear: 2022+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
-# license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
-# jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
+license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 publisher:
   name: FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)
   url: http://jpfhir.jp
-  # email: test@example.org
+  email: office@hlfhir.jp
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
@@ -72,8 +66,29 @@ publisher:
 # │ input/includes. To use a provided input/includes/menu.xml file, delete the "menu"              │
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+pages:
+  index.md:
+    title: Home
+  generalGuidance.md:
+    title: 総合ガイダンス
+  mustSupportCardinality.md:
+    title: Must SupportとCardinality(多重度)
+  handlingOfNonExistentData.md:
+    title: 欠損値の扱い
+  characterEncoding.md:
+    title: 文字コード
+  stringSearch.md:
+    title: 文字列検索
+
 menu:
   Home: index.html
+  Conformance: 
+    総合ガイダンス: generalGuidance.html
+    Must SupportとCardinality(多重度): mustSupportCardinality.html
+    欠損値の扱い: handlingOfNonExistentData.html
+    文字コード: characterEncoding.html
+    文字列検索: stringSearch.html
   Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
