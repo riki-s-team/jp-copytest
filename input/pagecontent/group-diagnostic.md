@@ -13,5 +13,5 @@
   * [JP Core DiagnosticReport LabResult （検体検査レポート）プロファイル]
   * [JP Core DiagnosticReport Radiology （放射線検査レポート）プロファイル]
 
-  
+### Extensions
 {% include markdown-link-references.md %}

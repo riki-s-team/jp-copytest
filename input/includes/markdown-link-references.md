@@ -20,7 +20,7 @@
 [JP Core ImagingStudy Radiology（放射線検査）プロファイル]: StructureDefinition-JP-ImagingStudy-Radiology.html
 [JP Core Location （所在場所）プロファイル]: StructureDefinition-JP-Location.html
 [JP Core Medication （薬剤）プロファイル]: StructureDefinition-JP-Medication.html
-[JP-MedicationAdministration-Injection]: StructureDefinition-JP-MedicationAdministration-Injection.html
+[JP Core MedicationAdministration Injection （注射薬剤投与実施情報）プロファイル]: StructureDefinition-JP-MedicationAdministration-Injection.html
 [JP-MedicationAdministration-UncategorizedComment]: StructureDefinition-JP-MedicationAdministration-UncategorizedComment.html
 [JP Core MedicationAdministration （内服・外用薬剤投与実施情報）プロファイル]: StructureDefinition-JP-MedicationAdministration.html
 [JP Core MedicationDispense Injection （注射薬剤処方調剤・払い出し記録）プロファイル]: StructureDefinition-JP-MedicationDispense-Injection.html
@@ -48,19 +48,19 @@
 [JP_Organization_PrefectureNo]: StructureDefinition-147dd0ac-e43c-45c7-b994-7494b7cb0848.html
 [JP_MedicationRequest_DosageInstruction_Line]: StructureDefinition-3c153c8f-bc10-4109-8552-0a8ad65498d9.html
 [JP_Coverage_InsuredPersonNumber]: StructureDefinition-3dcc02c6-c298-4fb0-bdd2-e19a6728ba24.html
+[JP_Coverage_InsuredPersonSymbol]: StructureDefinition-73958ac3-9a9d-4c07-8c35-3b277923492e.html
+[JP_Coverage_InsuredPersonSubNumber]: StructureDefinition-972fb17c-7248-40c0-8508-94c00e1c10f2.html
 [JP_MedicationDispense_Preparation]: StructureDefinition-41bcb8d5-3940-4baf-8b00-9b8fbaa8ae5d.html
 [JP_MedicationAdministration_DosageMethod_MethodComment]: StructureDefinition-4327927e-6d72-442a-bd48-5d5b059bd8fe.html
 [JP_Medication_Ingredient_DrugNo]: StructureDefinition-4b53c2de-7595-40da-9c04-bb912b394f27.html
 [JP_MedicationAdministration_Requester]: StructureDefinition-531d2d2b-2c3d-4f42-99f4-bebc6b26e674.html
 [JP_MedicationAdministration_Requester]: StructureDefinition-5f45be03-73b5-425d-94fb-ff7dac12b87c.html
 [JP_MedicationRequest_DosageInstruction_Device]: StructureDefinition-6d3333b3-d0f9-4b48-bd78-abfcbaad19fe.html
-[JP_Coverage_InsuredPersonSymbol]: StructureDefinition-73958ac3-9a9d-4c07-8c35-3b277923492e.html
 [JP_MedicationAdministration_Location]: StructureDefinition-78061a6c-42e8-402d-8f76-6fdac69f7f90.html
 [JP_MedicationAdministration_Dosage_LineComment]: StructureDefinition-7a1b4824-7464-47b1-ba4d-dad4dd006663.html
 [JP_MedicationAdministration_DosageRoute_RouteComment]: StructureDefinition-7d2bd9f9-3e77-423c-be7f-8602a284fe0a.html
 [JP_Medication_IngredientStrength_StrengthType]: StructureDefinition-88c8b7c4-fbfa-4a42-814d-071dc8acb4eb.html
 [JP_MedicationRequest_DispenseRequest_InstructionForDispense]: StructureDefinition-91cc41f3-a701-4cbe-b9bc-7d810bb7e9e5.html
-[JP_Coverage_InsuredPersonSubNumber]: StructureDefinition-972fb17c-7248-40c0-8508-94c00e1c10f2.html
 [JP_MedicationRequest_DispenseRequest_ExpectedRepeatCount]: StructureDefinition-996ef0bf-8b22-46e5-bc34-46c7bd6c6926.html
 [JP_MedicationRequest_DosageInstruction_PeriodOfUse]: StructureDefinition-a6ce827d-1083-49c4-b538-201c18de518d.html
 [JP_Patient_Race]: StructureDefinition-b14aa99c-ab14-403f-8efd-4a9de985514d.html
