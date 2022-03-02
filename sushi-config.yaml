@@ -16,7 +16,7 @@ publisher:
 
 pages:
   index.md:
-    title: HL7 FHIR JP Core 実装ガイド ＜Draft Ver.1〜＞
+    title: HL7 FHIR JP Core 実装ガイド ＜Draft Ver1.1＞
   generalGuidance.md:
     title: 総合ガイダンス
   mustSupportCardinality.md:
@@ -26,7 +26,15 @@ pages:
   characterEncoding.md:
     title: 文字コード
   stringSearch.md:
-    title: 文字列検索
+    title: 検索
+  group-administration.md:
+    title: Administrationグループ
+  group-medication.md:
+    title: Medicationグループ
+  group-diagnostic.md:
+    title: Diagnosticグループ
+  group-clinical.md:
+    title: Clinicalグループ
   security.md:
     title: セキュリティ
 
@@ -38,5 +46,10 @@ menu:
     欠損値の扱い: handlingOfNonExistentData.html
     文字コード: characterEncoding.html
     文字列検索: stringSearch.html
+  Contents:
+    Administration: group-administration.html
+    Medication: group-medication.html
+    Diagnostic: group-diagnostic.html
+    Clinical: group-clinical.html
   Artifacts: artifacts.html
   Security: security.html
