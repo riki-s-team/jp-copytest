@@ -57,3 +57,5 @@ jekyll -v
    1. スクリプト類のダウンロードの許可
 1. _genonce.bat(windows), _genonce.sh(linux,max)を実行する
 
+## マニュアル
+* [MarkDown記載方法](.\docs\markdown.md)
