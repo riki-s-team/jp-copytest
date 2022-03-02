@@ -1,5 +1,5 @@
 
-##### 必須要素
+### 必須要素
 
 Coverage リソースは、次の要素を必ず持たなければならない。
 
@@ -10,7 +10,7 @@ Coverage リソースは、次の要素を必ず持たなければならない�
 <br><br>
 
 
-##### Extensions定義
+### Extensions定義
 
 JP Core Coverage プロファイルで使用される拡張は次の通りである。
 - [JP_Coverage_InsuredPersonSymbol](https://simplifier.net/jp-core-draftv1/jpcoverageinsuredpersonsymbol)
@@ -23,7 +23,7 @@ JP Core Coverage プロファイルで使用される拡張は次の通りであ
 <br><br>
 
 
-##### 用語定義
+### 用語定義
 
 
 | Path                            | 定義                               | バインディング強度 | バリューセット |
@@ -35,15 +35,15 @@ JP Core Coverage プロファイルで使用される拡張は次の通りであ
 
 
 <br>
-##### 制約一覧
+### 制約一覧
 
 JP Coverage リソースには、制約は存在しない。
 <br><br>
 
-#### 利用方法
+## 利用方法
 <br>
 
-##### インタラクション一覧
+### インタラクション一覧
 
 | コンフォーマンス | インタラクション                            |
 | ---------------- | ------------------------------------------- |
@@ -53,11 +53,11 @@ JP Coverage リソースには、制約は存在しない。
 
 <br>
 
-##### OperationおよびSearch Parameter 一覧
+### OperationおよびSearch Parameter 一覧
 
 <br>
 
-###### Search Parameter一覧
+#### Search Parameter一覧
 
 | コンフォーマンス | パラメータ    | 型     | 例                                                           |
 | ---------------- | ------------- | ------ | ------------------------------------------------------------ |
@@ -75,7 +75,7 @@ JP Coverage リソースには、制約は存在しない。
 
 
 
-####### 推奨検索パラメータ
+##### 推奨検索パラメータ
 
 <span style="color: red;">★★コメント： 説明は記載途中です★★</span>
 

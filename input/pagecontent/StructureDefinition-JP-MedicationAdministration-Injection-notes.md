@@ -1,5 +1,5 @@
 
-##### 必須要素
+### 必須要素
 次のデータ項目は必須（データが存在しなければならない）、あるいは、データが送信システムに存在する場合はサポートされなければならないことを意味する。（Must Support）。
 
 MedicationAdministration リソースは、次の要素を持たなければならない。
@@ -15,10 +15,10 @@ MedicationAdministrationリソースは、次の要素をサポートしなけ�
 - subject :患者の参照情報
 - effectiveDateTime : 投与実施日時
 
-##### Extensions定義
+### Extensions定義
 MedicationAdministration リソースで使用される拡張は次の通りである。
 
-###### JP MedicationAdministration独自で追加されたExtension
+#### JP MedicationAdministration独自で追加されたExtension
 
 |拡張|説明|URL|値の型|
 |------------|-------------|----------|-----|
@@ -34,7 +34,7 @@ MedicationAdministration リソースで使用される拡張は次の通りで�
 |用法コメント|用法コメントを格納するための拡張|http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Dosage_DosageComment|CodeableConcept/String
 |未分類コメント|未分類コメントを格納するための拡張|http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_UncategorizedComment|CodeableConcept/String
 
-###### 既存のExtensionの利用
+#### 既存のExtensionの利用
 
 JP_MedicationRequestInjectionで追加された以下のExtensionを利用する。
 
@@ -43,7 +43,7 @@ JP_MedicationRequestInjectionで追加された以下のExtensionを利用する
 |指示ライン|指示ラインを格納する拡張|http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_Line|CodeableConcept|
 
 
-##### 用語定義
+### 用語定義
 HL7 FHIRの基底規格では、薬剤コードをはじめとして、剤形などでSNOMED CTが使われているが、日本ではライセンスの問題もあり普及していない。代替としてJAHIS処方データ交換規約やSS-MIX2で使われている用語集を採用した。
 
 HL7 V2系では用語集を識別するコーディングシステム名(以下、「CS名」）は文字列であったが、FHIRではURIを指定する必要があるため、それぞれにURIを割り当てた。以下に使用する用語集のCS名とURI表記を列記する。
@@ -78,11 +78,11 @@ MedicationAdministrationの各要素のバインディングは以下の通り�
 | MedicationAdministration.dosage.dose.code | １回量単位 | prefered | MERIT-9(単位) |
 
 
-##### 制約一覧
+### 制約一覧
 MedicationAdministration リソースは、以下の制約を満たさなければならない。
 - status : JP Coreでは `completed` or `stopped` に限定される。
 
-##### 項目の追加
+### 項目の追加
 MedicationAdministrationリソースでは、依頼元のMedicationRequestリソースをrequest要素にReferenceで参照できるようになっているが、
 依頼元のMedicationRequestリソースが取得できないケースも考慮して、依頼情報を直接記述できるように以下の項目を追加した。
 
@@ -94,9 +94,9 @@ MedicationAdministrationリソースでは、依頼元のMedicationRequestリソ
 
 * 実施場所の追加（拡張「JP_MedicationAdministration_Location」を使用）
 
-#### 利用方法
+## 利用方法
 
-##### Interaction一覧
+### Interaction一覧
 
 | コンフォーマンス | インタラクション                            |
 | ---------------- | ------------------------------------------- |
@@ -104,7 +104,7 @@ MedicationAdministrationリソースでは、依頼元のMedicationRequestリソ
 | SHOULD（推奨）   | vread、history-instance                     |
 | MAY（利用可能）  | create、update、patch、delete、history-type |
 
-###### Search Parameter一覧
+#### Search Parameter一覧
 
 | コンフォーマンス | パラメータ    | 型     | 例                                                           |
 | ---------------- | ------------- | ------ | ------------------------------------------------------------ |
@@ -113,7 +113,7 @@ MedicationAdministrationリソースでは、依頼元のMedicationRequestリソ
 | SHOULD           | patient,effective-time | referenece,date  | GET [base]/MedicationAdministration?patient=123456&effective-time=eq2013-01-14 |
 | MAY           | TBD | TBD | GET [base]/MedicationAdministration?code=urn:oid:1.2.392.100495.20.2.74\|105271807  |
 
-####### 必須検索パラメータ
+##### 必須検索パラメータ
 
 次の検索パラメータは必須でサポートされなければならない。
 
@@ -132,7 +132,7 @@ MedicationAdministrationリソースでは、依頼元のMedicationRequestリソ
    指定された識別子に一致するMedicationAdministrationリソースを含むBundleを検索する。
    
 
-####### 推奨検索パラメータ
+##### 推奨検索パラメータ
 
 次の検索パラメータをサポートすることが望ましい。
 
@@ -167,9 +167,9 @@ MedicationAdministrationリソースでは、依頼元のMedicationRequestリソ
    リソースIDが123456の患者の2013-01-14に投与実施されたMedicationAdministrationリソースを含むBundleを検索する。
 
 
-####### 追加検索パラメータ 
+##### 追加検索パラメータ 
 
-###### Operation一覧
+#### Operation一覧
 
 JP MedicationAdministration リソースに対して使用される操作は次の通りである。
 
@@ -178,9 +178,9 @@ JP MedicationAdministration リソースに対して使用される操作は次�
   - この操作が呼び出された特定のMedicationAdministrationに関連する全ての情報を返す。
     
 
-###### Operation 詳細
+#### Operation 詳細
 
-####### $everything 操作
+##### $everything 操作
 
 この操作は、この操作が呼び出された特定のMedicationAdministrationリソースに関連する全ての情報を返す。応答は "searchset" タイプのBundleリソースである。サーバは、少なくとも、識別されたMedicationAdministrationコンパートメントに含まれる全てのリソースと、それらから参照されるすべてのリソースを返すことが望ましい。
 
@@ -195,7 +195,7 @@ URL: [base]/MedicationAdministration/[id]/$everything
 本操作は、べき等な操作である。
 
 
-######## 入力パラメータ
+###### 入力パラメータ
 
 | 名前   | 多重度 | 型      | バインディング | プロファイル | 説明                                                         |
 | ------ | ------ | ------- | -------------- | ------------ | ------------------------------------------------------------ |
@@ -205,13 +205,13 @@ URL: [base]/MedicationAdministration/[id]/$everything
 | _type  | 0..*   | code    |                |              | 応答に含むFHIRリソース型を、カンマ区切りで指定する。指定されない場合は、サーバは全てのリソース型を対象とする。 |
 | _count | 0..1   | integer |                |              | Bundleの1ページに含まれるリソース件数を指定。                |
 
-######## 出力パラメータ
+###### 出力パラメータ
 
 | 名前   | 多重度 | 型     | バインディング | プロファイル | 説明                                                         |
 | ------ | ------ | ------ | -------------- | ------------ | ------------------------------------------------------------ |
 | return | 1..1   | Bundle |                |              | バンドルのタイプは"searchset"である。この操作の結果は、リソースとして直接返される。 |
 
-######## 例
+###### 例
 
 リクエスト：単一のMedicationAdministrationに関連する全てのリソースを取得する。
 
@@ -247,7 +247,7 @@ HTTP/1.1 200 OK
 }  
 ```
 
-##### サンプル
+### サンプル
 [JAHIS注射データ交換規約Ver.2.1C](https://www.jahis.jp/standard/detail/id=590)に記載されている下記の注射実施メッセージをFHIRで表現する場合のサンプル
 
 <details>
@@ -784,17 +784,17 @@ HTTP/1.1 200 OK
 
 </details>
 
-#### 注意事項
+## 注意事項
 
-##### 記述の単位について
+### 記述の単位について
 MedicationAdministrationは薬剤をCodeableConceptとして1つまでしか持つか、Medicationリソースのreferenceをもつことしかできない。したがって、複数の薬剤を同一のRp番号で表現する場合にはMedicationAdministrationを繰り返すか、複数の薬剤をまとめたMedication Resouceのインスタンスを参照することとなる。ワーキンググループでの検討の結果、複数の薬剤をまとめたMedicationリソースのインスタンスをcontained属性に内包した上で参照することとした。
 
-##### 投与薬剤、投与量の記述方法
+### 投与薬剤、投与量の記述方法
 １回の投与薬剤と投与量は、RP内の薬剤が１薬剤の場合も混注などで複数の薬剤を含む場合も、すべての薬剤を記述したMedicationリソースを contained 属性に内包し、それをMedicationRequest.medicationReference属性で参照するようにする。
 Medicationリソースのingredient.itemCodeableConcept要素にCodeableConcept型で各薬剤の識別情報を記述し、ingredient.strength.numerator要素に１回あたりの含有量を記述する。薬剤を識別するコードはHOT7("urn:oid:1.2.392.100495.20.2.73")、HOT9("urn:oid:1.2.392.200119.4.403.1")、YJコード("urn:oid:1.2.392.100495.20.1.73")を推奨するが、ローカルコードを使用してもよい。含有量の単位コードは MERIT-9（"urn:oid:1.2.392.100495.20.2.101"）を使用する。ingredient.strength.denominatorには固定値「１回」をMERIT-9（"urn:oid:1.2.392.100495.20.2.101"）を使用して指定する。
 dosage.dose要素には、情報が得られる場合には全体の容量をUCUM(`http://unitsofmeasure.org`)を使用してmL単位で指定する。
 
-##### 投薬管理ステータス
+### 投薬管理ステータス
 投与が実施された場合、status要素に `completed` を記述する。
 ```json
 "status": "completed"
@@ -805,7 +805,7 @@ dosage.dose要素には、情報が得られる場合には全体の容量をUCU
 "status": "stopped"
 ```
 
-##### 実施日
+### 実施日
 投与が実施された日時をeffectiveDateTime、またはeffectivePeriod要素に[RFC3339](https://datatracker.ietf.org/doc/html/rfc3339)形式で記述する。
 タイムゾーンはJST(+09:00)を指定する。
 
@@ -821,7 +821,7 @@ dosage.dose要素には、情報が得られる場合には全体の容量をUCU
 "effectiveDateTime": "2016-08-25T08:30:00+09:00"
 ```
 
-##### 実施者
+### 実施者
 投与を実施した医療従事者（自己管理の場合は患者）をperformer要素に記述する。
 
 performer.functionには、FHIR標準のValueSetである `http://terminology.hl7.org/CodeSystem/med-admin-perform-function` から、実施者を表す `performer` を固定で記述する。
@@ -843,7 +843,7 @@ performer.actorには、医療従事者(Practitioner)、または患者(Patient)
 }
 ```
 
-##### 実施場所
+### 実施場所
 投与を実施した場所（病棟、病室、ベッド番号など）を、拡張「JP_MedicationAdministration_Location」を使用して、Reference型でLocationリソースの参照情報を記述する。
 (Location Resourceの記述仕様については、当プロファイルのスコープ外とする)
 ```json
@@ -860,7 +860,7 @@ performer.actorには、医療従事者(Practitioner)、または患者(Patient)
 }
 ```
 
-##### 実施投与ライン
+### 実施投与ライン
 投与時に使用したラインを記述する場合は、dosage要素で拡張「JP_MedicationRequest_DosageInstruction_Line」を使用し、CodeableConcept型で指定する。推奨するコードシステムはないので、ローカルコードを使用する。
 
 ```json
@@ -882,7 +882,7 @@ performer.actorには、医療従事者(Practitioner)、または患者(Patient)
 }
 ```
 
-##### 実施投与経路
+### 実施投与経路
 「1:内服」、「2:外用」などJAMI標準用法コードにて基本用法区分として表現される区分は、dosage.route 要素にコードまたは文字列で指定する。基本用法区分を識別するURIとして、"urn:oid:1.2.392.200250.2.2.20.30"を使用する。
 
 ```json
@@ -899,7 +899,7 @@ performer.actorには、医療従事者(Practitioner)、または患者(Patient)
 }
 ```
 
-##### 実施投与部位
+### 実施投与部位
 投与部位を指定する場合は、dosage.site 要素に、CodeableConcept型で指定する。部位コードは、JAMI標準用法コード 表13 外用部位コード（"urn:oid:1.2.392.100495.20.2.33"）を推奨する。
 HL7表0550 身体部位("http://terminology.hl7.org/CodeSystem/v2-0550")とHL7表0495 身体部位修飾子("http://terminology.hl7.org/CodeSystem/v2-0495")を組み合わせて使用してもよいが、その場合は拡張「BodyStructure」を使用する。
 この拡張は BodyStructureリソースを参照することができるので、location 要素にHL7表0550 身体部位("http://terminology.hl7.org/CodeSystem/v2-0550")のコードを、locationQualifier 要素に
@@ -965,7 +965,7 @@ HL7表0550 身体部位("http://terminology.hl7.org/CodeSystem/v2-0550")とHL7�
 ]
 ```
 
-##### 実施投与手技
+### 実施投与手技
 「A:貼付」、「B:塗布」などJAMI標準用法コードにて用法詳細区分として表現される区分は、dosage.method 要素にコードまたは文字列で指定する。 用法詳細区分を識別するURIとして、"urn:oid:1.2.392.200250.2.2.20.40"を使用する。
 
 ```json
@@ -982,7 +982,7 @@ HL7表0550 身体部位("http://terminology.hl7.org/CodeSystem/v2-0550")とHL7�
 }
 ```
 
-##### 実施投与量
+### 実施投与量
 Medication.ingredientに記述される薬剤の合計容量(mL)を dosage.dose に、SimpleQuantity型で記録する。単位コードには、医薬品単位略号（urn:oid:1.2.392.100495.20.2.101）を使用する。
 
 以下薬剤を混注した際の合計容量「510mL」を記述したインスタンス例を示す。
@@ -1003,7 +1003,7 @@ Medication.ingredientに記述される薬剤の合計容量(mL)を dosage.dose 
 }
 ```
 
-##### 投与速度
+### 投与速度
 点滴注射など一定の速度で時間をかけて投与する場合、その投与速度は dosageInstruction.doseAndRate.rateRatioを使用してRatio型で表現する。単位コードには、UCUM(`http://unitsofmeasure.org`)を使用する。
 
 投与速度「100mL/h」を記述したインスタンス例を示す。
@@ -1027,9 +1027,9 @@ Medication.ingredientに記述される薬剤の合計容量(mL)を dosage.dose 
 }
 ```
 
-##### 各種実施コメント
+### 各種実施コメント
 
-###### 投与経路コメント
+#### 投与経路コメント
 投与経路を補足するためのコメントは、route要素に対して定義した拡張「JP_MedicationAdministration_Route_RouteComment」を使用する。
 この拡張は、コメントがコード化されている場合はCodeableConcept型を使用して記述する。コード化されていない場合はString型を使用して記述する。
 複数のコメントを記述する場合は、この拡張を繰り返して記述する。
@@ -1053,7 +1053,7 @@ Medication.ingredientに記述される薬剤の合計容量(mL)を dosage.dose 
 }
 ```
 
-###### 投与部位コメント
+#### 投与部位コメント
 投与部位を補足するためのコメントは、site要素に対して定義した拡張「JP_MedicationAdministration_Site_SiteComment」を使用する。
 この拡張は、コメントがコード化されている場合はCodeableConcept型を使用して記述する。コード化されていない場合はString型を使用して記述する。
 複数のコメントを記述する場合は、この拡張を繰り返して記述する。
@@ -1078,7 +1078,7 @@ Medication.ingredientに記述される薬剤の合計容量(mL)を dosage.dose 
 }
 ```
 
-###### 手技コメント
+#### 手技コメント
 手技を補足するためのコメントは、method要素に対して定義した拡張「JP_MedicationAdministration_Method_MethodComment」を使用する。
 この拡張は、コメントがコード化されている場合はCodeableConcept型を使用して記述する。コード化されていない場合はString型を使用して記述する。
 複数のコメントを記述する場合は、この拡張を繰り返して記述する。
@@ -1103,7 +1103,7 @@ Medication.ingredientに記述される薬剤の合計容量(mL)を dosage.dose 
 }
 ```
 
-###### ラインコメント
+#### ラインコメント
 ラインを補足するためのコメントは、dosage要素に対して定義した拡張「JP_MedicationAdministration_Dosage_LineComment」を使用する。
 この拡張は、コメントがコード化されている場合はCodeableConcept型を使用して記述する。コード化されていない場合はString型を使用して記述する。
 複数のコメントを記述する場合は、この拡張を繰り返して記述する。
@@ -1133,7 +1133,7 @@ Medication.ingredientに記述される薬剤の合計容量(mL)を dosage.dose 
 }
 ```
 
-###### 投与速度コメント
+#### 投与速度コメント
 投与速度を補足するためのコメントは、rate要素に対して定義した拡張「JP_MedicationAdministration_Rate_RateComment」を使用する。
 この拡張は、コメントがコード化されている場合はCodeableConcept型を使用して記述する。コード化されていない場合はString型を使用して記述する。
 複数のコメントを記述する場合は、この拡張を繰り返して記述する。
@@ -1163,7 +1163,7 @@ Medication.ingredientに記述される薬剤の合計容量(mL)を dosage.dose 
 }
 ```
 
-###### 用法コメント
+#### 用法コメント
 用法を補足するためのコメントは、dosage要素に対して定義した拡張「JP_MedicationAdministration_Dosage_DosageComment」を使用する。
 この拡張は、コメントがコード化されている場合はCodeableConcept型を使用して記述する。コード化されていない場合はString型を使用して記述する。
 複数のコメントを記述する場合は、この拡張を繰り返して記述する。
@@ -1181,7 +1181,7 @@ Medication.ingredientに記述される薬剤の合計容量(mL)を dosage.dose 
 }
 ```
 
-###### 進捗コメント
+#### 進捗コメント
 進捗を補足するためのコメントは、reasonCode要素を使用してCodeableConcept型でテキストによる記述とコードによる記述のどちらかを選択することができる。
 
 進捗コメントをテキストで記述したインスタンス例を示す
@@ -1192,7 +1192,7 @@ Medication.ingredientに記述される薬剤の合計容量(mL)を dosage.dose 
 }
 ```
 
-###### 未分類コメント
+#### 未分類コメント
 上記のコメントに分類できない、またはシステム的に分類して管理されていない場合、MedicationAdminstrationに対して定義した拡張「JP_MedicationAdministration_UncategorizedComment」を使用する。
 この拡張は、コメントがコード化されている場合はCodeableConcept型を使用して記述する。コード化されていない場合はString型を使用して記述する。
 複数のコメントを記述する場合は、この拡張を繰り返して記述する。
@@ -1214,7 +1214,7 @@ Medication.ingredientに記述される薬剤の合計容量(mL)を dosage.dose 
 }
 ```
 
-##### 投薬依頼情報
+### 投薬依頼情報
 実施の元となった投薬依頼(MedicationRequest)リソースの参照を記述する。
 ```json
 "request": {
@@ -1222,7 +1222,7 @@ Medication.ingredientに記述される薬剤の合計容量(mL)を dosage.dose 
 }
 ```
 
-##### 依頼科
+### 依頼科
 投薬依頼を行なった診療科を、拡張「JP_MedicationAdministration_RequestDepartment」を使用して、CodeableConcept型で記述する。
 ```json
 {
@@ -1244,7 +1244,7 @@ Medication.ingredientに記述される薬剤の合計容量(mL)を dosage.dose 
 }
 ```
 
-##### 依頼医師
+### 依頼医師
 投薬依頼を行なった医師を、拡張「JP_MedicationAdministration_Requester」を使用して、Reference型でPractitionerリソースの参照情報を記述する。
 (Practitioner Resourceの記述仕様については、当プロファイルのスコープ外とする)
 ```json
@@ -1261,7 +1261,7 @@ Medication.ingredientに記述される薬剤の合計容量(mL)を dosage.dose 
 }
 ```
 
-##### 依頼日時
+### 依頼日時
 投薬依頼を行なった日時を、拡張「JP_MedicationAdministration_RequestAuthoredOn」を使用して、[RFC3339](https://datatracker.ietf.org/doc/html/rfc3339)形式で記述する。
 タイムゾーンはJST(+09:00)を指定する。
 ```json
@@ -1276,7 +1276,7 @@ Medication.ingredientに記述される薬剤の合計容量(mL)を dosage.dose 
 }
 ```
 
-#### その他、参考文献・リンク等
+## その他、参考文献・リンク等
 1. HL7, FHIR MedicationRequest Resource, http://hl7.org/fhir/medicationrequest.html
 1. 保健医療福祉情報システム工業会, JAHIS 処方データ交換規約 Ver.3.0C, https://www.jahis.jp/standard/detail/id=564
 1. 日本医療情報学会MERIT-9研究会, 医療情報交換規約運用指針、MERIT-9 処方オーダver 1.0, http://merit-9.mi.hama-med.ac.jp/jahis/SHOHOU.pdf

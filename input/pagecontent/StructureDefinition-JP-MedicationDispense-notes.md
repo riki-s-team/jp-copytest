@@ -1,5 +1,5 @@
 
-##### 必須要素
+### 必須要素
 次のデータ項目は必須（データが存在しなければならない）、あるいは、データが送信システムに存在する場合はサポートされなければならないことを意味する。（Must Support）。
 
 JP Core MedicationDispense リソースは、次の要素を持たなければならない。
@@ -18,16 +18,16 @@ JP Core MedicationDispenseリソースは、次の要素をサポートしなけ
 - quantity : 調剤量
 - dosageInstruction.timing : 服⽤タイミング
 
-##### Extensions定義
+### Extensions定義
 JP Core MedicationDispense リソースで使用される拡張は次の通りである。
 
-###### JP Core MedicationDispense独自で追加されたExtension
+#### JP Core MedicationDispense独自で追加されたExtension
 
 |拡張|説明|URL|値の型|
 |------------|-------------|----------|-----|
 |調剤結果|薬剤単位の調剤結果|http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDispense_Preparation|CodeableConcept|
 
-###### 既存のExtensionの利用
+#### 既存のExtensionの利用
 
 JP Core MedicationDispense リソースでは、JP Core MedicationRequestプロファイルで定義された以下の拡張を使用する。
 
@@ -36,7 +36,7 @@ JP Core MedicationDispense リソースでは、JP Core MedicationRequestプロ�
 |服用開始日|服用開始日を格納する拡張|http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_PeriodOfUse|Period|
 |実服用日数|実服用日数を格納する拡張|http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_UsageDuration|Duration|
 
-##### 用語定義
+### 用語定義
 HL7 FHIRの基底規格では、薬剤コードをはじめとして、剤形などでSNOMED CTが使われているが、日本ではライセンスの問題もあり普及していない。代替としてJAHIS処方データ交換規約やSS-MIX2で使われている用語集を採用した。
 
 HL7 V2系では用語集を識別するコーディングシステム名(以下、「CS名」）は文字列であったが、FHIRではURIを指定する必要があるため、それぞれにURIを割り当てた。以下に使用する用語集のCS名とURI表記を列記する。
@@ -74,14 +74,14 @@ JP Core MedicationDispenseリソースの各要素のバインディングは以
 | MedicationDispense.dosageInstruction.doseAndRate.rateRatio.denominator.code | １日 | required | UCUM(http://hl7.org/fhir/ValueSet/ucum-units) |
 | MedicationDispense.quantity.code | 調剤量単位 | prefered | MERIT-9(単位) |
 
-##### 制約一覧
+### 制約一覧
 JP Core MedicationDispense リソースは、以下の制約を満たさなければならない。
 - dosageInstruction.doseAndRage.rateRatio.denominator.value : １日量を記述する場合"1"に固定される。
 - dosageInstruction.doseAndRage.rateRatio.denominator.unit : １日量を記述する場合"日"に固定される。
 - dosageInstruction.doseAndRage.rateRatio.denominator.system : １日量を記述する場合"http://unitsofmeasure.org"に固定される。
 - dosageInstruction.doseAndRage.rateRatio.denominator.code : １日量を記述する場合"d"に固定される。
 
-##### 項目の追加
+### 項目の追加
 療養担当則23条では、「保険医は、処方箋を交付する場合には、様式第二号若しくは第二号の二又はこれらに準ずる様式の処方箋に必要な事項を記載しなければならない。」とされており、外来処方、院内処方の区分を明示していない。
 したがって、個別のユースケースにおいては一部を省略されることも前提の上で、規格としてはこれに準拠すべきと考え、様式に収載されている以下の項目を追加した。
 
@@ -92,9 +92,9 @@ JP Core MedicationDispense リソースは、以下の制約を満たさなけ�
 * RP番号、薬剤番号の追加（identifierを使用）
 * ⼒価区分の追加（dosageInstruction.doseAndRate.typeを使用）
 
-#### 利用方法
+## 利用方法
 
-##### Interaction一覧
+### Interaction一覧
 
 | コンフォーマンス | インタラクション                            |
 | ---------------- | ------------------------------------------- |
@@ -102,7 +102,7 @@ JP Core MedicationDispense リソースは、以下の制約を満たさなけ�
 | SHOULD（推奨）   | vread、history-instance                     |
 | MAY（利用可能）  | create、update、patch、delete、history-type |
 
-###### Search Parameter一覧
+#### Search Parameter一覧
 
 | コンフォーマンス | パラメータ    | 型     | 例                                                           |
 | ---------------- | ------------- | ------ | ------------------------------------------------------------ |
@@ -111,7 +111,7 @@ JP Core MedicationDispense リソースは、以下の制約を満たさなけ�
 | SHOULD           | patient,whenhandedover | referenece,date  | GET [base]/MedicationDispense?patient=123456&whenhandedover=eq2013-01-14 |
 | MAY           | whenhandedover,whenprepared,context,code,performer| date,date,token,token,token | GET [base]/MedicationDispense?code=urn:oid:1.2.392.100495.20.2.74\|105271807  |
 
-####### 必須検索パラメータ
+##### 必須検索パラメータ
 
 次の検索パラメータは必須でサポートされなければならない。
 
@@ -130,7 +130,7 @@ JP Core MedicationDispense リソースは、以下の制約を満たさなけ�
    指定された識別子に一致するMedicationDispenseリソースを含むBundleを検索する。
    
 
-####### 推奨検索パラメータ
+##### 推奨検索パラメータ
 
 次の検索パラメータをサポートすることが望ましい。
 
@@ -165,10 +165,10 @@ JP Core MedicationDispense リソースは、以下の制約を満たさなけ�
    リソースIDが123456の患者の2013-01-14に払い出されたMedicationDispenseリソースを含むBundleを検索する。
 
 
-####### 追加検索パラメータ 
+##### 追加検索パラメータ 
 
 
-###### Operation一覧
+#### Operation一覧
 
 JP Core MedicationDispense リソースに対して使用される操作は次の通りである。
 
@@ -177,9 +177,9 @@ JP Core MedicationDispense リソースに対して使用される操作は次�
   - この操作が呼び出された特定のMedicationDispenseに関連する全ての情報を返す。
     
 
-###### Operation 詳細
+#### Operation 詳細
 
-####### $everything 操作
+##### $everything 操作
 
 この操作は、この操作が呼び出された特定のMedicationDispenseリソースに関連する全ての情報を返す。応答は "searchset" タイプのBundleリソースである。サーバは、少なくとも、識別されたMedicationDispenseコンパートメントに含まれる全てのリソースと、それらから参照されるすべてのリソースを返すことが望ましい。
 
@@ -194,7 +194,7 @@ URL: [base]/MedicationDispense/[id]/$everything
 本操作は、べき等な操作である。
 
 
-######## 入力パラメータ
+###### 入力パラメータ
 
 | 名前   | 多重度 | 型      | バインディング | プロファイル | 説明                                                         |
 | ------ | ------ | ------- | -------------- | ------------ | ------------------------------------------------------------ |
@@ -204,13 +204,13 @@ URL: [base]/MedicationDispense/[id]/$everything
 | _type  | 0..*   | code    |                |              | 応答に含むFHIRリソース型を、カンマ区切りで指定する。指定されない場合は、サーバは全てのリソース型を対象とする。 |
 | _count | 0..1   | integer |                |              | Bundleの1ページに含まれるリソース件数を指定。                |
 
-######## 出力パラメータ
+###### 出力パラメータ
 
 | 名前   | 多重度 | 型     | バインディング | プロファイル | 説明                                                         |
 | ------ | ------ | ------ | -------------- | ------------ | ------------------------------------------------------------ |
 | return | 1..1   | Bundle |                |              | バンドルのタイプは"searchset"である。この操作の結果は、リソースとして直接返される。 |
 
-######## 例
+###### 例
 
 リクエスト：単一のMedicationDispenseに関連する全てのリソースを取得する。
 
@@ -246,7 +246,7 @@ HTTP/1.1 200 OK
 }  
 ```
 
-##### サンプル
+### サンプル
 ```
 Rp1 ムコダイン錠２５０ｍｇ１錠（  １日３錠)
 　　１日３回朝昼夕食後３日分
@@ -426,14 +426,14 @@ Rp1 ムコダイン錠２５０ｍｇ１錠（  １日３錠)
 }
 ```
 
-#### 注意事項
+## 注意事項
 
-##### 記述の単位について
+### 記述の単位について
 MedicationDispenseは薬剤をCodeableConceptとして1つまでしか持つか、Medication Resourceのreferenceをもつことしかできない。
 したがって、複数の薬剤を同一のRp番号で表現する場合にはMedicationDispenseを繰り返すか、複数の薬剤をまとめたMedication Resouceのインスタンスを参照することとなる。
 ワーキンググループでの検討の結果、冗長とはなるがidentifierにRp番号と薬剤番号を記録することとし、MedicationDispenseを繰り返すことで表現する方法を推奨することとした。
 
-##### 調剤量の記述方法
+### 調剤量の記述方法
 調剤量はquantityに、SimpleQuantity型で記録する。単位コードには、投与量と同様に医薬品単位略号（"urn:oid:1.2.392.100495.20.2.101"）を使用する。
 調剤日数を記述したい場合は、daysSupply要素にSimpleQuantity方で記述し、単位コードはUCUM("http://unitsofmeasure.org")を使用する。
 
@@ -454,10 +454,10 @@ MedicationDispenseは薬剤をCodeableConceptとして1つまでしか持つか�
 }
 ```
 
-##### 力価区分の記述方法
+### 力価区分の記述方法
 用量は製剤量で記述することを基本とするが、必要に応じて原薬量指定も可能とする。この識別の記述方法は、JP Core MedicationRequestと同様とする。
 
-##### 代替医薬品への変更内容の記述方法
+### 代替医薬品への変更内容の記述方法
 調剤時に行ったジェネリック医薬品などへの変更内容の記述は、substitution.wasSubstituted, substitution.type, substitusion.reason を使用する。
 変更の種類はデフォルトのコード表（"http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"）を使用する。
 変更の理由はデフォルトのコード表（"http://terminology.hl7.org/CodeSystem/v3-ActReason")を使用するかフリーテキストで記述する。ローカルのコード表を使用してもよい。
@@ -490,7 +490,7 @@ MedicationDispenseは薬剤をCodeableConceptとして1つまでしか持つか�
 }
 ```
 
-##### 払い出し先
+### 払い出し先
 調剤された薬剤が払い出された先は、destination要素にReference型でLocationリソースの参照情報を記述する。
 
 ```json
@@ -499,13 +499,13 @@ MedicationDispenseは薬剤をCodeableConceptとして1つまでしか持つか�
 }
 ```
 
-##### 払い出し日時
+### 払い出し日時
 調剤された薬剤が払い出された日時は、whenHandedOver要素にdateTime型で記述する。
 
-##### 調剤日時
+### 調剤日時
 薬剤が実際に調剤された日時は、whenPrepared要素にdateTime型で記述する。
 
-##### 調剤実施者
+### 調剤実施者
 調剤を実際に行った医療従事者は、performer.actor要素にReference型でPractitionerリソースの参照情報を記述する。役割に応じて複数の医療従事者を記述できる。
 
 ```json
@@ -527,7 +527,7 @@ MedicationDispenseは薬剤をCodeableConceptとして1つまでしか持つか�
 ]
 ```
 
-##### 調剤結果の記述方法
+### 調剤結果の記述方法
 単一の薬剤に対する調剤結果は、MedicationDispenseに対して定義した拡張「JP_MedicationDispense_Preparation」を使用する。
 この拡張は、CodeableConcept型を使用してテキストによる指示とコードによる指示のどちらかを記述することができる。
 一つの薬剤に対して、複数の指示を記録する場合には、この拡張を、拡張単位で繰り返して記録する。 
@@ -557,13 +557,13 @@ MedicationDispenseは薬剤をCodeableConceptとして1つまでしか持つか�
 
 ```
 
-##### 疑義照会の内容
+### 疑義照会の内容
 調剤時に行った疑義照会の内容は、note要素にAnnotation型で記述する。
 
-##### 調剤時の特記事項（コメントなど）
+### 調剤時の特記事項（コメントなど）
 調剤時の特記事項（コメントなど）も、note要素にAnnotation型で記述する。
 
-##### 薬剤処方の各種指示情報の記述方法について
+### 薬剤処方の各種指示情報の記述方法について
 調剤の基となった薬剤処方の用法などの情報は、特に記述のない限り JP Core MedicationRequest と同様の記述方法とする。該当する項目としては以下のものがある。
 
 * 服用期間、実服用日数
@@ -579,7 +579,7 @@ MedicationDispenseは薬剤をCodeableConceptとして1つまでしか持つか�
 * 隔日投与、曜日指定投与
 
 
-#### その他、参考文献・リンク等
+## その他、参考文献・リンク等
 1. HL7, FHIR MedicationDispense Resource, http://hl7.org/fhir/MedicationDispense.html
 1. 保健医療福祉情報システム工業会, JAHIS 処方データ交換規約 Ver.3.0C, https://www.jahis.jp/standard/detail/id=564
 1. 日本医療情報学会MERIT-9研究会, 医療情報交換規約運用指針、MERIT-9 処方オーダver 1.0, http://merit-9.mi.hama-med.ac.jp/jahis/SHOHOU.pdf

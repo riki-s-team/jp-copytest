@@ -1,5 +1,5 @@
 
-##### 必須要素
+### 必須要素
 次のデータ項目は必須（データが存在しなければならない）、あるいは、データが送信システムに存在する場合はサポートされなければならないことを意味する。（Must Support）。
 
 MedicationAdministration リソースは、次の要素を持たなければならない。
@@ -15,10 +15,10 @@ MedicationAdministrationリソースは、次の要素をサポートしなけ�
 - subject :患者の参照情報
 - effectiveDateTime : 投与実施日時
 
-##### Extensions定義
+### Extensions定義
 MedicationAdministration リソースで使用される拡張は次の通りである。
 
-###### JP MedicationAdministration独自で追加されたExtension
+#### JP MedicationAdministration独自で追加されたExtension
 
 |拡張|説明|URL|値の型|
 |------------|-------------|----------|-----|
@@ -27,11 +27,11 @@ MedicationAdministration リソースで使用される拡張は次の通りで�
 |依頼日時|依頼日時を格納するための拡張|http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_RequestAuthoredOn|DateTime
 |実施場所|実施場所を格納するための拡張|http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Location|Reference(Location)
 
-###### 既存のExtensionの利用
+#### 既存のExtensionの利用
 
 既存のExtensionの利用は特にない。
 
-##### 用語定義
+### 用語定義
 HL7 FHIRの基底規格では、薬剤コードをはじめとして、剤形などでSNOMED CTが使われているが、日本ではライセンスの問題もあり普及していない。代替としてJAHIS処方データ交換規約やSS-MIX2で使われている用語集を採用した。
 
 HL7 V2系では用語集を識別するコーディングシステム名(以下、「CS名」）は文字列であったが、FHIRではURIを指定する必要があるため、それぞれにURIを割り当てた。以下に使用する用語集のCS名とURI表記を列記する。
@@ -66,11 +66,11 @@ MedicationAdministrationの各要素のバインディングは以下の通り�
 | MedicationAdministration.dosage.dose.code | １回量単位 | prefered | MERIT-9(単位) |
 
 
-##### 制約一覧
+### 制約一覧
 MedicationAdministration リソースは、以下の制約を満たさなければならない。
 - status : JP Coreでは `completed` or `stopped` に限定される。
 
-##### 項目の追加
+### 項目の追加
 MedicationAdministrationリソースでは、依頼元のMedicationRequestリソースをrequest要素にReferenceで参照できるようになっているが、
 依頼元のMedicationRequestリソースが取得できないケースも考慮して、依頼情報を直接記述できるように以下の項目を追加した。
 
@@ -82,9 +82,9 @@ MedicationAdministrationリソースでは、依頼元のMedicationRequestリソ
 
 * 実施場所の追加（拡張「JP_MedicationAdministration_Location」を使用）
 
-#### 利用方法
+## 利用方法
 
-##### Interaction一覧
+### Interaction一覧
 
 | コンフォーマンス | インタラクション                            |
 | ---------------- | ------------------------------------------- |
@@ -92,7 +92,7 @@ MedicationAdministrationリソースでは、依頼元のMedicationRequestリソ
 | SHOULD（推奨）   | vread、history-instance                     |
 | MAY（利用可能）  | create、update、patch、delete、history-type |
 
-###### Search Parameter一覧
+#### Search Parameter一覧
 
 | コンフォーマンス | パラメータ    | 型     | 例                                                           |
 | ---------------- | ------------- | ------ | ------------------------------------------------------------ |
@@ -101,7 +101,7 @@ MedicationAdministrationリソースでは、依頼元のMedicationRequestリソ
 | SHOULD           | patient,effective-time | referenece,date  | GET [base]/MedicationAdministration?patient=123456&effective-time=eq2013-01-14 |
 | MAY           | TBD | TBD | GET [base]/MedicationAdministration?code=urn:oid:1.2.392.100495.20.2.74\|105271807  |
 
-####### 必須検索パラメータ
+##### 必須検索パラメータ
 
 次の検索パラメータは必須でサポートされなければならない。
 
@@ -120,7 +120,7 @@ MedicationAdministrationリソースでは、依頼元のMedicationRequestリソ
    指定された識別子に一致するMedicationAdministrationリソースを含むBundleを検索する。
    
 
-####### 推奨検索パラメータ
+##### 推奨検索パラメータ
 
 次の検索パラメータをサポートすることが望ましい。
 
@@ -155,9 +155,9 @@ MedicationAdministrationリソースでは、依頼元のMedicationRequestリソ
    リソースIDが123456の患者の2013-01-14に投与実施されたMedicationAdministrationリソースを含むBundleを検索する。
 
 
-####### 追加検索パラメータ 
+##### 追加検索パラメータ 
 
-###### Operation一覧
+#### Operation一覧
 
 JP MedicationAdministration リソースに対して使用される操作は次の通りである。
 
@@ -166,9 +166,9 @@ JP MedicationAdministration リソースに対して使用される操作は次�
   - この操作が呼び出された特定のMedicationAdministrationに関連する全ての情報を返す。
     
 
-###### Operation 詳細
+#### Operation 詳細
 
-####### $everything 操作
+##### $everything 操作
 
 この操作は、この操作が呼び出された特定のMedicationAdministrationリソースに関連する全ての情報を返す。応答は "searchset" タイプのBundleリソースである。サーバは、少なくとも、識別されたMedicationAdministrationコンパートメントに含まれる全てのリソースと、それらから参照されるすべてのリソースを返すことが望ましい。
 
@@ -183,7 +183,7 @@ URL: [base]/MedicationAdministration/[id]/$everything
 本操作は、べき等な操作である。
 
 
-######## 入力パラメータ
+###### 入力パラメータ
 
 | 名前   | 多重度 | 型      | バインディング | プロファイル | 説明                                                         |
 | ------ | ------ | ------- | -------------- | ------------ | ------------------------------------------------------------ |
@@ -193,13 +193,13 @@ URL: [base]/MedicationAdministration/[id]/$everything
 | _type  | 0..*   | code    |                |              | 応答に含むFHIRリソース型を、カンマ区切りで指定する。指定されない場合は、サーバは全てのリソース型を対象とする。 |
 | _count | 0..1   | integer |                |              | Bundleの1ページに含まれるリソース件数を指定。                |
 
-######## 出力パラメータ
+###### 出力パラメータ
 
 | 名前   | 多重度 | 型     | バインディング | プロファイル | 説明                                                         |
 | ------ | ------ | ------ | -------------- | ------------ | ------------------------------------------------------------ |
 | return | 1..1   | Bundle |                |              | バンドルのタイプは"searchset"である。この操作の結果は、リソースとして直接返される。 |
 
-######## 例
+###### 例
 
 リクエスト：単一のMedicationAdministrationに関連する全てのリソースを取得する。
 
@@ -235,7 +235,7 @@ HTTP/1.1 200 OK
 }  
 ```
 
-##### サンプル
+### サンプル
 [JAHIS処方データ交換規約 Ver.3.0C](https://www.jahis.jp/standard/detail/id=564)の137ページに記載されている下記の処方実施をFHIRで表現する場合について解説する。
 ```
 投与日時　2016/08/25 08:30
@@ -262,7 +262,7 @@ Rp1
 | 投与場所 | 09A病棟021病室4ベッド |
 | 実施更新日時 | 2016/08/25 12:03:43 |
 
-###### ムコダイン錠２５０ｍｇ（実施）
+#### ムコダイン錠２５０ｍｇ（実施）
 ```json
 {
   "resourceType": "MedicationAdministration",
@@ -384,7 +384,7 @@ Rp1
 }
 ```
 
-###### パンスポリンＴ錠１００ １００ｍｇ（中止）
+#### パンスポリンＴ錠１００ １００ｍｇ（中止）
 ```json
 {
   "resourceType": "MedicationAdministration",
@@ -456,9 +456,9 @@ Rp1
 }
 ```
 
-#### 注意事項
+## 注意事項
 
-##### 記述の単位について
+### 記述の単位について
 MedicationAdministrationは薬剤をCodeableConceptとして1つまでしか持つか、Medication Resourceのreferenceをもつことしかできない。
 したがって、複数の薬剤を同一のRp番号で表現する場合にはMedicationAdministrationを繰り返すか、複数の薬剤をまとめたMedication Resouceのインスタンスを参照することとなる。
 ワーキンググループでの検討の結果、冗長とはなるがidentifierにRp番号と薬剤番号を記録することとし、MedicationAdministrationを繰り返すことで表現する方法を推奨することとした。
@@ -467,15 +467,15 @@ MedicationAdministrationは薬剤をCodeableConceptとして1つまでしか持�
 ただし、内服薬剤処方のMedicationRequestは複数回、複数日の服薬タイミングをまとめて1つのインスタンスで記述するが、MedicationAdministrationは1回の服薬単位の粒度でインスタンスを生成する必要がある。
 例えば、MedicationRequestの用法、投与日数が「１日３回 朝昼夕食後　１４日分」の場合、3 x 14 = 42 (x 薬剤数) の処方実施情報インスタンスが生成される。
 
-##### 投与実施の記述方法
+### 投与実施の記述方法
 
-##### 投薬管理ステータス
+### 投薬管理ステータス
 投与が実施された場合、status要素に `completed` を記述する。
 ```json
 "status": "completed"
 ```
 
-##### 実施日
+### 実施日
 投与が実施された日時をeffectiveDateTime or effectivePeriod要素に[RFC3339](https://datatracker.ietf.org/doc/html/rfc3339)形式で記述する。
 タイムゾーンはJST(+09:00)を指定する。
 
@@ -491,7 +491,7 @@ MedicationAdministrationは薬剤をCodeableConceptとして1つまでしか持�
 "effectiveDateTime": "2016-08-25T08:30:00+09:00"
 ```
 
-##### 実施者
+### 実施者
 投与を実施した医療従事者（自己管理の場合は患者）をperformer要素に記述する。
 
 performer.functionには、FHIR標準のValueSetである `http://terminology.hl7.org/CodeSystem/med-admin-perform-function` から、実施者を表す `performer` を固定で記述する。
@@ -516,7 +516,7 @@ performer.actorには、医療従事者(Practitioner)、または患者(Patient)
 ]
 ```
 
-##### 実施場所
+### 実施場所
 投与を実施した場所（病棟、病室、ベッド番号など）を、拡張「JP_MedicationAdministrationLocation」を使用して、Reference型でLocationリソースの参照情報を記述する。
 (Location Resourceの記述仕様については、当プロファイルのスコープ外とする)
 ```json
@@ -530,7 +530,7 @@ performer.actorには、医療従事者(Practitioner)、または患者(Patient)
 ]
 ```
 
-###　 実施情報
+#　 実施情報
 「1:内服」、「2:外用」などJAMI標準用法コードにて基本用法区分として表現される区分は、dosage.route 要素にコードまたは文字列で指定する。基本用法区分を識別するURIとして、"urn:oid:1.2.392.200250.2.2.20.30"を使用する。
 
 「A:貼付」、「B:塗布」などJAMI標準用法コードにて用法詳細区分として表現される区分は、dosage.method 要素にコードまたは文字列で指定する。 用法詳細区分を識別するURIとして、"urn:oid:1.2.392.200250.2.2.20.40"を使用する。
@@ -566,7 +566,7 @@ performer.actorには、医療従事者(Practitioner)、または患者(Patient)
 }
 ```
 
-##### 投薬依頼情報
+### 投薬依頼情報
 実施の元となった投薬依頼(MedicationRequest)リソースの参照を記述する。
 ```json
 "request": {
@@ -574,7 +574,7 @@ performer.actorには、医療従事者(Practitioner)、または患者(Patient)
 }
 ```
 
-##### 依頼科
+### 依頼科
 投薬依頼を行なった診療科を、拡張「JP_MedicationAdministration_RequestDepartment」を使用して、CodeableConcept型で記述する。
 ```json
 {
@@ -596,7 +596,7 @@ performer.actorには、医療従事者(Practitioner)、または患者(Patient)
 }
 ```
 
-##### 依頼医師
+### 依頼医師
 投薬依頼を行なった医師を、拡張「JP_MedicationAdministrationRequester」を使用して、Reference型でPractitionerリソースの参照情報を記述する。
 (Practitioner Resourceの記述仕様については、当プロファイルのスコープ外とする)
 ```json
@@ -613,7 +613,7 @@ performer.actorには、医療従事者(Practitioner)、または患者(Patient)
 }
 ```
 
-##### 依頼日時
+### 依頼日時
 投薬依頼を行なった日時を、拡張「JP_MedicationAdministrationRequestAuthoredOn」を使用して、[RFC3339](https://datatracker.ietf.org/doc/html/rfc3339)形式で記述する。
 タイムゾーンはJST(+09:00)を指定する。
 ```json
@@ -628,25 +628,25 @@ performer.actorには、医療従事者(Practitioner)、または患者(Patient)
 }
 ```
 
-##### 投与中止の記述方法
+### 投与中止の記述方法
 
-##### 投薬管理ステータス
+### 投薬管理ステータス
 投与が中止された場合、status要素に `stopped` を記述する。
 ```json
 "status": "stopped"
 ```
 
-##### 実施日
+### 実施日
 投与を実施する予定であった日時をeffectiveDateTime要素に[RFC3339](https://datatracker.ietf.org/doc/html/rfc3339)形式で記述する。
 タイムゾーンはJST(+09:00)を指定する。
 ```json
 "effectiveDateTime": "2016-08-25T08:30:00+09:00"
 ```
 
-##### 投薬依頼情報
+### 投薬依頼情報
 投与実施と同様
 
-#### その他、参考文献・リンク等
+## その他、参考文献・リンク等
 1. HL7, FHIR MedicationRequest Resource, http://hl7.org/fhir/medicationrequest.html
 1. 保健医療福祉情報システム工業会, JAHIS 処方データ交換規約 Ver.3.0C, https://www.jahis.jp/standard/detail/id=564
 1. 日本医療情報学会MERIT-9研究会, 医療情報交換規約運用指針、MERIT-9 処方オーダver 1.0, http://merit-9.mi.hama-med.ac.jp/jahis/SHOHOU.pdf

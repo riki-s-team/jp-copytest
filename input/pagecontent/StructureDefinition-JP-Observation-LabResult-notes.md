@@ -1,9 +1,9 @@
 
-##### 必須要素 
+### 必須要素 
 
 次のデータ項目はデータが存在しなければならない（必須）であるか、あるいは、データが送信システムに存在する場合はサポートされなければならない（Must Support）要素である。
 
-###### 必須
+#### 必須
 本プロファイルでは、次の要素を持たなければならない。
 
  - `status`︓検体検査情報項目の状態は必須である。
@@ -13,22 +13,22 @@
  - `effective[x]`：このリソースが示す検体検査情報項目が、いつ発生したかを示すためこのプロファイルでは必須とする。検体採取日時。
  - `specimen`：このリソースが示す検体検査情報項目が、どの検体で検査されるのかを示すため、このプロファイルでは参照する`specimen`リソースの定義を必須とする。
 
-###### MustSupport
+#### MustSupport
 本プロファイルでは、次の要素はMustSupportである。
 
  - `value[x]`：このリソースが示す検体検査情報項目の結果である。
 
-##### Extensions定義
+### Extensions定義
 
 このプロファイルでは拡張定義は行っていない。
 
-##### 用語定義
+### 用語定義
 | Path                            | 定義                               | バインディング強度 | バリューセット |
 | ------------------------------- | ---------------------------------- | ------------------ | -------------- |
 | `Observation.category` | 「laboratoy」固定 | Preferred | [`ObservationCategoryCodes`](https://hl7.org/fhir/valueset-observation-category.html) |
 | `Observation.code` | JLAC10 | Preferred | `LabResultCode` |
 
-##### 制約一覧
+### 制約一覧
 
 <!-- <span style="color:red;">レベルの指定が必要。</span>> 
 -->
@@ -40,17 +40,17 @@
 | obs-3 | Guideline | `Observation.referenceRange` | 可能な限り`low`、`high`に構造化すべき。構造化できない場合、あるいは`low`、`high`に該当しない場合は`text`を使用 | `low.exists() or high.exists() or text.exists()` |
 
 
-#### 利用方法
+## 利用方法
 
-##### インタラクション一覧
+### インタラクション一覧
 
 `Observation`リソースのインタラクション一覧の定義はユースケースに依存せず共通であるため、共通情報プロファイルに記載されている。
 
 [Observation共通情報プロファイル#インタラクション一覧](Observation#ObsInteraction)
 
-##### OperationおよびSearch Parameter 一覧
+### OperationおよびSearch Parameter 一覧
 
-###### Search Parameter一覧
+#### Search Parameter一覧
 
 検体検査結果ユースケースのSearch Parameter一覧は共通情報プロファイルとは異なり以下の通りである。
 
@@ -65,13 +65,13 @@
 | SHOULD | `code`,`value-string`,`subject` | `token`,`string`,`reference`  | `GET [base]/Observation?code=http://loinc.org|8867-4&value-string=positive&subject=Patient/123` |
 
 
-###### 操作詳細
+#### 操作詳細
 
-####### 必須検索パラメータ
+##### 必須検索パラメータ
 
 このプロファイルでは必須（SHALL）としての検索項目は定義していない。
 
-####### 推奨検索パラメータ
+##### 推奨検索パラメータ
 
 次の検索パラメータはサポートすることが推奨される。（SHOULD）
 
@@ -177,7 +177,7 @@
 
 
 
-####### オプション検索パラメータ
+##### オプション検索パラメータ
 
 <!--
 オプションとして次の検索パラメータをサポートすることができる。(MAY)
@@ -185,13 +185,13 @@
 このプロファイルでは、オプション検索パラメータ(MAY)は定義していない。
 
 
-###### Operation一覧
+#### Operation一覧
 
 `Observation`リソースのOperation一覧の定義はユースケースに依存せず共通であるため、共通情報プロファイルに記載されている。
 
 [Observation共通情報プロファイル#Operation一覧](Observation#ObsOperation)
 
-##### サンプル
+### サンプル
 ```json
 {
   "resourceType": "Observation",

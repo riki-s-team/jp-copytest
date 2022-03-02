@@ -1,19 +1,19 @@
 
-##### 必須要素
+### 必須要素
 
  JP Core PractitionerRole リソースで定義された必須要素は特にありません。
 
 
   
 
-##### Extensions定義
+### Extensions定義
 
  JP Core PractitionerRole リソースで定義された拡張は特にありません。
 
 
    
 
-##### 用語定義
+### 用語定義
 
 
 
@@ -26,14 +26,14 @@
 
 
 
-##### 制約一覧
+### 制約一覧
 
 制約はありません。
 
 
-#### 利用方法
+## 利用方法
 
-##### インタラクション一覧
+### インタラクション一覧
 
 <span style="color: red;">★★コメント ： 説明のための例示です。内容の妥当性は考慮していません。★★</span>
 
@@ -47,12 +47,12 @@
 
 
 
-##### OperationおよびSearch Parameter 一覧
+### OperationおよびSearch Parameter 一覧
 
 
 
 
-###### Search Parameter一覧
+#### Search Parameter一覧
 
 
 
@@ -63,7 +63,7 @@
 
 
 
-####### 必須検索パラメータ
+##### 必須検索パラメータ
 
 次の検索パラメータは必須でサポートされなければならない。
 
@@ -100,12 +100,12 @@
 
    
 
-####### 推奨検索パラメータ
+##### 推奨検索パラメータ
 
 推奨検索パラメータはありません。
 
 
-####### 追加検索パラメータ 
+##### 追加検索パラメータ 
 
 追加検索パラメータはありません。
 
@@ -113,13 +113,13 @@
 
 
 
-###### Operation一覧
+#### Operation一覧
 
 PractitionerRoleに対するOperationは定義されていません。
 
 
 
-##### サンプル
+### サンプル
 
 
 ```JSON
@@ -232,7 +232,7 @@ PractitionerRoleに対するOperationは定義されていません。
 
 
 
-#### 注意事項
+## 注意事項
 
 
 PractitionerRoleには、ここで定義されているlocationに住所が含まれているため、addressはありません。
@@ -242,7 +242,7 @@ PractitionerRoleには、ここで定義されているlocationに住所が含�
 
 
 
-#### その他、参考文献・リンク等
+## その他、参考文献・リンク等
 
 ・退院時サマリー規約
 http://www.hl7.jp/library/item/HL7J-CDA-007.pdf

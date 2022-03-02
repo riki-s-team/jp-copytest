@@ -1,20 +1,20 @@
 
-##### 必須要素 
+### 必須要素 
 
 次のデータ項目はデータが存在しなければならない（必須）であるか、あるいは、データが送信システムに存在する場合はサポートされなければならない（Must Support）要素である。
 
-###### 必須
+#### 必須
 `DiagnosticReport`リソースは、次の要素を持たなければならない。
 
  - `status`︓検体検査情報項目の状態は必須である。
  - `code`︓このリソースは何の検体検査情報項目であるかを示すため必須である。
 
 
-###### MustSupport
+#### MustSupport
 このプロファイルではMustSupportMustSupportを定めていない。
 
 
-##### Extensions定義
+### Extensions定義
 
 このプロファイルでは拡張定義は行っていない。
 
@@ -22,12 +22,12 @@
 
 
 <!--
-#### 注意事項
+## 注意事項
 (全体に対する注意事項等、その他の部分について記載します。）## 
 -->
 
 
-##### 用語定義
+### 用語定義
 
 | Path                            | 定義                               | バインディング強度 | バリューセット |
 | ------------------------------- | ---------------------------------- | ------------------ | -------------- |
@@ -35,9 +35,9 @@
 | `DiagnosticReport.category` | レポート（所見）を作成した部門 | Preferred | [`DiagnosticServiceSectionCodes`](http://hl7.org/fhir/ValueSet/diagnostic-service-sections)<br>"RAD", "RX", "CT", "NMR", "NMS", "RUS", "VUS", "OUS", "CUS"などを指定。デフォルトは"LAB"。 |
 
 
-#### 利用方法
+## 利用方法
 
-##### Interaction一覧 
+### Interaction一覧 
 `DiagnosticReport` リソースのインタラクション一覧の定義はユースケースに依存せず共通であるため、共通情報プロファイルに記載されている。
 
 
@@ -45,8 +45,8 @@
 
 
 
-##### OperationおよびSearch Parameter 一覧
-###### Search Parameter一覧
+### OperationおよびSearch Parameter 一覧
+#### Search Parameter一覧
 
 | コンフォーマンス | パラメータ    | 型     | 例                                                           |
 | ---------------- | ------------- | ------ | ------------------------------------------------------------ |
@@ -54,11 +54,11 @@
 | SHOULD | `subject`,`category`,`based-on` | `reference`,`reference`  | `GET [base]/DiagnosticReport?subject=Patient/123&category=LAB&based-on=ServiceRequest/456` |
 | SHOULD | `subject`,`category`,`date` | `reference`,`date`  | `GET [base]/Observation?subject=Patient/123&category=LAB&date=le2020-12-31` |
 
-####### 必須検索パラメータ
+##### 必須検索パラメータ
 
 このプロファイルでは必須（SHALL）としての検索項目は定義していない。
 
-####### 推奨検索パラメータ
+##### 推奨検索パラメータ
 
 次の検索パラメータはサポートすることが推奨される。（SHOULD）
 
@@ -107,13 +107,13 @@
    GET [base]/DiagnosticReport?subject=Patient/123&category=LAB&date=2021-11-08
    ```
 
-####### オプション検索パラメータ
+##### オプション検索パラメータ
 このプロファイルでは、オプション検索パラメータ(MAY)は定義していない。
 
-###### Operation一覧
+#### Operation一覧
 このプロファイルではOperationは定義していない。
 
-##### サンプル
+### サンプル
 ```json
 {
   "resourceType": "Bundle",
@@ -360,4 +360,4 @@
 }
 ```
 
-#### その他、参考文献、リンク等
+## その他、参考文献、リンク等

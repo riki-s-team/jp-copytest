@@ -1,21 +1,21 @@
 
 
-##### 必須要素
+### 必須要素
 
 
 次のデータ項目は必須（データが存在しなければならない）、あるいは、データが送信システムに存在する場合はサポートされなければならないことを意味する。（Must Support）。
 
-###### 必須
+#### 必須
 
 Encounter リソースは、次の要素を持たなければならない。
 
 - status ：受診状況を示す。value set encounter-statusで定義された値から設定する必要がある。（planned/arrived/triaged/in-progress/onleave/finished/cancelled/entered-in-error/unknown）
 - class : 受診分類を示す。value set ActEncounterCodeで定義された値から設定する必要がある。（AMB/EMER/FLD/HH/IMP/ACUTE/NONAC/OBSENC/PRENC/SS/VR）
 
-###### Must Support
+#### Must Support
 このプロファイルでは MustSupport要素定義は行っていない。
 
-##### Extensions定義
+### Extensions定義
 
 
 JP Encounter リソースで使用される拡張は次の通りである。
@@ -26,7 +26,7 @@ JP Encounter リソースで使用される拡張は次の通りである。
 
     
 
-##### 用語定義
+### 用語定義
 
 
 
@@ -54,14 +54,14 @@ JP Encounter リソースで使用される拡張は次の通りである。
 
 
 
-##### 制約一覧
+### 制約一覧
 
 このプロファイルでは制約定義は行っていない。
 
 
-#### 利用方法
+## 利用方法
 
-##### インタラクション一覧
+### インタラクション一覧
 
 | コンフォーマンス | インタラクション                            |
 | ---------------- | ------------------------------------------- |
@@ -69,9 +69,9 @@ JP Encounter リソースで使用される拡張は次の通りである。
 | SHOULD（推奨）   | vread、history-instance                     |
 | MAY（利用可能）  | create、update、patch、delete、history-type |
 
-##### OperationおよびSearch Parameter 一覧
+### OperationおよびSearch Parameter 一覧
 
-###### Search Parameter一覧
+#### Search Parameter一覧
 
 | コンフォーマンス | パラメータ    | 型     | 例                                                           |
 | ---------------- | ------------- | ------ | ------------------------------------------------------------ |
@@ -84,13 +84,13 @@ JP Encounter リソースで使用される拡張は次の通りである。
 
 <span style="color: red;">★★コメント： この表に合致する形で以下の説明を記載していく必要があります。★★</span>
 
-####### 必須検索パラメータ
+##### 必須検索パラメータ
 
 次の検索パラメータはでサポートされるべきである。(SHALL)
 
 必須検索パラメータ(SHALL)はありません。
 
-####### 推奨検索パラメータ
+##### 推奨検索パラメータ
 
 
 次の検索パラメータをサポートすることが望ましい。(SHOULD)
@@ -110,13 +110,13 @@ JP Encounter リソースで使用される拡張は次の通りである。
    指定された識別子に一致するEncounterリソースを含むBundleを検索する。
    
 
-####### 追加検索パラメータ 
+##### 追加検索パラメータ 
 
 オプションとして次の検索パラメータをサポートすることができる。(MAY)
 
 オプション検索パラメータ(MAY)はありません。
 
-###### Operation一覧
+#### Operation一覧
 
 
 JP Encounter リソースに対して使用される操作は次の通りである。
@@ -126,9 +126,9 @@ JP Encounter リソースに対して使用される操作は次の通りであ�
   - この操作が呼び出された特定のEncounterに関連する全ての情報を返す。
     
 
-###### Operation 詳細
+#### Operation 詳細
 
-####### $everything 操作
+##### $everything 操作
 
 この操作は、この操作が呼び出された特定のEncounterリソースに関連する全ての情報を返す。
 応答は "searchset" タイプのBundleリソースである。
@@ -144,7 +144,7 @@ URL: [base]/Encounter/[id]/$everything
 本操作は、べき等な操作である。
 
 
-######## 入力パラメータ
+###### 入力パラメータ
 <!--
 <span style="color: red;">http://www.hl7.org/fhir/encounter-operation-everything.html</span>
 -->
@@ -155,7 +155,7 @@ URL: [base]/Encounter/[id]/$everything
 | _count | 0..1   | integer |                |              | Bundleの1ページに含まれるリソース件数を指定。                |
 
 
-######## 出力パラメータ
+###### 出力パラメータ
 <!--
 <span style="color: red;">http://www.hl7.org/fhir/encounter-operation-everything.html</span>
 -->
@@ -166,7 +166,7 @@ URL: [base]/Encounter/[id]/$everything
 
 
 
-######## 例
+###### 例
 
 リクエスト：単一のEncounterに関連する全てのリソースを取得する。
 
@@ -202,7 +202,7 @@ HTTP/1.1 200 OK
 }  
 ```
 
-##### サンプル
+### サンプル
 
 
 ```JSON
@@ -250,13 +250,13 @@ HTTP/1.1 200 OK
 
 
 
-#### 注意事項
+## 注意事項
 
 Encounterリソースは、予定情報や予約の保存には使用されません。予約の保存にはAppointmentリソースを利用してください。FHIRでは、Appointmentは診察の日付を決定するのに利用されるのに対して、Encounterは実際に患者が来院して診察が実施されたことを表現します。
 そのため、「計画済み」 status の Encounter は実際に発生する前の Encounter であり、診療行為が完了するまで更新されることが期待されます。
 
 
-#### その他、参考文献・リンク等
+## その他、参考文献・リンク等
 
 ・退院時サマリー規約
 http://www.hl7.jp/library/item/HL7J-CDA-007.pdf

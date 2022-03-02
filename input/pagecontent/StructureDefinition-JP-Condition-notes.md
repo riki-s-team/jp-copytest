@@ -1,14 +1,14 @@
-#### 必須要素
+### 必須要素
 本プロファイルに準拠するためには、次の項目の値が存在しなければならない。
 
 - code : 患者が有する状態の種類を示すコード。
 - subject : 本リソースを有する患者。
 
-#### Extensions定義
+### Extensions定義
 
 - Extensions定義はない
 
-#### 用語定義
+### 用語定義
 
 | Path                            | 定義                               | バインディング強度 | バリューセット |
 | ------------------------------- | ---------------------------------- | ------------------ | -------------- |
@@ -22,12 +22,12 @@
 |Condition.stage.type| stage.summaryの詳細区分。病理的ステージなのか、臨床的ステージなのか、より詳しいものとしてTNM分類なのか、など |Example | 未定 |
 |Condition.evidence.code|本状態が存在することの根拠となる症状や兆候。例えば、弁膜症という状態の根拠として心雑音など| Example | 未定 |
 
-#### 制約一覧
+### 制約一覧
 
 - 制約はない
 
-### 利用方法
-#### インタラクション一覧
+## 利用方法
+### インタラクション一覧
 
 | コンフォーマンス | インタラクション                            |
 | ---------------- | ------------------------------------------- |
@@ -35,8 +35,8 @@
 | SHOULD（推奨）   | vread、history-instance                  |
 | MAY（利用可能）  | create、update、patch、delete、history-type |
 
-#### OperationおよびSearch Parameter 一覧
-##### Search Parameter一覧
+### OperationおよびSearch Parameter 一覧
+#### Search Parameter一覧
 
 | コンフォーマンス | パラメータ    | 型     | 例                                                           |
 | ---------------- | ------------- | ------ | ------------------------------------------------------------ |
@@ -46,7 +46,7 @@
 | SHOULD           | patient,verificationstatus | reference,code | GET [base]/Condition?patient=123456&verificationstatus=confirmed |
 | SHOULD           | patient,category | reference,code | GET [base]/Condition?patient=123456&category=jp_food |
 
-###### 必須検索パラメータ
+##### 必須検索パラメータ
 
 本プロファイルに準拠するためには、以下の検索パラメータをサポートしなければならない（SHALL）。
 
@@ -75,7 +75,7 @@
     
     指定された患者および日付のすべてのConditionを含むBundleを検索する。
 
-###### 推奨検索パラメータ
+##### 推奨検索パラメータ
 
 次の検索パラメータをサポートすることが推奨(SHOULD)される。
 
@@ -136,19 +136,19 @@
 
     指定された患者およびステータスのすべてのConditionを含むBundleを検索する。
 
-###### オプション検索パラメータ 
+##### オプション検索パラメータ 
 
 - オプション検索パラメータはない
 
-##### Operation一覧
+#### Operation一覧
 
 - Operation一覧はない
 
-### 注意事項
+## 注意事項
 
 - 未定
 
-### その他、参考文献・リンク等
+## その他、参考文献・リンク等
 
 - 未定
 

@@ -1,5 +1,5 @@
 
-##### 必須要素
+### 必須要素
 
 次のデータ項目は必須（SHALL）である。
 
@@ -8,7 +8,7 @@
 - `code` ：レポートの種別（画像診断レポート交換手順ガイドライン「5.1 レポート種別コード」に記載されているLOINCコード "Diagnostic imaging study" を指定）
 - `effectiveDateTime` ： レポート作成日時
 
-##### MustSupport
+### MustSupport
 
 次のデータは送信システムに存在する場合はサポートされなければならないことを意味する（Must Support）。
 
@@ -25,12 +25,12 @@
 
 `imagingStudy`エレメントはCardinalityが0..1だが、放射線レポートでは画像が必ず存在することから、検査実施後には必須（複数の可能性もあり）である。しかし、検査実施前などのstatusによっては0もあることから、とりあえずMustSupportのままとする。将来的な議論の結果によっては、cardinalityを変更する可能性がある。
 
-##### Extensions定義
+### Extensions定義
 
 本プロファイルはextensionを定義しない。
 
 
-##### 用語定義
+### 用語定義
 
 | Path                            | 定義                               | バインディング強度 | バリューセット |
 | ------------------------------- | ---------------------------------- | ------------------ | -------------- |
@@ -39,9 +39,9 @@
 | `DiagnosticReport.code` | レポートのフォーマット、種類など | Preferred | [Diagnostic imaging study](https://loinc.org/18748-4/) |
 | `DiagnosticReport.conclusionCode` | 診断レポートの結論・要約 | Example | [ICD-10](https://icd.who.int/browse10/2019/en), [ICD-11](https://icd.who.int/browse11/l-m/en) |
 
-#### 注意
+## 注意
 
-##### Text
+### Text
 
 `DiagnosticReport`のドメインリソースの一つである`text`エレメントに見読可能な[narrative](http://www.hl7.org/fhir/narrative.html)データとしてレポートの所見を中心とした情報を格納する。依頼情報や患者基本情報などを含んだレポート全体のデータは別途`presentedForm`エレメントに保持されるが、ここではPDF等のバイナリが保存される。よってレポート内容の見読性と検索性を担保するために`text`エレメントに保存されたデータが利用される。
 
@@ -104,12 +104,12 @@ NarrativeなtextにアクセスするためのDomainResource定義
 ```
 
 
-##### Identifier
+### Identifier
 
 `Identifier` のデータタイプはオーダー依頼者であるPlacerあるいはオーダーの実施者であるFiller（HL7 Version 2 Messaging Standardにて'Placer'あるいは'Filler'として知られている）によって割り当てられた識別子を区別するために利用される`type`エレメントを持っている。`type`エレメントは以下の様に利用する。
 <br>
 
-###### Placerの場合
+#### Placerの場合
 ```json
 {
   "identifier":[{
@@ -125,7 +125,7 @@ NarrativeなtextにアクセスするためのDomainResource定義
   }]
 }
 ```
-###### Fillerの場合
+#### Fillerの場合
 ```json
 {
   "identifier":[{
@@ -144,19 +144,19 @@ NarrativeなtextにアクセスするためのDomainResource定義
 
 `DiagnosticReport_Radiology` リソースでは`type`エレメントを明示する際にはオーダ番号やレポート番号が格納される可能性がある点に留意して対応することが重要である。
 
-##### 時間の指定
+### 時間の指定
 
 このプロファイルのリソースでは、`effective[x]`エレメントにはレポート作成時間を[dateTime](http://www.hl7.org/fhir/datatypes.html#dateTime)で格納する。
 
-##### 関連するObservation
+### 関連するObservation
 
 `DiagnosticReport.result`エレメントには関連する検体検査計測値などをしめす`Observation`リソースを含むことができる。
 
-##### 参照画像
+### 参照画像
 
 `ImagingStudy`や`media`は多少オーバーラップするが、使用される目的が異なる。用途に応じて使い分けること。`DiagnosticReport`ではDICOM画像への参照として`ImagingStudy`が利用され、キー画像として`media`が参照される。
 
-##### レポートの内容
+### レポートの内容
 
 典型的には放射線レポートはnarrativeな構成でのレポートが作成される。`DiagnosticReport_Radiology`では標準的なnarrativeリソースの表現としてXHTMLやrich text表現として（典型的にはPDF）が`presentedForm`に指定される。
 
@@ -166,14 +166,14 @@ Conclusionやコード化された診断結果は各々がレポートを構成�
 
 診断レポートの分野はAIによる診断補助やレポートの構造化を含め様々な変革がもたらされている。そのため、上記仕様は現時点でのリソース展開の例示であり、将来的に変更される可能性がある。
 
-#### 利用方法
+## 利用方法
 
-##### Interaction一覧 
+### Interaction一覧 
 `DiagnosticReport` リソースのインタラクション一覧の定義はユースケースに依存せず共通であるため、共通情報プロファイルに記載されている。
 
 [DiagnosticReport共通情報プロファイル#インタラクション一覧](DiagnosticReport#DxReportInteraction)
 
-###### 必須検索パラメータ
+#### 必須検索パラメータ
 
 次の検索パラメータは必須でサポートされなければならない。
 
@@ -194,7 +194,7 @@ Conclusionやコード化された診断結果は各々がレポートを構成�
 | `status` | `token` | レポートの状態 | `DiagnosticReport.status` |
 | `subject` | `reference` | レポートの対象となる患者 | `DiagnosticReport.subject`<br><br>([`Patient`](Patient)) |
 
-##### サンプル
+### サンプル
 ```json
 {
   "resourceType": "DiagnosticReport",
@@ -255,7 +255,7 @@ Conclusionやコード化された診断結果は各々がレポートを構成�
 }
 ```
 
-#### その他、参考文献・リンク等
+## その他、参考文献・リンク等
 
 本プロファイルそのものの定義には影響しないが、レポートの標準化に関し以下の情報が参考となる。`presentedForm` に収容するレポートのコンテンツを作成するレポーティングシステムにおいて、標準化に関する参考資料となる。
 

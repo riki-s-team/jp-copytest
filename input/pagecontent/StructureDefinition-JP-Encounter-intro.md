@@ -1,8 +1,4 @@
-### JP Core Encounter (来院/入院情報) プロファイル
-
-
-
-#### 概略
+## 概略
 
 医療サービスの提供または患者の健康状態の評価を目的とした、患者と医療提供者間の相互作用(interaction)。
 
@@ -25,7 +21,7 @@
 
 
 
-##### 背景および想定シナリオ
+### 背景および想定シナリオ
 
 本プロファイルは、以下のようなユースケースを想定している。
 
@@ -37,7 +33,7 @@
 
 - その他、上記以外の他のリソースからの患者受診歴の参照（例：Observationリソースの encounterで参照される対象とする患者の受診や、Careplanリソースのencounterで参照される患者の受診歴（入院歴））
 
-###### Scope and Usageの内容
+#### Scope and Usageの内容
 
 範囲と使用方法
 
@@ -53,7 +49,7 @@ Hospitalizationコンポーネントは、入院イベントに関連する拡�
 
 ProcedureとEncounterはお互いへの参照を持つが、これらは異なるProcedureであるべきである。1つは、Encounterの間に行われたProcedure（Procedure.encounterに格納）、もう1つは、Encounterが別のProcedureの結果である場合（Encounter.indicationに格納）、例えば、以前のProcedureによる合併症を解決するためのフォローアップのEncouterなどである。
 
-###### Status Managementの内容
+#### Status Managementの内容
 
 ステータス管理
 
@@ -66,7 +62,7 @@ arrived, triaged または in-progress のstatusは入院の開始と考えら�
 on leave のstatusは、例えば、患者が週末に帰宅することを許可された場合や、その他の形式の外部イベントの場合など、入院の一部である場合もあれば、そうでない場合もある。
 Encounterには「入院した」という固定した定義はないので、例えば外来（日帰り手術-大腸内視鏡検査）などの例では、患者は入院しているとも考えられる。少なくとも、ステータスが「in-progress」の場合は、患者は入院していると考えられます。
 
-###### Boudaries and Relationships の内容
+#### Boudaries and Relationships の内容
 
 境界線と関係性
 
@@ -81,7 +77,7 @@ Communicationリソースは、直接の接触がない場合に、医療従事�
 標準拡張。Associcated Encounter
 この拡張機能は、リソース上にこの関連性を定義するプロパティが既に存在しない場合に、エンカウンターを参照するために使用されるべきである。
 
-##### スコープ
+### スコープ
 
 外来における入院前受診、来院、入院診療における入院、滞在、退院といった、全ての患者受診を表す。
 
@@ -102,7 +98,7 @@ Encounterリソースは、partOf要素を仕様して、他のEncounterイン�
 なおこの入院イベントの関連付けは、Encounterリソースのperiod要素で指定されている期間と同じ期間内であることが望ましい。もし期間が異なる場合は、別のEncounterインスタンスを使用し、このEncounterインスタンスの一部として情報を関連付ける必要がある。
 
 
-#### 関連するプロファイル
+## 関連するプロファイル
 
 Encounter リソースは、以下のリソースから直接参照される。
 

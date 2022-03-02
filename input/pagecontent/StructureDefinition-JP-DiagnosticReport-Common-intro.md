@@ -1,6 +1,4 @@
-### JP Core DiagnosticReport (共通) プロファイル
-
-#### 概要
+## 概要
 
 | 項目           | 内容                                                       |
 | -------------- | ---------------------------------------------------------- |
@@ -14,7 +12,7 @@
 | Copyright      |FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)  |
 | ソースリソース | https://simplifier.net/jp-core-draftv1/jpdiagnosticreportcommon/ |
 
-#### 背景および想定シナリオ
+## 背景および想定シナリオ
 
 `DiagnosticReport`（検査レポート）リソースは、患者、患者のグループ、デバイス、場所、および/またはこれらから派生した検体に対する検査結果と解釈について記載されるリソースである。`DiagnosticReport`リソースに対する主な用途（プロファイル）は以下の通りである。
 
@@ -30,7 +28,7 @@
 
 また、`DiagnosticReport`リソースは、FHIRのワークフロー([`Workflow`を参照](http://www.hl7.org/fhir/workflow.html)）の観点からは、「イベント」リソースの１つである。このリソース（`DiagnosticReport`）を、[イベントリソース](http://www.hl7.org/fhir/workflow.html#event)のワークフローパターンに合わせることは、`Orders`や`Observation Workgroup`が意図するところである。
 
-##### スコープ
+### スコープ
 多くの診断プロセスは、`Observation`（検査、観察）と`DiagnosticReport`（検査レポート）を生成する手続きである点に留意する必要がある。多くの場合、`Observation`を作成するために明示的に手続きの発行を要しないが、診断手順がどのように実行されたかについての詳細な関心がある場合、[`Procedure`](http://www.hl7.org/fhir/procedure.html)リソースが行為を記述するために使用される。
 
 [`Observation`](http://www.hl7.org/fhir/observation.html)リソースとは 対照的に、`DiagnosticReport`リソースには通常、追加の臨床コンテキスト、いくつかの小さな所見のまとめ、画像、画像レポート、テキストおよびコード化された解釈、テンプレート化された診断報告書などが含まれる。検査レポート、病理レポート、および画像レポートは、`DiagnosticReport`リソースを使用して表す必要がある。`Observation`リソースは、特定の検査におけるいくつかの小さな所見のまとめを提供するために`DiagnosticReport`から参照される。
@@ -40,7 +38,7 @@
 レポートに関連する医用画像や汎用画像、およびキー画像は、`DiagnosticReport`リソースで参照される。詳細でかつ実際の画像インスタンスは、`DiagnosticReport.media`エレメントを使用して検査レポートで直接参照するか、`DiagnosticReport.ImagingStudy`エレメントを介して、特定の患者のDICOM画像検査またはDICOMインスタンスのセットで生成されたコンテンツを表す[`ImagingStudy`リソース](http://www.hl7.org/fhir/imagingstudy.html)を間接的に参照することができる。
 
 
-#### 関連するプロファイル
+## 関連するプロファイル
 このプロファイルは、以下のリソースに対して定義された各プロファイルから直接参照される可能性がある。
 
 - [`CarePlan`](https://www.hl7.org/fhir/careplan.html)

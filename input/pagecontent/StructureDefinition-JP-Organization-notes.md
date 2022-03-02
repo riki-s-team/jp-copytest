@@ -1,5 +1,5 @@
 
-##### 必須要素
+### 必須要素
 
 次のデータ項目は必須（データが存在しなければならない）これらは、人間が読めるように簡単に説明しています。プロファイル固有の指針と例も提供されている。以下の正式なプロファイル定義では，正式な概要，定義，および用語の要件が示されている。
 
@@ -11,7 +11,7 @@ Organization リソースは、次の要素を持たなければならない。
 - list of contact information ：
 - Endpoint information : 
 
-##### Extensions定義
+### Extensions定義
 
 JP Oraganization リソースで使用される拡張は次の通りである。
 
@@ -29,7 +29,7 @@ JP Oraganization リソースで使用される拡張は次の通りである。
 
 
 
-##### 用語定義
+### 用語定義
 
 
 | Path                            | 定義                               | バインディング強度 | バリューセット |
@@ -39,7 +39,7 @@ JP Oraganization リソースで使用される拡張は次の通りである。
 
 
 
-##### 制約一覧
+### 制約一覧
 
 | id       | レベル | 位置              | 説明                                                         | 式                                                           |
 | -------- | ------ | -----------------| ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -47,7 +47,7 @@ JP Oraganization リソースで使用される拡張は次の通りである。
 |  jp-org-2 |  Rule |Organization.address | 組織の住所に「ホーム」を使用することはできない | where(use = 'home').empty() |
 | jp-org-3 | Rule| Organization.telecom | 組織のtelecomに「ホーム」を使用することはできない | where(use = 'home').empty()
 
-##### その他
+### その他
 
  Organization.identifierには、以下のOraganization(組織)に関連したidentifier(ID情報)を格納できるようスライシングによる定義が追加されている。
 
@@ -57,9 +57,9 @@ JP Oraganization リソースで使用される拡張は次の通りである。
 | InsurerNumber | 健康保険組合などの保険者の保険者番号を表現する | identifier.system = "urn:oid:1.2.392.100495.20.3.61" を指定し、保険者番号を同valueに格納する。 |
 
 
-#### 利用方法
+## 利用方法
 
-##### インタラクション一覧
+### インタラクション一覧
 
 | コンフォーマンス | インタラクション                            |
 | ---------------- | ------------------------------------------- |
@@ -68,11 +68,11 @@ JP Oraganization リソースで使用される拡張は次の通りである。
 | MAY（利用可能）  | create、update、patch、delete、history-type |
 
 
-##### OperationおよびSearch Parameter 一覧
+### OperationおよびSearch Parameter 一覧
 
 
 
-##### Search Parameter一覧
+### Search Parameter一覧
 
 | コンフォーマンス | パラメータ    | 型     | 例                                                           |
 | ---------------- | ------------- | ------ | ------------------------------------------------------------ |
@@ -80,10 +80,10 @@ JP Oraganization リソースで使用される拡張は次の通りである。
 | SHOULD            | name          | string | GET [base]/Organization?name=Health                            |
 | SHOULD           | address | string  | GET [base]/Organization?address=Arbor
 
-###### 必須検索パラメータ
+#### 必須検索パラメータ
 必須検索パラメータ（SHALL）は特にない。
 
-##### 推奨検索パラメータ
+### 推奨検索パラメータ
 
 
 次の検索パラメータをサポートすることが望ましい。
@@ -126,13 +126,13 @@ JP Oraganization リソースで使用される拡張は次の通りである。
    GET [base]/Organization?address=Arbor
    ```
 
-##### オプション検索パラメータ
+### オプション検索パラメータ
 オプション検索パラメータ（MAY）は特にない。   
 
-##### Operation一覧
+### Operation一覧
 Operationは特にない。
 
-##### サンプル  
+### サンプル  
 
 ```json
     { 
@@ -165,9 +165,9 @@ Operationは特にない。
     }
 ```
 
-#### 注意事項
+## 注意事項
 連絡先情報は2箇所に記載がある。1つはOrganization自体にあり、一般的な公的組織の連絡先として使用される。もう1つはContactEntity構造を使用した場所であり、特定の目的のために連絡を受けるように組織が指定した人物や関係者に連絡を取るために使用される。
-#### その他、参考文献、リンク等
+## その他、参考文献、リンク等
 
 ・退院時サマリー規約
 http://www.hl7.jp/library/item/HL7J-CDA-007.pdf

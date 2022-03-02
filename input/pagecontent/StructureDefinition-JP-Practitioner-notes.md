@@ -1,5 +1,5 @@
 
-##### 必須要素
+### 必須要素
 
 
 次のデータ項目は必須（データが存在しなければならない）、あるいは、データが送信システムに存在する場合はサポートされなければならないことを意味する。（Must Support）。
@@ -7,17 +7,17 @@
 JP Practitioner リソースには、必須要素はありません。
 
   
-##### Extensions定義
+### Extensions定義
 
 JP Practitioner リソースで使用される拡張は次の通りである。
 
-###### 既存のExtensionの利用
+#### 既存のExtensionの利用
 
 - [NameRepresentationUse]("http://hl7.org/fhir/R4/extension-iso21090-en-representation.html")
 
   - 医療従事者氏名(Practitioner.name)の漢字表記・カナ表記識別のために使用する。
 
-##### 用語定義
+### 用語定義
 
 
 
@@ -28,13 +28,13 @@ JP Practitioner リソースで使用される拡張は次の通りである。
 
 
 
-##### 制約一覧
+### 制約一覧
 
 
 制約はありません。
 
 
-##### その他
+### その他
 
  Practitioner.qualificationには、以下の医療従事者のqualification(資格)を格納できるようスライシングによる定義が追加されている。
 
@@ -45,9 +45,9 @@ JP Practitioner リソースで使用される拡張は次の通りである。
 
 
 
-#### 利用方法
+## 利用方法
 
-##### インタラクション一覧
+### インタラクション一覧
 
 
 | コンフォーマンス | インタラクション                            |
@@ -58,10 +58,10 @@ JP Practitioner リソースで使用される拡張は次の通りである。
 
 
 
-##### OperationおよびSearch Parameter 一覧
+### OperationおよびSearch Parameter 一覧
 
 
-###### Search Parameter一覧
+#### Search Parameter一覧
 
 
 | コンフォーマンス | パラメータ    | 型     | 例                                                           |
@@ -70,7 +70,7 @@ JP Practitioner リソースで使用される拡張は次の通りである。
 | SHALL            | name          | string | GET [base]/Practitioner?name=山田                            |
 
 
-####### 必須検索パラメータ
+##### 必須検索パラメータ
 
 次の検索パラメータは必須でサポートされなければならない。
 
@@ -106,20 +106,20 @@ JP Practitioner リソースで使用される拡張は次の通りである。
 
    
 
-####### 推奨検索パラメータ
+##### 推奨検索パラメータ
 
 推奨検索パラメータ(SHOULD)はありません。
 
 
-####### オプション検索パラメータ 
+##### オプション検索パラメータ 
 
 オプション検索パラメータ(MAY)はありません。
 
-###### Operation一覧
+#### Operation一覧
 
 Operationはありません。
 
-##### サンプル
+### サンプル
 
 ```JSON
 {
@@ -180,11 +180,11 @@ Operationはありません。
 
 
 
-#### 注意事項
+## 注意事項
 
 注意事項はありません。
 
-#### その他、参考文献・リンク等
+## その他、参考文献・リンク等
 
 ・退院時サマリー規約
 http://www.hl7.jp/library/item/HL7J-CDA-007.pdf
