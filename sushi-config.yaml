@@ -17,15 +17,15 @@ publisher:
 pages:
   index.md:
     title: HL7 FHIR JP Core 実装ガイド ＜Draft Ver1.1＞
-  generalGuidance.md:
+  guide-general.md:
     title: 総合ガイダンス
-  mustSupportCardinality.md:
+  guide-mustSupportCardinality.md:
     title: Must SupportとCardinality(多重度)のルール
-  handlingOfNonExistentData.md:
+  guide-handlingOfNonExistentData.md:
     title: 欠損値（データが存在しない場合）の扱い
-  characterEncoding.md:
+  guide-characterEncoding.md:
     title: 文字コード
-  stringSearch.md:
+  guide-stringSearch.md:
     title: 検索
   group-administration.md:
     title: Administration Group
@@ -37,26 +37,19 @@ pages:
     title: Clinical Group
   security.md:
     title: セキュリティ
-  group-extensions.md:
-    title: Extensions(拡張)
-  group-terminology.md:
-    title: Terminology(用語集)
 
 menu:
   Home: index.html
   Conformance: 
-    総合ガイダンス: generalGuidance.html
-    Must Support Cardinality: mustSupportCardinality.html
-    欠損値の扱い: handlingOfNonExistentData.html
-    文字コード: characterEncoding.html
-    文字列検索: stringSearch.html
+    総合ガイダンス: guide-general.html
+    MustSupportとCardinality: guide-mustSupportCardinality.html
+    欠損値の扱い: guide-handlingOfNonExistentData.html
+    文字コード: guide-characterEncoding.html
+    文字列検索: guide-stringSearch.html
   Contents:
     Administration: group-administration.html
     Medication: group-medication.html
     Diagnostic: group-diagnostic.html
     Clinical: group-clinical.html
-  Defines:
-    Extensions: group-extensions.html
-    Terminology:  group-terminology.html
   Security: security.html
   Artifacts: artifacts.html

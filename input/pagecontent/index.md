@@ -3,16 +3,16 @@
 
 ### 概要
 ガイダンス: JP Coreでの全体に関わる規則や注意事項を記載しています。
-* [総合ガイダンス](generalGuidance.html)
-* [CMust SupportとCardinality(多重度)のルール](mustSupportCardinality.html)
-* [欠損値の扱い](handlingOfNonExistentData.html)
-* [文字コード](characterEncoding.html)
-* [検索](stringSearch.html)
+* [総合ガイダンス](guide-general.html)
+* [Must SupportとCardinality(多重度)のルール](guide-mustSupportCardinality.html)
+* [欠損値の扱い](guide-handlingOfNonExistentData.html)
+* [文字コード](guide-characterEncoding.html)
+* [検索](guide-stringSearch.html)
 
 ### JP Core FHIRコンテンツ
 JP Core FHIRコンテンツ: JP Coreで利用するFHIRの詳細について記載をしています。
 
-#### Profiles （プロファイル）
+#### [Profiles （プロファイル）](artifacts.html#1)
 * [Administrationグループ （運営管理）](group-administration.html)
   * [JP Core Patient （患者）プロファイル]
   * [JP Core Coverage （保険・公費）プロファイル]
@@ -30,16 +30,16 @@ JP Core FHIRコンテンツ: JP Coreで利用するFHIRの詳細について記�
   * [JP Core MedicationAdministration （内服・外用薬剤投与実施情報）プロファイル]
   * [JP Core MedicationAdministration Injection （注射薬剤投与実施情報）プロファイル]
 * [Diagnosticグループ （診断）](group-diagnostic.html)
-  * Observation （検査）
+  * [Observation （検査）](group-diagnostic.html#1)
     * [JP Core Observation Common （共通）プロファイル]
     * [JP Core Observation LabResult （検体検査結果）プロファイル]
     * [JP Core Observation VitalSigns （バイタルサイン）プロファイル]
     * [JP Core Observation BodyMeasurement （身体計測）プロファイル]
     * [JP Core Observation PhysicalExam （身体所見）プロファイル]
     * [JP Core Observation SocialHistory （生活背景）プロファイル]
-  * ImagingStudy （画像検査）
+  * [ImagingStudy （画像検査）](group-diagnostic.html#2)
     * [JP Core ImagingStudy Radiology（放射線検査）プロファイル]
-  * DiagnosticReport （診断レポート)
+  * [DiagnosticReport （診断レポート)](group-diagnostic.html#3)
     * [JP Core DiagnosticReport Common （共通）プロファイル]
     * [JP Core DiagnosticReport LabResult （検体検査レポート）プロファイル]
     * [JP Core DiagnosticReport Radiology （放射線検査レポート）プロファイル]
@@ -50,14 +50,14 @@ JP Core FHIRコンテンツ: JP Coreで利用するFHIRの詳細について記�
 
 #### Extensions （拡張）
 Profilesにて利用されるExtensionをまとめています。
-- [Extensions （拡張）](Extensions)
+- [Extensions （拡張）](artifacts.html#3)
 
 #### Operations and Search Parameters （操作および検索パラメータ）
 Profilesにて利用されるSearch Parameter および Operationをまとめています。
 - [Operations and Search Parameters （操作および検索パラメータ）](OperationsAndSearchParameters)
 
 #### Terminology （用語集）
-- [Terminology （用語集）](Terminology)
+- [Terminology （用語集）](artifacts.html#4)
 
 ### CapabilityStatements （機能宣言）
  - [JP Core Server Capability Statement](ServerCapabilityStatement)
@@ -68,6 +68,3 @@ Profilesにて利用されるSearch Parameter および Operationをまとめて
  - [Security （セキュリティ）](security.html)
 
 {% include markdown-link-references.md %}
-
-
-
