@@ -10,10 +10,9 @@
 * [検索](stringSearch.html)
 
 ### JP Core FHIRコンテンツ
-JP Coreで利用するFHIRの詳細について記載をしています。
+JP Core FHIRコンテンツ: JP Coreで利用するFHIRの詳細について記載をしています。
 
 #### Profiles （プロファイル）
-JP Core FHIRコンテンツ: JP Coreで利用するFHIRの詳細について記載をしています。
 * [Administrationグループ （運営管理）](group-administration.html)
   * [JP Core Patient （患者）プロファイル]
   * [JP Core Coverage （保険・公費）プロファイル]

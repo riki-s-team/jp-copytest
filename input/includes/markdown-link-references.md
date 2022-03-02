@@ -9,16 +9,17 @@
 [JP-ImplementationGuide]: ImplementationGuide-hl7.fhir.jp.core.html
 
 <!-- JPCore Profiles -->
-[JP Core AllergyIntolerance （アレルギー不耐症）プロファイル]: StructureDefinition-JP-AllergyIntolerance.html
-[JP Core Condition （状態）プロファイル]: StructureDefinition-JP-Condition.html
+<!-- Administration-->
+[JP Core Patient （患者）プロファイル]: StructureDefinition-JP-Patient.html
 [JP Core Coverage （保険・公費）プロファイル]: StructureDefinition-JP-Coverage.html
-[JP Core DiagnosticReport Common （共通）プロファイル]: StructureDefinition-JP-DiagnosticReport-Common.html
-[JP Core DiagnosticReport LabResult （検体検査レポート）プロファイル]: StructureDefinition-JP-DiagnosticReport-LabResult.html
-[JP Core DiagnosticReport Radiology （放射線検査レポート）プロファイル]: StructureDefinition-JP-DiagnosticReport-Radiology.html
 [JP Core Encounter （来院・入院）プロファイル]: StructureDefinition-JP-Encounter.html
-[JP-HumanName]: StructureDefinition-JP-HumanName.html
-[JP Core ImagingStudy Radiology（放射線検査）プロファイル]: StructureDefinition-JP-ImagingStudy-Radiology.html
 [JP Core Location （所在場所）プロファイル]: StructureDefinition-JP-Location.html
+[JP Core Organization （組織）プロファイル]: StructureDefinition-JP-Organization.html
+[JP Core Practitioner （医療従事者）プロファイル]: StructureDefinition-JP-Practitioner.html
+[JP Core PractitionerRole （医療従事者役割)プロファイル]: StructureDefinition-JP-PractitionerRole.html
+
+<!--Medication-->
+
 [JP Core Medication （薬剤）プロファイル]: StructureDefinition-JP-Medication.html
 [JP Core MedicationAdministration Injection （注射薬剤投与実施情報）プロファイル]: StructureDefinition-JP-MedicationAdministration-Injection.html
 [JP-MedicationAdministration-UncategorizedComment]: StructureDefinition-JP-MedicationAdministration-UncategorizedComment.html
@@ -29,6 +30,15 @@
 [JP Core MedicationRequest Injection （注射薬剤処方）プロファイル]: StructureDefinition-JP-MedicationRequest-Injection.html
 [JP Core MedicationRequest （内服・外用薬剤処方）プロファイル]: StructureDefinition-JP-MedicationRequest.html
 [JP-MedicationRequestBase]: StructureDefinition-JP-MedicationRequestBase.html
+
+
+<!--Diagnostic-->
+[JP Core DiagnosticReport Common （共通）プロファイル]: StructureDefinition-JP-DiagnosticReport-Common.html
+[JP Core DiagnosticReport LabResult （検体検査レポート）プロファイル]: StructureDefinition-JP-DiagnosticReport-LabResult.html
+[JP Core DiagnosticReport Radiology （放射線検査レポート）プロファイル]: StructureDefinition-JP-DiagnosticReport-Radiology.html
+[JP-HumanName]: StructureDefinition-JP-HumanName.html
+[JP Core ImagingStudy Radiology（放射線検査）プロファイル]: StructureDefinition-JP-ImagingStudy-Radiology.html
+
 [JP Core Observation BodyMeasurement （身体計測）プロファイル]: StructureDefinition-JP-Observation-BodyMeasurement.html
 [JP-Observation-BodySite-BodySitePosition]: StructureDefinition-JP-Observation-BodySite-BodySitePosition.html
 [JP Core Observation Common （共通）プロファイル]: StructureDefinition-JP-Observation-Common.html
@@ -36,10 +46,8 @@
 [JP Core Observation PhysicalExam （身体所見）プロファイル]: StructureDefinition-JP-Observation-PhysicalExam.html
 [JP Core Observation SocialHistory （生活背景）プロファイル]: StructureDefinition-JP-Observation-SocialHistory.html
 [JP Core Observation VitalSigns （バイタルサイン）プロファイル]: StructureDefinition-JP-Observation-VitalSigns.html
-[JP Core Organization （組織）プロファイル]: StructureDefinition-JP-Organization.html
-[JP Core Patient （患者）プロファイル]: StructureDefinition-JP-Patient.html
-[JP Core Practitioner （医療従事者）プロファイル]: StructureDefinition-JP-Practitioner.html
-[JP Core PractitionerRole （医療従事者役割)プロファイル]: StructureDefinition-JP-PractitionerRole.html
+[JP Core AllergyIntolerance （アレルギー不耐症）プロファイル]: StructureDefinition-JP-AllergyIntolerance.html
+[JP Core Condition （状態）プロファイル]: StructureDefinition-JP-Condition.html
 [JP Core Procedure （処置）プロファイル]: StructureDefinition-JP-Procedure.html
 
 <!-- JPCore Extensions -->
