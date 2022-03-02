@@ -183,7 +183,6 @@ Extension: JP_Patient_Race
 Id: b14aa99c-ab14-403f-8efd-4a9de985514d
 Description: "人種(Race)に関する情報を格納するためのExtension。"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Patient_Race"
-
 * ^date = "2021-11-30T09:57:31.0583757+00:00"
 * ^context.type = #element
 * ^context.expression = "Patient"

@@ -28,15 +28,19 @@ pages:
   stringSearch.md:
     title: 検索
   group-administration.md:
-    title: Administrationグループ
+    title: Administration Group
   group-medication.md:
-    title: Medicationグループ
+    title: Medication Group
   group-diagnostic.md:
-    title: Diagnosticグループ
+    title: Diagnostic Group
   group-clinical.md:
-    title: Clinicalグループ
+    title: Clinical Group
   security.md:
     title: セキュリティ
+  group-extensions.md:
+    title: Extensions(拡張)
+  group-terminology.md:
+    title: Terminology(用語集)
 
 menu:
   Home: index.html
@@ -51,5 +55,8 @@ menu:
     Medication: group-medication.html
     Diagnostic: group-diagnostic.html
     Clinical: group-clinical.html
+  Defines:
+    Extensions: group-extensions.html
+    Terminology:  group-terminology.html
   Security: security.html
   Artifacts: artifacts.html
