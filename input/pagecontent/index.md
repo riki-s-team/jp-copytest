@@ -7,7 +7,7 @@
 * [CMust SupportとCardinality(多重度)のルール](mustSupportCardinality.html)
 * [欠損値の扱い](handlingOfNonExistentData.html)
 * [文字コード](characterEncoding.html)
-* [検索](search.html)
+* [検索](stringSearch.html)
 
 ### JP Core FHIRコンテンツ
 JP Coreで利用するFHIRの詳細について記載をしています。
