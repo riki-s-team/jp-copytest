@@ -1,4 +1,4 @@
- ### Profiles
+### Profiles
   * [JP Core Patient （患者）プロファイル]
   * [JP Core Coverage （保険・公費）プロファイル]
   * [JP Core Encounter （来院・入院）プロファイル]

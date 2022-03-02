@@ -4,4 +4,12 @@
 * [JP Core Procedure （処置）プロファイル]
 
 ### Extensions
+なし
+
+### CodeSystems
+* [EventStatusCS]
+* [ProcedureCS]
+* [EventStatusVS]
+* [ProcedureVS]
+
 {% include markdown-link-references.md %}

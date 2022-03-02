@@ -71,8 +71,8 @@
 [JP_MedicationAdministration_RequestAuthoredOn]: StructureDefinition-dd47eb40-6be1-479f-9902-e03defe748bf.html
 
 <!-- JPCore Terminology -->
-[EventStatusCS]: CodeSystem-jp-core-work-codesystem-EventStatus.html
 [observation-physicalExamCS]: CodeSystem-jp-core-work-codesystem-observation-physicalExamCodes.html
+[EventStatusCS]: CodeSystem-jp-core-work-codesystem-EventStatus.html
 [ProcedureCS]: CodeSystem-jp-core-work-codesystem-ProcedureCodes.html
 [EventStatusVS]: ValueSet-jp-core-work-valueset-EventStatus.html
 [ProcedureVS]: ValueSet-jp-core-work-valueset-ProcedureCodes.html

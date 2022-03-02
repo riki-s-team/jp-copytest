@@ -14,4 +14,9 @@
   * [JP Core DiagnosticReport Radiology （放射線検査レポート）プロファイル]
 
 ### Extensions
+なし
+
+### CodeSystems
+* [ProcedureCS]
+
 {% include markdown-link-references.md %}
