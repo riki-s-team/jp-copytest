@@ -39,17 +39,17 @@ pages:
     title: セキュリティ
 
 menu:
-  Home: index.html
-  Conformance: 
+  FHIRJP: index.html
+  Guidances: 
     総合ガイダンス: guide-general.html
     MustSupportとCardinality: guide-mustSupportCardinality.html
     欠損値の扱い: guide-handlingOfNonExistentData.html
     文字コード: guide-characterEncoding.html
     文字列検索: guide-stringSearch.html
-  Contents:
+  FHIRContents:
     Administration: group-administration.html
     Medication: group-medication.html
     Diagnostic: group-diagnostic.html
     Clinical: group-clinical.html
   Security: security.html
-  Artifacts: artifacts.html
+  artifacts: artifacts.html

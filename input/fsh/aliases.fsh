@@ -21,3 +21,6 @@ Alias: $observation-method = http://jpfhir.jp/fhir/Common/ValueSet/observation-m
 Alias: $socialHistory-code = http://jpfhir.jp/fhir/Common/ValueSet/socialHistory-code
 Alias: $vitalSigns-category = http://jpfhir.jp/fhir/Common/ValueSet/vitalSigns-category
 Alias: $vitalSigns-code = http://jpfhir.jp/fhir/Common/ValueSet/vitalSigns-code
+
+Alias: $capabilityStatement-expectation = http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation
+Alias: $capabilityStatement-combination = http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination

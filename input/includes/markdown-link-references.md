@@ -5,8 +5,12 @@
   }
 </style>
 
-<!-- JPCore -->
+<!-- JPCore IG -->
 [JP-ImplementationGuide]: ImplementationGuide-hl7.fhir.jp.core.html
+
+<!-- JPCore Capability Statement -->
+[JP Core Server Capability Statement]: CapabilityStatement-JP-ServerCapabilityStatement.html
+[JP Core Client Capability Statement]: CapabilityStatement-JP-ClientCapabilityStatement.html
 
 <!-- JPCore Profiles -->
 <!-- Administration-->

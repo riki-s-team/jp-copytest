@@ -12,7 +12,7 @@
 ### JP Core FHIRコンテンツ
 JP Core FHIRコンテンツ: JP Coreで利用するFHIRの詳細について記載をしています。
 
-#### [Profiles （プロファイル）](artifacts.html#1)
+#### [Profiles （プロファイル）](artifacts.html#3)
 * [Administrationグループ （運営管理）](group-administration.html)
   * [JP Core Patient （患者）プロファイル]
   * [JP Core Coverage （保険・公費）プロファイル]
@@ -30,16 +30,16 @@ JP Core FHIRコンテンツ: JP Coreで利用するFHIRの詳細について記�
   * [JP Core MedicationAdministration （内服・外用薬剤投与実施情報）プロファイル]
   * [JP Core MedicationAdministration Injection （注射薬剤投与実施情報）プロファイル]
 * [Diagnosticグループ （診断）](group-diagnostic.html)
-  * [Observation （検査）](group-diagnostic.html#1)
+  * Observation （検査）
     * [JP Core Observation Common （共通）プロファイル]
     * [JP Core Observation LabResult （検体検査結果）プロファイル]
     * [JP Core Observation VitalSigns （バイタルサイン）プロファイル]
     * [JP Core Observation BodyMeasurement （身体計測）プロファイル]
     * [JP Core Observation PhysicalExam （身体所見）プロファイル]
     * [JP Core Observation SocialHistory （生活背景）プロファイル]
-  * [ImagingStudy （画像検査）](group-diagnostic.html#2)
+  * ImagingStudy （画像検査）
     * [JP Core ImagingStudy Radiology（放射線検査）プロファイル]
-  * [DiagnosticReport （診断レポート)](group-diagnostic.html#3)
+  * DiagnosticReport （診断レポート)
     * [JP Core DiagnosticReport Common （共通）プロファイル]
     * [JP Core DiagnosticReport LabResult （検体検査レポート）プロファイル]
     * [JP Core DiagnosticReport Radiology （放射線検査レポート）プロファイル]
@@ -50,18 +50,19 @@ JP Core FHIRコンテンツ: JP Coreで利用するFHIRの詳細について記�
 
 #### Extensions （拡張）
 Profilesにて利用されるExtensionをまとめています。
-- [Extensions （拡張）](artifacts.html#3)
+- [Extensions （拡張）一覧](artifacts.html#5)
 
 #### Operations and Search Parameters （操作および検索パラメータ）
 Profilesにて利用されるSearch Parameter および Operationをまとめています。
-- [Operations and Search Parameters （操作および検索パラメータ）](OperationsAndSearchParameters)
+- [Search Parameters（検索パラメータ）一覧](artifacts.html#2)
 
 #### Terminology （用語集）
-- [Terminology （用語集）](artifacts.html#4)
+- [CodeSystems （コードシステム）](artifacts.html#7)
+- [ValueSets （値セット）](artifacts.html#6)
 
-### CapabilityStatements （機能宣言）
- - [JP Core Server Capability Statement](ServerCapabilityStatement)
- - [JP Core Client Capability Statement](ClientCapabilityStatement)
+### [CapabilityStatements （機能宣言）](artifacts.html#1)
+ - [JP Core Server Capability Statement]
+ - [JP Core Client Capability Statement]
 
 ### Security （セキュリティ）
 セキュリティに関する要件を記載しています。
