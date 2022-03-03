@@ -11,6 +11,7 @@ FHIRのJpCore環境作成のためのサンプルサイトです。
 1. OutputフォルダにHtml一式が格納される
 
 ## マニュアル
-* [MarkDown記載方法](docs/markdown.md)
+* [FHIR Shorthand学習サイト(FSH Scool)](https://fshschool.org/)
 * [FHIR Shorthand & IGPubliser環境作成方法](docs/enviroment.md)
+* [MarkDown記載方法](docs/markdown.md)
 
