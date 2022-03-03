@@ -71,3 +71,5 @@ JP Core Clientは個別のユースケースや意味的な要請に応じてこ
 |Procedure                 | [JP Core Procedure （処置）プロファイル] |[SHALL] patient<br/>[SHALL] patient + date|
 
 ## RESTful Capabilities by Resource/Profile:
+
+{% include markdown-link-references.md %}
