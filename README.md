@@ -1,4 +1,4 @@
-# FHIR JPCore ver1.0用テストサイト
+# FHIR JPCore ver1.1用テストサイト
 FHIRのJpCore環境作成のためのサンプルサイトです。
 
 ## 環境作成
