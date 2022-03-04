@@ -4,9 +4,6 @@ name: JPCore FHIR Task
 on:
   push:
     branches: [ main ]
-    paths:
-    - '!docs/**'
-    - '!readme.md'
   pull_request:
     branches: [ main ]
     
