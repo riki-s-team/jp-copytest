@@ -57,8 +57,8 @@ Profilesにて利用されるSearch Parameter および Operationをまとめて
 - [Search Parameters（検索パラメータ）一覧](artifacts.html#2)
 
 #### Terminology （用語集）
-- [CodeSystems （コードシステム）](artifacts.html#7)
-- [ValueSets （値セット）](artifacts.html#6)
+- [CodeSystems （コードシステム）一覧](artifacts.html#7)
+- [ValueSets （値セット）一覧](artifacts.html#6)
 
 ### [CapabilityStatements （機能宣言）](artifacts.html#1)
  - [JP Core Server Capability Statement]
