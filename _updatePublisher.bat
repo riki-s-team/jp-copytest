@@ -202,13 +202,13 @@ REM start copy /y "_gencontinuous.new.sh" "_gencontinuous.sh" ^&^& del "_gencont
 
 
 :dl_script_6
-ECHO Updating _updatePublisher.bat
-call POWERSHELL -command if ('System.Net.WebClient' -as [type]) {(new-object System.Net.WebClient).DownloadFile(\"%update_bat_url%\",\"_updatePublisher.new.bat\") } else { Invoke-WebRequest -Uri "%update_bat_url%" -Outfile "_updatePublisher.new.bat" }
-if %ERRORLEVEL% == 0 goto upd_script_6
-echo "Errors encountered during download: %errorlevel%"
-goto end
-:upd_script_6
-start copy /y "_updatePublisher.new.bat" "_updatePublisher.bat" ^&^& del "_updatePublisher.new.bat" ^&^& exit
+REM ECHO Updating _updatePublisher.bat
+REM call POWERSHELL -command if ('System.Net.WebClient' -as [type]) {(new-object System.Net.WebClient).DownloadFile(\"%update_bat_url%\",\"_updatePublisher.new.bat\") } else { Invoke-WebRequest -Uri "%update_bat_url%" -Outfile "_updatePublisher.new.bat" }
+REM if %ERRORLEVEL% == 0 goto upd_script_6
+REM echo "Errors encountered during download: %errorlevel%"
+REM goto end
+REM :upd_script_6
+REM start copy /y "_updatePublisher.new.bat" "_updatePublisher.bat" ^&^& del "_updatePublisher.new.bat" ^&^& exit
 
 
 :end
