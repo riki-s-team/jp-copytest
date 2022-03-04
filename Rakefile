@@ -13,8 +13,8 @@ task :turn do
   sh "#{base_dir}/_genonce.sh"
 end
 
-desc 'Check broken links'
-task :check do
-  options = { disable_external: true,  }
-  HTMLProofer.check_directory("#{output_dir}", options).run
+# desc 'Check broken links'
+# task :check do
+#   options = { disable_external: true,  }
+#   HTMLProofer.check_directory("#{output_dir}", options).run
 end
