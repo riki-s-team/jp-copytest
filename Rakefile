@@ -17,4 +17,4 @@ end
 # task :check do
 #   options = { disable_external: true,  }
 #   HTMLProofer.check_directory("#{output_dir}", options).run
-end
+# end
