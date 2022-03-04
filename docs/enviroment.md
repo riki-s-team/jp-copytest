@@ -1,7 +1,7 @@
 # 環境作成
 
 ---
-## 必要なライブラリ
+## 1. 必要なライブラリ
 * Sushi
   * Node.js
   * npm
@@ -12,57 +12,119 @@
   * Jekyll
 
 ---
-## インストール手順
-### Node.js
-最新のLTSバージョンを取得する。npmも併せてインストールされる。
+## 2. Windows インストール手順
+* ### Node.js
+
+入手先：https://nodejs.org/ja/download/ <br/>
+最新のLTSバージョンを取得する。
+npmも併せてインストールされる。
 下記にてインストールを確認する。
-```
-# version確認
-
-node -version
-
-npm -version
 
 ```
-### sushi
+node -version    #バージョン確認
+npm -version    #バージョン確認
+
+```
+* ### Sushi
+
 ```
 # install
-sushi install -g fsh-sushi
+npm install -g fsh-sushi
 
-# version確認
-sushi -v
+sushi -v    #バージョン確認
 ```
 
-### Javaランタイム
+* ### Javaランタイム
 #### JavaSDK
 入手先: https://www.oracle.com/java/technologies/downloads/<br/>
 ver8,11,17のLSTバージョン<br/>
 **Java SDKを利用する場合はライセンス注意**
 #### OpenJDK
-入手先: http://jdk.java.net/
+入手先: http://jdk.java.net/<br/>
 ダウンロード後解凍し、フォルダに配置する。<br/>
 環境変数に対象フォルダを登録し、どの環境からでも実行できるように設定すること。
 
-### Ruby
-入手先:http://jekyllrb-ja.github.io/docs/installation/
- - Ruby+Devkitを選択する
- - ridk installを選択すること(**gemをインストールするため**)
+* ### Ruby
+入手先:http://jekyllrb-ja.github.io/docs/installation/<br/>
+ Ruby+Devkitを選択する</br>
+ridk installを選択すること(**gemをインストールするため**)
 
-### Jekyll
+* ### Jekyll
 ```
 # install
 gem install jekyll bundler
-# version確認
-jekyll -v
+
+jekyll -v     #バージョン確認
+```
+
+* ### git client
+入手先：https://gitforwindows.org/<br/>
+
+
+## 3. Linux ubuntu インストール手順
+
+```
+# ---------------------------------
+# nodejs
+# ---------------------------------
+sudo apt install nodejs npm
+
+node -v    #バージョン確認
+npm -v    #バージョン確認
+
+# ---------------------------------
+# sushi
+# ---------------------------------
+sushi install -g fsh
+
+sushi -v    #バージョン確認
+
+# ---------------------------------
+# java sdk 
+# ---------------------------------
+
+# java jre(ライセンス注意のこと)
+sudo apt install default-jre
+
+# open jdk (xxの部分はバージョン指定)
+sudo apt-get install openjdk-xx-jre
+
+java -version    #バージョン確認
+
+# ---------------------------------
+# ruby (developer)
+# ---------------------------------
+sudo apt install ruby-dev
+
+ruby --version
+
+# ---------------------------------
+# jekyll ※ruby gemがインストールされていること。
+# ---------------------------------
+gem install jekyll bundler
+
+jekyll -v    #バージョン確認
+
+# ---------------------------------
+# git client
+# ---------------------------------
+sudo apt install git
+
+git version    #バージョン確認
 ```
 
 ---
-## 推奨編集ツール
-### Visual Studio Code
+## 4. 推奨編集ツール
+
+### 4.1. Visual Studio Code
 無償のテキストエディタ。下記Extension機能をインストールすることにより、自動補完や完成イメージの表示、色付け等の高機能なソース編集ツールとして利用可能である。他のテキストエディタを利用することも可能。
 
 * VSCode FHIR Shorthand (FSH) Language Support
 * markdown all in one
 * AML Language Support by Red Hat, with built-in Kubernetes syntax support
 * Json for Visual Studio Code
+
+
+### 4.2. Source Tree
+mail addressを登録することで利用できる無料のgitクライアントツール<br/>
 
