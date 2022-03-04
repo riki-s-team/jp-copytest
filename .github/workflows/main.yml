@@ -34,6 +34,6 @@ jobs:
     - name: Turn the table
       working-directory: .
       run: bundle exec rake
-    - name: Chek broken links.
-      working-directory: .
-      run: bundle exec rake check
+    # - name: Chek broken links.
+    #   working-directory: .
+    #   run: bundle exec rake check
