@@ -5,8 +5,8 @@
   "description": "FHIR JpCore IG Template",
   "author": "https://jpfhir.jp",
   "canonical": "https://jpfhir.jp/core/templates/hl7.fhir.jp.core.ig-template",
-  "base": "hl7.fhir.template",
+  "base": "fhir.base.template",
   "dependencies": {
-    "hl7.fhir.template": "current"
+    "fhir.base.template": "current"
   }
 }
