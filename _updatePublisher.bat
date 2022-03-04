@@ -153,13 +153,13 @@ SETLOCAL DisableDelayedExpansion
 
 
 :dl_script_1
-ECHO Updating _updatePublisher.sh
-call POWERSHELL -command if ('System.Net.WebClient' -as [type]) {(new-object System.Net.WebClient).DownloadFile(\"%update_sh_url%\",\"_updatePublisher.new.sh\") } else { Invoke-WebRequest -Uri "%update_sh_url%" -Outfile "_updatePublisher.new.sh" }
-if %ERRORLEVEL% == 0 goto upd_script_1
-echo "Errors encountered during download: %errorlevel%"
-goto dl_script_2
-:upd_script_1
-start copy /y "_updatePublisher.new.sh" "_updatePublisher.sh" ^&^& del "_updatePublisher.new.sh" ^&^& exit
+REM ECHO Updating _updatePublisher.sh
+REM  call POWERSHELL -command if ('System.Net.WebClient' -as [type]) {(new-object System.Net.WebClient).DownloadFile(\"%update_sh_url%\",\"_updatePublisher.new.sh\") } else { Invoke-WebRequest -Uri "%update_sh_url%" -Outfile "_updatePublisher.new.sh" }
+REM  if %ERRORLEVEL% == 0 goto upd_script_1
+REM echo "Errors encountered during download: %errorlevel%"
+REM goto dl_script_2
+REM :upd_script_1
+REM start copy /y "_updatePublisher.new.sh" "_updatePublisher.sh" ^&^& del "_updatePublisher.new.sh" ^&^& exit
 
 
 :dl_script_2
@@ -182,22 +182,22 @@ start copy /y "_gencontinuous.new.bat" "_gencontinuous.bat" ^&^& del "_gencontin
 
 
 :dl_script_4
-ECHO Updating _genonce.sh
-call POWERSHELL -command if ('System.Net.WebClient' -as [type]) {(new-object System.Net.WebClient).DownloadFile(\"%gen_sh_url%\",\"_genonce.new.sh\") } else { Invoke-WebRequest -Uri "%gen_sh_url%" -Outfile "_genonce.sh" }
-if %ERRORLEVEL% == 0 goto upd_script_4
-echo "Errors encountered during download: %errorlevel%"
-goto dl_script_5
-:upd_script_4
-start copy /y "_genonce.new.sh" "_genonce.sh" ^&^& del "_genonce.new.sh" ^&^& exit
+REM ECHO Updating _genonce.sh
+REM call POWERSHELL -command if ('System.Net.WebClient' -as [type]) {(new-object System.Net.WebClient).DownloadFile(\"%gen_sh_url%\",\"_genonce.new.sh\") } else { Invoke-WebRequest -Uri "%gen_sh_url%" -Outfile "_genonce.sh" }
+REM if %ERRORLEVEL% == 0 goto upd_script_4
+REM echo "Errors encountered during download: %errorlevel%"
+REM goto dl_script_5
+REM :upd_script_4
+REM start copy /y "_genonce.new.sh" "_genonce.sh" ^&^& del "_genonce.new.sh" ^&^& exit
 
 :dl_script_5
-ECHO Updating _gencontinuous.sh
-call POWERSHELL -command if ('System.Net.WebClient' -as [type]) {(new-object System.Net.WebClient).DownloadFile(\"%gencont_sh_url%\",\"_gencontinuous.new.sh\") } else { Invoke-WebRequest -Uri "%gencont_sh_url%" -Outfile "_gencontinuous.sh" }
-if %ERRORLEVEL% == 0 goto upd_script_5
-echo "Errors encountered during download: %errorlevel%"
-goto dl_script_6
-:upd_script_5
-start copy /y "_gencontinuous.new.sh" "_gencontinuous.sh" ^&^& del "_gencontinuous.new.sh" ^&^& exit
+REM ECHO Updating _gencontinuous.sh
+REM call POWERSHELL -command if ('System.Net.WebClient' -as [type]) {(new-object System.Net.WebClient).DownloadFile(\"%gencont_sh_url%\",\"_gencontinuous.new.sh\") } else { Invoke-WebRequest -Uri "%gencont_sh_url%" -Outfile "_gencontinuous.sh" }
+REM if %ERRORLEVEL% == 0 goto upd_script_5
+REM echo "Errors encountered during download: %errorlevel%"
+REM goto dl_script_6
+REM :upd_script_5
+REM start copy /y "_gencontinuous.new.sh" "_gencontinuous.sh" ^&^& del "_gencontinuous.new.sh" ^&^& exit
 
 
 
