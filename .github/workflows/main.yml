@@ -29,8 +29,7 @@ jobs:
         cache: 'npm'
         cache-dependency-path: ./package-lock.json
     - name: Setup Sushi
-      run: npm install
-      # run: npm install -g fsh-sushi
+      run: npm install -g fsh-sushi
     - name: Turn the table
       working-directory: .
       run: bundle exec rake
