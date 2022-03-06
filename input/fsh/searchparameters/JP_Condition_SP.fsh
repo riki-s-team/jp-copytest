@@ -1,7 +1,7 @@
-Instance: jp-core-condition-category
+Instance: jp-condition-category
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-condition-category"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-condition-category"
 * name = "JPCoreConditionCategory"
 * status = #active
 * experimental = false
@@ -46,10 +46,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-condition-clinicalstatus
+Instance: jp-condition-clinicalstatus
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-condition-clinicalStatus"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-condition-clinicalStatus"
 * name = "JPCoreConditionClinicalStatus"
 * status = #active
 * experimental = false
@@ -93,10 +93,10 @@ Usage: #definition
 * modifier[+].extension.url = $capabilityStatement-expectation
 * modifier[=].extension.valueCode = #MAY
 
-Instance: jp-core-condition-date
+Instance: jp-condition-date
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-condition-date"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-condition-date"
 * name = "JPCoreConditionDate"
 * status = #active
 * experimental = false
@@ -143,10 +143,10 @@ Usage: #definition
 * modifier.extension.url = $capabilityStatement-expectation
 * modifier.extension.valueCode = #MAY
 
-Instance: jp-core-condition-patient
+Instance: jp-condition-patient
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-condition-patient"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-condition-patient"
 * name = "JPCoreConditionPatient"
 * status = #active
 * experimental = false
@@ -176,10 +176,10 @@ Usage: #definition
 * modifier[+].extension.url = $capabilityStatement-expectation
 * modifier[=].extension.valueCode = #MAY
 
-Instance: jp-core-condition-verificationstatus
+Instance: jp-condition-verificationstatus
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-condition-verificationStatus"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-condition-verificationStatus"
 * name = "JPCoreConditionVerificationStatus"
 * status = #active
 * experimental = false

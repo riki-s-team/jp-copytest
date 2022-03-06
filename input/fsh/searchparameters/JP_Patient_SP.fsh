@@ -1,7 +1,7 @@
-Instance: jp-core-patient-address-postalcode
+Instance: jp-patient-address-postalcode
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-patient-address-postalcode"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-address-postalcode"
 * name = "JPCorePatientAddressPostalcode"
 * status = #active
 * experimental = false
@@ -31,10 +31,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-patient-birthdate
+Instance: jp-patient-birthdate
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-patient-birthdate"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-birthdate"
 * name = "JPCorePatientBirthdate"
 * status = #active
 * experimental = false
@@ -82,10 +82,10 @@ Usage: #definition
 * modifier.extension.valueCode = #MAY
 
 
-Instance: jp-core-patient-family
+Instance: jp-patient-family
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-patient-family"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-family"
 * name = "JPCorePatientFamily"
 * status = #active
 * experimental = false
@@ -115,10 +115,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-patient-gender
+Instance: jp-patient-gender
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-patient-gender"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-gender"
 * name = "JPCorePatientGender"
 * status = #active
 * experimental = false
@@ -163,10 +163,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-patient-given
+Instance: jp-patient-given
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-patient-given"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-given"
 * name = "JPCorePatientGiven"
 * status = #active
 * experimental = false
@@ -196,10 +196,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-patient-id
+Instance: jp-patient-id
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-patient-id"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-id"
 * name = "JPCorePatientId"
 * status = #retired
 * experimental = false
@@ -244,10 +244,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-patient-identifier
+Instance: jp-patient-identifier
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-patient-identifier"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-identifier"
 * name = "JPCorePatientIdentifier"
 * status = #active
 * experimental = false
@@ -293,10 +293,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-patient-name
+Instance: jp-patient-name
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-patient-name"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-name"
 * name = "JPCorePatientName"
 * status = #active
 * experimental = false
@@ -326,10 +326,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-patient-phone
+Instance: jp-patient-phone
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-patient-phone"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-phone"
 * name = "JPCorePatientphone"
 * status = #active
 * experimental = false

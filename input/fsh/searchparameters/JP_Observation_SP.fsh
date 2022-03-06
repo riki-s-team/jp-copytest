@@ -1,7 +1,7 @@
-Instance: jp-core-observation-category
+Instance: jp-observation-category
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-observation-category"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-observation-category"
 * name = "JPCoreObservationCategory"
 * status = #active
 * experimental = false
@@ -46,10 +46,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-observation-code
+Instance: jp-observation-code
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-observation-code"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-observation-code"
 * name = "JPCoreObservationCode"
 * status = #active
 * experimental = false
@@ -94,10 +94,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-observation-date
+Instance: jp-observation-date
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-observation-date"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-observation-date"
 * name = "JPCoreObservationDate"
 * status = #active
 * experimental = false
@@ -145,10 +145,10 @@ Usage: #definition
 * modifier.extension.valueCode = #MAY
 
 
-Instance: jp-core-observation-encounter
+Instance: jp-observation-encounter
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-observation-encounter"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-observation-encounter"
 * name = "JPCoreObservationEncounter"
 * status = #active
 * experimental = false
@@ -179,10 +179,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-observation-patient
+Instance: jp-observation-patient
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-observation-patient"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-observation-patient"
 * name = "JPCoreObservationPatient"
 * status = #active
 * experimental = false
@@ -213,10 +213,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-observation-servicerequest
+Instance: jp-observation-servicerequest
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-observation-servicerequest"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-observation-servicerequest"
 * name = "JPCoreObservationServiceRequest"
 * status = #active
 * experimental = false
@@ -248,10 +248,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-observation-value-concept
+Instance: jp-observation-value-concept
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-observation-value-concept"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-observation-value-concept"
 * name = "JPCoreObservationValueConcept"
 * status = #active
 * experimental = false
@@ -296,10 +296,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-observation-value-quantity
+Instance: jp-observation-value-quantity
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-observation-value-quantity"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-observation-value-quantity"
 * name = "JPCoreObservationValueQuantity"
 * status = #active
 * experimental = false

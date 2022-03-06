@@ -1,7 +1,7 @@
-Instance: jp-core-allergyintolerance-category
+Instance: jp-allergyintolerance-category
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-allergyintolerance-category"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-allergyintolerance-category"
 * name = "JPCoreAllergyIntoleranceCategory"
 * status = #active
 * experimental = false
@@ -46,10 +46,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-allergyintolerance-clinicalstatus
+Instance: jp-allergyintolerance-clinicalstatus
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-allergyintolerance-clinicalStatus"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-allergyintolerance-clinicalStatus"
 * name = "JPCoreAllergyintoleranceClinicalStatus"
 * status = #active
 * experimental = false
@@ -94,10 +94,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-allergyintolerance-criticality
+Instance: jp-allergyintolerance-criticality
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-allergyintolerance-criticality"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-allergyintolerance-criticality"
 * name = "JPCoreAllergyIntoleranceCriticality"
 * status = #active
 * experimental = false
@@ -142,10 +142,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-allergyintolerance-date
+Instance: jp-allergyintolerance-date
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-allergyintolerance-date"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-allergyintolerance-date"
 * name = "JPCoreAllergyIntoleranceDate"
 * status = #active
 * experimental = false
@@ -193,10 +193,10 @@ Usage: #definition
 * modifier.extension.valueCode = #MAY
 
 
-Instance: jp-core-allergyintolerance-patient
+Instance: jp-allergyintolerance-patient
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-allergyintolerance-patient"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-allergyintolerance-patient"
 * name = "JPCoreAllergyIntolerancePatient"
 * status = #active
 * experimental = false
@@ -226,10 +226,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-allergyintolerance-type
+Instance: jp-allergyintolerance-type
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-allergyintolerance-type"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-allergyintolerance-type"
 * name = "JPCoreAllergyIntoleranceType"
 * status = #active
 * experimental = false
@@ -274,10 +274,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-allergyintolerance-verificationstatus
+Instance: jp-allergyintolerance-verificationstatus
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-allergyintolerance-verificationStatus"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-allergyintolerance-verificationStatus"
 * name = "JPCoreAllergyIntoleranceVerificationStatus"
 * status = #active
 * experimental = false

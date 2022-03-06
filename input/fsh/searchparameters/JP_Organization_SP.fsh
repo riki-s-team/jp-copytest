@@ -1,7 +1,7 @@
-Instance: jp-core-organization-address
+Instance: jp-organization-address
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-organization-address"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-organization-address"
 * name = "JPCoreOrganizationAddress"
 * status = #active
 * experimental = false
@@ -31,10 +31,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-organization-identifier
+Instance: jp-organization-identifier
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-organization-identifier"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-organization-identifier"
 * name = "JPCoreOrganizationIdentifier"
 * status = #active
 * experimental = false
@@ -79,10 +79,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-organization-name
+Instance: jp-organization-name
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-organization-name"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-organization-name"
 * name = "JPCoreOrganizationName"
 * status = #active
 * experimental = false

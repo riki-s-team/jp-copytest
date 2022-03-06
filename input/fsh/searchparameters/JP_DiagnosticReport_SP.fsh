@@ -1,7 +1,7 @@
-Instance: jp-core-diagnosticreport-category
+Instance: jp-diagnosticreport-category
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-diagnosticreport-category"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-diagnosticreport-category"
 * name = "JPCoreDiagnosticReportCategory"
 * status = #active
 * experimental = false
@@ -46,10 +46,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-diagnosticreport-code
+Instance: jp-diagnosticreport-code
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-diagnosticreport-code"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-diagnosticreport-code"
 * name = "JPCoreDiagnosticreportCode"
 * status = #active
 * experimental = false
@@ -94,10 +94,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-diagnosticreport-date
+Instance: jp-diagnosticreport-date
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-diagnosticreport-date"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-diagnosticreport-date"
 * name = "JPCoreDiagnosticreportDate"
 * status = #active
 * experimental = false
@@ -145,10 +145,10 @@ Usage: #definition
 * modifier.extension.valueCode = #MAY
 
 
-Instance: jp-core-diagnosticreport-patient
+Instance: jp-diagnosticreport-patient
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-diagnosticreport-patient"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-diagnosticreport-patient"
 * name = "JPCoreDiagnosticReportPatient"
 * status = #active
 * experimental = false
@@ -179,10 +179,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-diagnosticreport-servicerequest
+Instance: jp-diagnosticreport-servicerequest
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-diagnosticreport-servicerequest"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-diagnosticreport-servicerequest"
 * name = "JPCoreDiagnosticReportServiceRequest"
 * status = #active
 * experimental = false

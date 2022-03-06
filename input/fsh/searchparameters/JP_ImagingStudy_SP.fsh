@@ -1,7 +1,7 @@
-Instance: jp-core-imagingstudy-bodySite
+Instance: jp-imagingstudy-bodySite
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-imagingstudy-bodysite"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-imagingstudy-bodysite"
 * name = "JPCoreImagingStudyBodySite"
 * status = #active
 * experimental = false
@@ -46,10 +46,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-imagingstudy-encounter
+Instance: jp-imagingstudy-encounter
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-imagingstudy-encounter"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-imagingstudy-encounter"
 * name = "JPCoreImagingStudyEncounter"
 * status = #active
 * experimental = false
@@ -80,10 +80,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-imagingstudy-modality
+Instance: jp-imagingstudy-modality
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-imagingstudy-modality"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-imagingstudy-modality"
 * name = "JPCoreImagingStudyModality"
 * status = #active
 * experimental = false
@@ -128,10 +128,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-imagingstudy-patient
+Instance: jp-imagingstudy-patient
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-imagingstudy-patient"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-imagingstudy-patient"
 * name = "JPCoreImagingStudyPatient"
 * status = #active
 * experimental = false
@@ -162,10 +162,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-imagingstudy-started
+Instance: jp-imagingstudy-started
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-imagingstudy-started"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-imagingstudy-started"
 * name = "JPCoreImagingStudyStarted"
 * status = #active
 * experimental = false

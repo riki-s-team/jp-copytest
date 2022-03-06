@@ -1,7 +1,7 @@
-Instance: jp-core-coverage-beneficiary
+Instance: jp-coverage-beneficiary
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-coverage-beneficiary"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-coverage-beneficiary"
 * name = "JPCorecoverageBeneficiary"
 * status = #active
 * experimental = false
@@ -32,10 +32,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-coverage-identifier
+Instance: jp-coverage-identifier
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-coverage-identifier"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-coverage-identifier"
 * name = "JPCoreCoverageIdentifier"
 * status = #active
 * experimental = false

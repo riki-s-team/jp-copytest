@@ -1,7 +1,7 @@
-Instance: jp-core-medicationrequest-authoredon
+Instance: jp-medicationrequest-authoredon
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-medicationrequest-authoredon"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationrequest-authoredon"
 * name = "JPCoreMedicationrequestAuthoredOn"
 * status = #active
 * experimental = false
@@ -49,10 +49,10 @@ Usage: #definition
 * modifier.extension.valueCode = #MAY
 
 
-Instance: jp-core-medicationrequest-category
+Instance: jp-medicationrequest-category
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-medicationrequest-category"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationrequest-category"
 * name = "JPCoreMedicationRequestCategory"
 * status = #active
 * experimental = false
@@ -97,10 +97,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-medicationrequest-code
+Instance: jp-medicationrequest-code
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-medicationrequest-code"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationrequest-code"
 * name = "JPCoreMedicationRequestCode"
 * status = #active
 * experimental = false
@@ -145,10 +145,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-medicationrequest-date
+Instance: jp-medicationrequest-date
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-medicationrequest-date"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationrequest-date"
 * name = "JPCoreMedicationRequestDate"
 * status = #active
 * experimental = false
@@ -196,10 +196,10 @@ Usage: #definition
 * modifier.extension.valueCode = #MAY
 
 
-Instance: jp-core-medicationrequest-identifier
+Instance: jp-medicationrequest-identifier
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-medicationrequest-identifier"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationrequest-identifier"
 * name = "JPCoreMedicationRequestIdentifier"
 * status = #active
 * experimental = false
@@ -244,10 +244,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-medicationrequest-patient
+Instance: jp-medicationrequest-patient
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-medicationrequest-patient"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationrequest-patient"
 * name = "JPCoreMedicationRequestPatient"
 * status = #active
 * experimental = false
@@ -278,10 +278,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-medicationrequest-requester
+Instance: jp-medicationrequest-requester
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-medicationrequest-requester"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationrequest-requester"
 * name = "JPCoreMedicationRequestrRequester"
 * status = #active
 * experimental = false

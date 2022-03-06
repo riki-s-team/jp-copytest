@@ -1,7 +1,7 @@
-Instance: jp-core-medicationadministration-code
+Instance: jp-medicationadministration-code
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-medicationadministration-code"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationadministration-code"
 * name = "JPCoreMedicationAdministrationCode"
 * status = #active
 * experimental = false
@@ -46,10 +46,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-medicationadministration-effectivedatetime
+Instance: jp-medicationadministration-effectivedatetime
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-medicationadministration-effectivedatetime"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationadministration-effectivedatetime"
 * name = "JPCoreMedicationAdministrationEffectiveDatetime"
 * status = #active
 * experimental = false
@@ -97,10 +97,10 @@ Usage: #definition
 * modifier.extension.valueCode = #MAY
 
 
-Instance: jp-core-medicationadministration-identifier
+Instance: jp-medicationadministration-identifier
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-medicationadministration-identifier"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationadministration-identifier"
 * name = "JPCoreMedicationAdministrationIdentifier"
 * status = #active
 * experimental = false
@@ -145,10 +145,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-medicationadministration-patient
+Instance: jp-medicationadministration-patient
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-medicationadministration-patient"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationadministration-patient"
 * name = "JPCoreMedicationAdministrationPatient"
 * status = #active
 * experimental = false

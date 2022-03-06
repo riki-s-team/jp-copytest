@@ -1,7 +1,7 @@
-Instance: jp-core-practitioner-identifier
+Instance: jp-practitioner-identifier
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-practitioner-identifier"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-practitioner-identifier"
 * name = "JPCorePractitionerIdentifier"
 * status = #active
 * experimental = false
@@ -46,10 +46,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-core-practitioner-name
+Instance: jp-practitioner-name
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-practitioner-name"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-practitioner-name"
 * name = "JPCorePractitionerName"
 * status = #active
 * experimental = false

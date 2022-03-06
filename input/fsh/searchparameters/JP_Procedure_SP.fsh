@@ -1,7 +1,7 @@
-Instance: jp-core-procedure-date
+Instance: jp-procedure-date
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-procedure-date"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-procedure-date"
 * name = "JPCoreProcedureDate"
 * status = #active
 * experimental = false
@@ -49,10 +49,10 @@ Usage: #definition
 * modifier.extension.valueCode = #MAY
 
 
-Instance: jp-core-procedure-patient
+Instance: jp-procedure-patient
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-procedure-patient"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-procedure-patient"
 * name = "JPCoreProcedurePatient"
 * status = #active
 * experimental = false
