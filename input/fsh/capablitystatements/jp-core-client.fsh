@@ -1,4 +1,4 @@
-Instance: JP-ClientCapabilityStatement
+Instance: jp-client-capabilitystatement
 InstanceOf: CapabilityStatement
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/CapabilityStatement/StructureDefinition/jpcoreclientcapabilitystatement"
