@@ -216,7 +216,3 @@ table.lmap td {
     "Helvetica Neue", sans-serif;
 }
 
-table:nth-child(2n+1) {
-      background: #F0FFFF;
-  }
-  

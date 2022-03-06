@@ -3,7 +3,7 @@
 {% elsif site.data.structuredefinitions[include.id].kind == 'logical' %}
   {% assign modelType = 'Logical Model(論理モデル)' %}
 {% elsif site.data.structuredefinitions[include.id].kind == 'resource' %}
-  {% assign modelType = 'Resource Profile(プロファイルリソース)' %}
+  {% assign modelType = 'Resource Profile(リソースプロファイル)' %}
 {% else %}
-  {% assign modelType = 'Data Type Profile(データ型)' %}
+  {% assign modelType = 'Data Type Profile(データ型プロファイル)' %}
 {% endif %}
