@@ -2,7 +2,7 @@ Instance: jp-medicationadministration-code
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationadministration-code"
-* name = "JPCoreMedicationAdministrationCode"
+* name = "JPMedicationAdministrationCodeSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -50,7 +50,7 @@ Instance: jp-medicationadministration-effectivedatetime
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationadministration-effectivedatetime"
-* name = "JPCoreMedicationAdministrationEffectiveDatetime"
+* name = "JPMedicationAdministrationEffectiveDatetimeSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -101,7 +101,7 @@ Instance: jp-medicationadministration-identifier
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationadministration-identifier"
-* name = "JPCoreMedicationAdministrationIdentifier"
+* name = "JPMedicationAdministrationIdentifierSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -149,7 +149,7 @@ Instance: jp-medicationadministration-patient
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationadministration-patient"
-* name = "JPCoreMedicationAdministrationPatient"
+* name = "JPMedicationAdministrationPatientSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"

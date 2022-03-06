@@ -2,7 +2,7 @@ Instance: jp-medicationrequest-authoredon
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationrequest-authoredon"
-* name = "JPCoreMedicationrequestAuthoredOn"
+* name = "JPMedicationrequestAuthoredOnSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -53,7 +53,7 @@ Instance: jp-medicationrequest-category
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationrequest-category"
-* name = "JPCoreMedicationRequestCategory"
+* name = "JPMedicationRequestCategorySP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -101,7 +101,7 @@ Instance: jp-medicationrequest-code
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationrequest-code"
-* name = "JPCoreMedicationRequestCode"
+* name = "JPMedicationRequestCodeSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -149,7 +149,7 @@ Instance: jp-medicationrequest-date
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationrequest-date"
-* name = "JPCoreMedicationRequestDate"
+* name = "JPMedicationRequestDateSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -200,7 +200,7 @@ Instance: jp-medicationrequest-identifier
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationrequest-identifier"
-* name = "JPCoreMedicationRequestIdentifier"
+* name = "JPMedicationRequestIdentifierSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -248,7 +248,7 @@ Instance: jp-medicationrequest-patient
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationrequest-patient"
-* name = "JPCoreMedicationRequestPatient"
+* name = "JPMedicationRequestPatientSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -282,7 +282,7 @@ Instance: jp-medicationrequest-requester
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationrequest-requester"
-* name = "JPCoreMedicationRequestrRequester"
+* name = "JPMedicationRequestrRequesterSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"

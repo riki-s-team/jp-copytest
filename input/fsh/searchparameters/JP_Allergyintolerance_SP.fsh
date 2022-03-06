@@ -2,7 +2,7 @@ Instance: jp-allergyintolerance-category
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-allergyintolerance-category"
-* name = "JPCoreAllergyIntoleranceCategory"
+* name = "JPAllergyIntoleranceCategorySP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -50,7 +50,7 @@ Instance: jp-allergyintolerance-clinicalstatus
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-allergyintolerance-clinicalStatus"
-* name = "JPCoreAllergyintoleranceClinicalStatus"
+* name = "JPAllergyintoleranceClinicalStatusSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -98,7 +98,7 @@ Instance: jp-allergyintolerance-criticality
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-allergyintolerance-criticality"
-* name = "JPCoreAllergyIntoleranceCriticality"
+* name = "JPAllergyIntoleranceCriticalitySP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -146,7 +146,7 @@ Instance: jp-allergyintolerance-date
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-allergyintolerance-date"
-* name = "JPCoreAllergyIntoleranceDate"
+* name = "JPAllergyIntoleranceDateSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -197,7 +197,7 @@ Instance: jp-allergyintolerance-patient
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-allergyintolerance-patient"
-* name = "JPCoreAllergyIntolerancePatient"
+* name = "JPAllergyIntolerancePatientSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -230,7 +230,7 @@ Instance: jp-allergyintolerance-type
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-allergyintolerance-type"
-* name = "JPCoreAllergyIntoleranceType"
+* name = "JPAllergyIntoleranceTypeSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -278,7 +278,7 @@ Instance: jp-allergyintolerance-verificationstatus
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-allergyintolerance-verificationStatus"
-* name = "JPCoreAllergyIntoleranceVerificationStatus"
+* name = "JPAllergyIntoleranceVerificationStatusSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"

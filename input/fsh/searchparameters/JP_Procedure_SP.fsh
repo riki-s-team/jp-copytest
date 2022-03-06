@@ -2,7 +2,7 @@ Instance: jp-procedure-date
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-procedure-date"
-* name = "JPCoreProcedureDate"
+* name = "JPProcedureDateSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -53,7 +53,7 @@ Instance: jp-procedure-patient
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-procedure-patient"
-* name = "JPCoreProcedurePatient"
+* name = "JPProcedurePatientSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"

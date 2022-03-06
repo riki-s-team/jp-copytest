@@ -2,7 +2,7 @@ Instance: jp-medicationdispense-code
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationdispense-code"
-* name = "JPCoreMedicationDispenseCode"
+* name = "JPMedicationDispenseCodeSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -50,7 +50,7 @@ Instance: jp-medicationdispense-encounter
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationdispense-encounter"
-* name = "JPCoreMedicationDispenseEncounter"
+* name = "JPMedicationDispenseEncounterSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -84,7 +84,7 @@ Instance: jp-medicationdispense-identifier
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationdispense-identifier"
-* name = "JPCoreMedicationDispenseIdentifier"
+* name = "JPMedicationDispenseIdentifierSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -132,7 +132,7 @@ Instance: jp-medicationdispense-patient
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationdispense-patient"
-* name = "JPCoreMedicationDispensePatient"
+* name = "JPMedicationDispensePatientSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -166,7 +166,7 @@ Instance: jp-medicationdispense-performer
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationdispense-performer"
-* name = "JPCoreMedicationDispensePerformer"
+* name = "JPMedicationDispensePerformerSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -211,7 +211,7 @@ Instance: jp-medicationdispense-whenhandedover
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationdispense-whenhandedover"
-* name = "JPCoreMedicationDispenseWhenHandedOver"
+* name = "JPMedicationDispenseWhenHandedOverSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -262,7 +262,7 @@ Instance: jp-medicationdispense-whenprepared
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationdispense-whenprepared"
-* name = "JPCoreMedicationDispenseWhenPrepared"
+* name = "JPMedicationDispenseWhenPreparedSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"

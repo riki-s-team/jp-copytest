@@ -2,7 +2,7 @@ Instance: jp-practitionerrole-practitioner
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-practitionerrole-practitioner"
-* name = "JPCorePractitionerrolePractitioner"
+* name = "JPPractitionerrolePractitionerSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -42,7 +42,7 @@ Instance: jp-practitionerrole-specialty
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-practitionerrole-specialty"
-* name = "JPCorePractitionerroleSpecialty"
+* name = "JPPractitionerroleSpecialtySP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"

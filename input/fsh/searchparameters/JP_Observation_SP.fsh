@@ -2,7 +2,7 @@ Instance: jp-observation-category
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-observation-category"
-* name = "JPCoreObservationCategory"
+* name = "JPObservationCategorySP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -50,7 +50,7 @@ Instance: jp-observation-code
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-observation-code"
-* name = "JPCoreObservationCode"
+* name = "JPObservationCodeSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -98,7 +98,7 @@ Instance: jp-observation-date
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-observation-date"
-* name = "JPCoreObservationDate"
+* name = "JPObservationDateSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -149,7 +149,7 @@ Instance: jp-observation-encounter
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-observation-encounter"
-* name = "JPCoreObservationEncounter"
+* name = "JPObservationEncounterSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -183,7 +183,7 @@ Instance: jp-observation-patient
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-observation-patient"
-* name = "JPCoreObservationPatient"
+* name = "JPObservationPatientSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -217,7 +217,7 @@ Instance: jp-observation-servicerequest
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-observation-servicerequest"
-* name = "JPCoreObservationServiceRequest"
+* name = "JPObservationServiceRequestSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -252,7 +252,7 @@ Instance: jp-observation-value-concept
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-observation-value-concept"
-* name = "JPCoreObservationValueConcept"
+* name = "JPObservationValueConceptSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -300,7 +300,7 @@ Instance: jp-observation-value-quantity
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-observation-value-quantity"
-* name = "JPCoreObservationValueQuantity"
+* name = "JPObservationValueQuantitySP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"

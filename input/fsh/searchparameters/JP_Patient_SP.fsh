@@ -2,7 +2,7 @@ Instance: jp-patient-address-postalcode
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-address-postalcode"
-* name = "JPCorePatientAddressPostalcode"
+* name = "JPPatientAddressPostalcodeSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -35,7 +35,7 @@ Instance: jp-patient-birthdate
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-birthdate"
-* name = "JPCorePatientBirthdate"
+* name = "JPPatientBirthdateSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -86,7 +86,7 @@ Instance: jp-patient-family
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-family"
-* name = "JPCorePatientFamily"
+* name = "JPPatientFamilySP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -119,7 +119,7 @@ Instance: jp-patient-gender
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-gender"
-* name = "JPCorePatientGender"
+* name = "JPPatientGenderSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -167,7 +167,7 @@ Instance: jp-patient-given
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-given"
-* name = "JPCorePatientGiven"
+* name = "JPPatientGivenSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -200,7 +200,7 @@ Instance: jp-patient-id
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-id"
-* name = "JPCorePatientId"
+* name = "JPPatientIdSP"
 * status = #retired
 * experimental = false
 * date = "2021-12-01"
@@ -248,7 +248,7 @@ Instance: jp-patient-identifier
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-identifier"
-* name = "JPCorePatientIdentifier"
+* name = "JPPatientIdentifierSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -297,7 +297,7 @@ Instance: jp-patient-name
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-name"
-* name = "JPCorePatientName"
+* name = "JPPatientNameSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -330,7 +330,7 @@ Instance: jp-patient-phone
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-phone"
-* name = "JPCorePatientphone"
+* name = "JPPatientphoneSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"

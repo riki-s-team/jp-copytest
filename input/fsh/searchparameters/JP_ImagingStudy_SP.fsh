@@ -2,7 +2,7 @@ Instance: jp-imagingstudy-bodySite
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-imagingstudy-bodysite"
-* name = "JPCoreImagingStudyBodySite"
+* name = "JPImagingStudyBodySiteSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -50,7 +50,7 @@ Instance: jp-imagingstudy-encounter
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-imagingstudy-encounter"
-* name = "JPCoreImagingStudyEncounter"
+* name = "JPImagingStudyEncounterSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -84,7 +84,7 @@ Instance: jp-imagingstudy-modality
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-imagingstudy-modality"
-* name = "JPCoreImagingStudyModality"
+* name = "JPImagingStudyModalitySP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -132,7 +132,7 @@ Instance: jp-imagingstudy-patient
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-imagingstudy-patient"
-* name = "JPCoreImagingStudyPatient"
+* name = "JPImagingStudyPatientSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -166,7 +166,7 @@ Instance: jp-imagingstudy-started
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-imagingstudy-started"
-* name = "JPCoreImagingStudyStarted"
+* name = "JPImagingStudyStartedSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"

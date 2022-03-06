@@ -2,7 +2,7 @@ Instance: jp-diagnosticreport-category
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-diagnosticreport-category"
-* name = "JPCoreDiagnosticReportCategory"
+* name = "JPDiagnosticReportCategorySP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -50,7 +50,7 @@ Instance: jp-diagnosticreport-code
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-diagnosticreport-code"
-* name = "JPCoreDiagnosticreportCode"
+* name = "JPDiagnosticreportCodeSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -98,7 +98,7 @@ Instance: jp-diagnosticreport-date
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-diagnosticreport-date"
-* name = "JPCoreDiagnosticreportDate"
+* name = "JPDiagnosticreportDateSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -149,7 +149,7 @@ Instance: jp-diagnosticreport-patient
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-diagnosticreport-patient"
-* name = "JPCoreDiagnosticReportPatient"
+* name = "JPDiagnosticReportPatientSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -183,7 +183,7 @@ Instance: jp-diagnosticreport-servicerequest
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-diagnosticreport-servicerequest"
-* name = "JPCoreDiagnosticReportServiceRequest"
+* name = "JPDiagnosticReportServiceRequestSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"

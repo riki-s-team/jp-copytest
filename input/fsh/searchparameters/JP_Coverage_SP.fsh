@@ -2,7 +2,7 @@ Instance: jp-coverage-beneficiary
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-coverage-beneficiary"
-* name = "JPCorecoverageBeneficiary"
+* name = "JPCoverageBeneficiarySP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -36,7 +36,7 @@ Instance: jp-coverage-identifier
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-coverage-identifier"
-* name = "JPCoreCoverageIdentifier"
+* name = "JPCoverageIdentifierSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"

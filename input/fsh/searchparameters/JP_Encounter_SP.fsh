@@ -2,7 +2,7 @@ Instance: jp-encounter-class
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-encounter-class"
-* name = "JPCoreEncounterClass"
+* name = "JPEncounterClassSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -50,7 +50,7 @@ Instance: jp-encounter-date
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-encounter-date"
-* name = "JPCoreEncounterDate"
+* name = "JPEncounterDateSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -101,7 +101,7 @@ Instance: jp-encounter-identifier
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-encounter-identifier"
-* name = "JPCoreEncounterIdentifier"
+* name = "JPEncounterIdentifierSP"
 * status = #active
 * experimental = false
 * date = "2019-09-23T19:48:45+10:00"
@@ -152,7 +152,7 @@ Instance: jp-encounter-patient
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-encounter-patient"
-* name = "JPCoreEncounterPatient"
+* name = "JPEncounterPatientSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -185,7 +185,7 @@ Instance: jp-encounter-status
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-encounter-status"
-* name = "JPCoreEncounterStatus"
+* name = "JPEncounterStatusSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -233,7 +233,7 @@ Instance: jp-encounter-type
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-encounter-type"
-* name = "JPCoreEncounterType"
+* name = "JPEncounterTypeSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"

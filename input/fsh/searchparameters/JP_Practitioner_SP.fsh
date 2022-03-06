@@ -2,7 +2,7 @@ Instance: jp-practitioner-identifier
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-practitioner-identifier"
-* name = "JPCorePractitionerIdentifier"
+* name = "JPPractitionerIdentifierSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -50,7 +50,7 @@ Instance: jp-practitioner-name
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-practitioner-name"
-* name = "JPCorePractitionerName"
+* name = "JPPractitionerNameSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"

@@ -2,7 +2,7 @@ Instance: jp-condition-category
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-condition-category"
-* name = "JPCoreConditionCategory"
+* name = "JPConditionCategorySP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -50,7 +50,7 @@ Instance: jp-condition-clinicalstatus
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-condition-clinicalStatus"
-* name = "JPCoreConditionClinicalStatus"
+* name = "JPConditionClinicalStatusSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -97,7 +97,7 @@ Instance: jp-condition-date
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-condition-date"
-* name = "JPCoreConditionDate"
+* name = "JPConditionDateSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -147,7 +147,7 @@ Instance: jp-condition-patient
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-condition-patient"
-* name = "JPCoreConditionPatient"
+* name = "JPConditionPatientSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -180,7 +180,7 @@ Instance: jp-condition-verificationstatus
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-condition-verificationStatus"
-* name = "JPCoreConditionVerificationStatus"
+* name = "JPConditionVerificationStatusSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"

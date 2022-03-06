@@ -2,7 +2,7 @@ Instance: jp-organization-address
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-organization-address"
-* name = "JPCoreOrganizationAddress"
+* name = "JPOrganizationAddressSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -35,7 +35,7 @@ Instance: jp-organization-identifier
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-organization-identifier"
-* name = "JPCoreOrganizationIdentifier"
+* name = "JPOrganizationIdentifierSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -83,7 +83,7 @@ Instance: jp-organization-name
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-organization-name"
-* name = "JPCoreOrganizationName"
+* name = "JPOrganizationNameSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"

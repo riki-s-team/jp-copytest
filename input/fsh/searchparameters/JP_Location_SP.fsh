@@ -2,7 +2,7 @@ Instance: jp-location-address-city
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-location-address-city"
-* name = "JPCoreLocationAddressCity"
+* name = "JPLocationAddressCitySP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -35,7 +35,7 @@ Instance: jp-location-address-postalcode
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-location-address-postalcode"
-* name = "JPCoreLocationAddressPostalcode"
+* name = "JPLocationAddressPostalcodeSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -68,7 +68,7 @@ Instance: jp-location-address-state
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-location-address-state"
-* name = "JPCoreLocationAddressState"
+* name = "JPLocationAddressStateSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -101,7 +101,7 @@ Instance: jp-location-address
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-location-address"
-* name = "JPCoreLocationAddress"
+* name = "JPLocationAddressSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
@@ -134,7 +134,7 @@ Instance: jp-location-name
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-location-name"
-* name = "JPCoreLocationName"
+* name = "JPLocationNameSP"
 * status = #active
 * experimental = false
 * date = "2021-12-01"
