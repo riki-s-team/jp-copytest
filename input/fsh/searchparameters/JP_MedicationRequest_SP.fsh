@@ -3,7 +3,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationrequest-authoredon"
 * name = "JPMedicationrequestAuthoredOnSP"
-* status = #active
+* status = #draft
 * experimental = false
 * date = "2021-12-01"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
@@ -54,7 +54,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationrequest-category"
 * name = "JPMedicationRequestCategorySP"
-* status = #active
+* status = #draft
 * experimental = false
 * date = "2021-12-01"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
@@ -102,7 +102,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationrequest-code"
 * name = "JPMedicationRequestCodeSP"
-* status = #active
+* status = #draft
 * experimental = false
 * date = "2021-12-01"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
@@ -150,7 +150,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationrequest-date"
 * name = "JPMedicationRequestDateSP"
-* status = #active
+* status = #draft
 * experimental = false
 * date = "2021-12-01"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
@@ -201,7 +201,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationrequest-identifier"
 * name = "JPMedicationRequestIdentifierSP"
-* status = #active
+* status = #draft
 * experimental = false
 * date = "2021-12-01"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
@@ -249,7 +249,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationrequest-patient"
 * name = "JPMedicationRequestPatientSP"
-* status = #active
+* status = #draft
 * experimental = false
 * date = "2021-12-01"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
@@ -283,7 +283,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationrequest-requester"
 * name = "JPMedicationRequestrRequesterSP"
-* status = #active
+* status = #draft
 * experimental = false
 * date = "2021-12-01"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"

@@ -8,7 +8,7 @@ Title: "JP_AllergyIntolerance"
 Description: "本プロファイルはAllergyIntoleranceリソースに対して、患者のアレルギーや不耐症に関するデータを送受信するための基礎となる制約と拡張を定めたものである。"
 * ^language = #ja
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_AllergyIntolerance"
-* ^status = #active
+* ^status = #draft
 * ^experimental = false
 * ^date = "2021-12-03T06:03:05.9665854+00:00"
 * ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"

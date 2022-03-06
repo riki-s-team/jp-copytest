@@ -3,7 +3,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-address-postalcode"
 * name = "JPPatientAddressPostalcodeSP"
-* status = #active
+* status = #draft
 * experimental = false
 * date = "2021-12-01"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
@@ -36,7 +36,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-birthdate"
 * name = "JPPatientBirthdateSP"
-* status = #active
+* status = #draft
 * experimental = false
 * date = "2021-12-01"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
@@ -87,7 +87,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-family"
 * name = "JPPatientFamilySP"
-* status = #active
+* status = #draft
 * experimental = false
 * date = "2021-12-01"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
@@ -120,7 +120,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-gender"
 * name = "JPPatientGenderSP"
-* status = #active
+* status = #draft
 * experimental = false
 * date = "2021-12-01"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
@@ -168,7 +168,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-given"
 * name = "JPPatientGivenSP"
-* status = #active
+* status = #draft
 * experimental = false
 * date = "2021-12-01"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
@@ -249,7 +249,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-identifier"
 * name = "JPPatientIdentifierSP"
-* status = #active
+* status = #draft
 * experimental = false
 * date = "2021-12-01"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
@@ -298,7 +298,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-name"
 * name = "JPPatientNameSP"
-* status = #active
+* status = #draft
 * experimental = false
 * date = "2021-12-01"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
@@ -331,7 +331,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-phone"
 * name = "JPPatientphoneSP"
-* status = #active
+* status = #draft
 * experimental = false
 * date = "2021-12-01"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"

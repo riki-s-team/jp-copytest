@@ -3,7 +3,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-observation-category"
 * name = "JPObservationCategorySP"
-* status = #active
+* status = #draft
 * experimental = false
 * date = "2021-12-01"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
@@ -51,7 +51,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-observation-code"
 * name = "JPObservationCodeSP"
-* status = #active
+* status = #draft
 * experimental = false
 * date = "2021-12-01"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
@@ -99,7 +99,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-observation-date"
 * name = "JPObservationDateSP"
-* status = #active
+* status = #draft
 * experimental = false
 * date = "2021-12-01"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
@@ -150,7 +150,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-observation-encounter"
 * name = "JPObservationEncounterSP"
-* status = #active
+* status = #draft
 * experimental = false
 * date = "2021-12-01"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
@@ -184,7 +184,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-observation-patient"
 * name = "JPObservationPatientSP"
-* status = #active
+* status = #draft
 * experimental = false
 * date = "2021-12-01"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
@@ -218,7 +218,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-observation-servicerequest"
 * name = "JPObservationServiceRequestSP"
-* status = #active
+* status = #draft
 * experimental = false
 * date = "2021-12-01"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
@@ -253,7 +253,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-observation-value-concept"
 * name = "JPObservationValueConceptSP"
-* status = #active
+* status = #draft
 * experimental = false
 * date = "2021-12-01"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
@@ -301,7 +301,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-observation-value-quantity"
 * name = "JPObservationValueQuantitySP"
-* status = #active
+* status = #draft
 * experimental = false
 * date = "2021-12-01"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"

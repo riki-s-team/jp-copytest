@@ -3,7 +3,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationadministration-code"
 * name = "JPMedicationAdministrationCodeSP"
-* status = #active
+* status = #draft
 * experimental = false
 * date = "2021-12-01"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
@@ -51,7 +51,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationadministration-effectivedatetime"
 * name = "JPMedicationAdministrationEffectiveDatetimeSP"
-* status = #active
+* status = #draft
 * experimental = false
 * date = "2021-12-01"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
@@ -102,7 +102,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationadministration-identifier"
 * name = "JPMedicationAdministrationIdentifierSP"
-* status = #active
+* status = #draft
 * experimental = false
 * date = "2021-12-01"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
@@ -150,7 +150,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationadministration-patient"
 * name = "JPMedicationAdministrationPatientSP"
-* status = #active
+* status = #draft
 * experimental = false
 * date = "2021-12-01"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"

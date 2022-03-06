@@ -15,7 +15,7 @@ Description: "このプロファイルはユーザは直接適用するもので
     JP_MedicationRequest_DosageInstruction_Device named Device 0..*
 //
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationDispenseBase"
-* ^status = #active
+* ^status = #draft
 * ^date = "2021-12-03T15:35:21.0508205Z"
 * ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * ^purpose = "このプロファイルはユーザは直接適用するものではなく、JP_MedicationDispenseとJP_MedicationDispenseInjectionの共通の親となる抽象プロファイルである。このプロファイルはMedicationDispenseリソースに対して、内服・外用薬剤処方調剤・払い出し記録のデータを送受信するため、JP_MedicationDispenseとJP_MedicationDispenseInjectionの各プロファイルの基礎となる制約と拡張のうち共通部分を定めている。"

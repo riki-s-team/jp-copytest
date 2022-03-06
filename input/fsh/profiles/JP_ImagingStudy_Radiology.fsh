@@ -6,7 +6,7 @@ Parent: ImagingStudy
 Id: JP-ImagingStudy-Radiology
 Description: "このプロファイルはImagingStudyリソースに対して、放射線検査のデータを送受信するための制約と拡張を定めたものである。"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_ImagingStudy_Radiology"
-* ^status = #active
+* ^status = #draft
 * ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * ^copyright = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * . ^short = "A set of images produced in single study (one or more series of references images)　単一の検査スタディで生成された画像のセット（1つ以上の一連の参照画像）"

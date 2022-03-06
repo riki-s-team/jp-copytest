@@ -7,7 +7,7 @@ Id: JP-Procedure
 Title: "JP_Procedure"
 Description: "このプロファイルはProcedureリソースに対して、患者に対する医療的な処置のデータを送受信するための共通の制約と拡張を定めたものである。"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Procedure"
-* ^status = #active
+* ^status = #draft
 * ^experimental = false
 * ^date = "2020-09-04"
 * ^publisher = "HL7 FHIR JP WG・・・"

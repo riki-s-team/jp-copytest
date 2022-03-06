@@ -3,7 +3,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-diagnosticreport-category"
 * name = "JPDiagnosticReportCategorySP"
-* status = #active
+* status = #draft
 * experimental = false
 * date = "2021-12-01"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
@@ -51,7 +51,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-diagnosticreport-code"
 * name = "JPDiagnosticreportCodeSP"
-* status = #active
+* status = #draft
 * experimental = false
 * date = "2021-12-01"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
@@ -99,7 +99,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-diagnosticreport-date"
 * name = "JPDiagnosticreportDateSP"
-* status = #active
+* status = #draft
 * experimental = false
 * date = "2021-12-01"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
@@ -150,7 +150,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-diagnosticreport-patient"
 * name = "JPDiagnosticReportPatientSP"
-* status = #active
+* status = #draft
 * experimental = false
 * date = "2021-12-01"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
@@ -184,7 +184,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-diagnosticreport-servicerequest"
 * name = "JPDiagnosticReportServiceRequestSP"
-* status = #active
+* status = #draft
 * experimental = false
 * date = "2021-12-01"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"

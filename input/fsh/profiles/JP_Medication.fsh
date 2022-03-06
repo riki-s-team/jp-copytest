@@ -11,7 +11,7 @@ Description: "このプロファイルはMedicationリソースに対して、�
 * ingredient.strength.extension contains JP_Medication_IngredientStrength_StrengthType named StrenghtType 0..*
 //
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Medication"
-* ^status = #active
+* ^status = #draft
 * ^date = "2021-12-04T09:24:43.5308889+00:00"
 * ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * ^purpose = "このプロファイルはMedicationリソースに対して、主に薬剤データを送受信するための基礎となる制約と拡張を定めたものである。"
@@ -32,7 +32,7 @@ Description: "このプロファイルはMedicationリソースに対して、�
 * code ^binding.strength = #preferred
 * code ^binding.description = "薬品の種類を規定するコード化された概念"
 * status 1..
-* status = #active (exactly)
+* status = #draft (exactly)
 * status ^definition = "JP Coreでは active で固定される。\r\n薬剤が有効に使われているかどうかを指定するコード。"
 * status ^comment = "このステータスは薬剤がローカルにあるシステム内で薬剤データベースや棚卸表で有効とされているかどうかを識別するためのものである。たとえば、薬剤システムで「ABC病院特製クリーム」といった製剤のために新しい薬剤ファイルを作成されるような場合もある。未来のある時点では、薬剤記録を作成した時にエラーが発生し、ステータスが「entered-in-error」に変化することもありうる。このステータスは薬剤が特定の処方集に記載されているかどうかを指定するためのものではない。薬剤記録が複数の処方集やカタログを参照することも可能であり、それぞれの記録が異なるステータスを持つこともある。"
 * status ^isModifierReason = "このエレメントはすべての属性の解釈によって変化する。"

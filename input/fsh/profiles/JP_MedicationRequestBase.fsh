@@ -16,7 +16,7 @@ Description: "このプロファイルはユーザは直接適用するもので
 //* ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-01-05T07:41:37.927+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequestBase"
-* ^status = #active
+* ^status = #draft
 * ^date = "2022-01-05T07:41:36.2383032+00:00"
 * ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * ^purpose = "このプロファイルはユーザは直接適用するものではなく、JP_MedicationRequestとJP_MedicationRequestInjectionの共通の親となる抽象プロファイルである。MedicationRequestリソースに対して、内服・外用薬剤処方、注射・点滴などのデータを送受信するため、JP_MedicationRequestとJP_MedicationRequestInjectionの各プロファイルの基礎となる制約と拡張のうち共通部分を定めている。"
@@ -68,7 +68,7 @@ Description: "このプロファイルはユーザは直接適用するもので
 * identifier[RequestIdentifier] ^min = 0
 * identifier[RequestIdentifier].system 1..
 * identifier[RequestIdentifier].system = "http://jpfhir.jp/fhir/Common/IdSystem/resourceInstance-identifier" (exactly)
-* status = #active (exactly)
+* status = #draft (exactly)
 * status ^definition = "JP coreでは\"active\"に固定される。\r\nオーダーの現在の状態を示すコード。一般的には active か completed の状態であるだろう。"
 * status ^comment = "このエレメントはmodifierとされている。StatusとはこのResourceが現在妥当な状態ではないことも示すからである。"
 * status ^isModifierReason = "このエレメントは modifier である。Statusエレメントが entered-in-error という正当な情報として扱うべきではない状態の値も取り得るからである。"

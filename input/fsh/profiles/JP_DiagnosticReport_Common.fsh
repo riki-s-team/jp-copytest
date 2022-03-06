@@ -6,7 +6,7 @@ Parent: DiagnosticReport
 Id: JP-DiagnosticReport-Common
 Description: "このプロファイルはDiagnosticReportリソースに対して、データを送受信するための共通の制約と拡張を定めたものである。"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_DiagnosticReport_Common"
-* ^status = #active
+* ^status = #draft
 * ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * ^copyright = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * . ^short = "A Diagnostic report - a combination of request information, atomic results, images, interpretation, as well as formatted reports 診断レポート-依頼情報、１項目単位の結果、画像、解釈、およびフォーマットされたレポートの組み合わせ"

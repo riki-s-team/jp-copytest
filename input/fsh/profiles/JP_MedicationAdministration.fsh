@@ -15,7 +15,7 @@ Description: "このプロファイルはMedicationAdministrationリソースに
 //
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationAdministration"
 * ^version = "1.0.0"
-* ^status = #active
+* ^status = #draft
 * ^date = "2021-12-04T09:26:12.4448275+00:00"
 * ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * ^purpose = "このプロファイルはMedicationAdministrationリソースに対して、内服・外用薬剤処方投与実施情報のデータを送受信するための基礎となる制約と拡張を定めたものである。"

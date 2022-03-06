@@ -6,7 +6,7 @@ Parent: Practitioner
 Id: JP-Practitioner
 Description: "このプロファイルはPractitionerリソースに対して、医療従事者のデータを送受信するための基礎となる制約と拡張を定めたものである。"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner"
-* ^status = #active
+* ^status = #draft
 * ^date = "2021-11-02T06:37:21.1308929Z"
 * . ^short = "ヘルスケアまたは関連サービスの提供に正式な責任を負う人"
 * . ^definition = "A person who is directly or indirectly involved in the provisioning of healthcare.\r\n\r\n医療の提供に直接または間接的に関与する者をいう。"

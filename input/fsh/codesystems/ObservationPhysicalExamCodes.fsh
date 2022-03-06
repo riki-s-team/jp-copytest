@@ -1,7 +1,7 @@
 CodeSystem: ObservationPhysicalExamCodes
 Id: jp-core-work-codesystem-observation-physicalExamCodes
 * ^url = "http://jpfhir.jp/fhir/Common/CodeSystem/observation-physicalExamCodes"
-* ^status = #active
+* ^status = #draft
 * ^caseSensitive = true
 * ^valueSet = "http://jpfhir.jp/fhir/Common/ValueSet/observation-physicalExamCodes"
 * ^content = #complete
