@@ -1,4 +1,4 @@
-id: hl7-fhir-jpcore-ig
+id: hl7.fhir.jpcore
 canonical: http://jpfhir.jp/fhir/core
 name: FhirJpcoreImplementationGuide
 title: "FHIR JP Core 実装ガイド"
