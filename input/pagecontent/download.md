@@ -1,14 +1,12 @@
 
-## 定義情報
-
+### Definitions(定義情報)
 - [JSON](definitions.json.zip)
 - [XML](definitions.xml.zip)
 
-### Examples
+### Examples(サンプルデータ)
 
 - [JSON](examples.json.zip)
 - [XML](examples.xml.zip)
-
 
 ### 一覧データ
 - [CSV](csvs.zip)
