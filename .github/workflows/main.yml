@@ -22,10 +22,12 @@ jobs:
     - name: Setup npm
       uses: actions/setup-node@v2
       with:
-        check-latest: true
+        node-version: 'lts/*'
+        cache: 'npm'
 
     - name: Setup Sushi
-      run: sudo npm install -g fsh-sushi
+      run: |
+        sudo npm install -g fsh-sushi
 
     - name: Install Jekyll
       run: |
