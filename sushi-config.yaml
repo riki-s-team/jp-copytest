@@ -5,17 +5,22 @@ title: "FHIR JP Core 実装ガイド"
 description: "日本医療情報学会(JAMI) NeXEHRS課題研究会「HL7®FHIR® 日本実装検討WG」で作成した日本国内におけるベースとなるJP Core実装ガイドのドラフトVer.1 です。"
 status: draft # draft | active | retired | unknown
 version: 1.1.0
+date: 2022-03-08
 fhirVersion: 4.0.1
 copyrightYear: 2022+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 publisher:
-  name: FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)
+  name: FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)2
   url: http://jpfhir.jp
   email: office@hlfhir.jp
 copyright: >-
-  FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)
+  FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)2
 
+
+#-----------------------------------------
+# ページタイトル名称設定
+#-----------------------------------------
 pages:
   index.md:
     title: HL7 FHIR JP Core 実装ガイド ＜Draft Ver1.1＞
@@ -42,6 +47,9 @@ pages:
   download.md:
     title: ダウンロード
 
+#-----------------------------------------
+# メニュー設定
+#-----------------------------------------
 menu:
   FHIRJP: index.html
   Guidances: 
@@ -58,3 +66,28 @@ menu:
   Security: security.html
   Artifacts: artifacts.html
   Download: download.html
+
+parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
+  path-resource:
+    - input/resources
+    - fsh-generated/resources
+  path-pages:
+    - input/pagecontent
+    - input/intro-notes
+    - fsh-generated/includes
+    #- input/summaries
+  path-expansion-params: '../../input/resources/exp-params.json'  # for using US ed of SNOMED
+  active-tables: 'false'
+  apply-contact: 'true'
+  apply-publisher: 'true'
+  apply-version: 'true'
+  show-inherited-invariants: 'false'
+  usage-stats-opt-out: 'true'
+  excludexml: 'false'
+  excludejsn: 'false'
+  excludettl: 'true'
+  excludemap: 'true'
+  excludeexample: 'true'
+  generate: #what does this do - todo: remove and see
+    - xml
+    - json
