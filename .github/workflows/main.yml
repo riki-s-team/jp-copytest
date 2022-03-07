@@ -18,17 +18,11 @@ jobs:
         ruby-version: ['3.0']
     steps:
     - uses: actions/checkout@v2
-    # - name: Setup Ruby
-    #   uses: ruby/setup-ruby@v1
-    #   with:
-    #     ruby-version: ${{ matrix.ruby-version }}
-    #     working-directory: .
-    #     bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-    
+
     - name: Setup npm
       uses: actions/setup-node@v2
       with:
-        check-lastest: true
+        check-latest: true
 
     - name: Setup Sushi
       run: sudo npm install -g fsh-sushi
@@ -51,10 +45,16 @@ jobs:
         mv publisher.jar ./input-cache/publisher.jar
         unset DISPLAY
         java -Djava.awt.headless=true -jar ./input-cache/publisher.jar -ig ig.ini
-        
-    # - name: Turn the table
-    #   working-directory: .
-    #   run: bundle exec rake
-    # - name: Chek broken links.
-    #   working-directory: .
-    #   run: bundle exec rake check
+            - name: Deploy Implementation Guide
+
+# deploy      
+    # - name: Deploy Implementation Guide
+    #   if: success()
+    #   uses: peaceiris/actions-gh-pages@v3
+    #   with:
+    #     personal_token: ${{ secrets.ROBO_OLIVER }}
+    #     external_repository: HL7Austria/hl7austria.github.io
+    #     publish_branch: pages
+    #     publish_dir: ./output
+    #     destination_dir: ./r5-pica-${{ steps.extract_branch.outputs.branch }}
+
