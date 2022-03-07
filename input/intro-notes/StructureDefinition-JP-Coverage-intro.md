@@ -1,22 +1,3 @@
-## 概略
-<br>
-<span style="color:;">医療機関や薬局、介護サービス等の支払いや償還に利用する保険や公費等のこと。保険適用だけでなく自己負担の場合もこのリソースを利用する。</span>
-
-
-
-| 項目           | 内容                                                       |
-| -------------- | ---------------------------------------------------------- |
-| 定義URL        | http://jpfhir.jp/fhir/core/StructureDefinition/JP_Coverage |
-| バージョン     | 1.0.0                                                      |
-| 名前           | JPCoreCoverageProfile                                   |
-| タイトル       | JP Core Coverage Profile                               |
-| ステータス     | アクティブ（2021-11-24）                                   |
-| 定義           | このプロファイルはCoverageリソースに対して、保険・公費のデータを送受信するための基礎となる制約と拡張を定めたものである。                                                     |
-| 公開者         | FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)   |
-| Copyright      | FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)   |
-| ソースリソース | https://simplifier.net/jp-core-draftv1/jpcoverage   |
-
-<br>
 
 ### 背景および想定シナリオ
 
@@ -46,3 +27,5 @@ JP Coverage リソースは、以下のリソースから直接参照される�
 <br>
 JP Coverage リソースには、直接参照するリソースは存在しない。
 <br><br>
+
+## リソース定義

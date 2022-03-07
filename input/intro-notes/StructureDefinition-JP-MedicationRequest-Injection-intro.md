@@ -1,18 +1,3 @@
-## 概略
-<br>
-
-| 項目           | 内容                                                       |
-| -------------- | ---------------------------------------------------------- |
-| 定義URL        | http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest_Injection |
-| バージョン     | 1.0.0                                                      |
-| 名前           | JPCoreMedicationRequestInjectionProfile                      |
-| タイトル       | JP Core MedicationRequest Injection Profile               |
-| ステータス     | アクティブ（2021-09-02）                                   |
-| 定義           | このプロファイルはMedicationRequestリソースに対して、注射薬剤処方のデータを送受信するための基礎となる制約と拡張を定めたものである。 |
-| 公開者         | FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)  |
-| Copyright      | FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)  |
-| ソースリソース | https://simplifier.net/jp-core-draftv1/jpmedicationrequestinjection |
-
 <br>
 
 このプロファイルは注射、注入の薬剤処方（以下、「注射処方」）をMedicationRequestリソースを使用して表現する。注射処方は指示する項目、使用する用語集、プロセスなどにおいて諸外国と日本では異なっており、日本国内で規格を運用するためにExtensionの追加や用語集の追加・変更を行った。現在、日本での注射関連規格として利用されているJAHIS 注射データ交換規約 Ver 2.1CおよびSS-MIX2 Ver.1.2gを参考にした。
@@ -52,3 +37,5 @@ JP Core MedicationRequest Injection リソースは、以下のリソースを�
 - JP Core Organizationリソース
 - JP Core Coverageリソース
 - JP Core Medicationリソース
+
+## リソース定義

@@ -1,5 +1,4 @@
-## 概要
-
+<br>
 本プロファイルは、患者の健康状態とその臨床的な評価を表現するConditionリソースの記録・更新・検索を行う上で、準拠するべき必須となる要素や、サポートすべき拡張、用語、検索パラメータを定義する。
 
 ### スコープ
@@ -22,3 +21,5 @@
 - [Appointment](https://www.hl7.org/fhir/appointment.html)
 - [CarePlan](https://www.hl7.org/fhir/careplan.html)
 - ...（その他多数）
+
+## リソース定義

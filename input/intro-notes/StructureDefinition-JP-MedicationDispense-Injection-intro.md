@@ -1,18 +1,3 @@
-## 概略
-<br>
-
-| 項目           | 内容                                                    |
-| -------------- | ---------------------------------------------------------- |
-| 定義URL        | http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationDispense_Injection |
-| バージョン     | 1.0.0                                                      |
-| 名前           | JPCoreMedicationDispenseInjectionProfile                      |
-| タイトル       | JP Core MedicationDispense Injection Profile               |
-| ステータス     | アクティブ（2021-09-29）                                   |
-| 定義           | このプロファイルはMedicationDispenseリソースに対して、注射薬剤処方調剤・払い出し記録のデータを送受信するための基礎となる制約と拡張を定めたものである。 |
-| 公開者         | FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)  |
-| Copyright      | FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)  |
-| ソースリソース | https://simplifier.net/jp-core-draftv1/jpMedicationDispenseInjection |
-
 <br>
 
 このプロファイルは注射、注入を含む薬剤処方の調剤情報をMedicationDispenseリソースを使用して表現する。日本国内で規格を運用するためにExtensionの追加や用語集の追加・変更を行った。
@@ -44,3 +29,5 @@ JP Core MedicationDispense Injection リソースは、以下のリソースを�
 - JP Core Organizationリソース
 - JP Core MedicationRequest Injectionリソース
 - JP Core Medicationリソース
+
+## リソース定義

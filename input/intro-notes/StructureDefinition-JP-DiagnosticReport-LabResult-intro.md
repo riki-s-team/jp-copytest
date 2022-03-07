@@ -1,19 +1,4 @@
-## 概略
-
-
-| 項目           | 内容                                                       |
-| -------------- | ---------------------------------------------------------- |
-| 定義URL        | http://jpfhir.jp/fhir/core/StructureDefinition/JP_DiagnosticReport_LabResult |
-| バージョン     | 1.0.0                                                      |
-| 名前           | JPDiagnosticReportLabResult                                   |
-| タイトル       | JP Core Diagnostic Report Lab Result Profile |
-| ステータス     | アクティブ（2021-11-03）                                   |
-| 定義           | このプロファイルは[`DiagnosticReport`](DiagnosticReport#Common2)リソースに関し検体検査の１項目を対象として表現し、データを送受信するための基礎となる制約と拡張を定めたものである。 |
-| 公開者         | FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)|
-| Copyright      | FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI) |
-| ソースリソース | https://simplifier.net/jp-core-draftv1/jpdiagnosticreportlabresult |
-
-
+<br>
 本プロファイルは、患者に関連付けられた検査結果を記録、検索、および取得するための`DiagnosticReport`リソースを使用するにあたっての、最低限の制約を記述したものである。またこのプロファイルを使用するときに、どの要素、拡張機能、語彙、および値セットがリソースに存在する必要があるかを示す。
 
 検体検査結果は、通常は`Observation`リソースを参照する`DiagnosticReport`リソースを使用してグループ化および要約されたものである。
@@ -68,3 +53,6 @@
 - [`RiskAssessment`](https://www.hl7.org/fhir/riskassessment.html)
 - [`ServiceRequest`](https://www.hl7.org/fhir/servicerequest.html)
 - [`SupplyRequest`](https://www.hl7.org/fhir/supplyrequest.html)
+
+
+## リソース定義

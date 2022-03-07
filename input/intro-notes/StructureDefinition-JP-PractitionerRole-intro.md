@@ -1,24 +1,6 @@
-## 概略
-
+<br/>
 <span style="color: ;">医療者が組織で一定期間担当する可能性のある特定の役割/場所/専門分野/サービスのセット。</span>
-
-
-
-| 項目           | 内容                                                       |
-| -------------- | ---------------------------------------------------------- |
-| 定義URL        | http://jpfhir.jp/fhir/core/StructureDefinition/JP_PractitionerRole |
-| バージョン     | 1.0.0                                                      |
-| 名前           | JPCorePractitionerRoleProfile                                   |
-| タイトル       | JP Core PractitionerRole Profile                               |
-| ステータス     | アクティブ（2021-10-25）                                   |
-| 定義           | このプロファイルはPractitionerRoleリソースに対して、医療従事者役割のデータを送受信するための基礎となる制約と拡張を定めたものである。                                                     |
-| 公開者         | FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI) |
-| Copyright      | FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)
- |
-| ソースリソース | https://simplifier.net/jp-core-draftv1/jppractitionerrole   |
-
-
-
+<br/>
 本プロファイルは、PractitionerRoleリソースが医療者の役割を記録、検索、および取得するための最小の期待値を設定する。 これは、このプロファイルを使用するときにPractitionerRoleリソースに存在する必要がある必須のコア要素、拡張機能、語彙、および値セットを識別する。
 
 
@@ -49,3 +31,5 @@ JP PractitionerRole リソースは、以下のリソースから直接参照さ
 JP Core PractitionerRole リソースは、以下のリソースを直接参照する。
 
 - Practitioner, Organization, Location, HealthcareService and Endpoint
+
+## リソース定義

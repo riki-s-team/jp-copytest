@@ -1,22 +1,4 @@
-## 概略
-
-医療サービスの提供または患者の健康状態の評価を目的とした、患者と医療提供者間の相互作用(interaction)。
-
-
-| 項目           | 内容                                                       |
-| -------------- | ---------------------------------------------------------- |
-| 定義URL        | http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter |
-| バージョン     | 1.0.0 |
-| 名前           | JPCoreEncounterProfile                                   |
-| タイトル       | JP Core Encounter Profile                               |
-| ステータス     | アクティブ（2021-11-30）                                   |
-| 定義           | このプロファイルはEncounterリソースに対して、来院/入院情報のデータを送受信するための基礎となる制約と拡張を定めたものである。                                                     |
-| 公開者         | FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)  |
-| Copyright      | FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)  |
-| ソースリソース | https://simplifier.net/jp-core-draftv1/jpencounter   |
-
-
-
+<br>
 本プロファイルは、患者の医療機関受診に関する情報の登録や検索、取得のために 、FHIR Encounter リソースを使用するにあたっての、最低限の制約を記述したものである。Encounter リソースに対して本プロファイルに準拠する場合に必須となる要素や、サポートすべき拡張、用語、検索パラメータを定義する。
 
 
@@ -151,3 +133,5 @@ Encounter リソースは、以下のリソースを直接参照する。
  - Patient
  - ServiceRequest
  
+
+## リソース定義

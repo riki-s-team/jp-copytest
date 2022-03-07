@@ -1,17 +1,3 @@
-## 概要
-
-| 項目           | 内容                                                       |
-| -------------- | ---------------------------------------------------------- |
-| 定義URL        | http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_Common |
-| バージョン     | 1.0.0                                                      |
-| 名前           | JPCoreObservationCommonProfile |
-| タイトル       | JP Core Observation Common Profile |
-| ステータス     | アクティブ（2021-11-03）                                   |
-| 定義           | このプロファイルは`Observation`リソースに対して、データを送受信するための共通の制約と拡張を定めたものである。 |
-| 公開者         | FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)  |
-| Copyright      | FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)  |
-| ソースリソース | https://simplifier.net/jp-core-draftv1/jpobservationcommon
-
 ## 背景および想定シナリオ
 `Observation`リソースに対する主な用途は以下の通り。
 - 体重、血圧、体温などのバイタルサイン
@@ -60,3 +46,5 @@
 - [`RiskAssessment`](https://www.hl7.org/fhir/riskassessment.html)
 - [`ServiceRequest`](https://www.hl7.org/fhir/servicerequest.html)
 - [`SupplyRequest`](https://www.hl7.org/fhir/supplyrequest.html)
+
+## リソース定義

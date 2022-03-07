@@ -1,20 +1,7 @@
-## 概要
-
+<br/>
 この章ではJP Core Clientの期待される機能について説明する。
 JP Core Serverによってサポートされる FHIR プロファイル・RESTful操作・検索パラメータの完全なリストを定義する。  
 JP Core Clientは個別のユースケースや意味的な要請に応じてこれらのリストを通じて必要なデータにアクセスすることができる。
-
-| 項目           | 内容                                                       |
-| -------------- | ---------------------------------------------------------- |
-| 定義URL        | http://jpfhir.jp/fhir/core/CapabilityStatement/StructureDefinition/jpcoreclientcapabilitystatement |
-| バージョン     | 1.0.0                                                      |
-| 名前           | JPCoreClientCapabilityStatement                                   |
-| タイトル       | JP Core Client Capability Statement                              |
-| ステータス     | アクティブ（2021-12-01）                                   |
-| 定義           | JP Core Clientの期待される機能について説明する。JP Core Clientは、ローカルなユースケースやその他の文脈上の要件に基づいて、必要なデータにアクセスするために、このリストから選択することができます。|
-| 公開者         | FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)   |
-| Copyright      | FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)   |
-| ソースリソース | https://simplifier.net/jp-core-draftv1/jpcoreclientcapabilitystatement |
 
 ## FHIR RESTful Capabilities
 - JP Coreは以下の要件を必須とする(**SHALL**)

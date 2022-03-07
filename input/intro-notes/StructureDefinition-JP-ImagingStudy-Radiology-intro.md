@@ -1,19 +1,4 @@
-## 概略
-患者の画像検査（DICOM画像で情報が取得される検査）に関する情報
-
-| 項目           | 内容                                                       |
-| -------------- | ---------------------------------------------------------- |
-| 定義URL        | http://jpfhir.jp/fhir/core/StructureDefinition/JP_ImagingStudy_Radiology |
-| バージョン     | 1.0.0                                               |
-| 名前           | JPCoreImagingStudyRadiologyProfile                           |
-| タイトル       | JP Core ImagingStudy Radiology Profile                               |
-| ステータス     | アクティブ（2021-11-03）                                   |
-| 定義           | このプロファイルはImagingStudyリソースに対して、ひとつの画像検査のデータを送受信するための基礎となる制約と拡張を定めたものである。  |
-| 公開者         | FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI) |
-| Copyright      | FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)   |
-| ソースリソース | https://simplifier.net/jpcore/jpimagingstudy   |
-
-
+<br>
 本プロファイル説明は、患者に付属する画像検査情報について、情報の登録や検索、取得のために、FHIR `ImagingStudy`リソースを使用するにあたっての、最低限の制約を記述したものである。
 
 
@@ -71,3 +56,4 @@ DICOMタグは4桁の16進数がコンマで区切られたペア（例　(0008,
  - [`DiagnosticReport`](DiagnosticReportRadiology)
  - [`Observation`](Observation)
  
+## リソース定義

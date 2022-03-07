@@ -1,20 +1,5 @@
-## 概略
-<br>
+<br/>
 <span style="color:;">患者のケアやその他の健康関連サービスを受けている個人または動物に関する人口統計およびその他の管理情報。</span>
-
-| 項目           | 内容                                                       |
-| -------------- | ---------------------------------------------------------- |
-| 定義URL        | http://jpfhir.jp/fhir/core/StructureDefinition/JP_Patient |
-| バージョン     | 1.0.0                                                      |
-| 名前           | JPCorePatientProfile                                   |
-| タイトル       | JP Core Patient Profile                               |
-| ステータス     | アクティブ（2021-09-01）                                   |
-| 定義           | このプロファイルはPatientリソースに対して、患者のデータを送受信するための基礎となる制約と拡張を定めたものである。                                                     |
-| 公開者         | FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)  |
-| Copyright      | FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)  |
-| ソースリソース | https://simplifier.net/jp-core-draftv1/jppatient   |
-
-
 ### スコープ
 
 本リソースは、以下を含む幅広い健康関連活動に関与する患者と動物に関するデータをカバーしている。
@@ -127,3 +112,5 @@ JP Patient リソースは、以下のリソースを直接参照する。
 - Practitioner
 - PractitionerRole
 - RelatedPerson
+
+## リソース定義

@@ -1,23 +1,4 @@
-## 概略
-
-<span style="color: ;">サービスが提供され、リソースや参加者が保管、発見、収容、または宿泊できる物理的な場所の詳細および位置情報。</span>
-
-
-
-| 項目           | 内容                                                       |
-| -------------- | ---------------------------------------------------------- |
-| 定義URL        | http://jpfhir.jp/fhir/core/StructureDefinition/JP_Location |
-| バージョン     | 1.0.0                                                      |
-| 名前           | JPCoreLocationProfile                                   |
-| タイトル       | JP Core Location Profile                               |
-| ステータス     | アクティブ（2021-10-25）                                   |
-| 定義           | このプロファイルはLocationリソースに対して、所在場所のデータを送受信するための基礎となる制約と拡張を定めたものである。                                                     |
-| 公開者         | FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)  |
-| Copyright      | FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)  |
-| ソースリソース | https://simplifier.net/jp-core-draftv1/jplocation   |
-
-
-
+<br>
 本プロファイルは、患者、プロバイダー、または組織に関連付けられたロケーションを記録、検索、およびフェッチするために 、FHIR Location リソースを使用するにあたっての、最低限の制約を記述したものである。Location リソースに対して本プロファイルに準拠する場合に必須となる要素や、サポートすべき拡張、用語、検索パラメータを定義する。
 
 
@@ -64,3 +45,5 @@ JP Core Location リソースは、以下のリソースを直接参照する。
 
 - Organization, Location and Endpoint
 
+
+## リソース定義

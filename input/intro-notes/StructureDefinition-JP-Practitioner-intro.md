@@ -1,18 +1,4 @@
-## 概略
-
-| 項目           | 内容                                                       |
-| -------------- | ---------------------------------------------------------- |
-| 定義URL        | http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner |
-| バージョン     | 1.0.0                                                      |
-| 名前           | JPCorePratitionerProfile                                   |
-| タイトル       | JP Core Practitioner Profile                               |
-| ステータス     | アクティブ（2021-11-02）                                   |
-| 定義           | このプロファイルはPractitionerリソースに対して、医療従事者のデータを送受信するための基礎となる制約と拡張を定めたものである。                                                     |
-| 公開者         |  FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)  |
-| Copyright      |  FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)  |
-| ソースリソース | https://simplifier.net/jp-core-draftv1/jppractitioner   |
-
-
+<br/>
 本プロファイルは、医療従事者に関する情報の登録や検索、取得のために 、FHIR Practitioner リソースを使用するにあたっての、最低限の制約を記述したものである。Practitioner リソースに対して本プロファイルに準拠する場合に必須となる要素や、サポートすべき拡張、用語、検索パラメータを定義する。
 
 ### 背景および想定シナリオ
@@ -124,3 +110,5 @@ JP Practitioner リソースは、以下のリソースから直接参照され�
 JP Practitioner リソースは、以下のリソースを直接参照する。
 
 - Organization 
+
+## リソース定義

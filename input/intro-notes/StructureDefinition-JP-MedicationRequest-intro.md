@@ -1,18 +1,3 @@
-## 概略
-<br>
-
-| 項目           | 内容                                                       |
-| -------------- | ---------------------------------------------------------- |
-| 定義URL        | http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest |
-| バージョン     | 1.0.0                                                      |
-| 名前           | JPCoreMedicationRequestProfile                                   |
-| タイトル       | JP Core MedicationRequest Profile                               |
-| ステータス     | アクティブ（2021-08-26）                                   |
-| 定義           | このプロファイルはMedicationRequestリソースに対して、内服・外用薬剤処方のデータを送受信するための基礎となる制約と拡張を定めたものである。 |
-| 公開者         | FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)  |
-| Copyright      | FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)  |
-| ソースリソース | https://simplifier.net/jp-core-draftv1/jpmedicationrequest |
-
 <br>
 
 このプロファイルは内服、外用の薬剤処方をMedicationRequestリソースを使用して表現する。薬剤処方は指示する項目、使用する用語集、プロセスなどにおいて諸外国と日本では異なっており、日本国内で規格を運用するためにExtensionの追加や用語集の追加・変更を行った。現在、日本での処方関連規格として利用されているJAHIS 処方データ交換規約 Ver 3.0C、JAHIS院外処方箋２次元シンボル記録条件規約 Ver.1.6およびSS-MIX2 Ver.1.2gを参考にし、療養担当則23条様式2号の処方箋形式を電子的に構成することを目的とした。ただし、院外処方に特化することはせず、院内処方も含めた様々なコンテキストで利用できることを目指している。
@@ -58,3 +43,5 @@ JP Core MedicationRequestリソースは、以下のリソースを直接参照�
 - JP Core Coverageリソース
 - JP Core Medicationリソース
 
+
+## リソース定義

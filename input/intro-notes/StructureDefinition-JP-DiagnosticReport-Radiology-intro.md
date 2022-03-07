@@ -1,19 +1,4 @@
-## 概略
-
-| 項目           | 内容                                                       |
-| -------------- | ---------------------------------------------------------- |
-| 定義URL        | http://jpfhir.jp/fhir/core/StructureDefinition/JP_DiagnosticReport_Radiology |
-| バージョン     | 1.0.0                                                      |
-| 名前           | JPDiagnosticReportRadiology                                |
-| タイトル       | JP Core Diagnostic Report Radiology Profile                |
-| ステータス     | アクティブ（2021-11-03）                                   |
-| 定義           | このプロファイルは[`DiagnosticReport`](DiagnosticReport#Common2)リソースに関し放射線検査の１項目を対象として表現し、データを送受信するための基礎となる制約と拡張を定めたものである。 |
-| 公開者         | FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI) |
-| Copyright      | FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI) |
-| ソースリソース | https://simplifier.net/jp-core-draftv1/jpdiagnosticreportradiology |
-
-
-
+<br>
 本プロファイルは、[`DiagnosticReport`リソース](DiagnosticReport#Common2) のうち、放射線画像検査における患者、患者群、機器、場所、およびこれらから得られた画像に対して実施された診断結果またはその解釈を示す「報告書」を表現するリソースの定義である。ここでは、`DiagnosticReport` リソースに対して本プロファイルに準拠する場合に必須となる要素や、サポートすべき拡張、用語、検索パラメータを定義する。
 報告書は、依頼者や撮影の情報などの臨床的背景のほか、いくつかの計測値、画像、テキストおよびコード化された解釈、テンプレート化された診断報告書により構成される。
 
@@ -69,3 +54,5 @@
 - 感染症情報 [ (`RiskAssessment`) ](http://hl7.org/fhir/riskassessment.html) あるいは [ (`Observation`) ](https://simplifier.net/jp-core-draftv1/jpobservationlabresult)
 
 運用のフローに関連する TASK、Procedure 等のリソース定義についてはここでは触れない。
+
+## リソース定義

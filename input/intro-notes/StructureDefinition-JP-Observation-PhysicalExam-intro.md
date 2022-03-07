@@ -1,17 +1,4 @@
-## 概要
-
-| 項目           | 内容                                                       |
-| -------------- | ---------------------------------------------------------- |
-| 定義URL        | http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_PhysicalExam |
-| バージョン     | 1.0.0 |
-| 名前           | JPCoreObservationPhysicalExamProfile |
-| タイトル       | JP Core Observation PhysicalExam Profile |
-| ステータス     | アクティブ（2021-11-03）|
-| 定義           | このプロファイルはObservationリソースに対して、身体所見のデータを送受信するための制約と拡張を定めたものである。 |
-| 公開者         | FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI) |
-| Copyright      | FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI) |
-| ソースリソース | https://simplifier.net/jp-core-draftv1/jpobservationphysicalexam |
-
+<br/>
 本プロファイル説明は、患者に付属する一項目分の身体所見情報について、情報の登録や検索、取得のために、FHIR `Observation`リソースを使用するにあたっての、最低限の制約を記述したものである。
 
 `Observation`リソースに対して本プロファイルに準拠する場合に必須となる要素や、サポートすべき拡張、用語、検索パラメータを定義する。
@@ -67,3 +54,5 @@
 - [`Encounter`](Encounter)
 - [`Patient`](Patient)
 - [`Practitioner`](Practitioner)
+
+## リソース定義

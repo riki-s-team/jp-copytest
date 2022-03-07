@@ -1,17 +1,4 @@
-## 概要
-
-| 項目           | 内容                                                       |
-| -------------- | ---------------------------------------------------------- |
-| 定義URL        | http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_SocialHistory |
-| バージョン     | 1.0.0                                                      |
-| 名前           | JP_Observation_SocialHistory                                   |
-| タイトル       | JP Core Observation Social History Profile |
-| ステータス     | アクティブ（2021-11-03）                                   |
-| 定義           | Observation Social History Profile |
-| 公開者         | FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI) |
-| Copyright      | FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)  |
-| ソースリソース | https://simplifier.net/jp-core-draftv1/jpobservationsocialhistory |
-
+<br/>
 本プロファイル説明は、患者に付属する一項目分のバイタルサイン情報について、情報の登録や検索、取得のために、`JP_Observation_SocialHistory`リソースを使用するにあたっての、最低限の制約を記述したものである。
 `JP_Observation_SocialHistory` リソースに対して本プロファイルに準拠する場合に必須となる要素や、サポートすべき拡張、用語、検索パラメータを定義する。
 
@@ -63,3 +50,5 @@
 - [`RiskAssessment`](https://www.hl7.org/fhir/riskassessment.html)
 - [`ServiceRequest`](https://www.hl7.org/fhir/servicerequest.html)
 - [`SupplyRequest`](https://www.hl7.org/fhir/supplyrequest.html)
+
+## リソース定義

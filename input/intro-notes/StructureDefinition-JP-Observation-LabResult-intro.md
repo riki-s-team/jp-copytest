@@ -1,20 +1,4 @@
-## 概略
-
-
-| 項目           | 内容                                                       |
-| -------------- | ---------------------------------------------------------- |
-| 定義URL        | http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_LabResult |
-| バージョン     | 1.0.0                                                      |
-| 名前           | JPObservationLabResult                                   |
-| タイトル       | JP Core Observation Lab Result Profile |
-| ステータス     | アクティブ（2021-11-03）                                   |
-| 定義           | このプロファイルは[`Observation`](Observation#Common2)リソースに対して、\[検体検査結果\]のデータを送受信するための制約と拡張を定めたものであり、Observation（共通）プロファイルと共に使用される。　　　　　|
-| 公開者         | FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI) |
-| Copyright      | FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)  |
-| ソースリソース | https://simplifier.net/jp-core-draftv1/jpobservationlabresult |
-
-
-
+<br/>
 本プロファイル説明は、患者に関連付けられた検体検査結果を記録、検索、および取得のために、FHIR `Observation`リソースを使用するにあたっての、最低限の制約を記述したものである。
 
 `Observation`リソースに対して本プロファイルに準拠する場合に必須となる要素や、サポートすべき拡張、用語、検索パラメータを定義する。
@@ -71,3 +55,5 @@
 - [`ServiceRequest`](https://www.hl7.org/fhir/servicerequest.html)
 - [`SupplyRequest`](https://www.hl7.org/fhir/supplyrequest.html)
 
+
+## リソース定義
