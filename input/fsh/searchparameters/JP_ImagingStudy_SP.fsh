@@ -5,7 +5,7 @@ Usage: #definition
 * name = "JPImagingStudyBodySiteSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "ImagingStudyリソースのBodySite(部位)に関する検索を定義します。"
 * code = #bodysite
@@ -53,7 +53,7 @@ Usage: #definition
 * name = "JPImagingStudyEncounterSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "ImagingStudyリソースのEncounter(来院・入院)に関する検索を定義します。"
 * code = #encounter
@@ -87,7 +87,7 @@ Usage: #definition
 * name = "JPImagingStudyModalitySP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "ImagingStudyリソースのmodality(カテゴリ)に関する検索を定義します。"
 * code = #modality
@@ -135,7 +135,7 @@ Usage: #definition
 * name = "JPImagingStudyPatientSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "ImagingStudyリソースのPatient(患者)に関する検索を定義します。"
 * code = #patient
@@ -169,7 +169,7 @@ Usage: #definition
 * name = "JPImagingStudyStartedSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "ImagingStudyリソースのstarted(検査開始日時)に関する検索を定義します。"
 * code = #started

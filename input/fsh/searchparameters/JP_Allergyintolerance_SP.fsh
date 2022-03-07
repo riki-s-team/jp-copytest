@@ -5,7 +5,7 @@ Usage: #definition
 * name = "JPAllergyIntoleranceCategorySP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "AllergyIntoleranceリソースのCategory(カテゴリ)に関する検索を定義します。"
 * code = #category
@@ -53,7 +53,7 @@ Usage: #definition
 * name = "JPAllergyintoleranceClinicalStatusSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "AllergyIntoleranceリソースのclinicalStatus(アレルギー・不耐性の臨床的なステータス)に関する検索を定義します。"
 * code = #clinicalstatus
@@ -101,7 +101,7 @@ Usage: #definition
 * name = "JPAllergyIntoleranceCriticalitySP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "AllergyIntoleranceリソースのcriticalityに関する検索を定義します。"
 * code = #criticality
@@ -149,7 +149,7 @@ Usage: #definition
 * name = "JPAllergyIntoleranceDateSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "AllergyIntoleranceリソースのrecordedDate(記載日付)に関する検索を定義します。"
 * code = #date
@@ -200,7 +200,7 @@ Usage: #definition
 * name = "JPAllergyIntolerancePatientSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "AllergyIntoleranceリソースのPatient(患者)に関する検索を定義します。"
 * code = #patient
@@ -233,7 +233,7 @@ Usage: #definition
 * name = "JPAllergyIntoleranceTypeSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "AllergyIntoleranceリソースのtypeに関する検索を定義します。"
 * code = #type
@@ -281,7 +281,7 @@ Usage: #definition
 * name = "JPAllergyIntoleranceVerificationStatusSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "AllergyIntoleranceリソースのverificationStatusに関する検索を定義します。"
 * code = #verificationstatus

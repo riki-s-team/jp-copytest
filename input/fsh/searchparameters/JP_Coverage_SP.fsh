@@ -5,7 +5,7 @@ Usage: #definition
 * name = "JPCoverageBeneficiarySP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Coverageリソースのbeneficiaryに関する検索を定義します。"
 * code = #beneficiary
@@ -39,7 +39,7 @@ Usage: #definition
 * name = "JPCoverageIdentifierSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Coverageリソースのidentifierに関する検索を定義します。"
 * code = #identifier

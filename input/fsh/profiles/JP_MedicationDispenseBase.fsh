@@ -16,7 +16,7 @@ Description: "このプロファイルはユーザは直接適用するもので
 //
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationDispenseBase"
 * ^status = #draft
-* ^date = "2021-12-03T15:35:21.0508205Z"
+* ^date = "2022-03-07"
 * ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * ^purpose = "このプロファイルはユーザは直接適用するものではなく、JP_MedicationDispenseとJP_MedicationDispenseInjectionの共通の親となる抽象プロファイルである。このプロファイルはMedicationDispenseリソースに対して、内服・外用薬剤処方調剤・払い出し記録のデータを送受信するため、JP_MedicationDispenseとJP_MedicationDispenseInjectionの各プロファイルの基礎となる制約と拡張のうち共通部分を定めている。"
 * ^copyright = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
@@ -173,7 +173,7 @@ Title: "JP_MedicationDispense_Preparation"
 Description: "薬剤単位の調剤結果"
 * ^meta.lastUpdated = "2021-12-03T16:26:48.533+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDispense_Preparation"
-* ^date = "2021-12-03T16:26:12.6876987+00:00"
+* ^date = "2022-03-07"
 * ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * ^purpose = "薬剤単位の調剤結果"
 * ^copyright = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"

@@ -6,7 +6,7 @@ Usage: #definition
 * title = "JP Core Server CapabilityStatement"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "JP Core Server Actorの期待される機能について説明する。\nJP Core ServerがサポートするFHIRプロファイル、OperationsおよびSearch Parametersのリストが定義されている。"
 * copyright = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"

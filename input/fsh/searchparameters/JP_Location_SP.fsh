@@ -5,7 +5,7 @@ Usage: #definition
 * name = "JPLocationAddressCitySP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Locationリソースのaddress-cityに関する検索を定義します。"
 * code = #address-city
@@ -38,7 +38,7 @@ Usage: #definition
 * name = "JPLocationAddressPostalcodeSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Locationリソースのaddress-postalcodeに関する検索を定義します。"
 * code = #address-postalcode
@@ -71,7 +71,7 @@ Usage: #definition
 * name = "JPLocationAddressStateSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Locationリソースのaddress-stateに関する検索を定義します。"
 * code = #address-state
@@ -104,7 +104,7 @@ Usage: #definition
 * name = "JPLocationAddressSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Locationリソースのaddressに関する検索を定義します。"
 * code = #address
@@ -137,7 +137,7 @@ Usage: #definition
 * name = "JPLocationNameSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Locationリソースのname(名称)に関する検索を定義します。"
 * code = #name

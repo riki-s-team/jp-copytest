@@ -7,7 +7,7 @@ Id: JP-Organization
 Description: "このプロファイルはOrganizationリソースに対して、組織情報のデータを送受信するための基礎となる制約と拡張を定めたものである。"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Organization"
 * ^status = #draft
-* ^date = "2021-11-09T07:38:42.4698842+00:00"
+* ^date = "2022-03-07"
 * . ^short = "A grouping of people or organizations with a common purpose/共通の目的を持った人や組織の集まり"
 * . ^definition = "A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action.  Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, payer/insurer, etc.\r\n\r\n\r\n集団行動の何らかの形での達成を目的として結成された、正式または非公式に認められた人々または組織のグループ。企業、機関、企業、部門、コミュニティグループ、医療実践グループ、支払者/保険者などが含まれる。"
 * extension ^slicing.discriminator.type = #value
@@ -82,7 +82,7 @@ Id: 01530641-bc1b-4c76-a182-40fae3251e98
 Description: "点数表コード１桁（医科１、歯科３）表現するためのExtension。 JP Core Organizationプロファイルで利用されることを想定しているが、他のリソースでも利用可能である"
 * ^meta.lastUpdated = "2021-12-02T03:45:35.138+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationCategory"
-* ^date = "2021-12-01T06:35:56.7665609+00:00"
+* ^date = "2022-03-07"
 * ^context.type = #element
 * ^context.expression = "Organization"
 * . ^short = "点数表コード１桁（医科1、歯科３）"
@@ -104,7 +104,7 @@ Id: 0951c1d5-7a75-488e-9e00-b2807dba71e5
 Description: "保険医療機関番号７桁を表現するためのExtension。 JP Core Organizationプロファイルで利用されることを想定しているが、他のリソースでも利用可能である"
 * ^meta.lastUpdated = "2021-12-01T06:35:51.467+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationNo"
-* ^date = "2021-11-30T06:46:39.7818895Z"
+* ^date = "2022-03-07"
 * ^context.type = #element
 * ^context.expression = "Organization"
 * . ^short = "保険医療機関番号７桁"
@@ -126,7 +126,7 @@ Description: """都道府県番号２桁を表現するためのExtension。
 JP Core Organizationプロファイルで利用されることを想定しているが、他のリソースでも利用可能である"""
 * ^meta.lastUpdated = "2021-12-01T06:35:42.702+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_PrefectureNo"
-* ^date = "2021-11-30T06:32:24.0070401Z"
+* ^date = "2022-03-07"
 * ^context.type = #element
 * ^context.expression = "Organization"
 * . ^short = "都道府県番号2桁"

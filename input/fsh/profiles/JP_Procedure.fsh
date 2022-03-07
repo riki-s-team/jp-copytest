@@ -9,7 +9,7 @@ Description: "このプロファイルはProcedureリソースに対して、患
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Procedure"
 * ^status = #draft
 * ^experimental = false
-* ^date = "2020-09-04"
+* ^date = "2022-03-07"
 * ^publisher = "HL7 FHIR JP WG・・・"
 * ^jurisdiction = urn:iso:std:iso:3166#JP "Japan"
 * ^jurisdiction.text = "Jurisdiction"

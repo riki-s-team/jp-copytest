@@ -5,7 +5,7 @@ Usage: #definition
 * name = "JPPatientAddressPostalcodeSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Patientリソースのaddress-postal(郵便番号)に関する検索を定義します。"
 * code = #address-postalcode
@@ -38,7 +38,7 @@ Usage: #definition
 * name = "JPPatientBirthdateSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Patientリソースのbirthdate(生年月日)に関する検索を定義します。"
 * code = #birthdate
@@ -89,7 +89,7 @@ Usage: #definition
 * name = "JPPatientFamilySP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Patientリソースのfamily(姓)に関する検索を定義します。"
 * code = #family
@@ -122,7 +122,7 @@ Usage: #definition
 * name = "JPPatientGenderSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Patientリソースのgender(性別)に関する検索を定義します。"
 * code = #gender
@@ -170,7 +170,7 @@ Usage: #definition
 * name = "JPPatientGivenSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Patientリソースにのgiven(名)に関する検索を定義します。"
 * code = #given
@@ -203,7 +203,7 @@ Usage: #definition
 * name = "JPPatientIdSP"
 * status = #retired
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Patientリソースのidに関する検索を定義します。"
 * code = #_id
@@ -251,7 +251,7 @@ Usage: #definition
 * name = "JPPatientIdentifierSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Patientリソースのidentifierに関する検索を定義します。"
 * jurisdiction = urn:iso:std:iso:3166#US "United States of America"
@@ -300,7 +300,7 @@ Usage: #definition
 * name = "JPPatientNameSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Patientリソースのname(名前全体)に関する検索を定義します。"
 * code = #name
@@ -333,7 +333,7 @@ Usage: #definition
 * name = "JPPatientphoneSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Patientリソースのphone(電話番号)に関する検索を定義します。"
 * code = #phone

@@ -18,7 +18,7 @@ Description: "このプロファイルはMedicationAdministrationリソースに
 * dosage.rate[x].extension contains JP_MedicationAdministration_DosageRate_RateComment named RateComment 0..*
 // 
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationAdministration_Injection"
-* ^date = "2021-12-25T14:32:12.4448275+00:00"
+* ^date = "2022-03-07"
 * ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * ^purpose = "このプロファイルはMedicationAdministrationリソースに対して、注射薬剤処方投与実施情報のデータを送受信するための基礎となる制約と拡張を定めたものである。"
 * ^copyright = "FHIR® Japanese implementation research workaing group in Japan Association of Medical Informatics (JAMI)"

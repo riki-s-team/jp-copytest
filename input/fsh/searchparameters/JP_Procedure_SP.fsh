@@ -5,7 +5,7 @@ Usage: #definition
 * name = "JPProcedureDateSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Procedureリソースの​performed(実施日時)に関する検索を定義します。"
 * code = #date
@@ -56,7 +56,7 @@ Usage: #definition
 * name = "JPProcedurePatientSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "ProcedureリソースのPatient(患者)に関する検索を定義します。"
 * code = #patient

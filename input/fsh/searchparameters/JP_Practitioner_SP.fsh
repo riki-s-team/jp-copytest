@@ -5,7 +5,7 @@ Usage: #definition
 * name = "JPPractitionerIdentifierSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "practitionerリソースのidentifierに関する検索を定義します。"
 * code = #identifier
@@ -53,7 +53,7 @@ Usage: #definition
 * name = "JPPractitionerNameSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "practitionerリソースのnameに関する検索を定義します。"
 * code = #name

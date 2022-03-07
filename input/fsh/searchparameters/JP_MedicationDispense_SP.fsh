@@ -5,7 +5,7 @@ Usage: #definition
 * name = "JPMedicationDispenseCodeSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "MedicationDispenseリソースのCode(薬品コード)に関する検索を定義します。"
 * code = #code
@@ -53,7 +53,7 @@ Usage: #definition
 * name = "JPMedicationDispenseEncounterSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "MedicationDispenseリソースのEncounter(来院・入院)に関する検索を定義します。"
 * code = #encounter
@@ -87,7 +87,7 @@ Usage: #definition
 * name = "JPMedicationDispenseIdentifierSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "MedicationDispenseリソースのidentifierに関する検索を定義します。"
 * code = #identifier
@@ -135,7 +135,7 @@ Usage: #definition
 * name = "JPMedicationDispensePatientSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "MedicationDispenseリソースのpatient(患者)に関する検索を定義します。"
 * code = #patient
@@ -169,7 +169,7 @@ Usage: #definition
 * name = "JPMedicationDispensePerformerSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "MedicationDispenseリソースのperformerに関する検索を定義します。"
 * code = #performer
@@ -214,7 +214,7 @@ Usage: #definition
 * name = "JPMedicationDispenseWhenHandedOverSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "MedicationDispenseリソースのWhenHandedOver(払い出し日時)に関する検索を定義します。"
 * code = #whenhandedover
@@ -265,7 +265,7 @@ Usage: #definition
 * name = "JPMedicationDispenseWhenPreparedSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "MedicationDispenseリソースのWhenPrepared(準備管理用日時)に関する検索を定義します。"
 * code = #whenprepared

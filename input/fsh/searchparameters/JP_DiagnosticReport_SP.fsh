@@ -5,7 +5,7 @@ Usage: #definition
 * name = "JPDiagnosticReportCategorySP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "DiagnosticReportリソースのCategory(カテゴリ)に関する検索を定義します。"
 * code = #category
@@ -53,7 +53,7 @@ Usage: #definition
 * name = "JPDiagnosticreportCodeSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "DiagnosticReportリソースのCode(レポート文書コード)に関する検索を定義します。"
 * code = #code
@@ -101,7 +101,7 @@ Usage: #definition
 * name = "JPDiagnosticreportDateSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "DiagnosticReportリソースのDate(報告書の臨床的意義のある日時)に関する検索を定義します。"
 * code = #date
@@ -152,7 +152,7 @@ Usage: #definition
 * name = "JPDiagnosticReportPatientSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "DiagnosticReportリソースのPatient(患者)に関する検索を定義します。"
 * code = #patient
@@ -186,7 +186,7 @@ Usage: #definition
 * name = "JPDiagnosticReportServiceRequestSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "DiagnosticReportリソースのservicerequest(検査依頼診療科)に関する検索を定義します。"
 * code = #servicerequest

@@ -5,7 +5,7 @@ Usage: #definition
 * name = "JPEncounterClassSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Encounterリソースのclassに関する検索を定義します。"
 * code = #class
@@ -53,7 +53,7 @@ Usage: #definition
 * name = "JPEncounterDateSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Encounterリソースのdateに関する検索を定義します。"
 * code = #date
@@ -104,7 +104,7 @@ Usage: #definition
 * name = "JPEncounterIdentifierSP"
 * status = #draft
 * experimental = false
-* date = "2019-09-23T19:48:45+10:00"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * contact.telecom.system = #url
 * contact.telecom.value = "http://www.hl7.org/Special/committees/usrealm/index.cfm"
@@ -155,7 +155,7 @@ Usage: #definition
 * name = "JPEncounterPatientSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Encouterリソースのpatientに関する検索を定義します。"
 * code = #patient
@@ -188,7 +188,7 @@ Usage: #definition
 * name = "JPEncounterStatusSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Encouterリソースのstatusに関する検索を定義します。"
 * code = #status
@@ -236,7 +236,7 @@ Usage: #definition
 * name = "JPEncounterTypeSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Encounterリソースのtypeに関する検索を定義します。"
 * code = #type

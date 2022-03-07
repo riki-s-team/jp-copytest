@@ -5,7 +5,7 @@ Usage: #definition
 * name = "JPMedicationAdministrationCodeSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "MedicationAdministrationリソースのCode(薬品コード)に関する検索を定義します。"
 * code = #code
@@ -53,7 +53,7 @@ Usage: #definition
 * name = "JPMedicationAdministrationEffectiveDatetimeSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "MedicationAdministrationのEffectiveDatetime(投与実施日時)に関する検索を定義します。"
 * code = #EffectiveDatetime
@@ -104,7 +104,7 @@ Usage: #definition
 * name = "JPMedicationAdministrationIdentifierSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "MedicationAdministrationリソースのIdentifierに関する検索を定義します。"
 * code = #identifier
@@ -152,7 +152,7 @@ Usage: #definition
 * name = "JPMedicationAdministrationPatientSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "MedicationAdministrationリソースのpatient(患者)に関する検索を定義します。"
 * code = #patient

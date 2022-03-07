@@ -7,7 +7,7 @@ Id: JP-MedicationDispense
 Title: "JP_MedicationDispense"
 Description: "このプロファイルはMedicationDispenseリソースに対して、内服・外用薬剤処方調剤・払い出し記録のデータを送受信するための基礎となる制約と拡張を定めたものである。JP_MedicationDispenseBaseプロファイルからの派生プロファイルである。"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationDispense"
-* ^date = "2021-12-03T15:35:21.0508205Z"
+* ^date = "2022-03-07"
 * ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * ^purpose = "このプロファイルはMedicationDispenseリソースに対して、内服・外用薬剤処方調剤・払い出し記録のデータを送受信するための基礎となる制約と拡張を定めたものである。JP_MedicationDispenseBaseプロファイルからの派生プロファイルである。"
 * ^copyright = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"

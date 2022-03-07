@@ -10,7 +10,7 @@ Description: "本プロファイルはAllergyIntoleranceリソースに対して
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_AllergyIntolerance"
 * ^status = #draft
 * ^experimental = false
-* ^date = "2021-12-03T06:03:05.9665854+00:00"
+* ^date = "2022-03-07"
 * ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * ^copyright = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * . ^short = "患者のアレルギーや不耐症 (一般的には、、特定の物質への暴露に対する有害反応)"

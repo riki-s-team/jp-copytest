@@ -5,7 +5,7 @@ Usage: #definition
 * name = "JPConditionCategorySP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "ConditionリソースのCategory(カテゴリ)に関する検索を定義します。"
 * code = #category
@@ -53,7 +53,7 @@ Usage: #definition
 * name = "JPConditionClinicalStatusSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "ConditionリソースのclinicalStatus(アレルギー・不耐性の臨床的なステータス)に関する検索を定義します。"
 * code = #clinicalstatus
@@ -100,7 +100,7 @@ Usage: #definition
 * name = "JPConditionDateSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "ConditionリソースのrecordedDate(記載日付)に関する検索を定義します。"
 * code = #date
@@ -150,7 +150,7 @@ Usage: #definition
 * name = "JPConditionPatientSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "ConditionリソースのPatient(患者)に関する検索を定義します。"
 * code = #patient
@@ -183,7 +183,7 @@ Usage: #definition
 * name = "JPConditionVerificationStatusSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "ConditionリソースのverificationStatusに関する検索を定義します。"
 * code = #verificationstatus

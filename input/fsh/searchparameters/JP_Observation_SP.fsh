@@ -5,7 +5,7 @@ Usage: #definition
 * name = "JPObservationCategorySP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "ObservationリソースのCategory(カテゴリ)に関する検索を定義します。"
 * code = #category
@@ -53,7 +53,7 @@ Usage: #definition
 * name = "JPObservationCodeSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "ObservationリソースのCode(検査項目コード)に関する検索を定義します。"
 * code = #code
@@ -101,7 +101,7 @@ Usage: #definition
 * name = "JPObservationDateSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Observationリソースの日付(検査（採取）日)に関する検索を定義します。"
 * code = #date
@@ -152,7 +152,7 @@ Usage: #definition
 * name = "JPObservationEncounterSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "ObservationリソースのEncounter(来院・入院)に関する検索を定義します。"
 * code = #encounter
@@ -186,7 +186,7 @@ Usage: #definition
 * name = "JPObservationPatientSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "ObservationリソースのPatient(患者)に関する検索を定義します。"
 * code = #patient
@@ -220,7 +220,7 @@ Usage: #definition
 * name = "JPObservationServiceRequestSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Observationリソースのservicerequest(検査依頼診療科)に関する検索を定義します。"
 * code = #servicerequest
@@ -255,7 +255,7 @@ Usage: #definition
 * name = "JPObservationValueConceptSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Observationリソースのvalue-concept(検査項目コード)に関する検索を定義します。"
 * code = #value-concept
@@ -303,7 +303,7 @@ Usage: #definition
 * name = "JPObservationValueQuantitySP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Observationリソースの日付(検査（採取）日)に関する検索を定義します。"
 * code = #value-quantity

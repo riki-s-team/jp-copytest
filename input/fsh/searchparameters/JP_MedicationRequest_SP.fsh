@@ -5,7 +5,7 @@ Usage: #definition
 * name = "JPMedicationrequestAuthoredOnSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "MedicationRequestリソースのAuthoredOn(処方指示日時)に関する検索を定義します。"
 * code = #authoredon
@@ -56,7 +56,7 @@ Usage: #definition
 * name = "JPMedicationRequestCategorySP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "MedicationRequestリソースのCategoryに関する検索を定義します。"
 * code = #type
@@ -104,7 +104,7 @@ Usage: #definition
 * name = "JPMedicationRequestCodeSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "MedicationRequestリソースのCode(薬品コード)に関する検索を定義します。"
 * code = #code
@@ -152,7 +152,7 @@ Usage: #definition
 * name = "JPMedicationRequestDateSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "MedicationRequestリソースのDate(服用開始日)に関する検索を定義します。"
 * code = #date
@@ -203,7 +203,7 @@ Usage: #definition
 * name = "JPMedicationRequestIdentifierSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "MedicationRequestリソースのidentifierに関する検索を定義します。"
 * code = #identifier
@@ -251,7 +251,7 @@ Usage: #definition
 * name = "JPMedicationRequestPatientSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "MedicationRequestリソースのpatient(患者)に関する検索を定義します。"
 * code = #patient
@@ -285,7 +285,7 @@ Usage: #definition
 * name = "JPMedicationRequestrRequesterSP"
 * status = #draft
 * experimental = false
-* date = "2021-12-01"
+* date = "2022-03-07"
 * publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "MedicationRequestリソースのrequesterに関する検索を定義します。"
 * code = #requester
