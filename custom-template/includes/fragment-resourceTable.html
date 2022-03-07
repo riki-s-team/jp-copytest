@@ -42,6 +42,12 @@
       <td>{{site.data.resources[resource_].contexts | markdownify}}</td>
     </tr>
 {% endif %}
+{%if site.data.resources[resource_].publisher %}
+    <tr>
+      <td><i>公開者</i></td>
+      <td>{{site.data.resources[resource_].publisher | markdownify}}</td>
+    </tr>
+{% endif %}
 {%if site.data.resources[resource_].copyright %}
     <tr>
       <td><i>Copyright</i></td>
