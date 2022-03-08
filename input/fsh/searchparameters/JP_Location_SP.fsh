@@ -1,7 +1,7 @@
-Instance: jp-location-address-city
+Instance: jp-location-address-city-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-location-address-city"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-location-address-city-sp"
 * name = "JPLocationAddressCitySP"
 * status = #draft
 * experimental = false
@@ -30,10 +30,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-location-address-postalcode
+Instance: jp-location-address-postalcode-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-location-address-postalcode"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-location-address-postalcode-sp"
 * name = "JPLocationAddressPostalcodeSP"
 * status = #draft
 * experimental = false
@@ -62,10 +62,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-location-address-state
+Instance: jp-location-address-state-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-location-address-state"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-location-address-state-sp"
 * name = "JPLocationAddressStateSP"
 * status = #draft
 * experimental = false
@@ -94,10 +94,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-location-address
+Instance: jp-location-address-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-location-address"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-location-address-sp"
 * name = "JPLocationAddressSP"
 * status = #draft
 * experimental = false
@@ -126,10 +126,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-location-name
+Instance: jp-location-name-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-location-name"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-location-name-sp"
 * name = "JPLocationNameSP"
 * status = #draft
 * experimental = false

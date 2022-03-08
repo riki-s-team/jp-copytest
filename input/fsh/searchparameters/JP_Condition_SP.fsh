@@ -1,7 +1,7 @@
-Instance: jp-condition-category
+Instance: jp-condition-category-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-condition-category"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-condition-category-sp"
 * name = "JPConditionCategorySP"
 * status = #draft
 * experimental = false
@@ -45,10 +45,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-condition-clinicalstatus
+Instance: jp-condition-clinicalstatus-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-condition-clinicalstatus"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-condition-clinicalstatus-sp"
 * name = "JPConditionClinicalStatusSP"
 * status = #draft
 * experimental = false
@@ -91,10 +91,10 @@ Usage: #definition
 * modifier[+].extension.url = $capabilityStatement-expectation
 * modifier[=].extension.valueCode = #MAY
 
-Instance: jp-condition-date
+Instance: jp-condition-date-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-condition-date"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-condition-date-sp"
 * name = "JPConditionDateSP"
 * status = #draft
 * experimental = false
@@ -140,10 +140,10 @@ Usage: #definition
 * modifier.extension.url = $capabilityStatement-expectation
 * modifier.extension.valueCode = #MAY
 
-Instance: jp-condition-patient
+Instance: jp-condition-patient-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-condition-patient"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-condition-patient-sp"
 * name = "JPConditionPatientSP"
 * status = #draft
 * experimental = false
@@ -172,10 +172,10 @@ Usage: #definition
 * modifier[+].extension.url = $capabilityStatement-expectation
 * modifier[=].extension.valueCode = #MAY
 
-Instance: jp-condition-verificationstatus
+Instance: jp-condition-verificationstatus-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-condition-verificationstatus"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-condition-verificationstatus-sp"
 * name = "JPConditionVerificationStatusSP"
 * status = #draft
 * experimental = false

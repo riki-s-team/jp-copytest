@@ -1,7 +1,7 @@
-Instance: jp-allergyintolerance-category
+Instance: jp-allergyintolerance-category-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-allergyintolerance-category"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-allergyintolerance-category-sp"
 * name = "JPAllergyIntoleranceCategorySP"
 * status = #draft
 * experimental = false
@@ -45,10 +45,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-allergyintolerance-clinicalstatus
+Instance: jp-allergyintolerance-clinicalstatus-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-allergyintolerance-clinicalstatus"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-allergyintolerance-clinicalstatus-sp"
 * name = "JPAllergyintoleranceClinicalStatusSP"
 * status = #draft
 * experimental = false
@@ -92,10 +92,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-allergyintolerance-criticality
+Instance: jp-allergyintolerance-criticality-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-allergyintolerance-criticality"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-allergyintolerance-criticality-sp"
 * name = "JPAllergyIntoleranceCriticalitySP"
 * status = #draft
 * experimental = false
@@ -139,10 +139,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-allergyintolerance-date
+Instance: jp-allergyintolerance-date-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-allergyintolerance-date"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-allergyintolerance-date-sp"
 * name = "JPAllergyIntoleranceDateSP"
 * status = #draft
 * experimental = false
@@ -189,10 +189,10 @@ Usage: #definition
 * modifier.extension.valueCode = #MAY
 
 
-Instance: jp-allergyintolerance-patient
+Instance: jp-allergyintolerance-patient-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-allergyintolerance-patient"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-allergyintolerance-patient-sp"
 * name = "JPAllergyIntolerancePatientSP"
 * status = #draft
 * experimental = false
@@ -221,10 +221,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-allergyintolerance-type
+Instance: jp-allergyintolerance-type-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-allergyintolerance-type"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-allergyintolerance-type-sp"
 * name = "JPAllergyIntoleranceTypeSP"
 * status = #draft
 * experimental = false
@@ -268,10 +268,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-allergyintolerance-verificationstatus
+Instance: jp-allergyintolerance-verificationstatus-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-allergyintolerance-verificationstatus"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-allergyintolerance-verificationstatus-sp"
 * name = "JPAllergyIntoleranceVerificationStatusSP"
 * status = #draft
 * experimental = false

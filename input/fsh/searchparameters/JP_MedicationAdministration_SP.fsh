@@ -1,7 +1,7 @@
-Instance: jp-medicationadministration-code
+Instance: jp-medicationadministration-code-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationadministration-code"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationadministration-code-sp"
 * name = "JPMedicationAdministrationCodeSP"
 * status = #draft
 * experimental = false
@@ -45,10 +45,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-medicationadministration-effectivedatetime
+Instance: jp-medicationadministration-effectivedatetime-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationadministration-effectivedatetime"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationadministration-effectivedatetime-sp"
 * name = "JPMedicationAdministrationEffectiveDatetimeSP"
 * status = #draft
 * experimental = false
@@ -95,10 +95,10 @@ Usage: #definition
 * modifier.extension.valueCode = #MAY
 
 
-Instance: jp-medicationadministration-identifier
+Instance: jp-medicationadministration-identifier-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationadministration-identifier"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationadministration-identifier-sp"
 * name = "JPMedicationAdministrationIdentifierSP"
 * status = #draft
 * experimental = false
@@ -142,10 +142,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-medicationadministration-patient
+Instance: jp-medicationadministration-patient-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationadministration-patient"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationadministration-patient-sp"
 * name = "JPMedicationAdministrationPatientSP"
 * status = #draft
 * experimental = false

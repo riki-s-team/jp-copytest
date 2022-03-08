@@ -1,7 +1,7 @@
-Instance: jp-diagnosticreport-category
+Instance: jp-diagnosticreport-category-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-diagnosticreport-category"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-diagnosticreport-category-sp"
 * name = "JPDiagnosticReportCategorySP"
 * status = #draft
 * experimental = false
@@ -45,10 +45,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-diagnosticreport-code
+Instance: jp-diagnosticreport-code-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-diagnosticreport-code"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-diagnosticreport-code-sp"
 * name = "JPDiagnosticreportCodeSP"
 * status = #draft
 * experimental = false
@@ -92,10 +92,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-diagnosticreport-date
+Instance: jp-diagnosticreport-date-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-diagnosticreport-date"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-diagnosticreport-date-sp"
 * name = "JPDiagnosticreportDateSP"
 * status = #draft
 * experimental = false
@@ -142,10 +142,10 @@ Usage: #definition
 * modifier.extension.valueCode = #MAY
 
 
-Instance: jp-diagnosticreport-patient
+Instance: jp-diagnosticreport-patient-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-diagnosticreport-patient"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-diagnosticreport-patient-sp"
 * name = "JPDiagnosticReportPatientSP"
 * status = #draft
 * experimental = false
@@ -175,10 +175,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-diagnosticreport-servicerequest
+Instance: jp-diagnosticreport-servicerequest-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-diagnosticreport-servicerequest"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-diagnosticreport-servicerequest-sp"
 * name = "JPDiagnosticReportServiceRequestSP"
 * status = #draft
 * experimental = false

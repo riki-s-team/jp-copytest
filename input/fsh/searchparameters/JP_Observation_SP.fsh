@@ -1,7 +1,7 @@
-Instance: jp-observation-category
+Instance: jp-observation-category-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-observation-category"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-observation-category-sp"
 * name = "JPObservationCategorySP"
 * status = #draft
 * experimental = false
@@ -45,10 +45,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-observation-code
+Instance: jp-observation-code-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-observation-code"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-observation-code-sp"
 * name = "JPObservationCodeSP"
 * status = #draft
 * experimental = false
@@ -92,10 +92,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-observation-date
+Instance: jp-observation-date-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-observation-date"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-observation-date-sp"
 * name = "JPObservationDateSP"
 * status = #draft
 * experimental = false
@@ -142,10 +142,10 @@ Usage: #definition
 * modifier.extension.valueCode = #MAY
 
 
-Instance: jp-observation-encounter
+Instance: jp-observation-encounter-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-observation-encounter"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-observation-encounter-sp"
 * name = "JPObservationEncounterSP"
 * status = #draft
 * experimental = false
@@ -175,10 +175,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-observation-patient
+Instance: jp-observation-patient-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-observation-patient"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-observation-patient-sp"
 * name = "JPObservationPatientSP"
 * status = #draft
 * experimental = false
@@ -208,10 +208,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-observation-servicerequest
+Instance: jp-observation-servicerequest-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-observation-servicerequest"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-observation-servicerequest-sp"
 * name = "JPObservationServiceRequestSP"
 * status = #draft
 * experimental = false
@@ -242,10 +242,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-observation-value-concept
+Instance: jp-observation-value-concept-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-observation-value-concept"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-observation-value-concept-sp"
 * name = "JPObservationValueConceptSP"
 * status = #draft
 * experimental = false
@@ -289,10 +289,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-observation-value-quantity
+Instance: jp-observation-value-quantity-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-observation-value-quantity"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-observation-value-quantity-sp"
 * name = "JPObservationValueQuantitySP"
 * status = #draft
 * experimental = false

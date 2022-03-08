@@ -1,7 +1,7 @@
-Instance: jp-imagingstudy-bodysite
+Instance: jp-imagingstudy-bodysite-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-imagingstudy-bodysite"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-imagingstudy-bodysite-sp"
 * name = "JPImagingStudyBodySiteSP"
 * status = #draft
 * experimental = false
@@ -45,10 +45,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-imagingstudy-encounter
+Instance: jp-imagingstudy-encounter-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-imagingstudy-encounter"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-imagingstudy-encounter-sp"
 * name = "JPImagingStudyEncounterSP"
 * status = #draft
 * experimental = false
@@ -78,10 +78,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-imagingstudy-modality
+Instance: jp-imagingstudy-modality-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-imagingstudy-modality"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-imagingstudy-modality-sp"
 * name = "JPImagingStudyModalitySP"
 * status = #draft
 * experimental = false
@@ -125,10 +125,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-imagingstudy-patient
+Instance: jp-imagingstudy-patient-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-imagingstudy-patient"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-imagingstudy-patient-sp"
 * name = "JPImagingStudyPatientSP"
 * status = #draft
 * experimental = false
@@ -158,10 +158,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-imagingstudy-started
+Instance: jp-imagingstudy-started-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-imagingstudy-started"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-imagingstudy-started-sp"
 * name = "JPImagingStudyStartedSP"
 * status = #draft
 * experimental = false
@@ -206,5 +206,3 @@ Usage: #definition
 * modifier = #missing
 * modifier.extension.url = $capabilityStatement-expectation
 * modifier.extension.valueCode = #MAY
-
-

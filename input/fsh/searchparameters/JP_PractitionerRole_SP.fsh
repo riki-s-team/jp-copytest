@@ -1,7 +1,7 @@
-Instance: jp-practitionerrole-practitioner
+Instance: jp-practitionerrole-practitioner-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-practitionerrole-practitioner"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-practitionerrole-practitioner-sp"
 * name = "JPPractitionerrolePractitionerSP"
 * status = #draft
 * experimental = false
@@ -37,10 +37,10 @@ Usage: #definition
 * chain[=].extension.valueCode = #SHALL
 
 
-Instance: jp-practitionerrole-specialty
+Instance: jp-practitionerrole-specialty-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-practitionerrole-specialty"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-practitionerrole-specialty-sp"
 * name = "JPPractitionerroleSpecialtySP"
 * status = #draft
 * experimental = false

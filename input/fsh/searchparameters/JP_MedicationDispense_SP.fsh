@@ -1,7 +1,7 @@
-Instance: jp-medicationdispense-code
+Instance: jp-medicationdispense-code-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationdispense-code"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationdispense-code-sp"
 * name = "JPMedicationDispenseCodeSP"
 * status = #draft
 * experimental = false
@@ -45,10 +45,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-medicationdispense-encounter
+Instance: jp-medicationdispense-encounter-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationdispense-encounter"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationdispense-encounter-sp"
 * name = "JPMedicationDispenseEncounterSP"
 * status = #draft
 * experimental = false
@@ -78,10 +78,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-medicationdispense-identifier
+Instance: jp-medicationdispense-identifier-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationdispense-identifier"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationdispense-identifier-sp"
 * name = "JPMedicationDispenseIdentifierSP"
 * status = #draft
 * experimental = false
@@ -125,10 +125,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-medicationdispense-patient
+Instance: jp-medicationdispense-patient-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationdispense-patient"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationdispense-patient-sp"
 * name = "JPMedicationDispensePatientSP"
 * status = #draft
 * experimental = false
@@ -158,10 +158,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-medicationdispense-performer
+Instance: jp-medicationdispense-performer-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationdispense-performer"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationdispense-performer-sp"
 * name = "JPMedicationDispensePerformerSP"
 * status = #draft
 * experimental = false
@@ -202,10 +202,10 @@ Usage: #definition
 * chain[=].extension.valueCode = #SHALL
 
 
-Instance: jp-medicationdispense-whenhandedover
+Instance: jp-medicationdispense-whenhandedover-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationdispense-whenhandedover"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationdispense-whenhandedover-sp"
 * name = "JPMedicationDispenseWhenHandedOverSP"
 * status = #draft
 * experimental = false
@@ -252,10 +252,10 @@ Usage: #definition
 * modifier.extension.valueCode = #MAY
 
 
-Instance: jp-medicationdispense-whenprepared
+Instance: jp-medicationdispense-whenprepared-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-medicationdispense-whenprepared"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationdispense-whenprepared-sp"
 * name = "JPMedicationDispenseWhenPreparedSP"
 * status = #draft
 * experimental = false

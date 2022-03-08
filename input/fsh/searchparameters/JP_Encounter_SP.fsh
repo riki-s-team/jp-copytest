@@ -1,7 +1,7 @@
-Instance: jp-encounter-class
+Instance: jp-encounter-class-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-encounter-class"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-encounter-class-sp"
 * name = "JPEncounterClassSP"
 * status = #draft
 * experimental = false
@@ -45,10 +45,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-encounter-date
+Instance: jp-encounter-date-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-encounter-date"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-encounter-date-sp"
 * name = "JPEncounterDateSP"
 * status = #draft
 * experimental = false
@@ -95,10 +95,10 @@ Usage: #definition
 * modifier.extension.valueCode = #MAY
 
 
-Instance: jp-encounter-identifier
+Instance: jp-encounter-identifier-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-encounter-identifier"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-encounter-identifier-sp"
 * name = "JPEncounterIdentifierSP"
 * status = #draft
 * experimental = false
@@ -145,10 +145,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-encounter-patient
+Instance: jp-encounter-patient-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-encounter-patient"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-encounter-patient-sp"
 * name = "JPEncounterPatientSP"
 * status = #draft
 * experimental = false
@@ -177,10 +177,10 @@ Usage: #definition
 * modifier[+].extension.url = $capabilityStatement-expectation
 * modifier[=].extension.valueCode = #MAY
 
-Instance: jp-encounter-status
+Instance: jp-encounter-status-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-encounter-status"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-encounter-status-sp"
 * name = "JPEncounterStatusSP"
 * status = #draft
 * experimental = false
@@ -224,10 +224,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-encounter-type
+Instance: jp-encounter-type-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-encounter-type"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-encounter-type-sp"
 * name = "JPEncounterTypeSP"
 * status = #draft
 * experimental = false

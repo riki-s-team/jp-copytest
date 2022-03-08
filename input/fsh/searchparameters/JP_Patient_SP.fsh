@@ -1,7 +1,7 @@
-Instance: jp-patient-address-postalcode
+Instance: jp-patient-address-postalcode-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-address-postalcode"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-patient-address-postalcode-sp"
 * name = "JPPatientAddressPostalcodeSP"
 * status = #draft
 * experimental = false
@@ -30,10 +30,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-patient-birthdate
+Instance: jp-patient-birthdate-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-birthdate"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-patient-birthdate-sp"
 * name = "JPPatientBirthdateSP"
 * status = #draft
 * experimental = false
@@ -80,10 +80,10 @@ Usage: #definition
 * modifier.extension.valueCode = #MAY
 
 
-Instance: jp-patient-family
+Instance: jp-patient-family-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-family"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-patient-family-sp"
 * name = "JPPatientFamilySP"
 * status = #draft
 * experimental = false
@@ -112,10 +112,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-patient-gender
+Instance: jp-patient-gender-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-gender"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-patient-gender-sp"
 * name = "JPPatientGenderSP"
 * status = #draft
 * experimental = false
@@ -159,10 +159,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-patient-given
+Instance: jp-patient-given-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-given"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-patient-given-sp"
 * name = "JPPatientGivenSP"
 * status = #draft
 * experimental = false
@@ -191,10 +191,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-patient-id
+Instance: jp-patient-id-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-id"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-patient-id-sp"
 * name = "JPPatientIdSP"
 * status = #retired
 * experimental = false
@@ -238,10 +238,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-patient-identifier
+Instance: jp-patient-identifier-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-identifier"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-patient-identifier-sp"
 * name = "JPPatientIdentifierSP"
 * status = #draft
 * experimental = false
@@ -286,10 +286,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-patient-name
+Instance: jp-patient-name-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-name"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-patient-name-sp"
 * name = "JPPatientNameSP"
 * status = #draft
 * experimental = false
@@ -318,10 +318,10 @@ Usage: #definition
 * modifier[=].extension.valueCode = #MAY
 
 
-Instance: jp-patient-phone
+Instance: jp-patient-phone-sp
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-patient-phone"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-patient-phone-sp"
 * name = "JPPatientphoneSP"
 * status = #draft
 * experimental = false
