@@ -7,10 +7,10 @@ FHIR®では[JSON](https://www.hl7.org/fhir/json.html#2.6.2)および[XML](https
 JP Core の検索要求するクライアント(Requester)およびサーバ(Responder)は以下の要求を満たすこと **(SHALL)**
 #### クライアント(Requster)
 ---
-##### Must SupportおよびCardinalityが１以上が付与された要素を含むリソースを受信した場合、エラーを発生させたりアプリケーションを失敗させることなく、それらの値を処理することができなければならない **(SHALL)**。
+##### 実装ガイドに準拠するクライアントは、Cardinalityが1以上が付与された要素を含むリソースを受信した場合、エラーを発生させたりアプリケーションを失敗させることなく、それらの値を処理することができなければならない **(SHALL)**。
 
  **例)**
-Readインタラクションの応答として、Must SupportおよびCardinalityが１以上の 要素であるPatient.maritalStatus を含むPatient リソースを受信した場合、
+Readインタラクションの応答として、Cardinalityが１以上の 要素であるPatient.maritalStatus を含むPatient リソースを受信した場合、
 要求者はその値をエラーなく処理しなければならない。
 
 ```
@@ -28,7 +28,7 @@ Readインタラクションの応答として、Must SupportおよびCardinalit
 }, 
 ```
 
-##### 実装ガイドに準拠する要求者は、欠損データであることを宣言した Must SupportおよびCardinalityが１以上の データ要素を含むリソースインスタンスを処理できなければならない **(SHALL)**。
+##### 実装ガイドに準拠するクライアントは、欠損データであることを宣言した Cardinalityが1以上のデータ要素を含むリソースインスタンスを処理できなければならない **(SHALL)**。
  **例)**
 Patient.birthDateの値に欠損情報が付与されているリソースを、要求者は処理できなければならない。なお、birthDateはdate型というprimitive typeであり、そのextensionは"_"を先頭につけたプロパティに対して設定される([2.6.2.3 JSON representation of primitive elements](https://www.hl7.org/fhir/json.html#primitive))。
 
@@ -48,110 +48,7 @@ Patient.birthDateの値に欠損情報が付与されているリソースを、
 
 #### サーバ(Responder)
 ---
-##### Must SupportおよびCardinalityが１以上の 要素の値を保持している場合
-JP Core 実装ガイドに準拠する応答者は、Must SupportおよびCardinalityが１以上のが付与された要素について、当該要素の値を保持している場合には、要求された検索結果のリソースのデータ要素として含めることができなければならない。 **(SHALL)**
 
-##### Must SupportおよびCardinalityが１以上の 要素の値を保持していない場合
-Must SupportおよびCardinalityが１以上の要素がオプショナルな要素の場合Responderは、そのデータ要素の項目を省略してもよい。 **(MAY)**
+##### 要素の値を保持している場合
+JP Core 実装ガイドに準拠するサーバは、当該要素の値を保持している場合には、要求された検索結果のリソースのデータ要素として含めることができるべきである。 **(SHOULD)**
 
- **例)**
-```
-Patient.telecomが欠損している場合…telecom要素は含まなくてよい
-{
-    "resourceType" : "Patient",
-    ...
-    "name" : [{"family" : "Yamada", "given" : [ "Taro" ] }],
-    "gender" : "male",
-    ...
-}
-```
-
-###### Must SupportおよびCardinalityが１以上の 要素が必須要素の場合
-JP Core実装ガイドの応答者は、リソースに含めるべき必須 MustSupport要素の値を保持していない場合は、次のように、データの欠損理由を指定しなければならない。 **(SHALL)** もし、そのデータの欠損理由を応答者が正確に把握していない状況では、その値を含めてはならない。 **(SHALL NOT)**
-
-* 非コード化要素の場合
-非コード化値の場合： Data Absent Reason拡張を使用して、欠損理由を送
-信できなければならない。 **(SHALL)** 
-
- **例)**
-患者の生年月日が不明なため、Patient.birthDateに値を保持していない場合（Patient.birthDateが必須 MustSupport）、Data Absent Reason 拡張を使用して、欠損理由（＝不明）を示す。なお、birthDateはdate型というprimitive typeであり、そのextensionは"_"を先頭につけたプロパティに対して設定される([2.6.2.3 JSON representation of primitive elements](https://www.hl7.org/fhir/json.html#primitive))。
-
-```
-{
-    "resourceType " : "Patient",
-    ...
-    "_birthDate ": {
-        "extension" : [{
-            "url " : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
-            "valueCode" : "unknown"
-        }]
-    },
-    ...
-} 
-```
-* コード化データ要素の場合
-
-i. そのコード化要素が、CodeableConceptデータ型で、バインディング強度が、example, preferred, extensible のいずれかの場合
-
-ii. コード化値の代替となる文字情報を持っている場合は、文字データのみを使用する<br/>
- **例)**
- Patient.maritalStatus が必須要素の場合で、Patient.maritalStatus のコード値はわからないが、「既婚」という文字情報は持っている場合、CodeableConcept の text を使用する。<br/>
- ```
-   {
-    "resourceType" : "Patient",
-    ...
-    "maritalStatus": {
-        "text" : "既婚"
-    },
-    ...
-}
-```
-iii. コード化値の代替となる文字情報を持っていない場合はバリューセットの中に、例外値を表現するコードがある場合その値を使用する
-
- **例)** バリューセットに含まれる例外値を表現するコードを使用（ValueSet marital-statusには、不明な状態を表すコード[UNK]を含んでいるため、UNKを使用する）
-```
-{
-    "resourceType" : "Patient",
-    ...
-    "maritalStatus": {
-        "coding": [{
-            "system":"http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-            "code": "UNK",
-            "display": "unknown"
-        }]
-    },
-    …
-}
-```
-iv. バリューセットの中に、例外値を表現するコードが無い場合[DataAbsentReason]コード体系から、適切な概念コードを使用する。
-**例)** Patient.communication.language が必須MustSupport要素で、その値が、患者に確認していないため不明の場合、Data Absent Reason拡張より「not-asked」を使用する。※Patient.communication.language は現状のJP Core Patientプロファイル案では必須ではないため、例示のためのみに使用した。
-
-```
-{
-    "resourceType" : "Patient",
-    ...
-    "communication": [{
-        "language":{
-            "extension": [{
-                    "url " : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
-                    "valueCode" : "not-asked",
-                    "display": "Not asked"
-            }]
-        }
-    }],
-    ...
-}
-```
-
-
-v. そのコード化要素が、CodeableConceptデータ型、または、code データ型で、バインディング強度が required の場合そのバリューセット内に含まれる例外値を表すコードを使用する。
- **例)** Patient.gender が必須 MustSupport要素の場合で、その値が不明の場合、 バリューセットAdministrativeGender に含まれる例外値を表すコード「unknown」を使用する。※Patient.genderは現状のJP Core Patientプロファイル案では必須ではないため、例示のために使用した。
-
-```
-{
-    "resourceType" : "Patient",
-    ...
-    "gender": "unknown",
-    …
-}
-```
