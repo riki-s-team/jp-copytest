@@ -4,8 +4,10 @@ name: JPCore FHIR Task
 on:
   push:
     branches: 
-     - main
-     - action-test**
+      - main
+    paths:
+      - 'sushi-config.yaml'
+      - 'input/**'
   pull_request:
     branches: [ main ]
     
