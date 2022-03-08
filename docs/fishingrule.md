@@ -66,8 +66,8 @@ Kabab Case [ **aaa-bbb-ccc** ]を採用する
 | datetype | jp-{datatype} <br/>`jp-humanname `| |
 | search parameter | jp-{profile}-{searchparameter}-sp <br/>`jp-patient-birthdate-sp` | |
 | capblity statement | jp-{actor}-capablitystatement <br/>`jp-client-capablitystatement` |
-| codesytesm | jp-{codesystem} <br/> `jp-gender-cs` |
-| valueset | jp-{valueset} <br/> `jp-gender-vs` |
+| codesytesm | jp-{codesystem}-cs <br/> `jp-gender-cs` |
+| valueset | jp-{valueset}-vs <br/> `jp-gender-vs` |
 
 
 ### 3. URL定義形式
@@ -75,12 +75,12 @@ Kabab Case [ **aaa-bbb-ccc** ]を採用する
 
 | 項目 | ルール <br/> `(例)`  |
 | --- | --- | 
-| profile,<br/>datatype | http://jpfhir.jp/fhir/core/StructureDefinition/{id} <br/>`http://jpfhir.jp/fhir/coreStructureDefinition/jp-patient`| 
+| profile, <br/>datatype | http://jpfhir.jp/fhir/core/StructureDefinition/{id} <br/>`http://jpfhir.jp/fhir/core/StructureDefinition/jp-patient`| 
 | extension | http://jpfhir.jp/fhir/core/Extension/StructureDefinition/{id}<br/> `http://jpfhir.jp/fhir/core/Extension/StructureDefinition/jp-patient-race` |
 | search<br/>parameter | http://jpfhir.jp/fhir/core/SearchParameter/{id} <br/>`http://jpfhir.jp/fhir/core/SearchParameter/jp-patient-birthdate-sp` | |
 | capblity<br/>statement | http://jpfhir.jp/fhir/core/CapabilityStatement/{id} <br/>`http://jpfhir.jp/fhir/core/CapabilityStatement/jp-client-capabilitystatement` |
 | codesystem | http://jpfhir.jp/fhir/Common/CodeSystem/{id} <br/>`http://jpfhir.jp/fhir/Common/CodeSystem/jp-gender-cs` |
-| valueset | http://jpfhir.jp/fhir/Common/CodeSystem/{id} <br/>`http://jpfhir.jp/fhir/Common/ValueSet/jp-gender-vs` |
+| valueset | http://jpfhir.jp/fhir/Common/ValueSet/{id} <br/>`http://jpfhir.jp/fhir/Common/ValueSet/jp-gender-vs` |
 
 ### 4. Name形式
 ID名称をKebab Case形式 → Pascal Case形式に変換する。(全ての項目共通)
