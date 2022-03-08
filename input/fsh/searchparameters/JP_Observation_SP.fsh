@@ -6,7 +6,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "ObservationリソースのCategory(カテゴリ)に関する検索を定義します。"
 * code = #category
 * base = #Observation
@@ -54,7 +53,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "ObservationリソースのCode(検査項目コード)に関する検索を定義します。"
 * code = #code
 * base = #Observation
@@ -102,7 +100,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Observationリソースの日付(検査（採取）日)に関する検索を定義します。"
 * code = #date
 * base = #Observation
@@ -153,7 +150,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "ObservationリソースのEncounter(来院・入院)に関する検索を定義します。"
 * code = #encounter
 * base = #Observation
@@ -187,7 +183,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "ObservationリソースのPatient(患者)に関する検索を定義します。"
 * code = #patient
 * base = #Observation
@@ -221,7 +216,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Observationリソースのservicerequest(検査依頼診療科)に関する検索を定義します。"
 * code = #servicerequest
 * base = #Observation
@@ -256,7 +250,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Observationリソースのvalue-concept(検査項目コード)に関する検索を定義します。"
 * code = #value-concept
 * base = #Observation
@@ -304,7 +297,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Observationリソースの日付(検査（採取）日)に関する検索を定義します。"
 * code = #value-quantity
 * base = #Observation

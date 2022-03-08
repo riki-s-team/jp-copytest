@@ -6,7 +6,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "MedicationRequestリソースのAuthoredOn(処方指示日時)に関する検索を定義します。"
 * code = #authoredon
 * base = #MedicationRequest
@@ -57,7 +56,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "MedicationRequestリソースのCategoryに関する検索を定義します。"
 * code = #type
 * base = #MedicationRequest
@@ -105,7 +103,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "MedicationRequestリソースのCode(薬品コード)に関する検索を定義します。"
 * code = #code
 * base = #MedicationRequest
@@ -153,7 +150,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "MedicationRequestリソースのDate(服用開始日)に関する検索を定義します。"
 * code = #date
 * base = #MedicationRequest
@@ -204,7 +200,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "MedicationRequestリソースのidentifierに関する検索を定義します。"
 * code = #identifier
 * base = #MedicationRequest
@@ -252,7 +247,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "MedicationRequestリソースのpatient(患者)に関する検索を定義します。"
 * code = #patient
 * base = #MedicationRequest
@@ -286,7 +280,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "MedicationRequestリソースのrequesterに関する検索を定義します。"
 * code = #requester
 * base = #MedicationRequest

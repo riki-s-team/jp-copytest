@@ -7,8 +7,6 @@ Id: JP-Observation-SocialHistory
 Title: "JP_Observation_SocialHistory"
 Description: "このプロファイルはObservationリソースに対して、生活背景のデータを送受信するための制約と拡張を定めたものである。"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_SocialHistory"
-* ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
-* ^copyright = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * . ^short = "生活背景の情報"
 * . ^definition = "生活背景の情報"
 * . ^comment = "生活背景に関するObservation（収集したり観察した事実など）の制約プロフィール"

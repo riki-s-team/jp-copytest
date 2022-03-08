@@ -18,9 +18,7 @@ Description: "このプロファイルはユーザは直接適用するもので
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequestBase"
 * ^status = #draft
 * ^date = "2022-03-07"
-* ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * ^purpose = "このプロファイルはユーザは直接適用するものではなく、JP_MedicationRequestとJP_MedicationRequestInjectionの共通の親となる抽象プロファイルである。MedicationRequestリソースに対して、内服・外用薬剤処方、注射・点滴などのデータを送受信するため、JP_MedicationRequestとJP_MedicationRequestInjectionの各プロファイルの基礎となる制約と拡張のうち共通部分を定めている。"
-* ^copyright = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * . ^short = "患者あるいはグループに対しての薬剤処方オーダ"
 * . ^definition = "患者への薬の供給と内服指示を共に提供するオーダ。ケアプランやワークフローパターンとハーモナイズし、入院や外来でも使えるようにするため、このリソースは\"MedicationPrescription\"や\"MedicationOrder\"ではなく、\"MedicationRequest\"と呼ばれる。"
 * identifier ^slicing.discriminator.type = #value
@@ -900,9 +898,7 @@ Description: "投与装置を格納する拡張"
 * ^meta.lastUpdated = "2021-12-03T16:24:50.287+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_Device"
 * ^date = "2022-03-07"
-* ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * ^purpose = "投与装置を格納する拡張"
-* ^copyright = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * ^context[0].type = #element
 * ^context[=].expression = "MedicationRequest.dosageInstruction"
 * ^context[+].type = #element
@@ -919,9 +915,7 @@ Description: "指示ラインを格納するための拡張"
 * ^meta.lastUpdated = "2021-12-03T16:23:26.879+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_Line"
 * ^date = "2022-03-07"
-* ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * ^purpose = "指示ラインを格納するための拡張"
-* ^copyright = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * ^context[0].type = #element
 * ^context[=].expression = "MedicationRequest.dosageInstruction"
 * ^context[+].type = #element
@@ -940,9 +934,7 @@ Description: "投与開始日を格納する拡張"
 * ^meta.lastUpdated = "2021-12-03T16:16:39.185+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_PeriodOfUse"
 * ^date = "2022-03-07"
-* ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * ^purpose = "処方日とは別に明示的に投与・内服開始日を指定するため。"
-* ^copyright = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * ^context[0].type = #element
 * ^context[=].expression = "MedicationRequest.dosageInstruction"
 * ^context[+].type = #element
@@ -965,9 +957,7 @@ Description: "隔⽇投与など、服⽤開始⽇から終了⽇までの⽇数
 * ^meta.lastUpdated = "2021-12-03T16:20:07.109+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_UsageDuration"
 * ^date = "2022-03-07"
-* ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * ^purpose = "隔⽇投与など、服⽤開始⽇から終了⽇までの⽇数と実投与⽇数が異なる場合に、実投与⽇数を明⽰したい場合に使⽤する拡張"
-* ^copyright = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * ^context[0].type = #element
 * ^context[=].expression = "MedicationRequest.dosageInstruction"
 * ^context[+].type = #element

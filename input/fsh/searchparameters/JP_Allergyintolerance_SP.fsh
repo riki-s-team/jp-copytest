@@ -6,7 +6,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "AllergyIntoleranceリソースのCategory(カテゴリ)に関する検索を定義します。"
 * code = #category
 * base = #AllergyIntolerance
@@ -54,7 +53,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "AllergyIntoleranceリソースのclinicalStatus(アレルギー・不耐性の臨床的なステータス)に関する検索を定義します。"
 * code = #clinicalstatus
 * base = #AllergyIntolerance
@@ -102,7 +100,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "AllergyIntoleranceリソースのcriticalityに関する検索を定義します。"
 * code = #criticality
 * base = #AllergyIntolerance
@@ -150,7 +147,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "AllergyIntoleranceリソースのrecordedDate(記載日付)に関する検索を定義します。"
 * code = #date
 * base = #AllergyIntolerance
@@ -201,7 +197,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "AllergyIntoleranceリソースのPatient(患者)に関する検索を定義します。"
 * code = #patient
 * base = #AllergyIntolerance
@@ -234,7 +229,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "AllergyIntoleranceリソースのtypeに関する検索を定義します。"
 * code = #type
 * base = #AllergyIntolerance
@@ -282,7 +276,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "AllergyIntoleranceリソースのverificationStatusに関する検索を定義します。"
 * code = #verificationstatus
 * base = #AllergyIntolerance

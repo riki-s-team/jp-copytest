@@ -6,7 +6,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "ImagingStudyリソースのBodySite(部位)に関する検索を定義します。"
 * code = #bodysite
 * base = #ImagingStudy
@@ -54,7 +53,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "ImagingStudyリソースのEncounter(来院・入院)に関する検索を定義します。"
 * code = #encounter
 * base = #ImagingStudy
@@ -88,7 +86,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "ImagingStudyリソースのmodality(カテゴリ)に関する検索を定義します。"
 * code = #modality
 * base = #ImagingStudy
@@ -136,7 +133,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "ImagingStudyリソースのPatient(患者)に関する検索を定義します。"
 * code = #patient
 * base = #ImagingStudy
@@ -170,7 +166,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "ImagingStudyリソースのstarted(検査開始日時)に関する検索を定義します。"
 * code = #started
 * base = #ImagingStudy

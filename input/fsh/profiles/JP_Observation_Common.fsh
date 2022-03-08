@@ -7,8 +7,6 @@ Id: JP-Observation-Common
 Title: "JP_Observation_Common"
 Description: "このプロファイルはObservationリソースに対して、データを送受信するための共通の制約と拡張を定めたものである。"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_Common"
-* ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
-* ^copyright = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * . ^short = "測定や簡単な観察事実（assertion）"
 * . ^definition = "患者、デバイス、またはその他の対象について行われた測定と簡単な観察事実（assertion）。"
 * . ^comment = "すべてのObservation（検査測定や観察事実）の共通部分のプロファイル"

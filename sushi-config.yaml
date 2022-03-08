@@ -16,7 +16,7 @@ publisher:
   email: office@hlfhir.jp
 copyright: >-
   FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)
-jurisdiction: 'urn:iso:std:iso:3166-2#JP'
+jurisdiction: 'urn:iso:std:iso:3166#JP'
 
 #-----------------------------------------
 # ページタイトル名称設定
@@ -67,6 +67,9 @@ menu:
   Artifacts: artifacts.html
   Download: download.html
 
+#-----------------------------------------
+# IG 外部パラメータ設定
+#-----------------------------------------
 parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
   path-resource:
     - input/resources
@@ -76,7 +79,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - input/intro-notes
     - fsh-generated/includes
     #- input/summaries
-  path-expansion-params: '../../input/resources/exp-params.json'  # for using US ed of SNOMED
+  path-expansion-params: '../../input/resources/exp-params.json'
   active-tables: 'true'
   apply-contact: 'true'
   apply-publisher: 'true'

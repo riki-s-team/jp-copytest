@@ -19,9 +19,7 @@ Description: "このプロファイルはMedicationAdministrationリソースに
 // 
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationAdministration_Injection"
 * ^date = "2022-03-07"
-* ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * ^purpose = "このプロファイルはMedicationAdministrationリソースに対して、注射薬剤処方投与実施情報のデータを送受信するための基礎となる制約と拡張を定めたものである。"
-* ^copyright = "FHIR® Japanese implementation research workaing group in Japan Association of Medical Informatics (JAMI)"
 * . ^short = "患者への注射薬剤投与記録"
 * extension[UncategorizedComment] ^definition = "未分類コメントを格納するための拡張"
 * extension[UncategorizedComment] ^min = 0

@@ -7,8 +7,6 @@ Id: JP-Observation-VitalSigns
 Title: "JP_Observation_VitalSigns"
 Description: "このプロファイルはObservationリソースに対して、バイタルサインのデータを送受信するための制約と拡張を定めたものである。"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_VitalSigns"
-* ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
-* ^copyright = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * . ^short = "バイタルサインに関する測定や簡単な観察事実（assertion）"
 * . ^definition = "バイタルサインに関する測定と簡単な観察事実（assertion）。"
 * . ^comment = "バイタルサインに関するObservation（検査測定や観察事実）の制約プロフィール"

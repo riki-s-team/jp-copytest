@@ -6,7 +6,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "practitionerroleリソースのpractitionerに関する検索を定義します。"
 * code = #practitioner
 * base = #PractitionerRole
@@ -46,7 +45,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "practitionerroleリソースのspecialtyに関する検索を定義します。"
 * code = #specialty
 * base = #PractitionerRole

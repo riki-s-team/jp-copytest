@@ -7,8 +7,6 @@ Id: JP-Observation-BodyMeasurement
 Title: "JP_Observation_BodyMeasurement"
 Description: "このプロファイルはObservationリソースに対して、身体計測のデータを送受信するための制約と拡張を定めたものである。"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_BodyMeasurement"
-* ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
-* ^copyright = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * . ^short = "身体計測に関する測定や簡単な観察事実（assertion）"
 * . ^definition = "患者の身体計測に関する測定と簡単な観察事実（assertion）。"
 * . ^comment = "身体計測に関するObservation（検査測定や観察事実）の制約プロフィール"
@@ -37,8 +35,6 @@ Id: JP-Observation-BodySite-BodySitePosition
 Title: "JP_Observation_BodySite_BodySitePosition"
 Description: "部位（bodySite）の左右の区別を表現する際に使用する"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Observation_BodySite_BodySitePosition"
-* ^publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
-* ^copyright = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * ^context.type = #element
 * ^context.expression = "Observation.bodySite"
 * . ..1

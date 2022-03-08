@@ -7,9 +7,7 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "JP Core Clientの期待される機能について説明する。JP Core Clientは、ローカルなユースケースやその他の文脈上の要件に基づいて、必要なデータにアクセスするために、このリストから選択することができます。"
-* copyright = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * kind = #requirements
 * instantiates = "http://jpfhir.jp/fhir/core/CapabilityStatement/StructureDefinition/jpcoreclientcapabilitystatement"
 * fhirVersion = #4.0.1

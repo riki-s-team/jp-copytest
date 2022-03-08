@@ -6,7 +6,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Encounterリソースのclassに関する検索を定義します。"
 * code = #class
 * base = #Encounter
@@ -54,7 +53,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Encounterリソースのdateに関する検索を定義します。"
 * code = #date
 * base = #Encounter
@@ -105,7 +103,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * contact.telecom.system = #url
 * contact.telecom.value = "http://www.hl7.org/Special/committees/usrealm/index.cfm"
 * description = "Encounterリソースのidentifierに関する検索を定義します。"
@@ -156,7 +153,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Encouterリソースのpatientに関する検索を定義します。"
 * code = #patient
 * base = #Encounter
@@ -189,7 +185,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Encouterリソースのstatusに関する検索を定義します。"
 * code = #status
 * base = #Encounter
@@ -237,7 +232,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Encounterリソースのtypeに関する検索を定義します。"
 * code = #type
 * base = #Encounter

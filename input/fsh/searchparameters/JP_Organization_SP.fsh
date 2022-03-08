@@ -6,7 +6,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "organizationリソースのaddressに関する検索を定義します。"
 * code = #address
 * base = #Organization
@@ -39,7 +38,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "Organizationリソースのidentifierに関する検索を定義します。"
 * code = #identifier
 * base = #Organization
@@ -87,7 +85,6 @@ Usage: #definition
 * status = #draft
 * experimental = false
 * date = "2022-03-07"
-* publisher = "FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"
 * description = "organizationリソースのnameに関する検索を定義します。"
 * code = #name
 * base = #Organization
