@@ -7,7 +7,7 @@ FHIRのJpCore環境作成のためのサンプルサイトです。
 1. 初めて実行する場合は、_updatePublisher.bat(windows),_updatePublisher.sh(linux,mac)を実行する。
    1. igpublisher.jarのダウンロードの許可
    1. スクリプト類のダウンロードの許可
-1. _genonce.bat(windows), _genonce.sh(linux,max)を実行する
+1. _genonce.bat(windows), _genonce.sh(linux,mac)を実行する
 1. OutputフォルダにHtml一式が格納される
 
 ## マニュアル
