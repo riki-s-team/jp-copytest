@@ -1,0 +1,127 @@
+# JP Core FHIR Shorthand記載時ルール事項
+
+## 1. フォルダ構成
+ フォルダ構成は下記の通り
+```ruby
+(project root)
+├─.github #githubに関するシステムファイル
+├─custom-template #IG Publisher用テンプレート
+├─docs #github説明用ファイル
+└─input #入力フォルダ
+   ├─fsh #FHIR Shorthandファイル格納フォルダ
+   │  ├─capablitystatements #capablity statement用
+   │  ├─codesystems #code system用
+   │  ├─others #その他
+   │  ├─profiles #profile,extension用
+   │  ├─searchparameters #search parameter
+   │  └─valuesets #values
+   ├─includes #link file
+   ├─intro-notes #profileの前後説明文(-intro.md, -notes.md)
+   ├─pagecontent #Markdown Page
+   └─resources #resource
+```
+## 名称ルール
+### 1. ファイル配置＆命名規則
+#### 形式
+Snake Case [ **aaa_bbb_ccc.fsh** ]を採用する
+
+#### 項目ルール
+
+| 項目 | ルール | 備考 |
+| --- | --- | --- |
+| profile<br/>extension| profiles\jp_{プロファイル名}.fsh | 1ファイル集約 |
+| datatype | others\jp_{データタイプ名}.fsh | |
+| operation | others\jp_{オペレーション名}.fsh |  |
+| search parameter| searchparamters\jp_{プロファイル名}_sp.fsh | 1ファイル集約 |
+| codesystem | codesystems\jp_{コードシステム名称}_cs.fsh | |
+| valueset | valuesets\jp_{値セット名称}_vs.fsh | |
+
+#### サンプル
+
+```
+# profile, extension
+.\input\fsh\profiles\jp_patient.fsh
+
+# datatype
+.\input\fsh\others\jp_humanname.fsh
+
+# search parameter
+.\input\fsh\searchparameters\jp_patient_sp.fsh
+
+# code system
+.\input\fsh\codesytems\jp_gender_cs.fsh
+
+# value set
+.\input\fsh\valuesets\jp_gender_vs.fsh
+```
+
+### 2. ID名称
+#### 形式
+Kabab Case [ **aaa-bbb-ccc** ]を採用する
+
+| 項目 | ルール <br/> `(例)`  |
+| --- | --- | 
+| profile | jp-{profile} <br/>`jp-patient`|  |
+| extension | jp-{profile}-{element}-{extension} <br/>`jp-medicationrequest-dispenserequest-expectedrepeatcount` |
+| datetype | jp-{datatype} <br/>`jp-humanname `| |
+| search parameter | jp-{profile}-{searchparameter}-sp <br/>`jp-patient-birthdate-sp` | |
+| capblity statement | jp-{actor}-capablitystatement <br/>`jp-client-capablitystatement` |
+| codesytesm | jp-{codesystem} <br/> `jp-gender-cs` |
+| valueset | jp-{valueset} <br/> `jp-gender-vs` |
+
+
+### 3. URL定義形式
+接頭語 **http://jpfhir.jp/fhir/core**, **http://jpfhir.jp/fhir/Common**
+
+| 項目 | ルール <br/> `(例)`  |
+| --- | --- | 
+| profile,<br/>datatype | http://jpfhir.jp/fhir/core/StructureDefinition/{id} <br/>`http://jpfhir.jp/fhir/coreStructureDefinition/jp-patient`| 
+| extension | http://jpfhir.jp/fhir/core/Extension/StructureDefinition/{id}<br/> `http://jpfhir.jp/fhir/core/Extension/StructureDefinition/jp-patient-race` |
+| search<br/>parameter | http://jpfhir.jp/fhir/core/SearchParameter/{id} <br/>`http://jpfhir.jp/fhir/core/SearchParameter/jp-patient-birthdate-sp` | |
+| capblity<br/>statement | http://jpfhir.jp/fhir/core/CapabilityStatement/{id} <br/>`http://jpfhir.jp/fhir/core/CapabilityStatement/jp-client-capabilitystatement` |
+| codesystem | http://jpfhir.jp/fhir/Common/CodeSystem/{id} <br/>`http://jpfhir.jp/fhir/Common/CodeSystem/jp-gender-cs` |
+| valueset | http://jpfhir.jp/fhir/Common/CodeSystem/{id} <br/>`http://jpfhir.jp/fhir/Common/ValueSet/jp-gender-vs` |
+
+### 4. Name形式
+ID名称をKebab Case形式 → Pascal Case形式に変換する。(全ての項目共通)
+
+``` 
+JPPatientBirthDateSP
+```
+
+### 5. Title形式
+Space Separator形式変換する。(全ての項目共通)
+``` 
+JP Patient Birth Date SP
+```
+
+## 除外項目
+以下の項目はsushi-config.yamlの定義が展開されるため、.fshファイルでは定義しないこと。
+
+* version (バージョン)
+* copyright (コピーライト)
+* publisher (公開者)
+* contract (契約者)
+* licese (ライセンス)
+* jurisdiction (管轄)
+
+記載すると対象だけが別物として定義されるため、sushi-config.yamlの更新対象とならないため、注意すること。
+
+## Must Support
+JP Coreでは定義しない。（※日本国内のベースで派生先の制約を少なくしたいため）<br/>JP Coreの派生先での利用を想定している。
+
+## コメント記載
+以下のようにファイル内にグループがある場合、コメントにて区切りを入れ、グループが分かるようにすること。
+```
+// ==============================
+//   Extension 定義
+// ==============================
+
+(prifile記載)
+
+// ==============================
+//   Extension 定義
+// ==============================
+
+(extension記載)
+```

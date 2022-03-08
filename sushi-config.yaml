@@ -80,10 +80,12 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - fsh-generated/includes
     #- input/summaries
   path-expansion-params: '../../input/resources/exp-params.json'
-  active-tables: 'true'
-  apply-contact: 'true'
-  apply-publisher: 'true'
+  active-tables: 'false'
   apply-version: 'true'
+  apply-copyright: 'true'
+  apply-publisher: 'true'
+  apply-contact: 'true'
+  apply-licese: 'true'
   apply-jurisdiction: 'true'
   show-inherited-invariants: 'true'
   usage-stats-opt-out: 'true'
