@@ -48,7 +48,7 @@ Usage: #definition
 Instance: jp-condition-clinicalstatus
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-condition-clinicalStatus"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-condition-clinicalstatus"
 * name = "JPConditionClinicalStatusSP"
 * status = #draft
 * experimental = false
@@ -175,7 +175,7 @@ Usage: #definition
 Instance: jp-condition-verificationstatus
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-condition-verificationStatus"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-condition-verificationstatus"
 * name = "JPConditionVerificationStatusSP"
 * status = #draft
 * experimental = false

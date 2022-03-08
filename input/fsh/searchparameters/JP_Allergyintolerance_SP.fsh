@@ -48,7 +48,7 @@ Usage: #definition
 Instance: jp-allergyintolerance-clinicalstatus
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-allergyintolerance-clinicalStatus"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-allergyintolerance-clinicalstatus"
 * name = "JPAllergyintoleranceClinicalStatusSP"
 * status = #draft
 * experimental = false
@@ -271,7 +271,7 @@ Usage: #definition
 Instance: jp-allergyintolerance-verificationstatus
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-allergyintolerance-verificationStatus"
+* url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-allergyintolerance-verificationstatus"
 * name = "JPAllergyIntoleranceVerificationStatusSP"
 * status = #draft
 * experimental = false

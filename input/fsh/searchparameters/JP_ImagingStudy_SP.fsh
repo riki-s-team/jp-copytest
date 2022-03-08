@@ -1,4 +1,4 @@
-Instance: jp-imagingstudy-bodySite
+Instance: jp-imagingstudy-bodysite
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-imagingstudy-bodysite"
