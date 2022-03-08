@@ -1,7 +1,7 @@
 Instance: jp-client-capabilitystatement
 InstanceOf: CapabilityStatement
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/CapabilityStatement/StructureDefinition/jpcoreclientcapabilitystatement"
+* url = "http://jpfhir.jp/fhir/core/CapabilityStatement/StructureDefinition/jp-client-capabilitystatement"
 * name = "JPCoreClientCapabilityStatement"
 * title = "JP Core Client CapabilityStatement"
 * status = #draft
@@ -9,7 +9,7 @@ Usage: #definition
 * date = "2022-03-07"
 * description = "JP Core Clientの期待される機能について説明する。JP Core Clientは、ローカルなユースケースやその他の文脈上の要件に基づいて、必要なデータにアクセスするために、このリストから選択することができます。"
 * kind = #requirements
-* instantiates = "http://jpfhir.jp/fhir/core/CapabilityStatement/StructureDefinition/jpcoreclientcapabilitystatement"
+* instantiates = "http://jpfhir.jp/fhir/core/CapabilityStatement/StructureDefinition/jp-client-capabilitystatement"
 * fhirVersion = #4.0.1
 * format[0] = #json
 * format[+] = #xml

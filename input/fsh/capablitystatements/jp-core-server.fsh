@@ -1,7 +1,7 @@
 Instance: jp-server-capabilitystatement
 InstanceOf: CapabilityStatement
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/CapabilityStatement/StructureDefinition/jpcoreservercapabilitystatement"
+* url = "http://jpfhir.jp/fhir/core/CapabilityStatement/StructureDefinition/jp-server-capabilitystatement"
 * name = "JPCoreServerCapabilityStatement"
 * title = "JP Core Server CapabilityStatement"
 * status = #draft
@@ -9,7 +9,7 @@ Usage: #definition
 * date = "2022-03-07"
 * description = "JP Core Server Actorの期待される機能について説明する。\nJP Core ServerがサポートするFHIRプロファイル、OperationsおよびSearch Parametersのリストが定義されている。"
 * kind = #requirements
-* instantiates = "http://jpfhir.jp/fhir/core/CapabilityStatement/JP_ServerCapabilityStatement"
+* instantiates = "http://jpfhir.jp/fhir/core/CapabilityStatement/jp-server-capabilitystatement"
 * fhirVersion = #4.0.1
 * format[0] = #xml
 * format[+] = #json
