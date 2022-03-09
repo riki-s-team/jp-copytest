@@ -93,7 +93,7 @@ JPPatientBirthDateSP
 ### 5. Title命名規則
 NameをSpace Separator形式に変換する。(全ての項目共通)
 ``` 
-JP Patient Birth Date SP
+JP Patient BirthDate SP
 ```
 
 ## 除外項目
