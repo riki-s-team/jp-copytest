@@ -87,13 +87,13 @@ IDをSnake Case形式(小文字) [ **aaa_bbb_ccc.fsh** ]に変換する。<br/>
 ### 4. Name命名規則
 IDをKebab Case形式 → Pascal Case形式に変換する。(全ての項目共通)<br/>省略語は英大文字とする
 ``` 
-JPPatientBirthdateSP
+JPPatientRace
 ```
 
 ### 5. Title命名規則
-NameをSpace Separator形式に変換する。(全ての項目共通)<br/>省略語は英大文字とする
+NameをSpace Separator形式に変換する。(全ての項目共通)<br/>省略はなるべく用いない
 ``` 
-JP Patient Birthdate SP
+JP Core Patient Race Extension
 ```
 
 ## 除外項目
