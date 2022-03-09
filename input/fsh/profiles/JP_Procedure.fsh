@@ -10,8 +10,6 @@ Description: "このプロファイルはProcedureリソースに対して、患
 * ^status = #draft
 * ^experimental = false
 * ^date = "2022-03-07"
-* ^jurisdiction = urn:iso:std:iso:3166#JP "Japan"
-* ^jurisdiction.text = "Jurisdiction"
 * . ^short = "Procedureリソース"
 * . ^definition = "An action that is or was performed on or for a patient. This can be a physical intervention like an operation, or less invasive like long term services, counseling, or hypnotherapy.\r\n\r\n患者に対して、または患者のために実行されているか実行されたアクション。これは、手術のような身体的介入、または長期サービス、カウンセリング、催眠療法のような低侵襲性である可能性がある。"
 * id ^short = "Logical id of this artifact"

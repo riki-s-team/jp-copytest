@@ -20,7 +20,7 @@ Description: "このプロファイルはDiagnosticReportリソースに対し�
 * category ^definition = "レポートを作成した臨床分野・部門、または診断サービス（CT, US, MRIなど）を分類するコード。 これは、検索、並べ替え、および表示の目的で使用される。"
 * category ^comment = "様々なカテゴリのシェーマを用いて複数のカテゴリを設定できる。 カテゴリの情報粒度はvalue setに定義されている。より詳細なフィルタリングの粒度が必要な場合はDiagnosticReport.codeのmetadata等を用いることで対応できる。\r\n\r\n【JP-CORE】\r\n放射線レポートは ”RAD” をデフォルトとして設定。追加の情報については任意。\r\n<br/><br/>"
 * code ^definition = "この診断レポートを表現するコードや名称"
-* code ^comment = "すべての用語の使用がこの一般的なパターンに適合するわけではない。 場合によっては、モデルにcodeableConceptを使用せず、コーディングを直接使用して、テキスト、コーディング、翻訳、および要素間の関係と事前調整および事後調整を管理するための独自の構造を提供する必要がある。 \r\n\r\n【JP-CORE】\r\n<a href=\"https://www.jira-net.or.jp/publishing/files/jesra/JESRA_TR-0042_2018.pdf\">画像診断レポート交換手順ガイドライン</a>「5.1 レポート種別コード」に記載されているLOINCコード <a href=\"https://loinc.org/18748-4/\">\"Diagnostic imaging study\"</a> を指定\r\n<br/><br/>>"
+* code ^comment = "すべての用語の使用がこの一般的なパターンに適合するわけではない。 場合によっては、モデルにcodeableConceptを使用せず、コーディングを直接使用して、テキスト、コーディング、翻訳、および要素間の関係と事前調整および事後調整を管理するための独自の構造を提供する必要がある。 \r\n\r\n【JP-CORE】\r\n[画像診断レポート交換手順ガイドライン](https://www.jira-net.or.jp/publishing/files/jesra/JESRA_TR-0042_2018.pdf)「5.1 レポート種別コード」に記載されているLOINCコード [Diagnostic imaging study](https://loinc.org/18748-4/) を指定\r\n<br/><br/>"
 * subject ^definition = "レポートの対象。 必ずでは無いが、通常、これには「患者」が該当する。"
 * subject ^comment = "参照は実際のFHIRリソースへの参照であり、解決可能である必要がある。解決はURLから取得するか、または、リソースタイプが利用できる場合は絶対参照を正規URLとして扱い、ローカルレジストリ/リポジトリで検索する。\r\n\r\n【JP-CORE】\r\nPatient リソースを参照\r\n<br/><br/>"
 * subject ^requirements = "対象のコンテキストが必要である。"
