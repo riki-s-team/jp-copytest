@@ -126,3 +126,11 @@ JP Coreでは定義しない。（※日本国内のベースで派生先の制�
 
 (　~　extension記載　~　)
 ```
+
+## 警告対策
+| 非推奨 | 推奨 | 備考 |
+| --- | --- | --- |
+| ```<br>``` | ```<br/>``` | xhtml形式  |
+| ```<p>``` | ```<p/>``` | xhtml形式 |
+| ```<a herf="http://xxx">title</a>``` | ```[title](http://xxx)``` | markdown書式にて記載 |
+| ```<tag>hoge</tag>``` | ```&gt;tag&lt;hoge&gt;/tag&lt;``` | markdwonで許可されないタグはecapeが必要 |
