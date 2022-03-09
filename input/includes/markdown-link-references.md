@@ -10,7 +10,7 @@
 
 <!-- JPCore Capability Statement -->
 [JP Core Server Capability Statement]: CapabilityStatement-jp-client-capabilitystatement.html
-[JP Core Client Capability Statement]: CapabilityStatement-jp-server-capabilitystatement-intro.html
+[JP Core Client Capability Statement]: CapabilityStatement-jp-server-capabilitystatement.html
 
 <!-- JPCore Profiles -->
 <!-- Administration-->
