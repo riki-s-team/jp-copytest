@@ -107,13 +107,13 @@ MedicationAdministrationリソースでは、依頼元のMedicationRequestリソ
 
 1. identifier 検索パラメータを使用して、オーダーIDなどの識別子によるMedicationAdministrationの検索をサポートしなければならない（SHALL）。
 
-   ```http
+   ```
    GET [base]/MedicationAdministration?identifier={system|}[code]
    ```
 
    例：
 
-   ```http
+   ```
    GET [base]/MedicationAdministration?identifier=http://myhospital.com/fhir/medication\|1234567890
    ```
 
@@ -126,14 +126,14 @@ MedicationAdministrationリソースでは、依頼元のMedicationRequestリソ
 
 1. patient 検索パラメータを使用して、患者のリファレンス情報によるMedicationAdministrationの検索をサポートすることが望ましい（SHOULD）。
 
-   ```http
+   ```
    GET [base]/MedicationAdministration?patient=[id]
    GET [base]/MedicationAdministration?patient=[url]
    ```
 
    例：
 
-   ```http
+   ```
    GET [base]/MedicationAdministration?patient=123456
    ```
 
@@ -141,14 +141,14 @@ MedicationAdministrationリソースでは、依頼元のMedicationRequestリソ
 
 1. patient,effective-time 検索パラメータを使用して、患者のリファレンス情報と払い出し日によるMedicationAdministrationの検索をサポートすることが望ましい（SHOULD）。
 
-   ```http
+   ```
    GET [base]/MedicationAdministration?patient=[id]&effective-time=[date]
    GET [base]/MedicationAdministration?patient=[url]&effective-time=[date]
    ```
 
    例：
 
-   ```http
+   ```
    GET [base]/MedicationAdministration?patient=123456&effective-time=eq2013-01-14
    ```
 
@@ -174,7 +174,7 @@ JP MedicationAdministration リソースに対して使用される操作は次�
 
 この操作の公式なURLは以下である。
 
-```http
+```
 http://hl7.jp/fhir/OperationDefinition/MedicationAdministration-everything
 ```
 
@@ -203,14 +203,14 @@ URL: [base]/MedicationAdministration/[id]/$everything
 
 リクエスト：単一のMedicationAdministrationに関連する全てのリソースを取得する。
 
-```http
+```
 GET [base]/MedicationAdministration/1234567890/$everything
 [some headers]
 ```
 
 レスポンス：指定されたMedicationAdministrationに関連する全てのリソースを返す。
 
-```http
+```
 HTTP/1.1 200 OK
 [other headers]
 

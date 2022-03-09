@@ -69,13 +69,13 @@
 
 1. specialty 検索パラメータを使用して、医療者の特定の専門性によるPractitionerRoleの検索をサポートしなければならない（SHALL）。
 
-   ```http
+   ```
    GET [base]/PractitionerRole?specialty={system|}[code]
    ```
 
    例：
 
-   ```http
+   ```
    GET [base]/PractitionerRole?specialty=http://nucc.org/provider-taxonomy|208D0000X
    ```
 
@@ -85,13 +85,13 @@
 
 2. practitioner 検索パラメータを使用して、医療者の名前と識別子によるPractitionerRoleの検索をサポートしなければならない（SHALL）。
 
-   ```http
+   ```
    GET [base]/PractitionerRole?practitioner={Type/}[id]
    ```
 
    例：
 
-   ```http
+   ```
    1.GET [base]/PractitionerRole?practitioner.identifier=http://hl7.org/fhir/sid/us-npi|97860456&_include=PractitionerRole:practitioner&_include=PractitionerRole?endpoint
    2.GET [base]/PractitionerRole?practitioner.name=山田&_include=PractitionerRole:practitioner&_include=PractitionerRole?endpoint
    ```

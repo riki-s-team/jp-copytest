@@ -83,13 +83,13 @@ JP Coverage リソースには、制約は存在しない。
 
 1. beneficiary 検索パラメータを使用して、識別子によるCoverageの検索をサポートすることが望ましい（SHOULD）。
 
-   ```http
+   ```
    GET [base]/Coverage?beneficiary={system|}[code]
    ```
 
    例：
 
-   ```http
+   ```
    GET [base]/Coverage?beneficiary=*****
    ```
 
@@ -97,12 +97,12 @@ JP Coverage リソースには、制約は存在しない。
    
 2. class-type 検索パラメータを使用して、言語コードによるOrganizationの検索をサポートすることが望ましい（SHOULD）。
 
-   ```http
+   ```
    GET [base]/Coverage.class?type={token}
    ```
 
    例：
 
-   ```http
+   ```
    GET [base]/Coverageclass?type=*****
    ```

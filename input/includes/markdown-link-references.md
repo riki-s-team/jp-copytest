@@ -93,3 +93,34 @@
 [ProcedureCS]: CodeSystem-jp-core-work-codesystem-ProcedureCodes.html
 [EventStatusVS]: ValueSet-jp-core-work-valueset-EventStatus.html
 [ProcedureVS]: ValueSet-jp-core-work-valueset-ProcedureCodes.html
+
+<!-- link -->
+[JPClientCapabilityStatement]: CapabilityStatement-jp-client-capabilitystatement.html
+[JPServerCapabilityStatement]: CapabilityStatement-jp-server-capabilitystatement.html
+[JPAllergyIntolerance]: StructureDefinition-JP-AllergyIntolerance.html
+[JPCondition]: StructureDefinition-JP-Condition.html
+[JPCoverage]: StructureDefinition-JP-Coverage.html
+[JPDiagnosticReportCommon]: StructureDefinition-JP-DiagnosticReport-Common.html
+[JPDiagnosticReportLabResult]: StructureDefinition-JP-DiagnosticReport-LabResult.html
+[JPDiagnosticReportRadiology]: StructureDefinition-JP-DiagnosticReport-Radiology.html
+[JPEncounter]: StructureDefinition-JP-Encounter.html
+[JPImagingStudyRadiology]: StructureDefinition-JP-ImagingStudy-Radiology.html
+[JPLocation]: StructureDefinition-JP-Location.html
+[JPMedication]: StructureDefinition-JP-Medication.html
+[JPMedicationAdministrationInjection]:StructureDefinition-JP-MedicationAdministration-Injection.html
+[JPMedicationAdministration]: StructureDefinition-JP-MedicationAdministration.html
+[JPMedicationDispenseInjection]: StructureDefinition-JP-MedicationDispense-Injection.html
+[JPMedicationDispense]: StructureDefinition-JP-MedicationDispense.html
+[JPMedicationRequestInjection]: StructureDefinition-JP-MedicationRequest-Injection.html
+[JPMedicationRequest]: StructureDefinition-JP-MedicationRequest.html
+[JPObservationBodyMeasurement]: StructureDefinition-JP-Observation-BodyMeasurement.html
+[JPObservationCommon]: StructureDefinition-JP-Observation-Common.html
+[JPObservationLabResult]: StructureDefinition-JP-Observation-LabResult.html
+[JPObservationPhysicalExam]: StructureDefinition-JP-Observation-PhysicalExam.html
+[JPObservationSocialHistory]: StructureDefinition-JP-Observation-SocialHistory.html
+[JPObservationVitalSigns]: StructureDefinition-JP-Observation-VitalSigns.html
+[JPOrganization]: StructureDefinition-JP-Organization.html
+[JPPatient]: StructureDefinition-JP-Patient.html
+[JPPractitioner]: StructureDefinition-JP-Practitioner.html
+[JPPractitionerRole]: StructureDefinition-JP-PractitionerRole.html
+[JPProcedure]: StructureDefinition-JP-Procedure.html

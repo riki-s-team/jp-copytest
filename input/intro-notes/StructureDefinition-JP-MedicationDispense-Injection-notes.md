@@ -139,13 +139,13 @@ JP Core MedicationDispense Injectionリソースに内包されるMedicationリ�
 
 1. identifier 検索パラメータを使用して、オーダーIDなどの識別子によるMedicationReuqestの検索をサポートしなければならない（SHALL）。
 
-   ```http
+   ```
    GET [base]/MedicationDispense?identifier={system|}[code]
    ```
 
    例：
 
-   ```http
+   ```
    GET [base]/MedicationDispense?identifier=http://myhospital.com/fhir/medication\|1234567890
    ```
 
@@ -158,14 +158,14 @@ JP Core MedicationDispense Injectionリソースに内包されるMedicationリ�
 
 1. patient 検索パラメータを使用して、患者のリファレンス情報によるMedicationDispenseの検索をサポートすることが望ましい（SHOULD）。
 
-   ```http
+   ```
    GET [base]/MedicationDispense?patient=[id]
    GET [base]/MedicationDispense?patient=[url]
    ```
 
    例：
 
-   ```http
+   ```
    GET [base]/MedicationDispense?patient=123456
    ```
 
@@ -173,14 +173,14 @@ JP Core MedicationDispense Injectionリソースに内包されるMedicationリ�
 
 1. patient,whenhandedover 検索パラメータを使用して、患者のリファレンス情報と払い出し日によるMedicationDispenseの検索をサポートすることが望ましい（SHOULD）。
 
-   ```http
+   ```
    GET [base]/MedicationDispense?patient=[id]&whenhandedover=[date]
    GET [base]/MedicationDispense?patient=[url]&whenhandedover=[date]
    ```
 
    例：
 
-   ```http
+   ```
    GET [base]/MedicationDispense?patient=123456&whenhandedover=eq2013-01-14
    ```
 
@@ -206,7 +206,7 @@ JP Core MedicationDispense Injection リソースに対して使用される操�
 
 この操作の公式なURLは以下である。
 
-```http
+```
 http://hl7.jp/fhir/OperationDefinition/MedicationDispense-everything
 ```
 
@@ -235,14 +235,14 @@ URL: [base]/MedicationDispense/[id]/$everything
 
 リクエスト：単一のMedicationDispenseに関連する全てのリソースを取得する。
 
-```http
+```
 GET [base]/MedicationDispense/1234567890/$everything
 [some headers]
 ```
 
 レスポンス：指定されたMedicationDispenseに関連する全てのリソースを返す。
 
-```http
+```
 HTTP/1.1 200 OK
 [other headers]
 

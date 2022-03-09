@@ -86,13 +86,13 @@
 
 1.患者中心での検索：対象患者（= `Patient`リソース）を条件とした検索をサポートすることが望ましい。
 
-   ```http
+   ```
    GET [base]/ImagingStudy?subject={reference}
    ```
 
    例：
 
-   ```http
+   ```
    GET [base]/ImagingStudy?subject=Patient/123
    ```
 
@@ -101,13 +101,13 @@
 2.モダリティ中心の検索：対象患者（= `Patient`リソース）と撮影に使用されたモダリティを条件とした検索をサポートすることが望ましい。
 
 
-   ```http
+   ```
    GET [base]/ImagingStudy?subject={reference}&modality={token}
    ```
 
    例：
 
-   ```http
+   ```
    GET [base]/ImagingStudy?subject=Patient/123&modality=CT
    ```
 <br>
@@ -115,13 +115,13 @@
 3.部位中心の検索：対象患者（= `Patient`リソース）と撮影の対象となった撮影部位を条件とした検索をサポートすることが望ましい。
 
 
-   ```http
+   ```
    GET [base]/ImagingStudy?subject={reference}&bodysite={token}
    ```
 
    例：
 
-   ```http
+   ```
    GET [base]/ImagingStudy?subject=Patient/123&bodysite=T-15460
    ```
 <br>
@@ -129,13 +129,13 @@
 4.日付中心の検索：対象患者（= `Patient`リソース）と撮影の日時を条件とした検索をサポートすることが望ましい。
 
 
-   ```http
+   ```
    GET [base]/ImagingStudy?subject={reference}&started={date}
    ```
 
    例：
 
-   ```http
+   ```
    GET [base]/ImagingStudy?subject=subject=Patient/123&data=eq2021-06-25
    ```
 
@@ -144,13 +144,13 @@
 5.日付中心の検索：対象患者（= `Patient`リソース）と撮影の日時を条件とした検索をサポートすることが望ましい。
 
 
-   ```http
+   ```
    GET [base]/ImagingStudy?subject={reference}&started={date}
    ```
 
    例：
 
-   ```http
+   ```
    GET [base]/ImagingStudy?subject=subject=Patient/123&data=eq2021-06-25
    ```
 
@@ -159,13 +159,13 @@
 6.複数の条件を組み合わせた検索：対象患者（= `Patient`リソース）、撮影の日時、撮影に使用されたモダリティ、撮影の対象となった撮影部位を条件とした検索をサポートすることが望ましい。
 
 
-   ```http
+   ```
    GET [base]/ImagingStudy?subject={reference}&data={date}&modality={token}&bodysite={token}
    ```
 
    例：
 
-   ```http
+   ```
    GET [base]/ImagingStudy?subject=Patient/123&data=eq2021-06-18&modality=CT&bodysite=T-15460
    ```
 
@@ -174,13 +174,13 @@
 7.来院情報中心の検索：来院情報（= `Encounter`リソース）を条件とした検索をサポートすることが望ましい。
 
 
-   ```http
+   ```
    GET [base]/ImagingStudy?encounter={reference}
    ```
 
    例：
 
-   ```http
+   ```
    GET [base]/ImagingStudy?encounter=Encounter/456
    ```
 

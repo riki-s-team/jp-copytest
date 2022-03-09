@@ -87,13 +87,13 @@ address-state=東京都    |
 
 1. name 検索パラメータを使用して、任意の名前パートによる文字列検索をサポートしなければならない（SHALL）。
 
-   ```http
+   ```
    GET [base]/Location?name=[string]
    ```
 
    例：
 
-   ```http
+   ```
    GET [base]/Location?name=３南
    ```
 
@@ -103,13 +103,13 @@ address-state=東京都    |
 
 2. address 検索パラメータを使用して、住所テキストによる文字列検索をサポートしなければならない（SHALL）。
 
-   ```http
+   ```
    GET [base]/Location?address=[string]
    ```
 
    例：
 
-   ```http
+   ```
    GET [base]/Location?address=〒113-0033東京都文京区本郷７丁目３−１
    ```
 
@@ -123,13 +123,13 @@ address-state=東京都    |
 
 1. address-city 検索パラメータを使用して、住所の市町村名によるLocationの検索をサポートすることが望ましい（SHOULD）。
 
-   ```http
+   ```
    GET [base]/Location?address-city=[string]
    ```
 
    例：
 
-   ```http
+   ```
    GET [base]/Location?address-city=文京区
    ```
 
@@ -138,13 +138,13 @@ address-state=東京都    |
 
 2. address-state 検索パラメータを使用して、住所の都道府県名によるLocationの検索をサポートすることが望ましい（SHOULD）。
 
-   ```http
+   ```
    GET [base]/Location?address-state=[string]
    ```
 
    例：
 
-   ```http
+   ```
    GET [base]/Location?address-state=東京都
    ```
 
@@ -153,13 +153,13 @@ address-state=東京都    |
 
 3. address-postalcode 検索パラメータを使用して、住所の郵便番号によるLocationの検索をサポートすることが望ましい（SHOULD）。
 
-   ```http
+   ```
    GET [base]/Location?address-postalcode=[string]
    ```
 
    例：
 
-   ```http
+   ```
    GET [base]/Location?address-postalcode=1130033
    ```
 

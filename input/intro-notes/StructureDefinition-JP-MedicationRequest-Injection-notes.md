@@ -156,13 +156,13 @@ JP Core MedicationRequest Injectionリソースに内包されるMedicationリ�
 
 1. identifier 検索パラメータを使用して、オーダーIDなどの識別子によるMedicationReuqestの検索をサポートしなければならない（SHALL）。
 
-   ```http
+   ```
    GET [base]/MedicationRequest?identifier={system|}[code]
    ```
 
    例：
 
-   ```http
+   ```
    GET [base]/MedicationRequest?identifier=http://myhospital.com/fhir/medication\|1234567890
    ```
 
@@ -175,14 +175,14 @@ JP Core MedicationRequest Injectionリソースに内包されるMedicationリ�
 
 1. patient 検索パラメータを使用して、患者のリファレンス情報によるMedicationRequestの検索をサポートすることが望ましい（SHOULD）。
 
-   ```http
+   ```
    GET [base]/MedicationRequest?patient=[id]
    GET [base]/MedicationRequest?patient=[url]
    ```
 
    例：
 
-   ```http
+   ```
    GET [base]/MedicationRequest?patient=123456
    ```
 
@@ -190,14 +190,14 @@ JP Core MedicationRequest Injectionリソースに内包されるMedicationリ�
 
 1. patient,date 検索パラメータを使用して、患者のリファレンス情報と投薬日によるMedicationRequestの検索をサポートすることが望ましい（SHOULD）。
 
-   ```http
+   ```
    GET [base]/MedicationRequest?patient=[id]&date=[date]
    GET [base]/MedicationRequest?patient=[url]&date=[date]
    ```
 
    例：
 
-   ```http
+   ```
    GET [base]/MedicationRequest?patient=123456&date=eq2013-01-14
    ```
 
@@ -205,14 +205,14 @@ JP Core MedicationRequest Injectionリソースに内包されるMedicationリ�
 
 1. patient,authoredon 検索パラメータを使用して、患者のリファレンス情報と依頼日によるMedicationRequestの検索をサポートすることが望ましい（SHOULD）。
 
-   ```http
+   ```
    GET [base]/MedicationRequest?patient=[id]&authoredon=[date]
    GET [base]/MedicationRequest?patient=[url]&authoredon=[date]
    ```
 
    例：
 
-   ```http
+   ```
    GET [base]/MedicationRequest?patient=123456&authoredon=eq2013-03-21
    ```
 
@@ -237,7 +237,7 @@ JP Core MedicationRequest Injection リソースに対して使用される操�
 
 この操作の公式なURLは以下である。
 
-```http
+```
 http://hl7.jp/fhir/OperationDefinition/MedicationRequest-everything
 ```
 
@@ -266,14 +266,14 @@ URL: [base]/MedicationRequest/[id]/$everything
 
 リクエスト：単一のMedicationRequestに関連する全てのリソースを取得する。
 
-```http
+```
 GET [base]/MedicationRequest/1234567890/$everything
 [some headers]
 ```
 
 レスポンス：指定されたMedicationRequestに関連する全てのリソースを返す。
 
-```http
+```
 HTTP/1.1 200 OK
 [other headers]
 
