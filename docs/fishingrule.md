@@ -1,4 +1,4 @@
-# JP Core FHIR Shorthand記載時ルール事項
+# JP Core FHIR Shorthand記載時ルール事項(案)
 
 ## 1. フォルダ構成
  フォルダ構成は下記の通り
@@ -21,20 +21,35 @@
    └─resources #resource
 ```
 ## 名称ルール
-### 1. ファイル配置＆命名規則
-#### 形式
-Snake Case [ **aaa_bbb_ccc.fsh** ]を採用する
 
-#### 項目ルール
+### 1. ID命名規則
+#### 形式
+Kabab Case形式(小文字) [ **aaa-bbb-ccc** ]を採用する
+
+
+| 項目 | ルール <br/> `(例)`  |
+| --- | --- | 
+| profile | jp-{profile} <br/>`jp-patient`|  |
+| extension | jp-{profile}-{element}-{extension} <br/>`jp-medicationrequest-dispenserequest-expectedrepeatcount` <br/>64文字を超える場合は、**{element}-** を省略可能とする |
+| datetype | jp-{datatype} <br/>`jp-humanname `| |
+| search parameter | jp-{profile}-{searchparameter}-sp <br/>`jp-patient-birthdate-sp` | |
+| capblity statement | jp-{actor}-capablitystatement <br/>`jp-client-capablitystatement` |
+| codesytesm | jp-{codesystem}-cs <br/> `jp-gender-cs` |
+| valueset | jp-{valueset}-vs <br/> `jp-gender-vs` |
+
+
+### 2. ファイル配置＆命名規則
+#### 形式
+IDをSnake Case形式(小文字)に変換後、postfixおよび拡張子を付ける [ **aaa_bbb_ccc.fsh** ]を採用する
 
 | 項目 | ルール | 備考 |
 | --- | --- | --- |
-| profile<br/>extension| profiles\jp_{プロファイル名}.fsh | 1ファイル集約 |
-| datatype | others\jp_{データタイプ名}.fsh | |
-| operation | others\jp_{オペレーション名}.fsh |  |
-| search parameter| searchparamters\jp_{プロファイル名}_sp.fsh | 1ファイル集約 |
-| codesystem | codesystems\jp_{コードシステム名称}_cs.fsh | |
-| valueset | valuesets\jp_{値セット名称}_vs.fsh | |
+| profile<br/>extension| profiles/{[snake]Profile ID}.fsh | profileおよびextensionは1ファイル集約 |
+| datatype | others/{[snake]DateType ID}.fsh | |
+| operation | others/{[snake]Operation ID}.fsh |  |
+| search parameter| searchparamters/{[snake]Profile ID}_sp.fsh | postfixとして **[_sp]** があるのを注意。1ファイル集約 |
+| codesystem | codesystems/{[snake]CodeSystem ID}.fsh | |
+| valueset | valuesets/{[snake]ValueSet ID}.fsh | |
 
 #### サンプル
 
@@ -55,20 +70,6 @@ Snake Case [ **aaa_bbb_ccc.fsh** ]を採用する
 .\input\fsh\valuesets\jp_gender_vs.fsh
 ```
 
-### 2. ID名称
-#### 形式
-Kabab Case [ **aaa-bbb-ccc** ]を採用する
-
-| 項目 | ルール <br/> `(例)`  |
-| --- | --- | 
-| profile | jp-{profile} <br/>`jp-patient`|  |
-| extension | jp-{profile}-{element}-{extension} <br/>`jp-medicationrequest-dispenserequest-expectedrepeatcount` |
-| datetype | jp-{datatype} <br/>`jp-humanname `| |
-| search parameter | jp-{profile}-{searchparameter}-sp <br/>`jp-patient-birthdate-sp` | |
-| capblity statement | jp-{actor}-capablitystatement <br/>`jp-client-capablitystatement` |
-| codesytesm | jp-{codesystem}-cs <br/> `jp-gender-cs` |
-| valueset | jp-{valueset}-vs <br/> `jp-gender-vs` |
-
 
 ### 3. URL定義形式
 接頭語 **http://jpfhir.jp/fhir/core**, **http://jpfhir.jp/fhir/Common**
@@ -76,21 +77,21 @@ Kabab Case [ **aaa-bbb-ccc** ]を採用する
 | 項目 | ルール <br/> `(例)`  |
 | --- | --- | 
 | profile, <br/>datatype | http://jpfhir.jp/fhir/core/StructureDefinition/{id} <br/>`http://jpfhir.jp/fhir/core/StructureDefinition/jp-patient`| 
-| extension | http://jpfhir.jp/fhir/core/Extension/StructureDefinition/{id}<br/> `http://jpfhir.jp/fhir/core/Extension/StructureDefinition/jp-patient-race` |
+| extension | http://jpfhir.jp/fhir/core/Extension/StructureDefinition/{id}<br/> `http://jpfhir.jp/fhir/core/Extension/StructureDefinition/jp-patient-race`|
 | search<br/>parameter | http://jpfhir.jp/fhir/core/SearchParameter/{id} <br/>`http://jpfhir.jp/fhir/core/SearchParameter/jp-patient-birthdate-sp` | |
 | capblity<br/>statement | http://jpfhir.jp/fhir/core/CapabilityStatement/{id} <br/>`http://jpfhir.jp/fhir/core/CapabilityStatement/jp-client-capabilitystatement` |
 | codesystem | http://jpfhir.jp/fhir/Common/CodeSystem/{id} <br/>`http://jpfhir.jp/fhir/Common/CodeSystem/jp-gender-cs` |
 | valueset | http://jpfhir.jp/fhir/Common/ValueSet/{id} <br/>`http://jpfhir.jp/fhir/Common/ValueSet/jp-gender-vs` |
 
-### 4. Name形式
-ID名称をKebab Case形式 → Pascal Case形式に変換する。(全ての項目共通)
+### 4. Name命名規則
+IDをKebab Case形式 → Pascal Case形式に変換する。(全ての項目共通)
 
 ``` 
 JPPatientBirthDateSP
 ```
 
-### 5. Title形式
-Space Separator形式変換する。(全ての項目共通)
+### 5. Title命名規則
+NameをSpace Separator形式に変換する。(全ての項目共通)
 ``` 
 JP Patient Birth Date SP
 ```
@@ -117,11 +118,11 @@ JP Coreでは定義しない。（※日本国内のベースで派生先の制�
 //   Extension 定義
 // ==============================
 
-(prifile記載)
+(　~　prifile記載　~　)
 
 // ==============================
 //   Extension 定義
 // ==============================
 
-(extension記載)
+(　~　extension記載　~　)
 ```

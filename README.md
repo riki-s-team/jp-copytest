@@ -1,6 +1,10 @@
 # FHIR JPCore ver1.1用テストサイト
 FHIRのJpCore環境作成のためのサンプルサイトです。
 
+# 注意事項
+このドキュメントは日本医療情報学会NeXEHRS課題研究会「HL7®FHIR® 日本実装検討WG」で作成した実装ガイドのドラフトVer.1.1 です。このバージョンは日本HL7協会による承認を受けていません。今後、予告なく内容に変更があります。実装や利用は全て自己責任で行ってください。
+このページの実装ガイドは常に修正、追加がある改訂版開発用ページです。
+
 ## コンパイル手順
 1. ターミナル（コマンドプロンプト）を開き、対象ディレクトリにカレントを移動する
 1. Sushiを実行し、エラーが発生していないことを確認する
@@ -11,8 +15,13 @@ FHIRのJpCore環境作成のためのサンプルサイトです。
 1. OutputフォルダにHtml一式が格納される
 
 ## マニュアル
-* [FHIS Shorthand JPCoreコーディング規約](docs/fishingrule.md)
-* [FHIR Shorthand & IGPubliser環境作成方法](docs/enviroment.md)
-* [MarkDown記載方法](docs/markdown.md)
-* [FHIR Shorthand学習サイト(FSH Scool)](https://fshschool.org/)
+* [FHIR Shorthand & IG Publiser環境作成方法(作成中)](docs/enviroment.md)
+* [FHIR Shorthand JP Coreコーディング規約(作成中)](docs/fishingrule.md)
+* [プロファイル説明前後文書テンプレート(作成中)](docs/template_intronotes.md)
+* [github 更新ルール(作成中)](docs/githubflow.md)
 
+## FSH & Markdown記載方法
+* [MarkDown記載方法](docs/markdown.md)
+* [FHIR Shorthand FSH School](https://fshschool.org/)
+* [FHIR Shorthand Overview](https://build.fhir.org/ig/HL7/fhir-shorthand/overview.html)
+* [FHIR Shorthand Language Reference](https://build.fhir.org/ig/HL7/fhir-shorthand/reference.html)
