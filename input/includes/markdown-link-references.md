@@ -9,8 +9,8 @@
 [JP-ImplementationGuide]: ImplementationGuide-hl7.fhir.jp.core.html
 
 <!-- JPCore Capability Statement -->
-[JP Core Server Capability Statement]: CapabilityStatement-jp-client-capabilitystatement.html
-[JP Core Client Capability Statement]: CapabilityStatement-jp-server-capabilitystatement.html
+[JP Core Server Capability Statement]: CapabilityStatement-jp-server-capabilitystatement.html
+[JP Core Client Capability Statement]: CapabilityStatement-jp-client-capabilitystatement.html
 
 <!-- JPCore Profiles -->
 <!-- Administration-->
