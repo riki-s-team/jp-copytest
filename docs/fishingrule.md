@@ -24,15 +24,15 @@
 
 ### 1. ID命名規則
 #### 形式
-Kabab Case形式(小文字) [ **aaa-bbb-ccc** ]を採用する
-
+Kabab Case形式(小文字) [ **aaa-bbb-ccc** ]を採用する。<br/>
+正規表現 : ``` ([a-z]|[-])+ ```
 
 | 項目 | ルール <br/> `(例)`  |
 | --- | --- | 
 | profile | jp-{profile} <br/>`jp-patient`|  |
 | extension | jp-{profile}-{element}-{extension} <br/>`jp-medicationrequest-dispenserequest-expectedrepeatcount` <br/>64文字を超える場合は、**{element}-** を省略可能とする |
 | datetype | jp-{datatype} <br/>`jp-humanname `| |
-| search parameter | jp-{profile}-{searchparameter}-sp <br/>`jp-patient-birthdate-sp` | |
+| search parameter | jp-{profile}-{parameter}-sp <br/>`jp-patient-birthdate-sp` | |
 | capblity statement | jp-{actor}-capablitystatement <br/>`jp-client-capablitystatement` |
 | codesytesm | jp-{codesystem}-cs <br/> `jp-gender-cs` |
 | valueset | jp-{valueset}-vs <br/> `jp-gender-vs` |
@@ -40,7 +40,8 @@ Kabab Case形式(小文字) [ **aaa-bbb-ccc** ]を採用する
 
 ### 2. ファイル配置＆命名規則
 #### 形式
-IDをSnake Case形式(小文字)に変換後、postfixおよび拡張子を付ける [ **aaa_bbb_ccc.fsh** ]を採用する
+IDをSnake Case形式(小文字)に変換後、postfixおよび拡張子を付ける [ **aaa_bbb_ccc.fsh** ]を採用する。<br/>
+正規表現 : ``` ([a-z]|[_])+.fsh ```
 
 | 項目 | ルール | 備考 |
 | --- | --- | --- |
@@ -84,14 +85,13 @@ IDをSnake Case形式(小文字)に変換後、postfixおよび拡張子を付�
 | valueset | http://jpfhir.jp/fhir/Common/ValueSet/{id} <br/>`http://jpfhir.jp/fhir/Common/ValueSet/jp-gender-vs` |
 
 ### 4. Name命名規則
-IDをKebab Case形式 → Pascal Case形式に変換する。(全ての項目共通)
-
+IDをKebab Case形式 → Pascal Case形式に変換する。(全ての項目共通)<br/>省略語は英大文字とする
 ``` 
 JPPatientBirthDateSP
 ```
 
 ### 5. Title命名規則
-NameをSpace Separator形式に変換する。(全ての項目共通)
+NameをSpace Separator形式に変換する。(全ての項目共通)<br/>省略語は英大文字とする
 ``` 
 JP Patient BirthDate SP
 ```
