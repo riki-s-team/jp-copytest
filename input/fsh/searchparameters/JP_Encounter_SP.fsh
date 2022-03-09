@@ -106,7 +106,6 @@ Usage: #definition
 * contact.telecom.system = #url
 * contact.telecom.value = "http://www.hl7.org/Special/committees/usrealm/index.cfm"
 * description = "Encounterリソースのidentifierに関する検索を定義します。"
-* jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * code = #identifier
 * base = #Encounter
 * type = #token

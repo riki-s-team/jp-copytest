@@ -247,7 +247,6 @@ Usage: #definition
 * experimental = false
 * date = "2022-03-07"
 * description = "Patientリソースのidentifierに関する検索を定義します。"
-* jurisdiction = urn:iso:std:iso:3166#US "United States of America"
 * code = #identifier
 * base = #Patient
 * type = #token
