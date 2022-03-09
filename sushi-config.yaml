@@ -23,16 +23,18 @@ jurisdiction: 'urn:iso:std:iso:3166#JPN'
 pages:
   index.md:
     title: HL7 FHIR JP Core 実装ガイド ＜Draft Ver1.1＞
-  guide-general.md:
-    title: 総合ガイダンス
-  guide-mustSupportCardinality.md:
-    title: Must SupportとCardinality(多重度)のルール
-  guide-handlingOfNonExistentData.md:
-    title: 欠損値（データが存在しない場合）の扱い
-  guide-characterEncoding.md:
-    title: 文字コード
-  guide-stringSearch.md:
-    title: 検索
+  guidance.md:
+    title: ガイダンス
+    guide-general.md:
+      title: 総合ガイダンス
+    guide-mustSupportCardinality.md:
+      title: Must SupportとCardinality(多重度)のルール
+    guide-handlingOfNonExistentData.md:
+      title: 欠損値（データが存在しない場合）の扱い
+    guide-characterEncoding.md:
+      title: 文字コード
+    guide-stringSearch.md:
+      title: 検索
   group-administration.md:
     title: Administration Group
   group-medication.md:
