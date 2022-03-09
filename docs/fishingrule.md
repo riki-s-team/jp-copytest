@@ -40,7 +40,7 @@ Kabab Case形式(小文字) [ **aaa-bbb-ccc** ]を採用する。<br/>
 
 ### 2. ファイル配置＆命名規則
 #### 形式
-IDをSnake Case形式(小文字)に変換後、postfixおよび拡張子を付ける [ **aaa_bbb_ccc.fsh** ]を採用する。<br/>
+IDをSnake Case形式(小文字) [ **aaa_bbb_ccc.fsh** ]に変換する。<br/>
 正規表現 : ``` ([a-z]|[_])+.fsh ```
 
 | 項目 | ルール | 備考 |
@@ -87,13 +87,13 @@ IDをSnake Case形式(小文字)に変換後、postfixおよび拡張子を付�
 ### 4. Name命名規則
 IDをKebab Case形式 → Pascal Case形式に変換する。(全ての項目共通)<br/>省略語は英大文字とする
 ``` 
-JPPatientBirthDateSP
+JPPatientBirthdateSP
 ```
 
 ### 5. Title命名規則
 NameをSpace Separator形式に変換する。(全ての項目共通)<br/>省略語は英大文字とする
 ``` 
-JP Patient BirthDate SP
+JP Patient Birthdate SP
 ```
 
 ## 除外項目
