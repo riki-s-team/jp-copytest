@@ -85,7 +85,6 @@ Extension: JP_Medication_Ingredient_DrugNo
 Id: 4b53c2de-7595-40da-9c04-bb912b394f27
 Title: "JP_Medication_Ingredient_DrugNo"
 Description: "投与量が製剤単位か成分単位かを格納する拡張"
-* ^meta.lastUpdated = "2021-12-04T09:25:25.010+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Medication_Ingredient_DrugNo"
 * ^date = "2022-03-07"
 * ^purpose = "投与量が製剤単位か成分単位かを格納する拡張"
@@ -102,7 +101,6 @@ Extension: JP_Medication_IngredientStrength_StrengthType
 Id: 88c8b7c4-fbfa-4a42-814d-071dc8acb4eb
 Title: "JP_Medication_IngredientStrength_StrengthType"
 Description: "投与量が製剤単位か成分単位かを格納する拡張"
-* ^meta.lastUpdated = "2021-12-04T09:25:08.404+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Medication_IngredientStrength_StrengthType"
 * ^date = "2022-03-07"
 * ^purpose = "投与量が製剤単位か成分単位かを格納する拡張"

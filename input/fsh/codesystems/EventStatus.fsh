@@ -2,7 +2,6 @@ CodeSystem: EventStatus
 Id: jp-core-work-codesystem-EventStatus
 Title: "Procedureの状態"
 * ^meta.versionId = "5"
-* ^meta.lastUpdated = "2021-08-17T03:35:36.725+00:00"
 * ^meta.source = "#AlLSIJB6Oq53LiNn"
 * ^url = "https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-EventStatus"
 * ^status = #draft

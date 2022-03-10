@@ -130,7 +130,6 @@ Extension: JP_MedicationAdministration_Dosage_DosageComment
 Id: b8b80771-bdbb-4ce3-b7d5-9b56f90ff304
 Title: "JP_MedicationAdministration_Dosage_DosageComment"
 Description: "用法コメントを格納するための拡張"
-* ^meta.lastUpdated = "2021-12-04T09:29:22.094+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Dosage_DosageComment"
 * ^date = "2022-03-07"
 * ^purpose = "用法コメントを格納するための拡張"
@@ -143,7 +142,6 @@ Extension: JP_MedicationAdministration_Dosage_LineComment
 Id: 7a1b4824-7464-47b1-ba4d-dad4dd006663
 Title: "JP_MedicationAdministration_atDosage_LineComment"
 Description: "ラインコメントを格納する"
-* ^meta.lastUpdated = "2021-12-04T09:29:44.656+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Dosage_LineComment"
 * ^date = "2022-03-07"
 * ^purpose = "ラインコメントを格納する"
@@ -156,7 +154,6 @@ Extension: JP_MedicationAdministration_DosageMethod_MethodComment
 Id: 4327927e-6d72-442a-bd48-5d5b059bd8fe
 Title: "JP_MedicationAdministration_DosageMethod_MethodComment"
 Description: "手技コメントを格納するための拡張"
-* ^meta.lastUpdated = "2021-12-04T09:30:22.110+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_DosageMethod_MethodComment"
 * ^date = "2022-03-07"
 * ^purpose = "手技コメントを格納するための拡張"
@@ -171,7 +168,6 @@ Extension: JP_MedicationAdministration_DosageRate_RateComment
 Id: 5f45be03-73b5-425d-94fb-ff7dac12b87c
 Title: "JP_MedicationAdministration_DosageRate_RateComment"
 Description: "投与速度コメントを格納するための拡張"
-* ^meta.lastUpdated = "2021-12-04T09:30:41.643+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_DosageRate_RateComment"
 * ^date = "2022-03-07"
 * ^purpose = "投与速度コメントを格納するための拡張"
@@ -186,7 +182,6 @@ Extension: JP_MedicationAdministration_DosageRoute_RouteComment
 Id: 7d2bd9f9-3e77-423c-be7f-8602a284fe0a
 Title: "JP_MedicationAdministration_DosageRoute_RouteComment"
 Description: "投与経路コメントを格納するための拡張"
-* ^meta.lastUpdated = "2021-12-04T09:31:10.517+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_DosageRoute_RouteComment"
 * ^date = "2022-03-07"
 * ^purpose = "投与経路コメントを格納するための拡張"
@@ -199,7 +194,6 @@ Extension: JP_MedicationAdministration_DosageSite_SiteComment
 Id: cb26a2d4-7cfc-47c9-b3ef-0bc2cfb8aeb7
 Title: "JP_MedicationAdministration_DosageSite_SiteComment"
 Description: "投与部位コメントを格納するための拡張"
-* ^meta.lastUpdated = "2021-12-04T09:31:39.314+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_DosageSite_SiteComment"
 * ^date = "2022-03-07"
 * ^purpose = "投与部位コメントを格納するための拡張"
@@ -212,7 +206,6 @@ Extension: JP_MedicationAdministration_Location
 Id: 78061a6c-42e8-402d-8f76-6fdac69f7f90
 Title: "JP_MedicationAdministration_Location"
 Description: "実施場所を格納するための拡張"
-* ^meta.lastUpdated = "2021-12-03T16:59:14.569+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Location"
 * ^date = "2022-03-07"
 * ^purpose = "実施場所を格納するための拡張"
@@ -226,7 +219,6 @@ Extension: JP_MedicationAdministration_RequestAuthoredOn
 Id: dd47eb40-6be1-479f-9902-e03defe748bf
 Title: "JP_MedicationAdministration_RequestAuthoredOn"
 Description: "依頼日時を格納するための拡張"
-* ^meta.lastUpdated = "2021-12-03T17:06:41.554+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_RequestAuthoredOn"
 * ^date = "2022-03-07"
 * ^purpose = "依頼日時を格納するための拡張"
@@ -239,7 +231,6 @@ Extension: JP_MedicationAdministration_RequestDepartment
 Id: dbe80def-ec8a-4a76-a3f7-17c75c6fd1a1
 Title: "JP_MedicationAdministration_RequestDepartment"
 Description: "依頼科を格納するための拡張"
-* ^meta.lastUpdated = "2021-12-03T16:42:47.172+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_RequestDepartment"
 * ^date = "2022-03-07"
 * ^purpose = "依頼科を格納するための拡張"
@@ -252,7 +243,6 @@ Extension: JP_MedicationAdministration_Requester
 Id: 531d2d2b-2c3d-4f42-99f4-bebc6b26e674
 Title: "JP_MedicationAdministration_Requester"
 Description: "依頼医を格納するための拡張"
-* ^meta.lastUpdated = "2021-12-03T16:42:21.589+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Requester"
 * ^date = "2022-03-07"
 * ^purpose = "依頼医を格納するための拡張"
@@ -265,7 +255,6 @@ Extension: JP_MedicationAdministration_UncategorizedComment
 Id: JP-MedicationAdministration-UncategorizedComment
 Title: "JP_MedicationAdministration_UncategorizedComment"
 Description: "未分類コメントを格納するための拡張"
-* ^meta.lastUpdated = "2021-12-03T17:36:52.360+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_UncategorizedComment"
 * ^date = "2022-03-07"
 * ^purpose = "未分類コメントを格納するための拡張"

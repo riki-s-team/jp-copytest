@@ -117,7 +117,6 @@ Description: "このプロファイルはCoverageリソースに対して、保�
 Extension: JP_Coverage_InsuredPersonNumber
 Id: 3dcc02c6-c298-4fb0-bdd2-e19a6728ba24
 Description: "健康保険における被保険者証番号を示す拡張"
-* ^meta.lastUpdated = "2021-12-01T04:20:04.622+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonNumber"
 * ^date = "2022-03-07"
 * ^context.type = #element
@@ -130,7 +129,6 @@ Description: "健康保険における被保険者証番号を示す拡張"
 Extension: JP_Coverage_InsuredPersonSubNumber
 Id: 972fb17c-7248-40c0-8508-94c00e1c10f2
 Description: "健康保険における被保険者証番号の枝番を示す拡張"
-* ^meta.lastUpdated = "2021-12-01T04:19:35.505+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonSubNumber"
 * ^date = "2022-03-07"
 * ^context.type = #element
@@ -143,7 +141,6 @@ Description: "健康保険における被保険者証番号の枝番を示す拡
 Extension: JP_Coverage_InsuredPersonSymbol
 Id: 73958ac3-9a9d-4c07-8c35-3b277923492e
 Description: "健康保険における被保険者証記号を示す拡張"
-* ^meta.lastUpdated = "2021-12-01T04:19:21.721+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonSymbol"
 * ^date = "2022-03-07"
 * ^context.type = #element

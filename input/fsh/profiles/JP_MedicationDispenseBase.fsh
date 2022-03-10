@@ -169,7 +169,6 @@ Extension: JP_MedicationDispense_Preparation
 Id: 41bcb8d5-3940-4baf-8b00-9b8fbaa8ae5d
 Title: "JP_MedicationDispense_Preparation"
 Description: "薬剤単位の調剤結果"
-* ^meta.lastUpdated = "2021-12-03T16:26:48.533+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDispense_Preparation"
 * ^date = "2022-03-07"
 * ^purpose = "薬剤単位の調剤結果"

@@ -7,7 +7,6 @@ Id: JP-MedicationRequest
 Title: "JP_MedicationRequest"
 Description: "このプロファイルはJP_MedicationRequestBaseリソースに対して、内服・外用薬剤処方のデータを送受信するための基礎となる制約と拡張を定めたものである。"
 * ^meta.versionId = "1"
-* ^meta.lastUpdated = "2022-01-05T07:41:37.927+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest"
 * ^date = "2022-03-07"
 * ^purpose = "このプロファイルはJP_MedicationRequestBaseリソースに対して、内服・外用薬剤処方のデータを送受信するための基礎となる制約と拡張を定めたものである。"
