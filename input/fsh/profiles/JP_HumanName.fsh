@@ -6,7 +6,6 @@ Parent: HumanName
 Id: JP-HumanName
 Description: "このプロファイルはHumanName DataTypeに対して、患者のデータを送受信するための基礎となる制約と拡張を定めたものである。"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_HumanName"
-* ^version = "0.0.1"
 * ^date = "2022-03-07"
 * . ^short = "Name of a human - parts and usage　人の名前情報、その一部分と使い方"
 * . ^definition = "A human's name with the ability to identify parts and usage.\r\n\r\n識別のための人の名前情報、"
