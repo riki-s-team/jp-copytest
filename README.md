@@ -25,3 +25,4 @@ FHIRのJpCore環境作成のためのサンプルサイトです。
 * [FHIR Shorthand FSH School](https://fshschool.org/)
 * [FHIR Shorthand Overview](https://build.fhir.org/ig/HL7/fhir-shorthand/overview.html)
 * [FHIR Shorthand Language Reference](https://build.fhir.org/ig/HL7/fhir-shorthand/reference.html)
+* [FHIR Shorthand Quick Reference](https://build.fhir.org/ig/HL7/fhir-shorthand/FSHQuickReference.pdf)
