@@ -1,8 +1,6 @@
 CodeSystem: EventStatus
 Id: jp-core-work-codesystem-EventStatus
 Title: "Procedureの状態"
-* ^meta.versionId = "5"
-* ^meta.source = "#AlLSIJB6Oq53LiNn"
 * ^url = "https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-EventStatus"
 * ^status = #draft
 * ^content = #complete

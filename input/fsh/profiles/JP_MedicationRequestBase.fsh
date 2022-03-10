@@ -13,7 +13,6 @@ Description: "このプロファイルはユーザは直接適用するもので
     JP_MedicationRequest_DosageInstruction_PeriodOfUse named PeriodOfUse 0..1 and
     JP_MedicationRequest_DosageInstruction_Line named Line 0..* and
     JP_MedicationRequest_DosageInstruction_Device named Device 0..*
-//* ^meta.versionId = "1"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequestBase"
 * ^status = #draft
 * ^date = "2022-03-07"
