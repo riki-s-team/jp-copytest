@@ -21,7 +21,7 @@ major version変更をともなう場合は、別reposiotyを構築する。
 ### 修正の流れ
 * 修正者はfeatureブランチを作成しソース修正を行う。
 * 修正者は修正が完了した時点で、マージ責任者に修正が終わった旨を伝達する。
-  * 完了前にコンパイルを行ない、ビルドエラーが発生いないかを確認する。
+  * 通知前に完了前にコンパイルを行ないビルドエラーが発生いないかを確認する。
   * 修正完了の報告の手段としてPull Requestを利用することも可能とする。
     * Pull Request作成時に競合が起きていないかを確認すること。
     * Pull Reqseust発行の際に、なるべくレビュー者を設定すること。
@@ -36,7 +36,7 @@ major version変更をともなう場合は、別reposiotyを構築する。
 * マージの判別が付かない場合は、Slack等でサポートを依頼する。
 
 ### featureブランチ命名規則
-現在どのような修正を行なっているのかを分かりしやすくするため下記命名規則を適用する。
+現在どのような修正を行なっているのかを分かりしやすくするため、ブランチ名の一部にSWG名称を一部入れることとする。
 #### SWG関連の修正
 feature/swg[1-6]-(修正内容) 
 
@@ -51,54 +51,6 @@ feature/ext-(修正内容)
 git checkout -b feature/ext-versionの一括変更
 ```
 
----
-## 以下作成中
-### git commit コメント
-
-* Refactor subsystem X for readability
-* Fixed bug with Y
-* Update getting started documentation
-* Remove deprecated methods
-* Release version 1.0.0
-* merge pull request XXX.
-* Changing behavior of X
-* Sweet new API methods
-
-#### Isssueとの連動(作成中)
-
-```
-// (close|closed|fix|fixed|resolve|resolved) #{isssue number}
-
-fix  fixed #
-```
-
-
-### 心がけ(作成中)
-* 頻度よく作業前にはfetchを必ず行なうこと。
-* コンフリクトを起さないためには細かく分岐・マージを繰り返すこと。
-
-## リリース
-### Version発番ルール
-(major).(miner).(patch)(status)
-
-``` 
-version : 1.1.0a
-```
-
-|バージョン説明||
-| --- | --- |
-| major | 親fhirバージョンの変更するなどの大きな修正がともなう場合に発番する。|
-| miner | 機能追加等のバージョンアップの際に採番する。 |
-| patch | バグフィックス等の軽微な修正があった場合に採番する。 |
-| status | リリース前にはアルファ版 a, ベータ版 bを付与する。|
-
-
-### Status
-
-### 成熟度
-
-
-## Isssue
-### 発番
-
-### 記載内容
+### 
+* コンフリクトを起さないために細かく分岐・マージを繰り返すこと。
+* 作業を明確化するために１日１回以上リモートブランチに対してコミットを行なうこと。
