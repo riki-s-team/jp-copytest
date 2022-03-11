@@ -80,7 +80,6 @@ Description: "このプロファイルはOrganizationリソースに対して、
 Extension: JP_Organization_InsuranceOrganizationCategory
 Id: 01530641-bc1b-4c76-a182-40fae3251e98
 Description: "点数表コード１桁（医科１、歯科３）表現するためのExtension。 JP Core Organizationプロファイルで利用されることを想定しているが、他のリソースでも利用可能である"
-* ^meta.lastUpdated = "2021-12-02T03:45:35.138+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationCategory"
 * ^date = "2022-03-07"
 * ^context.type = #element
@@ -102,7 +101,6 @@ Description: "点数表コード１桁（医科１、歯科３）表現するた
 Extension: JP_Organization_InsuranceOrganizationNo
 Id: 0951c1d5-7a75-488e-9e00-b2807dba71e5
 Description: "保険医療機関番号７桁を表現するためのExtension。 JP Core Organizationプロファイルで利用されることを想定しているが、他のリソースでも利用可能である"
-* ^meta.lastUpdated = "2021-12-01T06:35:51.467+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationNo"
 * ^date = "2022-03-07"
 * ^context.type = #element
@@ -124,7 +122,6 @@ Extension: JP_Organization_PrefectureNo
 Id: 147dd0ac-e43c-45c7-b994-7494b7cb0848
 Description: """都道府県番号２桁を表現するためのExtension。
 JP Core Organizationプロファイルで利用されることを想定しているが、他のリソースでも利用可能である"""
-* ^meta.lastUpdated = "2021-12-01T06:35:42.702+00:00"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_PrefectureNo"
 * ^date = "2022-03-07"
 * ^context.type = #element
