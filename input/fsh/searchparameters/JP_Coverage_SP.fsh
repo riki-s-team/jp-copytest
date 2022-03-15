@@ -4,7 +4,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-coverage-beneficiary-sp"
 * name = "JPCoverageBeneficiarySP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "Coverageリソースのbeneficiaryに関する検索を定義します。"
 * code = #beneficiary
@@ -37,7 +36,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-coverage-identifier-sp"
 * name = "JPCoverageIdentifierSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "Coverageリソースのidentifierに関する検索を定義します。"
 * code = #identifier

@@ -4,7 +4,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-location-address-city-sp"
 * name = "JPLocationAddressCitySP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "Locationリソースのaddress-cityに関する検索を定義します。"
 * code = #address-city
@@ -36,7 +35,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-location-address-postalcode-sp"
 * name = "JPLocationAddressPostalcodeSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "Locationリソースのaddress-postalcodeに関する検索を定義します。"
 * code = #address-postalcode
@@ -68,7 +66,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-location-address-state-sp"
 * name = "JPLocationAddressStateSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "Locationリソースのaddress-stateに関する検索を定義します。"
 * code = #address-state
@@ -100,7 +97,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-location-address-sp"
 * name = "JPLocationAddressSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "Locationリソースのaddressに関する検索を定義します。"
 * code = #address
@@ -132,7 +128,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-location-name-sp"
 * name = "JPLocationNameSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "Locationリソースのname(名称)に関する検索を定義します。"
 * code = #name

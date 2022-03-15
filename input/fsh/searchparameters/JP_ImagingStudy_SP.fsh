@@ -4,7 +4,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-imagingstudy-bodysite-sp"
 * name = "JPImagingStudyBodySiteSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "ImagingStudyリソースのBodySite(部位)に関する検索を定義します。"
 * code = #bodysite
@@ -51,7 +50,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-imagingstudy-encounter-sp"
 * name = "JPImagingStudyEncounterSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "ImagingStudyリソースのEncounter(来院・入院)に関する検索を定義します。"
 * code = #encounter
@@ -84,7 +82,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-imagingstudy-modality-sp"
 * name = "JPImagingStudyModalitySP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "ImagingStudyリソースのmodality(カテゴリ)に関する検索を定義します。"
 * code = #modality
@@ -131,7 +128,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-imagingstudy-patient-sp"
 * name = "JPImagingStudyPatientSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "ImagingStudyリソースのPatient(患者)に関する検索を定義します。"
 * code = #patient
@@ -164,7 +160,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-imagingstudy-started-sp"
 * name = "JPImagingStudyStartedSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "ImagingStudyリソースのstarted(検査開始日時)に関する検索を定義します。"
 * code = #started

@@ -4,7 +4,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-organization-address-sp"
 * name = "JPOrganizationAddressSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "organizationリソースのaddressに関する検索を定義します。"
 * code = #address
@@ -36,7 +35,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-organization-identifier-sp"
 * name = "JPOrganizationIdentifierSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "Organizationリソースのidentifierに関する検索を定義します。"
 * code = #identifier
@@ -83,7 +81,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-organization-name-sp"
 * name = "JPOrganizationNameSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "organizationリソースのnameに関する検索を定義します。"
 * code = #name

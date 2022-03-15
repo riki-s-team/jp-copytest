@@ -4,7 +4,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-encounter-class-sp"
 * name = "JPEncounterClassSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "Encounterリソースのclassに関する検索を定義します。"
 * code = #class
@@ -51,7 +50,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-encounter-date-sp"
 * name = "JPEncounterDateSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "Encounterリソースのdateに関する検索を定義します。"
 * code = #date
@@ -101,7 +99,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-encounter-identifier-sp"
 * name = "JPEncounterIdentifierSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * contact.telecom.system = #url
 * contact.telecom.value = "http://www.hl7.org/Special/committees/usrealm/index.cfm"
@@ -150,7 +147,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-encounter-patient-sp"
 * name = "JPEncounterPatientSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "Encouterリソースのpatientに関する検索を定義します。"
 * code = #patient
@@ -182,7 +178,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-encounter-status-sp"
 * name = "JPEncounterStatusSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "Encouterリソースのstatusに関する検索を定義します。"
 * code = #status
@@ -229,7 +224,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-encounter-type-sp"
 * name = "JPEncounterTypeSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "Encounterリソースのtypeに関する検索を定義します。"
 * code = #type

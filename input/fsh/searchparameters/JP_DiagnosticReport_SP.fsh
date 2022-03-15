@@ -4,7 +4,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-diagnosticreport-category-sp"
 * name = "JPDiagnosticReportCategorySP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "DiagnosticReportリソースのCategory(カテゴリ)に関する検索を定義します。"
 * code = #category
@@ -51,7 +50,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-diagnosticreport-code-sp"
 * name = "JPDiagnosticreportCodeSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "DiagnosticReportリソースのCode(レポート文書コード)に関する検索を定義します。"
 * code = #code
@@ -98,7 +96,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-diagnosticreport-date-sp"
 * name = "JPDiagnosticreportDateSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "DiagnosticReportリソースのDate(報告書の臨床的意義のある日時)に関する検索を定義します。"
 * code = #date
@@ -148,7 +145,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-diagnosticreport-patient-sp"
 * name = "JPDiagnosticReportPatientSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "DiagnosticReportリソースのPatient(患者)に関する検索を定義します。"
 * code = #patient
@@ -181,7 +177,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-diagnosticreport-servicerequest-sp"
 * name = "JPDiagnosticReportServiceRequestSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "DiagnosticReportリソースのservicerequest(検査依頼診療科)に関する検索を定義します。"
 * code = #servicerequest

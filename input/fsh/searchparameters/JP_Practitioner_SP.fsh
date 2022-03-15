@@ -4,7 +4,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-practitioner-identifier-sp"
 * name = "JPPractitionerIdentifierSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "practitionerリソースのidentifierに関する検索を定義します。"
 * code = #identifier
@@ -51,7 +50,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-practitioner-name-sp"
 * name = "JPPractitionerNameSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "practitionerリソースのnameに関する検索を定義します。"
 * code = #name

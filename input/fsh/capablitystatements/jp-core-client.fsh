@@ -5,7 +5,6 @@ Usage: #definition
 * name = "JPCoreClientCapabilityStatement"
 * title = "JP Core Client CapabilityStatement"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "JP Core Clientの期待される機能について説明する。JP Core Clientは、ローカルなユースケースやその他の文脈上の要件に基づいて、必要なデータにアクセスするために、このリストから選択することができます。"
 * kind = #requirements

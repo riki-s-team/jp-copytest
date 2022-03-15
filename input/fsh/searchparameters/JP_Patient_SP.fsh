@@ -4,7 +4,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-patient-address-postalcode-sp"
 * name = "JPPatientAddressPostalcodeSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "Patientリソースのaddress-postal(郵便番号)に関する検索を定義します。"
 * code = #address-postalcode
@@ -36,7 +35,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-patient-birthdate-sp"
 * name = "JPPatientBirthdateSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "Patientリソースのbirthdate(生年月日)に関する検索を定義します。"
 * code = #birthdate
@@ -86,7 +84,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-patient-family-sp"
 * name = "JPPatientFamilySP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "Patientリソースのfamily(姓)に関する検索を定義します。"
 * code = #family
@@ -118,7 +115,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-patient-gender-sp"
 * name = "JPPatientGenderSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "Patientリソースのgender(性別)に関する検索を定義します。"
 * code = #gender
@@ -165,7 +161,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-patient-given-sp"
 * name = "JPPatientGivenSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "Patientリソースにのgiven(名)に関する検索を定義します。"
 * code = #given
@@ -197,7 +192,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-patient-id-sp"
 * name = "JPPatientIdSP"
 * status = #retired
-* experimental = false
 * date = "2022-03-07"
 * description = "Patientリソースのidに関する検索を定義します。"
 * code = #_id
@@ -244,7 +238,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-patient-identifier-sp"
 * name = "JPPatientIdentifierSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "Patientリソースのidentifierに関する検索を定義します。"
 * code = #identifier
@@ -291,7 +284,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-patient-name-sp"
 * name = "JPPatientNameSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "Patientリソースのname(名前全体)に関する検索を定義します。"
 * code = #name
@@ -323,7 +315,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-patient-phone-sp"
 * name = "JPPatientphoneSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "Patientリソースのphone(電話番号)に関する検索を定義します。"
 * code = #phone

@@ -4,7 +4,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationadministration-code-sp"
 * name = "JPMedicationAdministrationCodeSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "MedicationAdministrationリソースのCode(薬品コード)に関する検索を定義します。"
 * code = #code
@@ -51,7 +50,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationadministration-effectivedatetime-sp"
 * name = "JPMedicationAdministrationEffectiveDatetimeSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "MedicationAdministrationのEffectiveDatetime(投与実施日時)に関する検索を定義します。"
 * code = #EffectiveDatetime
@@ -101,7 +99,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationadministration-identifier-sp"
 * name = "JPMedicationAdministrationIdentifierSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "MedicationAdministrationリソースのIdentifierに関する検索を定義します。"
 * code = #identifier
@@ -148,7 +145,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationadministration-patient-sp"
 * name = "JPMedicationAdministrationPatientSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "MedicationAdministrationリソースのpatient(患者)に関する検索を定義します。"
 * code = #patient

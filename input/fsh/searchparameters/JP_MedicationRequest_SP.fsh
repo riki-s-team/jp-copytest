@@ -4,7 +4,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationrequest-authoredon-sp"
 * name = "JPMedicationrequestAuthoredOnSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "MedicationRequestリソースのAuthoredOn(処方指示日時)に関する検索を定義します。"
 * code = #authoredon
@@ -54,7 +53,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationrequest-category-sp"
 * name = "JPMedicationRequestCategorySP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "MedicationRequestリソースのCategoryに関する検索を定義します。"
 * code = #type
@@ -101,7 +99,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationrequest-code-sp"
 * name = "JPMedicationRequestCodeSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "MedicationRequestリソースのCode(薬品コード)に関する検索を定義します。"
 * code = #code
@@ -148,7 +145,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationrequest-date-sp"
 * name = "JPMedicationRequestDateSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "MedicationRequestリソースのDate(服用開始日)に関する検索を定義します。"
 * code = #date
@@ -198,7 +194,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationrequest-identifier-sp"
 * name = "JPMedicationRequestIdentifierSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "MedicationRequestリソースのidentifierに関する検索を定義します。"
 * code = #identifier
@@ -245,7 +240,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationrequest-patient-sp"
 * name = "JPMedicationRequestPatientSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "MedicationRequestリソースのpatient(患者)に関する検索を定義します。"
 * code = #patient
@@ -278,7 +272,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationrequest-requester-sp"
 * name = "JPMedicationRequestrRequesterSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "MedicationRequestリソースのrequesterに関する検索を定義します。"
 * code = #requester

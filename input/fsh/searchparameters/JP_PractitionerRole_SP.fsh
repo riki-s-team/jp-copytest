@@ -4,7 +4,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-practitionerrole-practitioner-sp"
 * name = "JPPractitionerrolePractitionerSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "practitionerroleリソースのpractitionerに関する検索を定義します。"
 * code = #practitioner
@@ -43,7 +42,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-practitionerrole-specialty-sp"
 * name = "JPPractitionerroleSpecialtySP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "practitionerroleリソースのspecialtyに関する検索を定義します。"
 * code = #specialty

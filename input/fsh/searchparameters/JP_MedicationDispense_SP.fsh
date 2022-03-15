@@ -4,7 +4,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationdispense-code-sp"
 * name = "JPMedicationDispenseCodeSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "MedicationDispenseリソースのCode(薬品コード)に関する検索を定義します。"
 * code = #code
@@ -51,7 +50,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationdispense-encounter-sp"
 * name = "JPMedicationDispenseEncounterSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "MedicationDispenseリソースのEncounter(来院・入院)に関する検索を定義します。"
 * code = #encounter
@@ -84,7 +82,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationdispense-identifier-sp"
 * name = "JPMedicationDispenseIdentifierSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "MedicationDispenseリソースのidentifierに関する検索を定義します。"
 * code = #identifier
@@ -131,7 +128,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationdispense-patient-sp"
 * name = "JPMedicationDispensePatientSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "MedicationDispenseリソースのpatient(患者)に関する検索を定義します。"
 * code = #patient
@@ -164,7 +160,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationdispense-performer-sp"
 * name = "JPMedicationDispensePerformerSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "MedicationDispenseリソースのperformerに関する検索を定義します。"
 * code = #performer
@@ -208,7 +203,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationdispense-whenhandedover-sp"
 * name = "JPMedicationDispenseWhenHandedOverSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "MedicationDispenseリソースのWhenHandedOver(払い出し日時)に関する検索を定義します。"
 * code = #whenhandedover
@@ -258,7 +252,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-medicationdispense-whenprepared-sp"
 * name = "JPMedicationDispenseWhenPreparedSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "MedicationDispenseリソースのWhenPrepared(準備管理用日時)に関する検索を定義します。"
 * code = #whenprepared

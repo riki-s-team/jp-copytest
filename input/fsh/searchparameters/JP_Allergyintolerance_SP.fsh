@@ -4,7 +4,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-allergyintolerance-category-sp"
 * name = "JPAllergyIntoleranceCategorySP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "AllergyIntoleranceリソースのCategory(カテゴリ)に関する検索を定義します。"
 * code = #category
@@ -51,7 +50,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-allergyintolerance-clinicalstatus-sp"
 * name = "JPAllergyintoleranceClinicalStatusSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "AllergyIntoleranceリソースのclinicalStatus(アレルギー・不耐性の臨床的なステータス)に関する検索を定義します。"
 * code = #clinicalstatus
@@ -98,7 +96,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-allergyintolerance-criticality-sp"
 * name = "JPAllergyIntoleranceCriticalitySP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "AllergyIntoleranceリソースのcriticalityに関する検索を定義します。"
 * code = #criticality
@@ -145,7 +142,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-allergyintolerance-date-sp"
 * name = "JPAllergyIntoleranceDateSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "AllergyIntoleranceリソースのrecordedDate(記載日付)に関する検索を定義します。"
 * code = #date
@@ -195,7 +191,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-allergyintolerance-patient-sp"
 * name = "JPAllergyIntolerancePatientSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "AllergyIntoleranceリソースのPatient(患者)に関する検索を定義します。"
 * code = #patient
@@ -227,7 +222,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-allergyintolerance-type-sp"
 * name = "JPAllergyIntoleranceTypeSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "AllergyIntoleranceリソースのtypeに関する検索を定義します。"
 * code = #type
@@ -274,7 +268,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-allergyintolerance-verificationstatus-sp"
 * name = "JPAllergyIntoleranceVerificationStatusSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "AllergyIntoleranceリソースのverificationStatusに関する検索を定義します。"
 * code = #verificationstatus
