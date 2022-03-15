@@ -72,8 +72,12 @@ IDをSnake Case形式(小文字) [ **aaa_bbb_ccc.fsh** ]に変換する。<br/>
 ```
 
 
-### 3. URL定義形式
-接頭語 **http://jpfhir.jp/fhir/core**, **http://jpfhir.jp/fhir/Common**
+### 3. 定義URL形式
+* Page部分はIDと同一とする。<br/>
+※PageとIDが異なるとIG Publisherの警告対象となるため。
+* JPCoreに関するサイト名称は **http://jpfhir.jp/fhir/core** にて統一する。
+* ただしTerminologyについては **http://jpfhir.jp/fhir/Common** とする。<br/>
+※JPCoreに限らずいろいろな用途として利用されるため。
 
 | 項目 | ルール <br/> `(例)`  |
 | --- | --- | 
@@ -85,13 +89,13 @@ IDをSnake Case形式(小文字) [ **aaa_bbb_ccc.fsh** ]に変換する。<br/>
 | valueset | http://jpfhir.jp/fhir/Common/ValueSet/{id} <br/>`http://jpfhir.jp/fhir/Common/ValueSet/jp-gender-vs` |
 
 ### 4. Name命名規則
-IDをKebab Case形式 → Pascal Case形式に変換する。(全ての項目共通)<br/>省略語は英大文字とする
+IDをKebab Case形式 → Pascal Case形式に変換する。(全ての項目共通)<br/>省略語は英大文字としてもよい
 ``` 
 JPPatientRace
 ```
 
 ### 5. Title命名規則
-NameをSpace Separator形式に変換する。(全ての項目共通)<br/>省略はなるべく用いない
+NameをSpace Separator形式に変換する。(全ての項目共通)<br/>省略語は英大文字としてもよい
 ``` 
 JP Core Patient Race Extension
 ```
@@ -130,7 +134,7 @@ JP Coreでは定義しない。（※日本国内のベースで派生先の制�
 ## 警告対策
 | 非推奨 | 推奨 | 備考 |
 | --- | --- | --- |
-| ```<br>``` | ```<br/>``` | xhtml形式  |
-| ```<p>``` | ```<p/>``` | xhtml形式 |
-| ```<a herf="http://xxx">title</a>``` | ```[title](http://xxx)``` | markdown書式にて記載 |
-| ```<tag>hoge</tag>``` | ```&gt;tag&lt;hoge&gt;/tag&lt;``` | markdwonで許可されないタグはecapeが必要 |
+| ```<br>``` | ```<br/>``` | tagが閉じていないとの警告が発生する。xhtml形式にすることで回避。 |
+| ```<p>``` | ```<p/>``` | tagが閉じていないとの警告が発生する。xhtml形式にすることで回避。 |
+| ```<a herf="http://xxx">title</a>``` | ```[title](http://xxx)``` | tagが対応しておらず、閉じていないとの警告が発生する。Markdown形式に変更することで回避 |
+| ```<tag>hoge</tag>``` | ```&gt;tag&lt;hoge&gt;/tag&lt;``` | その他対未対応タグは,xmlのEscape処理を行なう。 |
