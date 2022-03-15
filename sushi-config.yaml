@@ -35,14 +35,16 @@ pages:
       title: 文字コード
     guide-stringSearch.md:
       title: 検索
-  group-administration.md:
-    title: Administration Group
-  group-medication.md:
-    title: Medication Group
-  group-diagnostic.md:
-    title: Diagnostic Group
-  group-clinical.md:
-    title: Clinical Group
+  group-fhircontents.md:
+    title: FHIR Contents List
+    group-administration.md:
+      title: Administration Group
+    group-medication.md:
+      title: Medication Group
+    group-diagnostic.md:
+      title: Diagnostic Group
+    group-clinical.md:
+      title: Clinical Group
   security.md:
     title: セキュリティ
   download.md:
