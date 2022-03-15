@@ -107,7 +107,7 @@ Description: "このプロファイルはユーザは直接適用するもので
 * medication[x].text ^short = "この概念のプレーンテキスト表現"
 * medication[x].text ^definition = "入力したユーザーが見た/選択した/発したとおりの概念および・またはユーザーが意図した概念を自然言語で表現したもの。"
 * medication[x].text ^comment = "textエレメントはcodingのdisplayNameエレメントと一致することがよくある。"
-* subject only Reference(Patient)
+* subject only Reference(JP_Patient)
 * subject MS
 * subject ^short = "処方箋が発行された対象(個人あるいはグループ)"
 * subject ^definition = "JP Coreでは患者を表すPatientリソースへの参照。\r\n一般には薬剤が投与される対象となる人（あるいはグループ)を表現するResourceに対するリンク。"

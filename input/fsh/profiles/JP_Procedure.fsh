@@ -43,7 +43,7 @@ Description: "このプロファイルはProcedureリソースに対して、患
 * code ^comment = "すべての用語の使用がこの一般的なパターンに当てはまるわけではない。場合によっては、モデルはCodeableConceptを使用せず、Codingを直接使用し、テキスト、コーディング、翻訳、要素間の関係や事前・事後の調整を管理するための独自の構造を提供すべきである。"
 * code ^binding.strength = #required
 * code ^binding.description = "Procedureコード"
-* subject only Reference(Patient)
+* subject only Reference(JP_Patient)
 * subject ^short = "Who the procedure was performed on　プロシジャーが実施された対象人"
 * subject ^definition = "The person, animal or group on which the procedure was performed.\r\nプロシジャーが実行された対象の人、動物、またはグループ。"
 * subject ^comment = "参照は、実際のFHIRリソースへの参照であり、解決可能でなければならない（アクセス制御、一時的な利用不能などを可能にする）。解決は、URLからの検索、またはリソースタイプによって該当する場合は、絶対参照を正規のURLとして扱い、ローカルレジストリ/リポジトリで検索することによって行うことができる。"

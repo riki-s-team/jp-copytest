@@ -49,6 +49,7 @@ Description: "このプロファイルはユーザは直接適用するもので
 * medication[x].coding.system 1..
 * medication[x].coding.code 1..
 * medication[x].coding.display 1..
+* subject only Reference(JP_Patient)
 * subject MS
 * subject ^short = "Who received medication　投与対象患者"
 * subject ^definition = "The person or animal or group receiving the medication.\r\n\r\n投与を受ける患者"

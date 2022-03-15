@@ -17,7 +17,7 @@ Description: "このプロファイルはObservationリソースに対して、�
 * code from $socialHistory-code (preferred)
 * code ^comment = "*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.\r\n\r\n【JP仕様】<br/>\r\n項目についてはMEDISのJ-MIXの「生活背景情報」を基にバリューセットを定義する<br/>\r\n具体的なコードについてはSWG6と連携して決定する必要がある（TBD）"
 * subject 1..
-* subject only Reference(Patient)
+* subject only Reference(JP_Patient)
 * subject ^comment = "One would expect this element to be a cardinality of 1..1. The only circumstance in which the subject can be missing is when the observation is made by a device that does not know the patient. In this case, the observation SHALL be matched to a patient through some context/channel matching technique, and at this point, the observation should be updated.\r\n\r\n【JP仕様】<br/>\r\n患者"
 * effective[x] only dateTime or Period
 * effective[x] ^comment = "At least a date should be present unless this observation is a historical report.  For recording imprecise or \"fuzzy\" times (For example, a blood glucose measurement taken \"after breakfast\") use the [Timing](datatypes.html#timing) datatype which allow the measurement to be tied to regular life events.\r\n\r\n【JP仕様】<br/>\r\neffectiveDateTime：医療者が確認した日時<br/>\r\neffectivePeriod：医療者が確認した期間"

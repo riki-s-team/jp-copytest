@@ -19,7 +19,7 @@ Description: "このプロファイルはObservationリソースに対して、�
 * code from $observation-physicalExam (required)
 * code ^comment = "*All* code-value and, if present, component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation.\r\n\r\n【JP仕様】<br/>\r\n所見の有無を表すコード（固定値）"
 * subject 1..
-* subject only Reference(Patient)
+* subject only Reference(JP_Patient)
 * subject ^comment = "One would expect this element to be a cardinality of 1..1. The only circumstance in which the subject can be missing is when the observation is made by a device that does not know the patient. In this case, the observation SHALL be matched to a patient through some context/channel matching technique, and at this point, the observation should be updated.\r\n\r\n【JP仕様】<br/>\r\n患者"
 * encounter 1..
 * encounter ^comment = "This will typically be the encounter the event occurred within, but some events may be initiated prior to or after the official completion of an encounter but still be tied to the context of the encounter (e.g. pre-admission laboratory tests).\r\n\r\n【JP仕様】<br/>\r\n診察"
