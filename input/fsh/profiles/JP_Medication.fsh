@@ -48,7 +48,6 @@ Description: "このプロファイルはMedicationリソースに対して、�
 * ingredient.extension ^min = 0
 * ingredient.extension[DrugNo] ^min = 0
 * ingredient.item[x] only CodeableConcept
-* ingredient.item[x] MS
 * ingredient.item[x] ^short = "有効な成分あるいは含有物"
 * ingredient.item[x] ^definition = "有効成分。物質(単純成分）あるいは他の薬剤や処方。"
 * ingredient.item[x] ^comment = "すべての用語集はこの一般的な様式を満たさない。場合によっては、情報モデルとしてCodeableConceptや直接Codingを使うべきではなく、テキストやコード、翻訳や事前条件と事後条件でのエレメントの関係などを示すことも適切ではない。"
@@ -56,7 +55,7 @@ Description: "このプロファイルはMedicationリソースに対して、�
 * ingredient.isActive ^short = "有効成分の指標"
 * ingredient.isActive ^definition = "この成分が薬剤の治療効果に影響するかどうかの指標\r\nI\r\nndication of whether this ingredient affects the therapeutic action of the drug."
 * ingredient.isActive ^requirements = "Trueであれば、この成分が薬剤の治療効果に影響がある（たとえば有効）ということを示す。\r\nFalseであれば、この成分が薬剤の治療効果に影響がない（たとえば無効）ということを示す。"
-* ingredient.strength 1.. MS
+* ingredient.strength 1..
 * ingredient.strength ^short = "成分の活性量"
 * ingredient.strength ^definition = "この薬剤中にどの程度の物質が含まれているかを示す。たとえば、1錠あたり250mgなど。これは分子が250mgで分母が1錠である比率を表現している。"
 * ingredient.strength ^comment = "Ratioデータ型は2つの数字の関係で示され、Quantityや一般的な単位で適切に表現できない関係を表すときにのみ用いられる。分母の値が「1」で固定されているような値であれば、QuantityがRatioの代わりに用いられるべきである。"

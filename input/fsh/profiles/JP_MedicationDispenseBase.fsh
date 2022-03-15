@@ -36,7 +36,6 @@ Description: "このプロファイルはユーザは直接適用するもので
 * category ^short = "Type of medication dispense　調剤タイプ"
 * category ^definition = "Indicates the type of medication dispense (for example, where the medication is expected to be consumed or administered (i.e. inpatient or outpatient)).\r\n\r\n投薬のタイプを示します（たとえば、薬剤が消費または投与されると予想される場所（つまり、入院患者または外来患者））。　入院、外来、退院、自宅など。"
 * medication[x] only CodeableConcept
-* medication[x] MS
 * medication[x] ^short = "What medication was supplied　医薬品"
 * medication[x] ^definition = "Identifies the medication that was administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications.\r\n\r\n投与された薬剤を識別する。既知の薬のリストから薬を識別するコード情報を設定する。"
 * medication[x] ^comment = "If only a code is specified, then it needs to be a code for a specific product. If more information is required, then the use of the medication resource is recommended.  For example, if you require form or lot number, then you must reference the Medication resource.\r\n\r\n【JP-CORE】\r\nひとつのtext要素と、複数のcoding 要素を記述できる。処方オーダ時に選択または入力し、実際に処方箋に印字される文字列を必ずtext要素に格納した上で、それをコード化した情報を1個以上のcoding 要素に記述する。\r\n\r\n厚生労働省標準であるHOT9コード（販社指定が不要な場合にはHOT7コード）または広く流通しているYJコードを用いるか、一般名処方の場合には厚生労働省保険局一般名処方マスタのコードを使用して、Coding要素（コードsystemを識別するURI、医薬品のコード、そのコード表における医薬品の名称の3つからなる）で記述する。\r\n\rなお、上記のいずれの標準的コードも付番されていない医薬品や医療材料の場合には、薬機法の下で使用されているGS1標準の識別コードであるGTIN(Global Trade Item Number)の調剤包装単位（最少包装単位、個別包装単位）14桁を使用する。\r\n\rひとつの処方薬、医療材料を複数のコード体系のコードで記述してもよく、その場合にcoding 要素を繰り返して記述する。\rただし、ひとつの処方薬を複数のコードで繰り返し記述する場合には、それらのコードが指し示す処方薬、医療材料は当然同一でなければならない。\rまた、処方を発行した医療機関内でのデータ利用のために、医療機関固有コード体系によるコード（ハウスコード、ローカルコード）の記述を含めてもよいが、その場合でも上述したいずれかの標準コードを同時に記述することが必要である。"
@@ -50,7 +49,6 @@ Description: "このプロファイルはユーザは直接適用するもので
 * medication[x].coding.code 1..
 * medication[x].coding.display 1..
 * subject only Reference(JP_Patient)
-* subject MS
 * subject ^short = "Who received medication　投与対象患者"
 * subject ^definition = "The person or animal or group receiving the medication.\r\n\r\n投与を受ける患者"
 * subject ^comment = "References SHALL be a reference to an actual FHIR resource, and SHALL be resolveable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.\r\n\r\n参照は、実際のFHIRリソースへの参照である必要があり、解決可能（内容に到達可能）である必要がある（アクセス制御、一時的な使用不可などを考慮に入れる）。解決は、URLから取得するか、リソースタイプによって該当する場合は、絶対参照を正規URLとして扱い、ローカルレジストリ/リポジトリで検索することによって行うことができる。"
@@ -69,7 +67,7 @@ Description: "このプロファイルはユーザは直接適用するもので
 * authorizingPrescription ^definition = "Indicates the medication order that is being dispensed against.\r\n調剤の元になった処方オーダを表すMedicationRequestリソースへの参照。"
 * type ^definition = "Indicates the type of dispensing event that is performed. For example, Trial Fill, Completion of Trial, Partial Fill, Emergency Fill, Samples, etc.\r\n実行される調剤イベントのタイプを示します。たとえば、トライアルフィル、トライアルの完了、部分フィル、緊急フィル、サンプルなどです。"
 * type ^comment = "Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.\r\n\r\nすべてのターミノロジーの使用がこの一般的なパターンに適合するわけではない。場合によっては、モデルはCodeableConceptを使用せず、コーディングを直接使用して、テキスト、コーディング、翻訳、および要素間の関係とpre-coordinationとpost-coordinationの用語関係を管理するための独自の構造を提供する必要がある。"
-* quantity 1.. MS
+* quantity 1..
 * quantity ^short = "払い出される薬剤の量"
 * quantity ^definition = "調剤総量。\r\nJP Coreでは必須\r\n払い出される薬剤の量。計測単位を含む。"
 * quantity ^comment = "The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator.\r\n\r\n使用状況によって、これがどのような量であるか、したがってどのような単位を使用できるかが定義される場合がかなりあります。使用状況によっては、比較演算子の値も制限される場合がある。"
@@ -83,7 +81,7 @@ Description: "このプロファイルはユーザは直接適用するもので
 * daysSupply ^comment = "The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator.\r\n\r\n使用状況によって、これがどのような量であるか、したがってどのような単位を使用できるかが定義される場合がかなりあります。使用状況によっては、比較演算子の値も制限される場合がある。"
 * whenPrepared ^short = "When product was packaged and reviewed　調剤がパッケージ化され、レビューされた日時"
 * whenPrepared ^definition = "The time when the dispensed product was packaged and reviewed.\r\n\r\n調剤がパッケージ化され、レビューされた日時"
-* whenHandedOver 1.. MS
+* whenHandedOver 1..
 * whenHandedOver ^short = "Medication order that authorizes the dispense　払い出された日時"
 * whenHandedOver ^definition = "The time the dispensed product was provided to the patient or their representative.\r\n\r\n【JP Core】\r\n必須。\r\n患者あるいはその代理人に払い出される薬剤が提供された日時。"
 * destination ^short = "Where the medication was sent　薬が送られた場所"
@@ -129,7 +127,7 @@ Description: "このプロファイルはユーザは直接適用するもので
 * dosageInstruction.additionalInstruction ^definition = "Supplemental instructions to the patient on how to take the medication  (e.g. \"with meals\" or\"take half to one hour before food\") or warnings for the patient about the medication (e.g. \"may cause drowsiness\" or \"avoid exposure of skin to direct sunlight or sunlamps\").\r\n\r\n薬の服用方法に関する補足的な指示（例：「食事と一緒に」または「食事の30分から1時間前に服用」）または薬に関する患者への警告（例：「眠気を引き起こす可能性がある」または「皮膚の露出を避ける」直射日光またはサンランプ」）。"
 * dosageInstruction.patientInstruction ^short = "Patient or consumer oriented instructions　患者または消費者向けの指示"
 * dosageInstruction.patientInstruction ^definition = "Instructions in terms that are understood by the patient or consumer.\r\n\r\n患者または消費者が理解できる用語での指示。"
-* dosageInstruction.timing 1.. MS
+* dosageInstruction.timing 1..
 * dosageInstruction.timing ^short = "When medication should be administered　投与日時"
 * dosageInstruction.timing ^definition = "When medication should be administered.　\r\n\r\n投与日時、服用タイミング。\r\n【JP-CORE】\r\n必須。dosageInstruction.timing.code.coding.code, dosageInstruction.timing.code.coding.system が必ず存在しなければならない。"
 * dosageInstruction.timing.code.coding.system 1..

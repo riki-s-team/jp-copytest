@@ -89,7 +89,6 @@ Description: "このプロファイルはユーザは直接適用するもので
 * reported[x] ^short = "初期記録にはない報告"
 * reported[x] ^definition = "このレコードは元々の一次記録から報告されたものか、二次的に「報告された」資料から取り込まれたものかを示す。報告の情報源についても示される。"
 * medication[x] only CodeableConcept
-* medication[x] MS
 * medication[x] ^short = "投与される薬剤"
 * medication[x] ^definition = "医薬品コードと医薬品名称。coding要素を繰り返すことでHOT9 やYJコードなど複数のコード体系で医薬品コード並記することが可能。\r\n薬される薬剤についてのID。JP Coreでは内服処方箋で使用されるMedicationRequestではcodeableConceptのみを使用する。"
 * medication[x] ^comment = "日本での運用を検討した場合に、煩雑ではあるがMedication resourceを参照するのではなくcodeableConceptとして1薬剤ごとにMedicationRequestインスタンスを生成する方針とした。\r\n\r\nコードだけが指定されていても、製品を特定できる必要がある。もし、多くの情報が必要であれば、Medication Resourceを利用することが推奨される。たとえば、もし、薬剤の剤型や、ロット番号を知る必要があったり、薬剤の成分や臨時で調整されたものであったりする場合には、Medication Resourceを参照しなくてはならない。\r\n 【JP-CORE】 ひとつのtext要素と、複数のcoding 要素を記述できる。処方オーダ時に選択または入力し、実際に処方箋に印字される文字列を必ずtext要素に格納した上で、それをコード化した情報を1個以上のcoding 要素に記述する。\r\n厚生労働省標準であるHOT9コード（販社指定が不要な場合にはHOT7コード）または広く流通しているYJコードを用いるか、一般名処方の場合には厚生労働省保険局一般名処方マスタのコードを使用して、Coding要素（コードsystemを識別するURI、医薬品のコード、そのコード表における医薬品の名称の3つからなる）で記述する。\r\nなお、上記のいずれの標準的コードも付番されていない医薬品や医療材料の場合には、薬機法の下で使用されているGS1標準の識別コードであるGTIN(Global Trade Item Number)の調剤包装単位（最少包装単位、個別包装単位）14桁を使用する。\r\nひとつの処方薬、医療材料を複数のコード体系のコードで記述してもよく、その場合にcoding 要素を繰り返して記述する。 ただし、ひとつの処方薬を複数のコードで繰り返し記述する場合には、それらのコードが指し示す処方薬、医療材料は当然同一でなければならない。 また、処方を発行した医療機関内でのデータ利用のために、医療機関固有コード体系によるコード（ハウスコード、ローカルコード）の記述を含めてもよいが、その場合でも上述したいずれかの標準コードを同時に記述することが必要である。"
@@ -108,7 +107,6 @@ Description: "このプロファイルはユーザは直接適用するもので
 * medication[x].text ^definition = "入力したユーザーが見た/選択した/発したとおりの概念および・またはユーザーが意図した概念を自然言語で表現したもの。"
 * medication[x].text ^comment = "textエレメントはcodingのdisplayNameエレメントと一致することがよくある。"
 * subject only Reference(JP_Patient)
-* subject MS
 * subject ^short = "処方箋が発行された対象(個人あるいはグループ)"
 * subject ^definition = "JP Coreでは患者を表すPatientリソースへの参照。\r\n一般には薬剤が投与される対象となる人（あるいはグループ)を表現するResourceに対するリンク。"
 * subject ^comment = "処方オーダーの対象は必須項目である。\r\n二次利用のためにどこに実際の対象がいるのかについての情報は提供されない。特定の対象に対して匿名化することも必要である。"
@@ -130,7 +128,6 @@ Description: "このプロファイルはユーザは直接適用するもので
 * supportingInformation ^short = "薬剤オーダについて補助的情報"
 * supportingInformation ^definition = "薬剤をオーダーするときに補助的となる追加情報（たとえば、患者の身長や体重））を含む。"
 * supportingInformation ^comment = "参照先は実存するFHIR Resourceでなければならず(SHALL)、解決可能(アクセスコントロールや、一時的に利用不可であることなどは許容される)でなければならない(SHALL)。解決の方法はURLから取得可能であるか、Resouce型が適応できるかどうか、正規のURLとして絶対的参照を扱うことができるか、ローカルのレジストリ／リポジトリから参照することができるかである。"
-* authoredOn 1.. MS
 * authoredOn ^short = "この処方オーダーが最初に記述された日"
 * authoredOn ^definition = "JP Core profileでは必須。処方指示が最初に作成された日時。秒の精度まで記録する。タイムゾーンも付与しなければならない。"
 * requester ^short = "このオーダーを発行した人・物"
@@ -247,7 +244,6 @@ Description: "このプロファイルはユーザは直接適用するもので
 * dosageInstruction.patientInstruction ^short = "患者あるいは消費者向けの指示"
 * dosageInstruction.patientInstruction ^definition = "患者あるいは消費者に理解してもらうための指示。"
 * dosageInstruction.patientInstruction ^comment = "FHIRの文字列は1MB以上の大きさとなってなはらない(SHALL NOT)。"
-* dosageInstruction.timing 1.. MS
 * dosageInstruction.timing ^short = "服⽤タイミング"
 * dosageInstruction.timing ^definition = "服⽤タイミングを記録する。"
 * dosageInstruction.timing ^comment = "Dosage.textが設定されていることが想定されているのとは異なり、この属性は常に設定されていなくてもよい。もし、療法が設定されている場合はDosage.textはDosage.timingを反映させているべきである。"
@@ -755,7 +751,6 @@ Description: "このプロファイルはユーザは直接適用するもので
 * dispenseRequest.numberOfRepeatsAllowed ^short = "許可された払い出し回数"
 * dispenseRequest.numberOfRepeatsAllowed ^definition = "最初の払い出しに追加で許可された払い出し回数（リフィル、日本では分割処方であるが制度的に一致しない)を示す整数であり、患者が処方された薬を受け取ることができる回数である。使用上の注意：この整数には最初の払い出しが含まれない。オーダーが「30錠に加えて3回繰り返し調剤可」であれば、このオーダーで合計4回、120錠が患者に受け渡される。処方者は0回のリフィルが許可されていると示すことで、初回の払い出し以外を認めないことを明示することができる。"
 * dispenseRequest.numberOfRepeatsAllowed ^comment = "もし、許可された払い出し回数を表示するのであれば、この数字に1を足すこと。"
-* dispenseRequest.quantity 1.. MS
 * dispenseRequest.quantity ^short = "調剤量"
 * dispenseRequest.quantity ^definition = "1回の調剤で払い出される薬剤の量"
 * dispenseRequest.quantity ^comment = "このエレメントはどのような量を表現するか定義するためにコンテキストにあわせてよく定義される。したがって、どのような単位でも利用することができる。使用されるコンテキストによってcomparatorエレメントで値が定義されることもある。"
