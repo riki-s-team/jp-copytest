@@ -48,14 +48,11 @@ jobs:
         unset DISPLAY
         java -Djava.awt.headless=true -jar ./input-cache/publisher.jar -ig ig.ini
 
-# deploy      
-    # - name: Deploy Implementation Guide
-    #   if: success()
-    #   uses: peaceiris/actions-gh-pages@v3
-    #   with:
-    #     personal_token: ${{ secrets.ROBO_OLIVER }}
-    #     external_repository: HL7Austria/hl7austria.github.io
-    #     publish_branch: pages
-    #     publish_dir: ./output
-    #     destination_dir: ./r5-pica-${{ steps.extract_branch.outputs.branch }}
+    - name: Deploy Implementation Guide
+      if: success()
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        publish_branch: pages
+        publish_dir: ./output
+        destination_dir: ./develop-latest
 
