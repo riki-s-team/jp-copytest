@@ -5,7 +5,6 @@ Usage: #definition
 * name = "JPCoreServerCapabilityStatement"
 * title = "JP Core Server CapabilityStatement"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "JP Core Server Actorの期待される機能について説明する。\nJP Core ServerがサポートするFHIRプロファイル、OperationsおよびSearch Parametersのリストが定義されている。"
 * kind = #requirements

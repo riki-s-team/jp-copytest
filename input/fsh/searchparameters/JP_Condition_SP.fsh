@@ -4,7 +4,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-condition-category-sp"
 * name = "JPConditionCategorySP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "ConditionリソースのCategory(カテゴリ)に関する検索を定義します。"
 * code = #category
@@ -51,7 +50,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-condition-clinicalstatus-sp"
 * name = "JPConditionClinicalStatusSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "ConditionリソースのclinicalStatus(アレルギー・不耐性の臨床的なステータス)に関する検索を定義します。"
 * code = #clinicalstatus
@@ -97,7 +95,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-condition-date-sp"
 * name = "JPConditionDateSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "ConditionリソースのrecordedDate(記載日付)に関する検索を定義します。"
 * code = #date
@@ -146,7 +143,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-condition-patient-sp"
 * name = "JPConditionPatientSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "ConditionリソースのPatient(患者)に関する検索を定義します。"
 * code = #patient
@@ -178,7 +174,6 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-condition-verificationstatus-sp"
 * name = "JPConditionVerificationStatusSP"
 * status = #draft
-* experimental = false
 * date = "2022-03-07"
 * description = "ConditionリソースのverificationStatusに関する検索を定義します。"
 * code = #verificationstatus
