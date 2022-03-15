@@ -7,6 +7,7 @@ Id: JP-Patient
 Title: "JP_Patient"
 Description: "このプロファイルはPatientリソースに対して、患者のデータを送受信するための基礎となる制約と拡張を定めたものである。"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Patient"
+* ^status = #draft
 * ^date = "2022-03-07"
 * . ^short = "Information about an individual or animal receiving health care services　医療サービスを受けている個人または動物に関する情報"
 * . ^definition = "Demographics and other administrative information about an individual or animal receiving care or other health-related services.\r\n\r\nケアまたはその他の健康関連サービスを受けている個人または動物に関する人口統計およびその他の管理情報。"

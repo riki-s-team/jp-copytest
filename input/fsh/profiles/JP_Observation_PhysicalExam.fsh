@@ -8,6 +8,7 @@ Title: "JP_Observation_PhysicalExam"
 Description: "このプロファイルはObservationリソースに対して、身体所見のデータを送受信するための制約と拡張を定めたものである。"
 * bodySite.extension contains JP_Observation_BodySite_BodySitePosition named JPCoreBodySitePositionExtension 0..*
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_PhysicalExam"
+* ^status = #draft
 * . ^short = "身体所見に関する測定や簡単な観察事実（assertion）"
 * . ^definition = "身体所見に関する測定や簡単な観察事実"
 * . ^comment = "身体所見に関するObservation（検査測定や観察事実）の制約プロフィール"

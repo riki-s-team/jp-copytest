@@ -7,6 +7,7 @@ Id: JP-MedicationRequest-Injection
 Title: "JP_MedicationRequest_Injection"
 Description: "このプロファイルはJP_MedicationRequestBaseリソースに対して、注射薬剤処方のデータを送受信するための基礎となる制約と拡張を定めたものである。"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest_Injection"
+* ^status = #draft
 * ^date = "2022-03-07"
 * ^purpose = "このプロファイルはJP_MedicationRequestBaseリソースに対して、内服・外用薬剤処方のデータを送受信するための基礎となる制約と拡張を定めたものである。"
 * . ^short = "患者あるいはグループに対しての注射薬剤処方オーダ"
