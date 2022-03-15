@@ -1,7 +1,7 @@
 Instance: jp-server-capabilitystatement
 InstanceOf: CapabilityStatement
 Usage: #definition
-* url = "http://jpfhir.jp/fhir/core/CapabilityStatement/StructureDefinition/jp-server-capabilitystatement"
+* url = "http://jpfhir.jp/fhir/core/CapabilityStatement/jp-server-capabilitystatement"
 * name = "JPCoreServerCapabilityStatement"
 * title = "JP Core Server CapabilityStatement"
 * status = #draft

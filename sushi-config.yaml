@@ -2,7 +2,7 @@ id: hl7.fhir.jp.core
 canonical: http://jpfhir.jp/fhir/core
 name: "FHIRJPCoreImplementationGuide"
 title: "FHIR JP Core 実装ガイド"
-description: "日本医療情報学会(JAMI) NeXEHRS課題研究会「HL7®FHIR® 日本実装検討WG」で作成した日本国内におけるベースとなるJP Core実装ガイドのドラフトVer.1 です。"
+description: "日本医療情報学会(JAMI) NeXEHRS課題研究会「HL7®FHIR® 日本実装検討WG」で作成した日本国内におけるベースとなるJP Core実装ガイドのドラフトVer.1.1 です。"
 status: draft # draft | active | retired | unknown
 version: 1.1.0a
 date: 2022-03-08
@@ -61,7 +61,7 @@ menu:
     欠損値の扱い: guide-handlingOfNonExistentData.html
     文字コード: guide-characterEncoding.html
     文字列検索: guide-stringSearch.html
-  FHIRContents:
+  FHIRContents: 
     Administration: group-administration.html
     Medication: group-medication.html
     Diagnostic: group-diagnostic.html
