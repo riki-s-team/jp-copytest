@@ -55,4 +55,4 @@
 - [`Patient`](Patient)
 - [`Practitioner`](Practitioner)
 
-## リソース定義
+## プロファイル定義

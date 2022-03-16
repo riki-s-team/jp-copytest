@@ -40,4 +40,4 @@ JP Core MedicationRequest Injection リソースは、以下のリソースを�
 - JP Core Coverageリソース
 - JP Core Medicationリソース
 
-## リソース定義
+## プロファイル定義

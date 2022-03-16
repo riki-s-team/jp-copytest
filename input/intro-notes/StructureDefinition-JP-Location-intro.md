@@ -43,4 +43,4 @@ JP Core Location リソースは、以下のリソースを直接参照する。
 - Organization, Location and Endpoint
 
 
-## リソース定義
+## プロファイル定義

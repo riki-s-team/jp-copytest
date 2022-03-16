@@ -22,4 +22,4 @@
 - [CarePlan](https://www.hl7.org/fhir/careplan.html)
 - ...（その他多数）
 
-## リソース定義
+## プロファイル定義

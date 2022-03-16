@@ -46,4 +46,4 @@ JP Core MedicationRequestリソースは、以下のリソースを直接参照�
 - JP Core Medicationリソース
 
 
-## リソース定義
+## プロファイル定義

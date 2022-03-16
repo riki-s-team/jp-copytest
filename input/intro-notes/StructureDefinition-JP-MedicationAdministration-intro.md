@@ -36,4 +36,4 @@ JP MedicationAdministrationリソースは、以下のリソースを直接参�
 - JP Core MedicationRequestリソース
 - JP Core Medicationリソース
 
-## リソース定義
+## プロファイル定義

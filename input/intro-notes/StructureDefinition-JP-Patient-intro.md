@@ -112,4 +112,4 @@ JP Patient リソースは、以下のリソースを直接参照する。
 - PractitionerRole
 - RelatedPerson
 
-## リソース定義
+## プロファイル定義

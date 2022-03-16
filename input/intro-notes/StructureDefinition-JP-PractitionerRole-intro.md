@@ -31,4 +31,4 @@ JP Core PractitionerRole リソースは、以下のリソースを直接参照�
 
 - Practitioner, Organization, Location, HealthcareService and Endpoint
 
-## リソース定義
+## プロファイル定義

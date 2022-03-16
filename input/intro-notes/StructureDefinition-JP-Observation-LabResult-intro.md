@@ -56,4 +56,4 @@
 - [`SupplyRequest`](https://www.hl7.org/fhir/supplyrequest.html)
 
 
-## リソース定義
+## プロファイル定義

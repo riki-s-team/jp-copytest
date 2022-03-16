@@ -44,4 +44,4 @@ Procedureリソースは、処置の発生に関する要約情報を提供す�
 - Procedure
 - QuestionnaireResponse
 
-## リソース定義
+## プロファイル定義

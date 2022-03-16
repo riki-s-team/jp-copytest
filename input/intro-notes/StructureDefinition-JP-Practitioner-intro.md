@@ -111,4 +111,4 @@ JP Practitioner リソースは、以下のリソースを直接参照する。
 
 - Organization 
 
-## リソース定義
+## プロファイル定義

@@ -55,4 +55,4 @@ DICOMタグは4桁の16進数がコンマで区切られたペア（例　(0008,
  - [`DiagnosticReport`](DiagnosticReportRadiology)
  - [`Observation`](Observation)
  
-## リソース定義
+## プロファイル定義

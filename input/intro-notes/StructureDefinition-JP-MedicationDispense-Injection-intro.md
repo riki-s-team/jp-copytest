@@ -32,4 +32,4 @@ JP Core MedicationDispense Injection リソースは、以下のリソースを�
 - JP Core MedicationRequest Injectionリソース
 - JP Core Medicationリソース
 
-## リソース定義
+## プロファイル定義
