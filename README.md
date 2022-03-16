@@ -14,15 +14,19 @@ FHIRのJpCore環境作成のためのサンプルサイトです。
 1. _genonce.bat(windows), _genonce.sh(linux,mac)を実行する
 1. OutputフォルダにHtml一式が格納される
 
-## マニュアル
-* [FHIR Shorthand & IG Publiser環境作成方法(作成中)](docs/enviroment.md)
+## ビルド結果確認
+* [ビルド状況](https://github.com/findex-miyakawa/fhir-jpcore-ig-test/actions)
+* [最新Delelop&Pull Request結果](https://findex-miyakawa.github.io/fhir-jpcore-ig-test/)
+
+## FSH & Markdown記載関連
+* [FHIR Shorthand & IG Publiser環境作成方法(作成中)](fhir-jpcore-ig-test/)
 * [FHIR Shorthand JP Coreコーディング規約(作成中)](docs/fishingrule.md)
 * [プロファイル説明前後文書テンプレート(作成中)](docs/template_intronotes.md)
 * [github 更新ルール(作成中)](docs/githubflow.md)
 
-## FSH & Markdown記載方法
+## 資料・学習用サイト等
 * [MarkDown記載方法](docs/markdown.md)
-* [FHIR Shorthand FSH School](https://fshschool.org/)
-* [FHIR Shorthand Overview](https://build.fhir.org/ig/HL7/fhir-shorthand/overview.html)
-* [FHIR Shorthand Language Reference](https://build.fhir.org/ig/HL7/fhir-shorthand/reference.html)
-* [FHIR Shorthand Quick Reference](https://build.fhir.org/ig/HL7/fhir-shorthand/FSHQuickReference.pdf)
+* [FHIR Shorthand FSH School(外部リンク)](https://fshschool.org/)
+* [FHIR Shorthand Overview(外部リンク)](https://build.fhir.org/ig/HL7/fhir-shorthand/overview.html)
+* [FHIR Shorthand Language Reference(外部リンク)](https://build.fhir.org/ig/HL7/fhir-shorthand/reference.html)
+* [FHIR Shorthand Quick Reference(外部リンク)](https://build.fhir.org/ig/HL7/fhir-shorthand/FSHQuickReference.pdf)
