@@ -26,7 +26,7 @@ FHIRのJpCore環境作成のためのサンプルサイトです。
 * [FHIR Shorthandコーディングルール **(作成中)** ](docs/fishingrule.md)
 * [プロファイル説明Markdown編集ルール **(作成中)** ](docs/template_intronotes.md)
 * [github 更新ルール **(作成中)** ](docs/githubflow.md)
-* [JP Core IG用語 **(作成中)** ](docs/terminology_ig.md)
+* [JP Core IG記載ルール **(作成中)** ](docs/ig_rules.md)
 
 ## 資料・学習用サイト等
 * [FHIR Shorthand FSH School(外部リンク)](https://fshschool.org/)
