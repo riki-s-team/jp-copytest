@@ -4,7 +4,7 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-procedure-date-sp"
 * name = "JPProcedureDateSP"
 * status = #draft
-* date = "2022-03-18"
+* date = "2022-03-16"
 * description = "Procedureリソースの​performed(実施日時)に関する検索を定義します。"
 * code = #date
 * base = #Procedure
@@ -53,7 +53,7 @@ Usage: #definition
 * url = "http://jpfhir.jp/fhir/core/SearchParameter/jp-procedure-patient-sp"
 * name = "JPProcedurePatientSP"
 * status = #draft
-* date = "2022-03-18"
+* date = "2022-03-16"
 * description = "ProcedureリソースのPatient(患者)に関する検索を定義します。"
 * code = #patient
 * base = #Procedure
