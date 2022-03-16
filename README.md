@@ -15,7 +15,7 @@ FHIRのJpCore環境作成のためのサンプルサイトです。
 1. OutputフォルダにHtml一式が格納される
 
 ## ビルド結果確認
-* [ビルド状況] (https://github.com/findex-miyakawa/fhir-jpcore-ig-test/actions)
+* [ビルド状況](https://github.com/findex-miyakawa/fhir-jpcore-ig-test/actions)
 * [最新Delelop&Pull Request結果](https://findex-miyakawa.github.io/fhir-jpcore-ig-test/)
 
 ## FSH & Markdown記載関連
