@@ -5,7 +5,7 @@ Usage: #definition
 * name = "JPCoreServerCapabilityStatement"
 * title = "JP Core Server CapabilityStatement"
 * status = #draft
-* date = "2022-03-16"
+* date = "2022-03-18"
 * description = "JP Core Server Actorの期待される機能について説明する。\nJP Core ServerがサポートするFHIRプロファイル、OperationsおよびSearch Parametersのリストが定義されている。"
 * kind = #requirements
 * instantiates = "http://jpfhir.jp/fhir/core/CapabilityStatement/jp-server-capabilitystatement"

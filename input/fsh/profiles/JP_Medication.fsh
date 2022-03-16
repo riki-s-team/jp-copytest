@@ -12,7 +12,7 @@ Description: "このプロファイルはMedicationリソースに対して、�
 //
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Medication"
 * ^status = #draft
-* date = "2022-03-16"
+* ^date = "2022-03-18"
 * ^purpose = "このプロファイルはMedicationリソースに対して、主に薬剤データを送受信するための基礎となる制約と拡張を定めたものである。"
 * . ^short = "Medication Resourceの定義"
 * . ^definition = "This resource is primarily used for the identification and definition of a medication for the purposes of prescribing, dispensing, and administering a medication as well as for making statements about medication use.\r\n\r\nこのResourceは薬剤を処方し、払い出し（調剤）、その投与を定義し、IDを付与するためにまず利用され、薬剤の使用状態を示すためにも使われる。"
@@ -83,7 +83,7 @@ Id: 4b53c2de-7595-40da-9c04-bb912b394f27
 Title: "JP_Medication_Ingredient_DrugNo"
 Description: "投与量が製剤単位か成分単位かを格納する拡張"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Medication_Ingredient_DrugNo"
-* date = "2022-03-16"
+* ^date = "2022-03-18"
 * ^purpose = "投与量が製剤単位か成分単位かを格納する拡張"
 * ^context.type = #element
 * ^context.expression = "Medication.ingredient"
@@ -99,7 +99,7 @@ Id: 88c8b7c4-fbfa-4a42-814d-071dc8acb4eb
 Title: "JP_Medication_IngredientStrength_StrengthType"
 Description: "投与量が製剤単位か成分単位かを格納する拡張"
 * ^url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Medication_IngredientStrength_StrengthType"
-* date = "2022-03-16"
+* ^date = "2022-03-18"
 * ^purpose = "投与量が製剤単位か成分単位かを格納する拡張"
 * ^context.type = #element
 * ^context.expression = "Medication.ingredient.strength"
