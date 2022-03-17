@@ -64,53 +64,50 @@ jekyll -v     #バージョン確認
 ## 3. Linux ubuntu インストール手順
 
 ```
-# ---------------------------------
-# nodejs
-# ---------------------------------
+# aptのアップデート
+# 必要に応じて行ってください。
+sudo apt update
+
+
+# nodejsのインストール
 sudo apt install nodejs npm
 
 node -v    #バージョン確認
 npm -v    #バージョン確認
 
-# ---------------------------------
-# sushi
-# ---------------------------------
+# sushiのインストール
 sushi install -g fsh
 
 sushi -v    #バージョン確認
 
-# ---------------------------------
-# java sdk 
-# ---------------------------------
+# java sdk のインストール
+# 下記のいずれかをインストールすること
 
-# java jre(ライセンス注意のこと)
+# 1)java jre(ライセンス注意のこと)
 sudo apt install default-jre
 
-# open jdk (xxの部分はバージョン指定)
+# 2)open jdk (xxの部分はバージョン指定)
 sudo apt-get install openjdk-xx-jre
 
+# --
 java -version    #バージョン確認
 
-# ---------------------------------
-# ruby (developer)
-# ---------------------------------
+# ruby (developer)のインストール
 sudo apt install ruby-dev
 
 ruby --version
 
-# ---------------------------------
 # jekyll ※ruby gemがインストールされていること。
-# ---------------------------------
 gem install jekyll bundler
 
 jekyll -v    #バージョン確認
 
-# ---------------------------------
 # git client
-# ---------------------------------
 sudo apt install git
 
 git version    #バージョン確認
+
+
 ```
 
 ---
