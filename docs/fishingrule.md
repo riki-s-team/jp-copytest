@@ -1,4 +1,4 @@
-# JP Core FHIR Shorthand記載時ルール事項(案)
+# JP Core FHIR Shorthand記載ルール(案)
 
 ## 1. フォルダ構成
  フォルダ構成は下記の通り

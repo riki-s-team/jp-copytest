@@ -23,10 +23,10 @@ FHIRのJpCore環境作成のためのサンプルサイトです。
 * [最新ビルド結果](https://findex-miyakawa.github.io/fhir-jpcore-ig-test/)
 
 ## FSH & Markdown記載ルール
-* [FHIR Shorthandコーディングルール **(作成中)** ](docs/fishingrule.md)
-* [プロファイル説明Markdown編集ルール **(作成中)** ](docs/template_intronotes.md)
-* [github 更新ルール **(作成中)** ](docs/githubflow.md)
+* [FHIR Shorthand記載ルール **(作成中)** ](docs/fishingrule.md)
+* [プロファイル説明用Markdown記載ルール **(作成中)** ](docs/template_intronotes.md)
 * [JP Core IG記載ルール **(作成中)** ](docs/ig_rules.md)
+* [github 利用ルール **(作成中)** ](docs/githubflow.md)
 
 ## 資料・学習用サイト等
 * [FHIR Shorthand FSH School(外部リンク)](https://fshschool.org/)
