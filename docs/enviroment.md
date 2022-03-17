@@ -76,7 +76,7 @@ node -v    #バージョン確認
 npm -v    #バージョン確認
 
 # sushiのインストール
-sushi install -g fsh
+sudo npm install -g fsh-sushi
 
 sushi -v    #バージョン確認
 
