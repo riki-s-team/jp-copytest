@@ -9,13 +9,45 @@ FHIRのJpCore環境作成のためのサンプルサイトです。
 * [FHIR Shorthand & IG Publiser環境作成方法 **(作成中)** ](docs/enviroment.md)
 
 ## クライアントコンパイル手順
-1. ターミナル（コマンドプロンプト）を開き、対象ディレクトリにカレントを移動する
-1. Sushiを実行し、エラーが発生していないことを確認する
-1. 初めて実行する場合は、_updatePublisher.bat(windows),_updatePublisher.sh(linux,mac)を実行する。
-   1. igpublisher.jarのダウンロードの許可
-   1. スクリプト類のダウンロードの許可
-1. _genonce.bat(windows), _genonce.sh(linux,mac)を実行する
-1. OutputフォルダにHtml一式が格納される
+### Windowsの場合
+``` ruby
+#実行ディレクトリに移動
+> cd (プロジェクトディレクトリ移動)
+
+# (初回のみ実行)gitクローン
+> git clone http://github.com/findex-miyakawa/fhir-jpcore-ig-test.git
+
+# git 最新化
+> cd fhir-jpcore-ig-test
+> git fetch
+> git pull
+
+# (初回のみ実行)IgPublisher.jarのダウンロード
+> _updatePublisher.bat
+
+# igpublisherの実行
+> _genonce.bat
+```
+
+### Ubuntuの場合
+``` ruby
+#実行ディレクトリに移動
+> cd (プロジェクトディレクトリ移動)
+
+# (初回のみ実行)gitクローン
+> git clone http://github.com/findex-miyakawa/fhir-jpcore-ig-test.git
+
+# git 最新化
+> cd fhir-jpcore-ig-test
+> git fetch
+> git pull
+
+# (初回のみ実行)IgPublisher.jarのダウンロード
+> bash _updatePublisher.sh
+
+# igpublisherの実行
+> bash _genonce.sh
+```
 
 ## GitHubAction 自動ビルド＆デプロイ
 * [ビルド状況](https://github.com/findex-miyakawa/fhir-jpcore-ig-test/actions)
