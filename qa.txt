@@ -2,8 +2,8 @@
 =========================================
 
 err = 58, warn = 87, info = 99
-IG Publisher Version: 1.1.112 Out of date - current version is 1.1.113
-Generated Fri Mar 18 05:51:51 UTC 2022. FHIR version 4.0.1 for hl7.fhir.jp.core#1.1.0a (canonical = http://jpfhir.jp/fhir/core)
+IG Publisher Version: 1.1.113
+Generated Fri Mar 18 07:06:42 UTC 2022. FHIR version 4.0.1 for hl7.fhir.jp.core#1.1.0a (canonical = http://jpfhir.jp/fhir/core)
  Build Errors : 83 / 5 / 0
  /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/CapabilityStatement-jp-client-capabilitystatement : 0 / 0 / 46
  /home/runner/work/jp-core-v1x/jp-core-v1x/fsh-generated/resources/CapabilityStatement-jp-server-capabilitystatement : 0 / 0 / 46

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="8b07b389-d2c3-4bb4-ab12-22e5b129a808"/>
+  <id value="7ce91ce1-3e9e-4a69-93d8-e1914eb7d4a1"/>
   <meta>
-    <lastUpdated value="2022-03-18T05:47:24.669+00:00"/>
+    <lastUpdated value="2022-03-18T07:01:27.913+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -107,7 +107,7 @@
         <name value="EventStatus"/>
         <title value="Procedureの状態"/>
         <status value="draft"/>
-        <date value="2022-03-18T05:47:24+00:00"/>
+        <date value="2022-03-18T07:01:27+00:00"/>
         <publisher value="FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"/>
         <contact>
           <name value="FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"/>
@@ -128,8 +128,8 @@
         </jurisdiction>
         <copyright value="FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"/>
         <expansion>
-          <identifier value="urn:uuid:d4882f5b-f028-4103-9761-5a0a73e4f31d"/>
-          <timestamp value="2022-03-18T05:47:59+00:00"/>
+          <identifier value="urn:uuid:b3f1ddbc-6272-47b8-bc62-6cb2c12fa01c"/>
+          <timestamp value="2022-03-18T07:02:15+00:00"/>
           <total value="8"/>
           <parameter>
             <name value="excludeNested"/>
@@ -215,7 +215,7 @@
         <name value="ProcedureCodes"/>
         <title value="Procedureコード"/>
         <status value="draft"/>
-        <date value="2022-03-18T05:47:24+00:00"/>
+        <date value="2022-03-18T07:01:27+00:00"/>
         <publisher value="FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"/>
         <contact>
           <name value="FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"/>
@@ -236,8 +236,8 @@
         </jurisdiction>
         <copyright value="FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)"/>
         <expansion>
-          <identifier value="urn:uuid:d317d140-3d44-414f-b5a0-87342cfb0927"/>
-          <timestamp value="2022-03-18T05:48:23+00:00"/>
+          <identifier value="urn:uuid:f883e11f-6e85-463a-ad08-8f7409ab26e1"/>
+          <timestamp value="2022-03-18T07:02:51+00:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
